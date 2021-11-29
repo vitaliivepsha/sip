@@ -1,0 +1,74 @@
+.txt-page__top{
+  background: linear-gradient(180deg, rgba(202, 188, 246, 0.5) 0%, rgba(255, 206, 172, 0.5) 100%);
+  border-radius: 5px;
+  padding: 172px 0 72px;
+  @include bp(md){
+    padding: 150px 0 60px;
+  }
+  @include bp(xs){
+    padding: 125px 0 78px;
+  }
+  .page-title{
+    margin-bottom: 5px;
+    @include bp(xs){
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.about-description{
+  background: $bg-gray;
+  border-radius: 5px;
+  padding: 110px 0;
+  @include bp(md){
+    padding: 60px 0;
+  }
+  @include bp(xs){
+    padding: 45px 0 55px;
+  }
+}
+
+.txt-page__main{
+  background: $bg-gray;
+  border-radius: 5px;
+  padding: 55px 0 140px;
+}
+
+.txt-page__wrap{
+  width: 540px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 150%;
+  color: $text;
+  @include bp(xs) {
+    font-size: 15px;
+    line-height: 150%;
+  }
+  p{
+    margin-bottom: 20px;
+  }
+  ul{
+    margin-bottom: 20px;
+    li{
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 24px;
+      &:before{
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 10px;
+        width: 4px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: $text;
+      }
+    }
+  }
+  ol{
+    list-style-type: decimal;
+    padding-left: 18px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,250 @@
+.partners-main{
+  background: linear-gradient(14.13deg, rgba(117, 215, 214, 0.5) 32.87%, rgba(95, 108, 250, 0.5) 205%);
+  border-radius: 5px;
+  padding: 172px 0 72px;
+  @include bp(md){
+    padding: 150px 0 60px;
+  }
+  @include bp(xs){
+    padding: 125px 0 78px;
+  }
+  .page-title{
+    margin-bottom: 5px;
+    @include bp(xs){
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.page-title{
+  display: block;
+  margin-top: 0;
+  font-family: $title;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: center;
+  color: $black;
+  @include bp(xs){
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+.partners-main__txt{
+  width: 540px;
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  color: $black;
+  text-align: center;
+  margin: 0 auto;
+  @include bp(xs){
+    font-size: 15px;
+    line-height: 20px;
+    width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+  p{
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.partners-description{
+  background: $bg-gray;
+  border-radius: 5px;
+  padding: 110px 0;
+  @include bp(md){
+    padding: 60px 0;
+  }
+  @include bp(xs){
+    padding: 45px 0 55px;
+  }
+}
+
+.partners-description__txt{
+  columns: 2;
+  font-size: 16px;
+  line-height: 150%;
+  width: 940px;
+  max-width: 100%;
+  margin: 0 auto;
+  @include bp(md){
+    columns: 1;
+  }
+  @include bp(xs){
+    font-size: 15px;
+    line-height: 150%;
+  }
+  p{
+    margin-bottom: 10px;
+    padding-right: 20px;
+  }
+}
+
+.partners-advantages{
+  background: $bg-gray;
+  border-radius: 5px;
+  padding: 70px 0 105px;
+  @include bp(md){
+    padding: 60px 0;
+  }
+  @include bp(xs){
+    padding: 55px 0 65px;
+  }
+}
+
+.partners-advantages__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  @include bp(md){
+    flex-direction: column-reverse;
+  }
+}
+
+.partners-advantages__txt{
+  .section-title{
+    margin-bottom: 15px;
+  }
+  >p{
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 10px;
+    @include bp(xs) {
+      font-size: 15px;
+      line-height: 150%;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  >ul{
+    font-size: 16px;
+    line-height: 150%;
+    @include bp(xs) {
+      font-size: 15px;
+      line-height: 150%;
+    }
+    li{
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 24px;
+      &:before{
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 10px;
+        width: 4px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: $text;
+      }
+    }
+  }
+}
+
+.partners-advantages__pic{
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+  @include bp(md) {
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+  @include bp(xs){
+    margin-bottom: 45px;
+  }
+  picture{
+    max-width: 100%;
+    @include bp(xs){
+      display: block;
+      max-width: 195px;
+    }
+    img{
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.partners-requirements{
+  background: $black;
+  border-radius: 5px;
+  padding: 110px 0 160px;
+  color: #fff;
+  @include bp(md){
+    padding: 60px 0;
+  }
+  @include bp(xs){
+    padding: 50px 0 55px;
+  }
+  .section-title{
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+    @include bp(xs){
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.partners-requirements__txt{
+  text-align: center;
+  width: 730px;
+  max-width: 100%;
+  margin: 0 auto;
+  >p{
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 10px;
+    @include bp(xs) {
+      font-size: 15px;
+      line-height: 150%;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.partners-become{
+  background: linear-gradient(14.13deg, rgba(117, 215, 214, 0.5) 32.87%, rgba(95, 108, 250, 0.5) 205%);
+  border-radius: 5px;
+  padding: 50px 0 68px;
+  @include bp(xs){
+    padding: 50px 0;
+  }
+  .section-title{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .btn{
+    width: 230px;
+    margin: 0 auto;
+    @include bp(xs){
+      width: 250px;
+    }
+  }
+}
+
+.partners-contacts{
+  background: $bg-gray;
+  border-radius: 5px;
+  padding: 100px 0 115px;
+  @include bp(md){
+    padding: 60px 0;
+  }
+  @include bp(xs){
+    padding: 35px 0 50px;
+  }
+  .section-title{
+    text-align: center;
+    margin-bottom: 5px;
+    @include bp(xs){
+      margin-bottom: 10px;
+    }
+  }
+}
