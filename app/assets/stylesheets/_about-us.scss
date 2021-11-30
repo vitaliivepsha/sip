@@ -1,7 +1,7 @@
 .about-main{
   background: linear-gradient(180deg, rgba(202, 188, 246, 0.5) 0%, rgba(255, 206, 172, 0.5) 100%);
   border-radius: 5px;
-  padding: 172px 0 72px;
+  padding: 172px 0 127px;
   @include bp(md){
     padding: 150px 0 60px;
   }
@@ -19,7 +19,7 @@
 .about-description{
   background: $bg-gray;
   border-radius: 5px;
-  padding: 110px 0;
+  padding: 70px 0 45px;
   @include bp(md){
     padding: 60px 0;
   }
@@ -29,22 +29,78 @@
 }
 
 .about-description__txt{
-  columns: 2;
-  font-size: 16px;
-  line-height: 150%;
-  width: 940px;
+  width: 680px;
   max-width: 100%;
   margin: 0 auto;
-  @include bp(md){
-    columns: 1;
+  text-align: center;
+  div{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color: $black;
+    margin-bottom: 22px;
+    @include bp(xs){
+      font-size: 18px;
+      line-height: 23px;
+    }
   }
+  p{
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 22px;
+  }
+  >picture{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    img{
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.about-advantages{
+  background: $black;
+  border-radius: 5px;
+  padding: 66px 0 70px;
+  .section-title{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 36px;
+  }
+}
+
+.about-advantages__list{
+  color: #fff;
+  width: 995px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 200%;
   @include bp(xs){
     font-size: 15px;
     line-height: 150%;
   }
-  p{
-    margin-bottom: 10px;
-    padding-right: 20px;
+  li{
+    position: relative;
+    padding-left: 24px;
+    @include bp(xs){
+      margin-bottom: 10px;
+    }
+    &:before{
+      position: absolute;
+      content: '';
+      top: 15px;
+      left: 10px;
+      width: 4px;
+      height: 4px;
+      border-radius: 4px;
+      background-color: #fff;
+      @include bp(xs){
+        top: 10px;
+      }
+    }
   }
 }
 
@@ -116,10 +172,23 @@
   }
   .section-title{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     @include bp(xs){
-      margin-bottom: 25px;
+      margin-bottom: 15px;
     }
+  }
+}
+
+.about-team__descr{
+  margin: 0 auto 44px;
+  font-size: 16px;
+  line-height: 150%;
+  width: 980px;
+  max-width: 100%;
+  text-align: center;
+  @include bp(xs){
+    font-size: 15px;
+    margin-bottom: 20px;
   }
 }
 

@@ -16,18 +16,6 @@
   }
 }
 
-.about-description{
-  background: $bg-gray;
-  border-radius: 5px;
-  padding: 110px 0;
-  @include bp(md){
-    padding: 60px 0;
-  }
-  @include bp(xs){
-    padding: 45px 0 55px;
-  }
-}
-
 .txt-page__main{
   background: $bg-gray;
   border-radius: 5px;

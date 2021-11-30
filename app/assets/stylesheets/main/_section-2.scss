@@ -1,7 +1,7 @@
 .workers-section{
-  background-color: $bg-gray;
+  background-color: #fff;
   border-radius: 5px;
-  padding: 70px 0 55px;
+  padding: 85px 0;
   @include bp(xs) {
     padding: 40px 0 45px;
   }
@@ -9,9 +9,14 @@
 
 .workers-wrapper{
   display: flex;
-  flex-wrap: wrap;
-  @include bp(md){
-    flex-direction: column-reverse;
+  justify-content: center;
+  picture{
+    width: 300px;
+    max-width: 100%;
+    img{
+      max-width: 100%;
+      object-fit: contain;
+    }
   }
 }
 

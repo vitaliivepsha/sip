@@ -10,18 +10,17 @@
 .services-wrapper{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   @include bp(md){
     flex-direction: column;
   }
 }
 
 .services-pic{
-  padding-top: 28px;
   @include bp(md){
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    padding-top: 0;
   }
   @include bp(xs) {
     margin-bottom: 40px;
