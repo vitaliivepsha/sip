@@ -3,14 +3,14 @@
 'use strict';
 
 if (process.env.NODE_ENV !== 'production') {
-  require('./assets/templates/layouts/index.html');
-  require('./assets/templates/layouts/for-partners.html');
-  require('./assets/templates/layouts/for-companies.html');
-  require('./assets/templates/layouts/contacts.html');
-  require('./assets/templates/layouts/about-us.html');
-  require('./assets/templates/layouts/impressum.html');
-  require('./assets/templates/layouts/terms.html');
-  require('./assets/templates/layouts/policy.html');
+    require('./assets/templates/layouts/index.html');
+    require('./assets/templates/layouts/for-partners.html');
+    require('./assets/templates/layouts/for-companies.html');
+    require('./assets/templates/layouts/contacts.html');
+    require('./assets/templates/layouts/about-us.html');
+    require('./assets/templates/layouts/impressum.html');
+    require('./assets/templates/layouts/terms.html');
+    require('./assets/templates/layouts/policy.html');
 }
 
 // Depends
@@ -29,124 +29,153 @@ var Popup = require('_modules/popup');
 //require('../node_modules/sumoselect/jquery.sumoselect.min');
 //require('../node_modules/ion-rangeslider/js/ion.rangeSlider');
 //import PerfectScrollbar from 'perfect-scrollbar';
+import Swal from 'sweetalert2';
+
 
 // Stylesheet entrypoint
 require('_stylesheets/app.scss');
 
 // Are you ready?
-$(function() {
-  new Forms();
-  new Popup();
-  //new Fancy_select();
-  //new Jscrollpane();
-  //new LightGallery();
-  new Slider();
-  //new Jslider();
-  //new Fancybox();
+$(function () {
+    new Forms();
+    new Popup();
+    //new Fancy_select();
+    //new Jscrollpane();
+    //new LightGallery();
+    new Slider();
+    //new Jslider();
+    //new Fancybox();
 
-  setTimeout(function() {
-    $('body').trigger('scroll');
-  }, 100);
+    setTimeout(function () {
+        $('body').trigger('scroll');
+    }, 100);
 
-  // fixed header
+    // fixed header
 
-  var header = $('.header'),
-    scrollPrev = 0;
+    var header = $('.header'),
+        scrollPrev = 0;
 
-  $(window).scroll(function() {
-    var scrolled = $(window).scrollTop();
-    if (scrolled > 60) {
-      header.addClass('fixed');
-    } else {
-      header.removeClass('fixed');
+    $(window).scroll(function () {
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 60) {
+            header.addClass('fixed');
+        } else {
+            header.removeClass('fixed');
+        }
+        scrollPrev = scrolled;
+    });
+
+    // languages
+
+    $('.header-lang').click(function () {
+        $(this).closest('.header-lang__wrapper').toggleClass('active');
+    });
+
+    $(document).click(function () {
+        $('.header-lang__wrapper').removeClass('active');
+    });
+
+    $(document).on('click', '.header-lang', function (e) {
+        e.stopPropagation();
+    });
+
+    $(document).on('click', '.header-lang__list', function (e) {
+        e.stopPropagation();
+    });
+
+    // mobile menu
+
+    var touch = $('.mobile-menu__btn');
+
+    var toggles = document.querySelectorAll('.mobile-menu__btn');
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+        var toggle = toggles[i];
+        toggleHandler(toggle);
     }
-    scrollPrev = scrolled;
-  });
 
-  // languages
+    function toggleHandler(toggle) {
+        toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            (this.classList.contains('active') === true) ? this.classList.remove('active') : this.classList.add('active');
+        });
+    }
 
-  $('.header-lang').click(function() {
-    $(this).closest('.header-lang__wrapper').toggleClass('active');
-  });
-
-  $(document).click(function() {
-    $('.header-lang__wrapper').removeClass('active');
-  });
-
-  $(document).on('click', '.header-lang', function(e) {
-    e.stopPropagation();
-  });
-
-  $(document).on('click', '.header-lang__list', function(e) {
-    e.stopPropagation();
-  });
-
-  // mobile menu
-
-  var touch = $('.mobile-menu__btn');
-
-  var toggles = document.querySelectorAll('.mobile-menu__btn');
-
-  for (var i = toggles.length - 1; i >= 0; i--) {
-    var toggle = toggles[i];
-    toggleHandler(toggle);
-  }
-
-  function toggleHandler(toggle) {
-    toggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      (this.classList.contains('active') === true) ? this.classList.remove('active') : this.classList.add('active');
+    $(touch).click(function (e) {
+        e.preventDefault();
+        $('body').toggleClass('menu-opened').removeClass('login-menu__show');
+        return false;
     });
-  }
 
-  $(touch).click(function(e) {
-    e.preventDefault();
-    $('body').toggleClass('menu-opened').removeClass('login-menu__show');
-    return false;
-  });
-
-  $(document).on('click', '.mobile-menu__btn', function(e) {
-    e.stopPropagation();
-  });
-
-  $(document).on('click', '.mobile-menu__wrapper', function(e) {
-    e.stopPropagation();
-  });
-
-  // contacts
-
-  $('.contacts-info__phone').click(function() {
-    $(this).closest('.contacts-info__phone-wrapper').toggleClass('active');
-  });
-
-  $(document).click(function() {
-    $('.contacts-info__phone-wrapper').removeClass('active');
-  });
-
-  $(document).on('click', '.contacts-info__phone', function(e) {
-    e.stopPropagation();
-  });
-
-  $(document).on('click', '.contacts-info__list', function(e) {
-    e.stopPropagation();
-  });
-
-  // lazy load
-  var lazyload = function() {
-    var scroll = $(window).scrollTop() + $(window).height() * 3;
-
-    $('.lazy').each(function() {
-      var $this = $(this);
-      if ($this.offset().top < scroll) {
-        $this.attr('src', $(this).data('original'));
-      }
+    $(document).on('click', '.mobile-menu__btn', function (e) {
+        e.stopPropagation();
     });
-    $('.lazy-web').each(function() {
-      var $this = $(this);
-      if ($this.offset().top < scroll) {
-        $this.attr('srcset', $(this).data('original'));
-      }
+
+    $(document).on('click', '.mobile-menu__wrapper', function (e) {
+        e.stopPropagation();
     });
-  };
-  $(window).scroll(lazyload);
+
+    // contacts
+
+    $('.contacts-info__phone').click(function () {
+        $(this).closest('.contacts-info__phone-wrapper').toggleClass('active');
+    });
+
+    $(document).click(function () {
+        $('.contacts-info__phone-wrapper').removeClass('active');
+    });
+
+    $(document).on('click', '.contacts-info__phone', function (e) {
+        e.stopPropagation();
+    });
+
+    $(document).on('click', '.contacts-info__list', function (e) {
+        e.stopPropagation();
+    });
+
+    // lazy load
+    var lazyload = function () {
+        var scroll = $(window).scrollTop() + $(window).height() * 3;
+
+        $('.lazy').each(function () {
+            var $this = $(this);
+            if ($this.offset().top < scroll) {
+                $this.attr('src', $(this).data('original'));
+            }
+        });
+        $('.lazy-web').each(function () {
+            var $this = $(this);
+            if ($this.offset().top < scroll) {
+                $this.attr('srcset', $(this).data('original'));
+            }
+        });
+    };
+    $(window).scroll(lazyload);
+
+    // popup "Связаться с нами" - удачная отправка
+    $('.popup-swal').click(function () {
+        Swal("Заявка принята, наш менеджер свяжется с Вами в ближайшее время");
+    });
+
+    //  popup
+
+    $('.login-link').magnificPopup({
+        delegate: 'a',
+        removalDelay: 100,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            }
+        },
+    });
+
+    $('.registration-link').magnificPopup({
+        delegate: 'a',
+        removalDelay: 100,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            }
+        },
+    });
 });
