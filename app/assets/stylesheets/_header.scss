@@ -285,6 +285,8 @@
   bottom: 10px;
   background: linear-gradient(180deg, rgb(202, 188, 246) 0%, rgb(255, 206, 172) 100%);
   border-radius: 5px;
+  overflow: auto;
+  padding-bottom: 15px;
   & .container {
     padding: 0 10px;
     @media (min-width: 575px) {
@@ -351,4 +353,14 @@
       display: block;
     }
   }
+}
+
+.logged-in{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

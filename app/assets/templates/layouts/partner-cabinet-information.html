@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>SIP</title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon.png" type="image/png">
+    <meta name="theme-color" content="#5F6CFA">
+    <meta name="msapplication-navbutton-color" content="#5F6CFA">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5F6CFA">
+</head>
+<body>
+
+${require('../parts/header-logged-in.html')}
+<main class="main">
+    <div class="section partner-cabinet__top">
+        <div class="container">
+            <div class="page-title">Личный кабинет партнера</div>
+            <nav class="partner-cabinet__navigation">
+                <ul>
+                    <li class="current">
+                        <a href="javascript:void(0)">Информация о предприятии</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Студенты</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Документы</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Бизнес-процессы</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Новости</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="7.11834" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <ellipse cx="10.9972" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <ellipse cx="14.8801" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <path d="M19.25 1.37319C19.6147 1.37319 20.2223 1.77538 20.2223 1.77538C20.4801 2.03291 20.625 2.38218 20.625 2.74637V13.7319C20.625 14.0961 20.4801 14.4453 20.2223 14.7029C19.9644 14.9604 19.6147 15.1051 19.25 15.1051H6.06925C5.33996 15.1052 4.6406 15.3947 4.125 15.9097L1.375 18.6561V2.74637C1.375 2.38218 1.51987 2.03291 1.77773 1.77538C2.03559 1.51786 2.38533 1.37319 2.75 1.37319H19.25ZM2.75 0C2.02065 0 1.32118 0.289349 0.805456 0.804394C0.289731 1.31944 0 2.01799 0 2.74637L0 20.3136C2.88955e-05 20.4494 0.0404148 20.5822 0.116046 20.6951C0.191678 20.8081 0.299155 20.896 0.424874 20.9479C0.550594 20.9998 0.688904 21.0133 0.8223 20.9867C0.955695 20.96 1.07818 20.8945 1.17425 20.7983L5.09713 16.8806C5.35493 16.623 5.70461 16.4783 6.06925 16.4782H19.25C19.9793 16.4782 20.6788 16.1889 21.1945 15.6738C21.7103 15.1588 22 14.4603 22 13.7319V2.74637C22 2.01799 21.7103 1.31944 21.1945 0.804394C20.6788 0.289349 19.9793 0 19.25 0L2.75 0Z" fill="#25222C"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="section partner-cabinet__info">
+        <div class="container">
+            <div class="partner-cabinet__info-main">
+                <form class="partner-cabinet__form">
+                    <div class="form-section">
+                        <div class="form-row">
+                            <label>Название компании</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="company-name" value="Firmenname" disabled>
+                                <div class="edit-btn">
+                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.77625 2.91667C8.99675 2.69617 9.11808 2.40333 9.11808 2.09183C9.11808 1.78033 8.99675 1.4875 8.77625 1.267L7.85108 0.341833C7.63058 0.121333 7.33775 0 7.02625 0C6.71475 0 6.42192 0.121333 6.202 0.34125L0 6.524V9.09942H2.57425L8.77625 2.91667ZM7.02625 1.16667L7.952 2.09125L7.0245 3.01525L6.09933 2.09067L7.02625 1.16667ZM1.16667 7.93275V7.00817L5.27333 2.91433L6.1985 3.8395L2.09242 7.93275H1.16667ZM0 10.2661H9.33333V11.4327H0V10.2661Z" fill="#8B8A8E"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Юридический адрес</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="legal-address" placeholder="Anschrift: Strasse, № Hausnummer, Stadt">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Страна</label>
+                            <div class="input-wrapper select-wrapper">
+                                <select>
+                                    <option selected disabled>Wahlen Staat</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#25222C"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-row">
+                            <label>Фактический адрес</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="actual-address" placeholder="Forname, Name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Страна</label>
+                            <div class="input-wrapper select-wrapper">
+                                <select>
+                                    <option selected disabled>Wahlen Staat</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#25222C"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-row">
+                            <label>Контактное лицо - имя и фамилия</label>
+                            <div class="name-wrapper">
+                                <div class="input-wrapper select-wrapper">
+                                    <select>
+                                        <option selected disabled>Herr/Frau</option>
+                                        <option>Herr</option>
+                                        <option>Frau</option>
+                                    </select>
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#25222C"/>
+                                    </svg>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="text" name="name" placeholder="Forname, Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Телефон</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="phone" value="+49 (000) 000 00 00" disabled>
+                                <div class="edit-btn">
+                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.77625 2.91667C8.99675 2.69617 9.11808 2.40333 9.11808 2.09183C9.11808 1.78033 8.99675 1.4875 8.77625 1.267L7.85108 0.341833C7.63058 0.121333 7.33775 0 7.02625 0C6.71475 0 6.42192 0.121333 6.202 0.34125L0 6.524V9.09942H2.57425L8.77625 2.91667ZM7.02625 1.16667L7.952 2.09125L7.0245 3.01525L6.09933 2.09067L7.02625 1.16667ZM1.16667 7.93275V7.00817L5.27333 2.91433L6.1985 3.8395L2.09242 7.93275H1.16667ZM0 10.2661H9.33333V11.4327H0V10.2661Z" fill="#8B8A8E"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Email</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="email" value="gmail@gmail.com" disabled>
+                                <div class="edit-btn">
+                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.77625 2.91667C8.99675 2.69617 9.11808 2.40333 9.11808 2.09183C9.11808 1.78033 8.99675 1.4875 8.77625 1.267L7.85108 0.341833C7.63058 0.121333 7.33775 0 7.02625 0C6.71475 0 6.42192 0.121333 6.202 0.34125L0 6.524V9.09942H2.57425L8.77625 2.91667ZM7.02625 1.16667L7.952 2.09125L7.0245 3.01525L6.09933 2.09067L7.02625 1.16667ZM1.16667 7.93275V7.00817L5.27333 2.91433L6.1985 3.8395L2.09242 7.93275H1.16667ZM0 10.2661H9.33333V11.4327H0V10.2661Z" fill="#8B8A8E"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-row">
+                            <div class="input-file">
+                                <input type="file" id="photo">
+                                <label for="photo">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 18.4651C0 19.1373 0.273147 19.7819 0.759353 20.2572C1.24556 20.7325 1.90499 20.9995 2.59259 20.9995H17.4074C18.095 20.9995 18.7544 20.7325 19.2406 20.2572C19.7269 19.7819 20 19.1373 20 18.4651V14.4824H17.7778V18.4651C17.7778 18.5611 17.7388 18.6532 17.6693 18.7211C17.5998 18.789 17.5056 18.8271 17.4074 18.8271H2.59259C2.49436 18.8271 2.40016 18.789 2.3307 18.7211C2.26124 18.6532 2.22222 18.5611 2.22222 18.4651V14.4824H0V18.4651Z" fill="#5F6CFA"/>
+                                        <path d="M11.1122 15.2051L11.1122 3.70604L14.4455 6.96459L16.0159 5.42945L10.7862 0.31716C10.5779 0.113755 10.2955 -0.000497353 10.0011 -0.000497378C9.70661 -0.000497404 9.4242 0.113755 9.21587 0.31716L3.98624 5.42945L5.55661 6.96459L8.88994 3.70604L8.88994 15.2051L11.1122 15.2051Z" fill="#5F6CFA"/>
+                                    </svg>
+                                    <span>Загрузить фотографию контактного лица</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="add-contact">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="25" height="25" rx="12.5" fill="#5F6CFA"/>
+                                    <rect x="11.9565" y="6.52148" width="1.63043" height="11.9565" fill="white"/>
+                                    <rect x="18.4783" y="11.9551" width="1.63043" height="11.9565" transform="rotate(90 18.4783 11.9551)" fill="white"/>
+                                </svg>
+                                Добавить еще одно контактное лицо
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-row">
+                            <div class="input-file">
+                                <input type="file" id="license">
+                                <label for="license">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 18.4651C0 19.1373 0.273147 19.7819 0.759353 20.2572C1.24556 20.7325 1.90499 20.9995 2.59259 20.9995H17.4074C18.095 20.9995 18.7544 20.7325 19.2406 20.2572C19.7269 19.7819 20 19.1373 20 18.4651V14.4824H17.7778V18.4651C17.7778 18.5611 17.7388 18.6532 17.6693 18.7211C17.5998 18.789 17.5056 18.8271 17.4074 18.8271H2.59259C2.49436 18.8271 2.40016 18.789 2.3307 18.7211C2.26124 18.6532 2.22222 18.5611 2.22222 18.4651V14.4824H0V18.4651Z" fill="#5F6CFA"/>
+                                        <path d="M11.1122 15.2051L11.1122 3.70604L14.4455 6.96459L16.0159 5.42945L10.7862 0.31716C10.5779 0.113755 10.2955 -0.000497353 10.0011 -0.000497378C9.70661 -0.000497404 9.4242 0.113755 9.21587 0.31716L3.98624 5.42945L5.55661 6.96459L8.88994 3.70604L8.88994 15.2051L11.1122 15.2051Z" fill="#5F6CFA"/>
+                                    </svg>
+                                    <span>Загрузить лицензию</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-file">
+                                <input type="file" id="doc">
+                                <label for="doc">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 18.4651C0 19.1373 0.273147 19.7819 0.759353 20.2572C1.24556 20.7325 1.90499 20.9995 2.59259 20.9995H17.4074C18.095 20.9995 18.7544 20.7325 19.2406 20.2572C19.7269 19.7819 20 19.1373 20 18.4651V14.4824H17.7778V18.4651C17.7778 18.5611 17.7388 18.6532 17.6693 18.7211C17.5998 18.789 17.5056 18.8271 17.4074 18.8271H2.59259C2.49436 18.8271 2.40016 18.789 2.3307 18.7211C2.26124 18.6532 2.22222 18.5611 2.22222 18.4651V14.4824H0V18.4651Z" fill="#5F6CFA"/>
+                                        <path d="M11.1122 15.2051L11.1122 3.70604L14.4455 6.96459L16.0159 5.42945L10.7862 0.31716C10.5779 0.113755 10.2955 -0.000497353 10.0011 -0.000497378C9.70661 -0.000497404 9.4242 0.113755 9.21587 0.31716L3.98624 5.42945L5.55661 6.96459L8.88994 3.70604L8.88994 15.2051L11.1122 15.2051Z" fill="#5F6CFA"/>
+                                    </svg>
+                                    <span>Загрузить Документ о регистрации фирмы (свидетельство или выписку)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+${require('../parts/footer.html')}
+
+<div class="overlay"></div>
+<div class="mfp-hide"></div>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>SIP</title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon.png" type="image/png">
+    <meta name="theme-color" content="#5F6CFA">
+    <meta name="msapplication-navbutton-color" content="#5F6CFA">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5F6CFA">
+</head>
+<body>
+
+${require('../parts/header-logged-in.html')}
+<main class="main">
+    <div class="section partner-cabinet__top">
+        <div class="container">
+            <div class="page-title">Личный кабинет партнера</div>
+            <nav class="partner-cabinet__navigation">
+                <ul>
+                    <li class="current">
+                        <a href="javascript:void(0)">Информация о предприятии</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Студенты</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Документы</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Бизнес-процессы</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Новости</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="7.11834" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <ellipse cx="10.9972" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <ellipse cx="14.8801" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <path d="M19.25 1.37319C19.6147 1.37319 20.2223 1.77538 20.2223 1.77538C20.4801 2.03291 20.625 2.38218 20.625 2.74637V13.7319C20.625 14.0961 20.4801 14.4453 20.2223 14.7029C19.9644 14.9604 19.6147 15.1051 19.25 15.1051H6.06925C5.33996 15.1052 4.6406 15.3947 4.125 15.9097L1.375 18.6561V2.74637C1.375 2.38218 1.51987 2.03291 1.77773 1.77538C2.03559 1.51786 2.38533 1.37319 2.75 1.37319H19.25ZM2.75 0C2.02065 0 1.32118 0.289349 0.805456 0.804394C0.289731 1.31944 0 2.01799 0 2.74637L0 20.3136C2.88955e-05 20.4494 0.0404148 20.5822 0.116046 20.6951C0.191678 20.8081 0.299155 20.896 0.424874 20.9479C0.550594 20.9998 0.688904 21.0133 0.8223 20.9867C0.955695 20.96 1.07818 20.8945 1.17425 20.7983L5.09713 16.8806C5.35493 16.623 5.70461 16.4783 6.06925 16.4782H19.25C19.9793 16.4782 20.6788 16.1889 21.1945 15.6738C21.7103 15.1588 22 14.4603 22 13.7319V2.74637C22 2.01799 21.7103 1.31944 21.1945 0.804394C20.6788 0.289349 19.9793 0 19.25 0L2.75 0Z" fill="#25222C"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="section partner-cabinet__info">
+        <div class="container">
+            <a href="javascript:void(0)" class="edit-btn__top">
+                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.77625 2.91667C8.99675 2.69617 9.11808 2.40333 9.11808 2.09183C9.11808 1.78033 8.99675 1.4875 8.77625 1.267L7.85108 0.341833C7.63058 0.121333 7.33775 0 7.02625 0C6.71475 0 6.42192 0.121333 6.202 0.34125L0 6.524V9.09942H2.57425L8.77625 2.91667ZM7.02625 1.16667L7.952 2.09125L7.0245 3.01525L6.09933 2.09067L7.02625 1.16667ZM1.16667 7.93275V7.00817L5.27333 2.91433L6.1985 3.8395L2.09242 7.93275H1.16667ZM0 10.2661H9.33333V11.4327H0V10.2661Z" fill="#5F6CFA"/>
+                </svg>
+                Изменить данные
+            </a>
+            <div class="partner-cabinet__info-main">
+                <form class="partner-cabinet__form">
+                    <div class="form-section">
+                        <div class="form-row">
+                            <label>Название компании</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="company-name" value="Partner" disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Юридический адрес</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="legal-address" value="Ul. Primernaya,12, 65100, Kyiv" disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Страна</label>
+                            <div class="input-wrapper select-wrapper">
+                                <select disabled>
+                                    <option selected disabled>Ukraine</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#25222C"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-row">
+                            <label>Фактический адрес</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="actual-address" value="Ul. Primernaya,12, 65100, Kyiv" disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Страна</label>
+                            <div class="input-wrapper select-wrapper">
+                                <select disabled>
+                                    <option selected disabled>Ukraine</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#25222C"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-row">
+                            <label>Контактное лицо - имя и фамилия</label>
+                            <div class="name-wrapper">
+                                <div class="input-wrapper select-wrapper">
+                                    <select disabled>
+                                        <option disabled>Herr/Frau</option>
+                                        <option selected>Herr</option>
+                                        <option>Frau</option>
+                                    </select>
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#25222C"/>
+                                    </svg>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="text" name="name" value="Alexey Ivanov" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Телефон</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="phone" value="+49 (111) 111 11 11" disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Email</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="email" value="gmail@gmail.com" disabled>
+                            </div>
+                        </div>
+                        <div class="photo-row__wrapper">
+                            <div class="form-row photo-row">
+                                <label>Фотография контактного лица</label>
+                                <div class="input-wrapper">
+                                    <div class="photo-wrapper disabled">
+                                        <div class="photo">
+                                            <picture>
+                                                <source srcset="../../images/pixel.webp" data-original="../../images/photo-001.webp" class="lazy-web"
+                                                        type="image/webp">
+                                                <source srcset="../../images/pixel.jpg" data-original="../../images/photo-001.jpg" class="lazy-web"
+                                                        type="image/jpg">
+                                                <img src="../../images/pixel.jpg" data-original="../../images/photo-001.jpg" class="lazy" alt="">
+                                            </picture>
+                                        </div>
+                                        <span class="remove-photo">
+                                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.46998 2.99941L4.90331 1.56941C4.96608 1.50664 5.00134 1.42151 5.00134 1.33274C5.00134 1.24398 4.96608 1.15885 4.90331 1.09608C4.84054 1.03331 4.75541 0.998047 4.66665 0.998047C4.57788 0.998047 4.49275 1.03331 4.42998 1.09608L2.99998 2.52941L1.56998 1.09608C1.50721 1.03331 1.42208 0.998047 1.33331 0.998047C1.24455 0.998047 1.15941 1.03331 1.09665 1.09608C1.03388 1.15885 0.998616 1.24398 0.998616 1.33274C0.998616 1.42151 1.03388 1.50664 1.09665 1.56941L2.52998 2.99941L1.09665 4.42941C1.0654 4.4604 1.04061 4.49727 1.02368 4.53788C1.00676 4.5785 0.998047 4.62207 0.998047 4.66608C0.998047 4.71008 1.00676 4.75365 1.02368 4.79427C1.04061 4.83489 1.0654 4.87176 1.09665 4.90274C1.12763 4.93399 1.1645 4.95878 1.20512 4.97571C1.24574 4.99263 1.28931 5.00134 1.33331 5.00134C1.37732 5.00134 1.42089 4.99263 1.46151 4.97571C1.50212 4.95878 1.53899 4.93399 1.56998 4.90274L2.99998 3.46941L4.42998 4.90274C4.46097 4.93399 4.49783 4.95878 4.53845 4.97571C4.57907 4.99263 4.62264 5.00134 4.66665 5.00134C4.71065 5.00134 4.75422 4.99263 4.79484 4.97571C4.83546 4.95878 4.87232 4.93399 4.90331 4.90274C4.93456 4.87176 4.95935 4.83489 4.97628 4.79427C4.9932 4.75365 5.00191 4.71008 5.00191 4.66608C5.00191 4.62207 4.9932 4.5785 4.97628 4.53788C4.95935 4.49727 4.93456 4.4604 4.90331 4.42941L3.46998 2.99941Z" fill="#474747"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-row">
+                            <label>Контактное лицо - имя и фамилия</label>
+                            <div class="name-wrapper">
+                                <div class="input-wrapper select-wrapper">
+                                    <select disabled>
+                                        <option disabled>Herr/Frau</option>
+                                        <option selected>Herr</option>
+                                        <option>Frau</option>
+                                    </select>
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#25222C"/>
+                                    </svg>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="text" name="name" value="Alexey Ivanov" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Телефон</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="phone" value="+49 (111) 111 11 11" disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Email</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="email" value="gmail@gmail.com" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-row">
+                            <div class="cert-wrapper">
+                                <div class="cert-item disabled">
+                                    <span>Лицензия компании</span>
+                                    <div class="cert-pic">
+                                        <span class="remove-cert">
+                                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.46998 2.99941L4.90331 1.56941C4.96608 1.50664 5.00134 1.42151 5.00134 1.33274C5.00134 1.24398 4.96608 1.15885 4.90331 1.09608C4.84054 1.03331 4.75541 0.998047 4.66665 0.998047C4.57788 0.998047 4.49275 1.03331 4.42998 1.09608L2.99998 2.52941L1.56998 1.09608C1.50721 1.03331 1.42208 0.998047 1.33331 0.998047C1.24455 0.998047 1.15941 1.03331 1.09665 1.09608C1.03388 1.15885 0.998616 1.24398 0.998616 1.33274C0.998616 1.42151 1.03388 1.50664 1.09665 1.56941L2.52998 2.99941L1.09665 4.42941C1.0654 4.4604 1.04061 4.49727 1.02368 4.53788C1.00676 4.5785 0.998047 4.62207 0.998047 4.66608C0.998047 4.71008 1.00676 4.75365 1.02368 4.79427C1.04061 4.83489 1.0654 4.87176 1.09665 4.90274C1.12763 4.93399 1.1645 4.95878 1.20512 4.97571C1.24574 4.99263 1.28931 5.00134 1.33331 5.00134C1.37732 5.00134 1.42089 4.99263 1.46151 4.97571C1.50212 4.95878 1.53899 4.93399 1.56998 4.90274L2.99998 3.46941L4.42998 4.90274C4.46097 4.93399 4.49783 4.95878 4.53845 4.97571C4.57907 4.99263 4.62264 5.00134 4.66665 5.00134C4.71065 5.00134 4.75422 4.99263 4.79484 4.97571C4.83546 4.95878 4.87232 4.93399 4.90331 4.90274C4.93456 4.87176 4.95935 4.83489 4.97628 4.79427C4.9932 4.75365 5.00191 4.71008 5.00191 4.66608C5.00191 4.62207 4.9932 4.5785 4.97628 4.53788C4.95935 4.49727 4.93456 4.4604 4.90331 4.42941L3.46998 2.99941Z" fill="#474747"/>
+                                            </svg>
+                                        </span>
+                                        <div class="cert-pic__inner">
+                                            <picture>
+                                                <source srcset="../../images/pixel.webp" data-original="../../images/cert-001.webp" class="lazy-web"
+                                                        type="image/webp">
+                                                <source srcset="../../images/pixel.jpg" data-original="../../images/cert-001.jpg" class="lazy-web"
+                                                        type="image/jpg">
+                                                <img src="../../images/pixel.jpg" data-original="../../images/cert-001.jpg" class="lazy" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cert-item disabled">
+                                    <span>Документ о регистрации фирмы</span>
+                                    <div class="cert-pic">
+                                        <span class="remove-cert">
+                                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.46998 2.99941L4.90331 1.56941C4.96608 1.50664 5.00134 1.42151 5.00134 1.33274C5.00134 1.24398 4.96608 1.15885 4.90331 1.09608C4.84054 1.03331 4.75541 0.998047 4.66665 0.998047C4.57788 0.998047 4.49275 1.03331 4.42998 1.09608L2.99998 2.52941L1.56998 1.09608C1.50721 1.03331 1.42208 0.998047 1.33331 0.998047C1.24455 0.998047 1.15941 1.03331 1.09665 1.09608C1.03388 1.15885 0.998616 1.24398 0.998616 1.33274C0.998616 1.42151 1.03388 1.50664 1.09665 1.56941L2.52998 2.99941L1.09665 4.42941C1.0654 4.4604 1.04061 4.49727 1.02368 4.53788C1.00676 4.5785 0.998047 4.62207 0.998047 4.66608C0.998047 4.71008 1.00676 4.75365 1.02368 4.79427C1.04061 4.83489 1.0654 4.87176 1.09665 4.90274C1.12763 4.93399 1.1645 4.95878 1.20512 4.97571C1.24574 4.99263 1.28931 5.00134 1.33331 5.00134C1.37732 5.00134 1.42089 4.99263 1.46151 4.97571C1.50212 4.95878 1.53899 4.93399 1.56998 4.90274L2.99998 3.46941L4.42998 4.90274C4.46097 4.93399 4.49783 4.95878 4.53845 4.97571C4.57907 4.99263 4.62264 5.00134 4.66665 5.00134C4.71065 5.00134 4.75422 4.99263 4.79484 4.97571C4.83546 4.95878 4.87232 4.93399 4.90331 4.90274C4.93456 4.87176 4.95935 4.83489 4.97628 4.79427C4.9932 4.75365 5.00191 4.71008 5.00191 4.66608C5.00191 4.62207 4.9932 4.5785 4.97628 4.53788C4.95935 4.49727 4.93456 4.4604 4.90331 4.42941L3.46998 2.99941Z" fill="#474747"/>
+                                            </svg>
+                                        </span>
+                                        <div class="cert-pic__inner">
+                                            <picture>
+                                                <source srcset="../../images/pixel.webp" data-original="../../images/cert-002.webp" class="lazy-web"
+                                                        type="image/webp">
+                                                <source srcset="../../images/pixel.jpg" data-original="../../images/cert-002.jpg" class="lazy-web"
+                                                        type="image/jpg">
+                                                <img src="../../images/pixel.jpg" data-original="../../images/cert-002.jpg" class="lazy" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<button type="submit" class="btn">Сохранить</button>-->
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+${require('../parts/footer.html')}
+
+<div class="overlay"></div>
+<div class="mfp-hide"></div>
+
+</body>
+</html>

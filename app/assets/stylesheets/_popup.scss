@@ -1,0 +1,93 @@
+.mfp-zoom-in {
+  & .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+  }
+
+  &.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+
+  &.mfp-ready {
+    & .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1);
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  &.mfp-removing {
+    & .mfp-with-anim {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+  }
+}
+
+// popup "Связаться с нами" - удачная отправка
+
+.swal2-container.swal2-shown {
+  background-color: rgba(#fff, 0.25);
+  .swal2-modal.swal2-show {
+    position: relative;
+    background: $pink !important;
+    max-width: 444px;
+    padding: 48px 58px !important;
+    border-radius: 5px;
+    & .swal2-title {
+      font-family: $title;
+      font-size: 21px;
+      line-height: 26px;
+      font-weight: 600;
+      color: #ffffff;
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    & .swal2-buttonswrapper {
+      position: absolute;
+      right: 23px;
+      top: 17px;
+      margin: 0;
+      .swal2-confirm.swal2-styled {
+        display: block;
+        width: 12px !important;
+        height: 12px;
+        background-color: transparent !important;
+        font-size: 0;
+      }
+    }
+  }
+}
+
+.swal2-modal .swal2-styled {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 12px;
+    transform: rotate(45deg);
+    background-color: #fff;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 12px;
+    transform: rotate(-45deg);
+    background-color: #fff;
+  }
+}
