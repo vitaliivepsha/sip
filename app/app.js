@@ -14,6 +14,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/partner-cabinet-information.html');
   require('./assets/templates/layouts/partner-cabinet-information-saved.html');
   require('./assets/templates/layouts/partner-cabinet-information-edit.html');
+  require('./assets/templates/layouts/partner-cabinet-students.html');
 }
 
 // Depends
@@ -273,5 +274,33 @@ $(function() {
   $('.remove-doc').click(function() {
     $('.doc-row').show();
     $(this).closest('.cert-item').remove();
+  });
+
+  /* partner cabinet students */
+
+  // dropdown
+
+  $('.dropdown').click(function() {
+    $(this).closest('.dropdown-wrapper').toggleClass('active').siblings().removeClass('active').removeClass('all');
+  });
+
+  $('.dropdown-more').click(function() {
+    $(this).closest('.dropdown-wrapper').addClass('all');
+  });
+
+  $('.dropdown-list__item').click(function() {
+    $(this).toggleClass('active');
+  });
+
+  $(document).click(function() {
+    $('.dropdown-wrapper').removeClass('active').removeClass('all');
+  });
+
+  $(document).on('click', '.dropdown', function(e) {
+    e.stopPropagation();
+  });
+
+  $(document).on('click', '.dropdown-list', function(e) {
+    e.stopPropagation();
   });
 });
