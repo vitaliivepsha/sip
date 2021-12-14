@@ -17,6 +17,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/partner-cabinet-students.html');
   require('./assets/templates/layouts/partner-cabinet-students-vacancy-choice.html');
   require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list.html');
+  require('./assets/templates/layouts/partner-cabinet-students-add.html');
 }
 
 // Depends
@@ -304,5 +305,35 @@ $(function() {
 
   $(document).on('click', '.dropdown-list', function(e) {
     e.stopPropagation();
+  });
+
+  // date placeholder
+
+  $('.input.date').on('focus', function() {
+    $(this).next('.placeholder').hide();
+  });
+  $('.input.date').on('focusout', function() {
+    $(this).next('.placeholder').show();
+  });
+  $('.input.date').on('change', function() {
+    $(this).next('.placeholder').remove();
+  });
+
+  // show hide block with changed name
+  $('#changed-name').on('change', function() {
+    $(this).closest('.changed-name__wrapper').find('.changed-name').toggle();
+  });
+
+  // when choose other option in select
+
+  $('.another-option').change(function() {
+    var value = $(this).val(),
+      $input = $(this).closest('.another-option__wrapper').find('.another-option__input');
+    if (value == 'another') {
+      $input.show();
+    }
+    else {
+      $input.hide();
+    }
   });
 });
