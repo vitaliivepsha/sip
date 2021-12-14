@@ -916,6 +916,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 130%;
+  color: $black;
   margin-bottom: 7px;
 }
 
@@ -1330,4 +1331,26 @@
   font-size: 14px;
   line-height: 130%;
   color: $black;
+}
+
+.documents-control__block{
+  padding: 25px 20px 45px;
+}
+
+.documents-control__title{
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: $black;
+  margin-bottom: 10px;
+}
+
+.documents-control__descr{
+  display: block;
+  font-size: 12px;
+  line-height: 130%;
+  p{
+    margin-bottom: 0;
+  }
 }
