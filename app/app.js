@@ -19,6 +19,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list.html');
   require('./assets/templates/layouts/partner-cabinet-students-add.html');
   require('./assets/templates/layouts/partner-cabinet-students-contol-of-the-documents.html');
+  require('./assets/templates/layouts/partner-cabinet-chats.html');
 }
 
 // Depends
@@ -336,5 +337,13 @@ $(function() {
     else {
       $input.hide();
     }
+  });
+
+  // tabs
+
+  $('.tabs').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('.tabs-wrapper').find('.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
   });
 });
