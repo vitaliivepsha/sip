@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>SIP</title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon.png" type="image/png">
+    <meta name="theme-color" content="#5F6CFA">
+    <meta name="msapplication-navbutton-color" content="#5F6CFA">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5F6CFA">
+</head>
+<body>
+
+${require('../parts/header-logged-in.html')}
+<main class="main">
+    <div class="section partner-cabinet__top">
+        <div class="container">
+            <div class="page-title">Личный кабинет партнера</div>
+            <nav class="partner-cabinet__navigation">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">Информация о предприятии</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Студенты</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Документы</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Бизнес-процессы</a>
+                    </li>
+                    <li class="current">
+                        <a href="javascript:void(0)">Новости</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="7.11834" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <ellipse cx="10.9972" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <ellipse cx="14.8801" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <path d="M19.25 1.37319C19.6147 1.37319 20.2223 1.77538 20.2223 1.77538C20.4801 2.03291 20.625 2.38218 20.625 2.74637V13.7319C20.625 14.0961 20.4801 14.4453 20.2223 14.7029C19.9644 14.9604 19.6147 15.1051 19.25 15.1051H6.06925C5.33996 15.1052 4.6406 15.3947 4.125 15.9097L1.375 18.6561V2.74637C1.375 2.38218 1.51987 2.03291 1.77773 1.77538C2.03559 1.51786 2.38533 1.37319 2.75 1.37319H19.25ZM2.75 0C2.02065 0 1.32118 0.289349 0.805456 0.804394C0.289731 1.31944 0 2.01799 0 2.74637L0 20.3136C2.88955e-05 20.4494 0.0404148 20.5822 0.116046 20.6951C0.191678 20.8081 0.299155 20.896 0.424874 20.9479C0.550594 20.9998 0.688904 21.0133 0.8223 20.9867C0.955695 20.96 1.07818 20.8945 1.17425 20.7983L5.09713 16.8806C5.35493 16.623 5.70461 16.4783 6.06925 16.4782H19.25C19.9793 16.4782 20.6788 16.1889 21.1945 15.6738C21.7103 15.1588 22 14.4603 22 13.7319V2.74637C22 2.01799 21.7103 1.31944 21.1945 0.804394C20.6788 0.289349 19.9793 0 19.25 0L2.75 0Z" fill="#25222C"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="section partner-cabinet__info">
+        <div class="container">
+            <div class="partner-cabinet__news">
+                <span class="partner-cabinet__news-title">Новости</span>
+                <div class="partner-cabinet__news-bar">
+                    <div class="partner-cabinet__tags-wrapper dropdown-wrapper">
+                        <div class="partner-cabinet__tag dropdown">
+                            <span>Все теги</span>
+                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#8B8A8E"></path>
+                            </svg>
+                        </div>
+                        <div class="partner-cabinet__tags-list dropdown-list">
+                            <div class="partner-cabinet__tags-search">
+                                <input type="text" name="tags-search" placeholder="Поиск...">
+                                <button>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.7">
+                                            <path d="M14.8763 14.8743L11.6987 11.6911L14.8763 14.8743ZM13.4596 7.43685C13.4596 9.03367 12.8253 10.5651 11.6962 11.6942C10.567 12.8233 9.03563 13.4577 7.4388 13.4577C5.84198 13.4577 4.31056 12.8233 3.18143 11.6942C2.0523 10.5651 1.41797 9.03367 1.41797 7.43685C1.41797 5.84002 2.0523 4.3086 3.18143 3.17948C4.31056 2.05035 5.84198 1.41602 7.4388 1.41602C9.03563 1.41602 10.567 2.05035 11.6962 3.17948C12.8253 4.3086 13.4596 5.84002 13.4596 7.43685V7.43685Z" stroke="#8B8A8E" stroke-width="2" stroke-linecap="round"/>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="search-results">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)"><span>Все теги</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span>О компании</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span>Важное</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span>Справки/Документы</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span>О компании</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span>Важное</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span>Справки/Документы</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span>О компании</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span>Важное</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span>Справки/Документы</span></a>
+                                    </li>
+                                </ul>
+                                <div class="search-results__empty">Совпадений не найдено</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partner-cabinet__sort-block">
+                        <span>Сортировка</span>
+                        <div class="partner-cabinet__sort-wrapper dropdown-wrapper">
+                            <div class="partner-cabinet__sort dropdown">От новых к старым</div>
+                            <div class="partner-cabinet__sort-list dropdown-list">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">От новых к старым</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">От старых к новым</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-cabinet__news-wrapper">
+                    <div class="partner-cabinet__news-item">
+                        <span class="partner-cabinet__news-item__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tristique non eros, arcu.</span>
+                        <div class="partner-cabinet__news-item__tags">
+                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 5.75V2.25C3.75 2.17708 3.72656 2.11719 3.67969 2.07031C3.63281 2.02344 3.57292 2 3.5 2C3.42708 2 3.36719 2.02344 3.32031 2.07031C3.27344 2.11719 3.25 2.17708 3.25 2.25V5.75C3.25 5.82292 3.27344 5.88281 3.32031 5.92969C3.36719 5.97656 3.42708 6 3.5 6C3.57292 6 3.63281 5.97656 3.67969 5.92969C3.72656 5.88281 3.75 5.82292 3.75 5.75ZM9 8.5C9 8.63542 8.95052 8.7526 8.85156 8.85156C8.7526 8.95052 8.63542 9 8.5 9H5.14844L4.75 12.7734C4.73958 12.8359 4.71224 12.8893 4.66797 12.9336C4.6237 12.9779 4.57031 13 4.50781 13H4.5C4.35938 13 4.27604 12.9297 4.25 12.7891L3.65625 9H0.5C0.364583 9 0.247396 8.95052 0.148438 8.85156C0.0494792 8.7526 0 8.63542 0 8.5C0 7.85938 0.204427 7.28255 0.613281 6.76953C1.02214 6.25651 1.48438 6 2 6V2C1.72917 2 1.49479 1.90104 1.29688 1.70312C1.09896 1.50521 1 1.27083 1 1C1 0.729167 1.09896 0.494792 1.29688 0.296875C1.49479 0.0989583 1.72917 0 2 0H7C7.27083 0 7.50521 0.0989583 7.70312 0.296875C7.90104 0.494792 8 0.729167 8 1C8 1.27083 7.90104 1.50521 7.70312 1.70312C7.50521 1.90104 7.27083 2 7 2V6C7.51562 6 7.97786 6.25651 8.38672 6.76953C8.79557 7.28255 9 7.85938 9 8.5Z" fill="#F459A4"/>
+                            </svg>
+                            <span>О компании</span>
+                        </div>
+                        <div class="partner-cabinet__news-item__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae pellentesque integer ridiculus sollicitudin. Tincidunt iaculis lectus vel malesuada. Malesuada rhoncus vivamus dolor habitasse quam id adipiscing nibh purus. Purus bibendum augue ut scelerisque amet justo. Arcu tellus volutpat at sit. Dapibus ut nulla dolor ultricies egestas donec sed. Morbi bibendum in nec scelerisque sodales. In massa nulla habitant blandit. Vitae nec est suspendisse tempus convallis auctor a. Bibendum quam neque egestas orci ante maecenas mattis nisl. Sollicitudin porta sodales aliquet id vivamus sit bibendum arcu. Ac habitasse dui fringilla ac ante massa. Dis ligula curabitur nunc tristique non. Dignissim enim, varius eget urna et vestibulum id pellentesque. Cursus sed aliquet tortor diam feugiat nibh. Habitant cras id fusce donec morbi sed. Aenean tortor fames gravida at quis convallis integer euismod ultricies. Eget risus tellus sem convallis praesent neque elementum egestas. Donec viverra lectus nibh enim facilisis.</p>
+                        </div>
+                        <span class="partner-cabinet__news-item__date">01 / 01 / 2026</span>
+                    </div>
+                    <div class="partner-cabinet__news-item">
+                        <span class="partner-cabinet__news-item__title">iam tristique non eros, arcu.</span>
+                        <div class="partner-cabinet__news-item__tags">
+                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 5.75V2.25C3.75 2.17708 3.72656 2.11719 3.67969 2.07031C3.63281 2.02344 3.57292 2 3.5 2C3.42708 2 3.36719 2.02344 3.32031 2.07031C3.27344 2.11719 3.25 2.17708 3.25 2.25V5.75C3.25 5.82292 3.27344 5.88281 3.32031 5.92969C3.36719 5.97656 3.42708 6 3.5 6C3.57292 6 3.63281 5.97656 3.67969 5.92969C3.72656 5.88281 3.75 5.82292 3.75 5.75ZM9 8.5C9 8.63542 8.95052 8.7526 8.85156 8.85156C8.7526 8.95052 8.63542 9 8.5 9H5.14844L4.75 12.7734C4.73958 12.8359 4.71224 12.8893 4.66797 12.9336C4.6237 12.9779 4.57031 13 4.50781 13H4.5C4.35938 13 4.27604 12.9297 4.25 12.7891L3.65625 9H0.5C0.364583 9 0.247396 8.95052 0.148438 8.85156C0.0494792 8.7526 0 8.63542 0 8.5C0 7.85938 0.204427 7.28255 0.613281 6.76953C1.02214 6.25651 1.48438 6 2 6V2C1.72917 2 1.49479 1.90104 1.29688 1.70312C1.09896 1.50521 1 1.27083 1 1C1 0.729167 1.09896 0.494792 1.29688 0.296875C1.49479 0.0989583 1.72917 0 2 0H7C7.27083 0 7.50521 0.0989583 7.70312 0.296875C7.90104 0.494792 8 0.729167 8 1C8 1.27083 7.90104 1.50521 7.70312 1.70312C7.50521 1.90104 7.27083 2 7 2V6C7.51562 6 7.97786 6.25651 8.38672 6.76953C8.79557 7.28255 9 7.85938 9 8.5Z" fill="#F459A4"/>
+                            </svg>
+                            <span>Важное</span>
+                        </div>
+                        <div class="partner-cabinet__news-item__text">
+                            <p>Malesuada rhoncus vivamus dolor habitasse quam id adipiscing nibh purus. Purus bibendum augue ut scelerisque amet justo. Arcu tellus volutpat at sit. Dapibus ut nulla dolor ultricies egestas donec sed. Morbi bibendum in nec scelerisque sodales. In massa nulla habitant blandit. Vitae nec est suspendisse tempus convallis auctor a.</p>
+                        </div>
+                        <span class="partner-cabinet__news-item__date">01 / 01 / 2026</span>
+                    </div>
+                    <div class="partner-cabinet__news-item">
+                        <span class="partner-cabinet__news-item__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tristique non eros, arcu.</span>
+                        <div class="partner-cabinet__news-item__tags">
+                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 5.75V2.25C3.75 2.17708 3.72656 2.11719 3.67969 2.07031C3.63281 2.02344 3.57292 2 3.5 2C3.42708 2 3.36719 2.02344 3.32031 2.07031C3.27344 2.11719 3.25 2.17708 3.25 2.25V5.75C3.25 5.82292 3.27344 5.88281 3.32031 5.92969C3.36719 5.97656 3.42708 6 3.5 6C3.57292 6 3.63281 5.97656 3.67969 5.92969C3.72656 5.88281 3.75 5.82292 3.75 5.75ZM9 8.5C9 8.63542 8.95052 8.7526 8.85156 8.85156C8.7526 8.95052 8.63542 9 8.5 9H5.14844L4.75 12.7734C4.73958 12.8359 4.71224 12.8893 4.66797 12.9336C4.6237 12.9779 4.57031 13 4.50781 13H4.5C4.35938 13 4.27604 12.9297 4.25 12.7891L3.65625 9H0.5C0.364583 9 0.247396 8.95052 0.148438 8.85156C0.0494792 8.7526 0 8.63542 0 8.5C0 7.85938 0.204427 7.28255 0.613281 6.76953C1.02214 6.25651 1.48438 6 2 6V2C1.72917 2 1.49479 1.90104 1.29688 1.70312C1.09896 1.50521 1 1.27083 1 1C1 0.729167 1.09896 0.494792 1.29688 0.296875C1.49479 0.0989583 1.72917 0 2 0H7C7.27083 0 7.50521 0.0989583 7.70312 0.296875C7.90104 0.494792 8 0.729167 8 1C8 1.27083 7.90104 1.50521 7.70312 1.70312C7.50521 1.90104 7.27083 2 7 2V6C7.51562 6 7.97786 6.25651 8.38672 6.76953C8.79557 7.28255 9 7.85938 9 8.5Z" fill="#F459A4"/>
+                            </svg>
+                            <span>Алгоритмы</span>
+                        </div>
+                        <div class="partner-cabinet__news-item__text">
+                            <p>Ac habitasse dui fringilla ac ante massa. Dis ligula curabitur nunc tristique non. Dignissim enim, varius eget urna et vestibulum id pellentesque. Cursus sed aliquet tortor diam feugiat nibh. Habitant cras id fusce donec morbi sed. Aenean tortor fames gravida at quis convallis integer euismod ultricies. Eget risus tellus sem convallis praesent neque elementum egestas. Donec viverra lectus nibh enim facilisis.</p>
+                            <p>Dignissim enim, varius eget urna et vestibulum id pellentesque. Cursus sed aliquet tortor diam feugiat nibh. Habitant cras id fusce donec morbi sed. Aenean tortor fames gravida at quis convallis integer euismod ultricies. Eget risus tellus sem convallis praesent neque elementum egestas. Donec viverra lectus nibh enim facilisis.</p>
+                        </div>
+                        <span class="partner-cabinet__news-item__date">01 / 01 / 2026</span>
+                    </div>
+                    <ul class="pagination">
+                        <li class="prev disabled">
+                            <span><<</span>
+                        </li>
+                        <li class="current">
+                            <span>1</span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">2</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">3</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">...</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">8</a>
+                        </li>
+                        <li class="next">
+                            <a href="javascript:void(0)">>></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+${require('../parts/footer.html')}
+
+<div class="overlay"></div>
+<div class="mfp-hide"></div>
+
+</body>
+</html>
