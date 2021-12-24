@@ -37,7 +37,7 @@ var Popup = require('_modules/popup');
 var LightGallery = require('_modules/lightgallery');
 //var Jslider = require('_modules/jslider');
 //var Fancybox = require('_modules/fancybox');
-//require('../node_modules/sumoselect/jquery.sumoselect.min');
+require('../node_modules/sumoselect/jquery.sumoselect.min');
 //require('../node_modules/ion-rangeslider/js/ion.rangeSlider');
 //import PerfectScrollbar from 'perfect-scrollbar';
 require('../node_modules/mark.js/dist/jquery.mark.min');
@@ -289,7 +289,8 @@ $(function() {
   // dropdown
 
   $('.dropdown').click(function() {
-    $(this).closest('.dropdown-wrapper').toggleClass('active').siblings().removeClass('active').removeClass('all');
+    $(this).closest('.dropdown-wrapper').toggleClass('active');
+    $('.dropdown').not(this).closest('.dropdown-wrapper').removeClass('active').removeClass('all');
   });
 
   $('.dropdown-more').click(function() {
@@ -310,6 +311,18 @@ $(function() {
 
   $(document).on('click', '.dropdown-list', function(e) {
     e.stopPropagation();
+  });
+
+  // select
+
+  $('.dropdown-select').SumoSelect({
+    //okCancelInMulti: true,
+    search: true,
+    placeholder: 'Поиск',
+    csvDispCount: 3,
+    captionFormat: '{0} выбрано',
+    forceCustomRendering: true,
+    triggerChangeCombined: false
   });
 
   // date placeholder
