@@ -1591,3 +1591,27 @@
     }
   }
 }
+
+.getting-originals__block{
+  padding: 20px 45px 45px 20px;
+  >span{
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: $black;
+    margin-bottom: 25px;
+  }
+  >ul{
+    padding-left: 18px;
+    list-style-type: disc;
+    font-size: 12px;
+    line-height: 130%;
+    li{
+      margin-bottom: 8px;
+    }
+  }
+  .btn{
+    width: 445px;
+    margin-top: 34px;
+  }}
