@@ -266,9 +266,35 @@ main {
   }
 }
 
+.input-wrapper{
+  select{
+    border: 1px solid transparent;
+  }
+  &.error{
+    .input {
+      border-color: $pink;
+      +label.error{
+        font-size: 12px;
+        font-weight: 400;
+        color: $pink;
+        margin-bottom: 0;
+      }
+    }
+    select{
+      border-color: $pink;
+      +label.error{
+        font-size: 12px;
+        font-weight: 400;
+        color: $pink;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 .input {
   width: 100%;
-  border: none;
+  border: 1px solid transparent;
   padding: 0 15px;
   height: 40px;
   background: #fff;

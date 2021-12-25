@@ -53,12 +53,12 @@ ${require('../parts/header-logged-in.html')}
     <div class="section partner-cabinet__info">
         <div class="container">
             <div class="partner-cabinet__students-add">
-                <form class="partner-cabinet__students-form">
+                <form class="partner-cabinet__students-form validate-form">
                     <div class="partner-cabinet__students-form__section">
                         <div class="partner-cabinet__students-form__row">
                             <label>ФИО студента <span>(по-украински из паспорта)</span></label>
                             <div class="input-wrapper">
-                                <input class="input" type="text" name="name-ua" placeholder="Алексєєв Олексій Олексійовіч">
+                                <input class="input" type="text" name="name_ua" placeholder="Алексєєв Олексій Олексійовіч">
                             </div>
                         </div>
                         <div class="partner-cabinet__students-form__row changed-name__row">
@@ -81,13 +81,13 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Имя студента <span>(латиницей  из загранпаспорта или ID)</span></label>
                             <div class="input-wrapper">
-                                <input class="input" type="text" name="first-name-en" placeholder="Oleksii">
+                                <input class="input" type="text" name="first_name_en" placeholder="Oleksii">
                             </div>
                         </div>
                         <div class="partner-cabinet__students-form__row">
                             <label>Фамилия студента <span>(латиницей  из загранпаспорта или ID)</span></label>
                             <div class="input-wrapper">
-                                <input class="input" type="text" name="last-name-en" placeholder="Alekseiev">
+                                <input class="input" type="text" name="last_name_en" placeholder="Alekseiev">
                             </div>
                         </div>
                         <div class="partner-cabinet__students-form__row">
@@ -100,7 +100,7 @@ ${require('../parts/header-logged-in.html')}
                                             <path d="M6.25 27.5H23.75C25.1287 27.5 26.25 26.3787 26.25 25V7.5C26.25 6.12125 25.1287 5 23.75 5H21.25V2.5H18.75V5H11.25V2.5H8.75V5H6.25C4.87125 5 3.75 6.12125 3.75 7.5V25C3.75 26.3787 4.87125 27.5 6.25 27.5ZM23.75 10L23.7512 25H6.25V10H23.75Z" fill="#474747"/>
                                         </g>
                                     </svg>
-                                    <input name="date-of-birth" type="date" class="input date">
+                                    <input name="date_of_birth" type="date" class="input date">
                                     <span class="placeholder">01.10.2021</span>
                                 </div>
                             </div>
@@ -108,7 +108,7 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Место рождения студента (страна)</label>
                             <div class="input-wrapper select-wrapper">
-                                <select>
+                                <select name="place_of_birth">
                                     <option selected disabled>Выберите из списка</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -122,13 +122,13 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Место рождения студента (область, город)</label>
                             <div class="input-wrapper">
-                                <input class="input" type="text" name="place-of-birth" placeholder="Харьковская область, Мерефа">
+                                <input class="input" type="text" name="city_of_birth" placeholder="Харьковская область, Мерефа">
                             </div>
                         </div>
                         <div class="partner-cabinet__students-form__row">
                             <label>Пол студента</label>
                             <div class="input-wrapper select-wrapper">
-                                <select>
+                                <select name="sex">
                                     <option selected disabled>мужской / женский</option>
                                     <option>мужской</option>
                                     <option>женский</option>
@@ -155,7 +155,7 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Учебное учреждение</label>
                             <div class="input-wrapper select-wrapper">
-                                <select>
+                                <select name="educational_establishment">
                                     <option selected disabled>Выберите из списка</option>
                                     <option>Техникум</option>
                                     <option>Колледж</option>
@@ -169,7 +169,7 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Название учебного заведения</label>
                             <div class="input-wrapper select-wrapper">
-                                <select>
+                                <select name="educational_establishment_name">
                                     <option selected disabled>Выберите из списка</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -183,14 +183,14 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Сайт учебного заведения</label>
                             <div class="input-wrapper">
-                                <input class="input" type="text" name="university-sitе" placeholder="Техникум/Колледж/Университет...">
+                                <input class="input" type="text" name="university_sitе" placeholder="Техникум/Колледж/Университет...">
                             </div>
                         </div>
                         <div class="partner-cabinet__students-form__row another-option__row">
                             <label>Факультет студента</label>
                             <div class="input-wrapper another-option__wrapper">
                                 <div class="input-wrapper select-wrapper">
-                                    <select class="another-option">
+                                    <select class="another-option" name="faculty">
                                         <option selected disabled>Выберите из списка</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -201,7 +201,7 @@ ${require('../parts/header-logged-in.html')}
                                     </svg>
                                 </div>
                                 <div class="input-wrapper another-option__input">
-                                    <input class="input" type="text" name="another-faculty" placeholder="Введите название факультета">
+                                    <input class="input" type="text" name="another_faculty" placeholder="Введите название факультета">
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@ ${require('../parts/header-logged-in.html')}
                                             <path d="M6.25 27.5H23.75C25.1287 27.5 26.25 26.3787 26.25 25V7.5C26.25 6.12125 25.1287 5 23.75 5H21.25V2.5H18.75V5H11.25V2.5H8.75V5H6.25C4.87125 5 3.75 6.12125 3.75 7.5V25C3.75 26.3787 4.87125 27.5 6.25 27.5ZM23.75 10L23.7512 25H6.25V10H23.75Z" fill="#474747"/>
                                         </g>
                                     </svg>
-                                    <input name="admission-date" type="date" class="input date">
+                                    <input name="admission_date" type="date" class="input date">
                                     <span class="placeholder">01.10.2021</span>
                                 </div>
                             </div>
@@ -236,7 +236,7 @@ ${require('../parts/header-logged-in.html')}
                                             <path d="M6.25 27.5H23.75C25.1287 27.5 26.25 26.3787 26.25 25V7.5C26.25 6.12125 25.1287 5 23.75 5H21.25V2.5H18.75V5H11.25V2.5H8.75V5H6.25C4.87125 5 3.75 6.12125 3.75 7.5V25C3.75 26.3787 4.87125 27.5 6.25 27.5ZM23.75 10L23.7512 25H6.25V10H23.75Z" fill="#474747"/>
                                         </g>
                                     </svg>
-                                    <input name="graduation-date" type="date" class="input date">
+                                    <input name="graduation_date" type="date" class="input date">
                                     <span class="placeholder">01.10.2021</span>
                                 </div>
                             </div>
@@ -251,7 +251,7 @@ ${require('../parts/header-logged-in.html')}
                                             <path d="M6.25 27.5H23.75C25.1287 27.5 26.25 26.3787 26.25 25V7.5C26.25 6.12125 25.1287 5 23.75 5H21.25V2.5H18.75V5H11.25V2.5H8.75V5H6.25C4.87125 5 3.75 6.12125 3.75 7.5V25C3.75 26.3787 4.87125 27.5 6.25 27.5ZM23.75 10L23.7512 25H6.25V10H23.75Z" fill="#474747"/>
                                         </g>
                                     </svg>
-                                    <input name="start-of-vacation" type="date" class="input date">
+                                    <input name="start_of_vacation" type="date" class="input date">
                                     <span class="placeholder">01.10.2021</span>
                                 </div>
                             </div>
@@ -266,7 +266,7 @@ ${require('../parts/header-logged-in.html')}
                                             <path d="M6.25 27.5H23.75C25.1287 27.5 26.25 26.3787 26.25 25V7.5C26.25 6.12125 25.1287 5 23.75 5H21.25V2.5H18.75V5H11.25V2.5H8.75V5H6.25C4.87125 5 3.75 6.12125 3.75 7.5V25C3.75 26.3787 4.87125 27.5 6.25 27.5ZM23.75 10L23.7512 25H6.25V10H23.75Z" fill="#474747"/>
                                         </g>
                                     </svg>
-                                    <input name="end-of-vacation" type="date" class="input date">
+                                    <input name="end_of_vacation" type="date" class="input date">
                                     <span class="placeholder">01.10.2021</span>
                                 </div>
                             </div>
@@ -276,7 +276,7 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Страна проживания студента</label>
                             <div class="input-wrapper select-wrapper">
-                                <select>
+                                <select name="country_of_residence">
                                     <option selected disabled>Выберите из списка</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -291,7 +291,7 @@ ${require('../parts/header-logged-in.html')}
                             <label>Город проживания студента</label>
                             <div class="input-wrapper another-option__wrapper">
                                 <div class="input-wrapper select-wrapper">
-                                    <select class="another-option">
+                                    <select class="another-option" name="city_of_residence">
                                         <option selected disabled>Выберите из списка</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -302,7 +302,7 @@ ${require('../parts/header-logged-in.html')}
                                     </svg>
                                 </div>
                                 <div class="input-wrapper another-option__input">
-                                    <input class="input" type="text" name="another-city" placeholder="Ввведите город">
+                                    <input class="input" type="text" name="another_city" placeholder="Ввведите город">
                                 </div>
                             </div>
                         </div>
@@ -312,14 +312,14 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Улица и номер дома, квартиры</label>
                             <div class="input-wrapper">
-                                <input class="input" type="text" name="registration-address" placeholder="ul. Primernaya, 1.">
+                                <input class="input" type="text" name="registration_address" placeholder="ul. Primernaya, 1.">
                             </div>
                         </div>
                         <div class="partner-cabinet__students-form__row another-option__row">
                             <label>Город</label>
                             <div class="input-wrapper another-option__wrapper">
                                 <div class="input-wrapper select-wrapper">
-                                    <select class="another-option">
+                                    <select class="another-option" name="registration_address_city">
                                         <option selected disabled>Выберите из списка</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -330,7 +330,7 @@ ${require('../parts/header-logged-in.html')}
                                     </svg>
                                 </div>
                                 <div class="input-wrapper another-option__input">
-                                    <input class="input" type="text" name="registration-address-another-city" placeholder="Ввведите город">
+                                    <input class="input" type="text" name="registration_address_another_city" placeholder="Ввведите город">
                                 </div>
                             </div>
                         </div>
@@ -357,7 +357,7 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Уровень немецкого языка студента</label>
                             <div class="input-wrapper select-wrapper">
-                                <select>
+                                <select name="german_level">
                                     <option selected disabled>Выберите из списка</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -371,7 +371,7 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Уровень английского языка студента</label>
                             <div class="input-wrapper select-wrapper">
-                                <select>
+                                <select name="english_level">
                                     <option selected disabled>Выберите из списка</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -385,15 +385,15 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Другие языки, укажите какие и их уровень</label>
                             <div class="input-wrapper">
-                                <input class="input" type="text" name="another-languages" placeholder="Введите данные">
+                                <input class="input" type="text" name="another_languages" placeholder="Введите данные">
                             </div>
                         </div>
                     </div>
                     <div class="partner-cabinet__students-form__section">
                         <div class="partner-cabinet__students-form__row">
-                            <label>Наличие у студента одительского удостоверения</label>
+                            <label>Наличие у студента водительского удостоверения</label>
                             <div class="input-wrapper select-wrapper">
-                                <select>
+                                <select name="driving_license">
                                     <option selected disabled>Выберите из списка</option>
                                     <option>Есть права</option>
                                     <option>Нет прав</option>
@@ -408,19 +408,19 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Рост, см</label>
                             <div class="input-wrapper">
-                                <input class="input" type="text" name="Рост" placeholder="180">
+                                <input class="input" type="text" name="growth" placeholder="180">
                             </div>
                         </div>
                         <div class="partner-cabinet__students-form__row">
                             <label>Размер обуви</label>
                             <div class="input-wrapper">
-                                <input class="input" type="text" name="shoe-size" placeholder="43">
+                                <input class="input" type="text" name="shoe_size" placeholder="43">
                             </div>
                         </div>
                         <div class="partner-cabinet__students-form__row">
                             <label>Размер футболки</label>
                             <div class="input-wrapper select-wrapper">
-                                <select>
+                                <select name="tshirt_size">
                                     <option selected disabled>Выберите из списка</option>
                                     <option>XXS</option>
                                     <option>XS</option>
@@ -439,7 +439,7 @@ ${require('../parts/header-logged-in.html')}
                         <div class="partner-cabinet__students-form__row">
                             <label>Размер брюк</label>
                             <div class="input-wrapper select-wrapper">
-                                <select>
+                                <select name="pants_size">
                                     <option selected disabled>Выберите из списка</option>
                                     <option>XXS</option>
                                     <option>XS</option>
@@ -465,7 +465,7 @@ ${require('../parts/header-logged-in.html')}
                             <label>Согласие на обработку персональных данных</label>
                             <div class="input-wrapper">
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" id="agreement">
+                                    <input type="checkbox" id="agreement" name="agreement">
                                     <label for="agreement">Согласен</label>
                                 </div>
                             </div>

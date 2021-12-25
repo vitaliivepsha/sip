@@ -901,9 +901,7 @@
 }
 
 .partner-cabinet__vacancy-steps{
-  width: 874px;
-  max-width: 100%;
-  margin: 0 auto;
+  padding-left: 92px;
 }
 
 .partner-cabinet__vacancy-steps__head{
@@ -937,6 +935,14 @@
 .partner-cabinet__vacancy-steps__main__days{
   width: 130px;
   max-width: 130px;
+  margin-left: 43px;
+  &:last-child{
+    width: 102px;
+    max-width: 102px;
+    span{
+      width: 100%;
+    }
+  }
   span{
     width: 150px;
     display: block;
@@ -1055,6 +1061,7 @@
   color: $black;
   font-size: 13px;
   line-height: 130%;
+  padding-right: 145px;
   span{
     margin-left: 15px;
   }
@@ -1069,6 +1076,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 130%;
+  font-family: $title;
   color: $black;
   margin-bottom: 7px;
 }
@@ -1257,8 +1265,7 @@
       >svg{
         pointer-events: none;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 15px;
         right: 16px;
       }
       select{
@@ -1269,7 +1276,6 @@
         height: 40px;
         background: #fff;
         border-radius: 5px;
-        border: 1px solid #fff;
         font-size: 12px;
         line-height: 130%;
         color: rgba($text, 0.3);
@@ -1300,6 +1306,21 @@
       .date-choose{
         width: 148px;
         position: relative;
+        &.error{
+          &:before{
+            border-color: $pink;
+          }
+          label.error{
+            min-width: max-content;
+            position: absolute;
+            top: 10px;
+            left: 150px;
+            font-size: 12px;
+            font-weight: 400;
+            color: $pink;
+            margin-bottom: 0;
+          }
+        }
         &:before{
           position: absolute;
           content: '';
@@ -1308,6 +1329,7 @@
           left: 0;
           top: 0;
           background: #fff;
+          border: 1px solid transparent;
           border-radius: 5px;
           pointer-events: none;
         }
@@ -1320,11 +1342,11 @@
         }
         .placeholder{
           pointer-events: none;
-          width: 90px;
+          width: 88px;
           padding: 5px 14px;
           position: absolute;
           z-index: 2;
-          left: 0;
+          left: 1px;
           top: 50%;
           transform: translateY(-50%);
           background-color: #fff;
@@ -1353,6 +1375,13 @@
             right: 0;
             top:0;
             bottom: 0;
+          }
+          &.valid{
+            +label{
+              +.placeholder{
+                display: none;
+              }
+            }
           }
         }
       }
@@ -1495,6 +1524,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 130%;
+  font-family: $title;
   color: $black;
   margin-bottom: 10px;
 }
@@ -1516,6 +1546,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 130%;
+  font-family: $title;
   color: $black;
   margin-bottom: 18px;
   a{
@@ -1599,6 +1630,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
+    font-family: $title;
     color: $black;
     margin-bottom: 25px;
   }
@@ -1614,4 +1646,174 @@
   .btn{
     width: 445px;
     margin-top: 34px;
-  }}
+  }
+}
+
+.wfp-block{
+  padding: 22px 40px 55px 30px;
+  font-size: 12px;
+  line-height: 150%;
+  p{
+    margin-bottom: 15px;
+    &.pink{
+      color: $pink;
+    }
+    span{
+      display: block;
+    }
+  }
+  >ul{
+    padding-left: 18px;
+    list-style-type: disc;
+    margin-bottom: 15px;
+    li{
+      margin-bottom: 8px;
+    }
+  }
+  .btn{
+    width: 445px;
+  }
+}
+
+.wfp-title{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  font-family: $title;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.wfp-package{
+  display: flex;
+  align-items: center;
+  padding: 11px 13px 11px 27px;
+  background: $bg-gray;
+  border-radius: 5px;
+  margin-bottom: 27px;
+  label{
+    color: $black;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 0;
+    width: calc(100% - 240px);
+  }
+  input{
+    width: 240px;
+  }
+}
+
+.candidacy-approval__block{
+  padding: 22px 40px 35px 20px;
+  >span{
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    font-family: $title;
+    color: $black;
+    +p{
+      margin-top: 10px;
+    }
+  }
+  p{
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 130%;
+  }
+  .btn{
+    width: 330px;
+  }
+}
+
+.experience-block{
+  padding: 20px 30px 60px 17px;
+  >p{
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 130%;
+    color: $black;
+  }
+  .add-job{
+    margin-top: 20px;
+    width: 480px;
+    max-width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba($accent, 0.3);
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    color: $black;
+    padding: 5px;
+    >svg{
+      min-width: 25px;
+      margin-right: 20px;
+    }
+  }
+  .btn{
+    width: 330px;
+    margin-top: 25px;
+  }
+}
+
+.experience-title{
+  display: block;
+  font-family: $title;
+  color: $black;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  margin-bottom: 6px;
+  a{
+    color: $purple;
+    text-decoration: underline;
+    &:hover{
+      color: $purple;
+      text-decoration: none;
+    }
+  }
+}
+
+.experience-job{
+  margin-top: 30px;
+  >span{
+    font-family: $title;
+    color: $black;
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+}
+
+.experience-job__fields{
+  padding: 26px 64px 26px 30px;
+  background: $bg-gray;
+  border-radius: 5px;
+  .experience-job__row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    >label{
+      font-family: $title;
+      color: $black;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 130%;
+      margin-bottom: 0;
+      width: calc(100% - 290px);
+      padding-right: 15px;
+    }
+  }
+  .input-wrapper{
+    width: 290px;
+  }
+}

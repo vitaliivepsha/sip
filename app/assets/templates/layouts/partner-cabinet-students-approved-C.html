@@ -223,9 +223,16 @@ ${require('../parts/header-logged-in.html')}
                             </div>
                         </div>
                     </div>
-                    <div class="partner-cabinet__vacancy-step checked">
+                    <div class="partner-cabinet__vacancy-step current">
                         <div class="partner-cabinet__vacancy-step__head">
-                            <div class="partner-cabinet__vacancy-step__title">5. Утверждение кандидатуры студента работодателем</div>
+                            <div class="partner-cabinet__vacancy-step__title">
+                                <span>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.250048 6.751L11.1895 6.751L7.2198 10.7208L8.2803 11.7813L14.0605 6.001L8.2803 0.220753L7.2198 1.28125L11.1895 5.251L0.250048 5.251L0.250048 6.751Z" fill="#5F6CFA"/>
+                                    </svg>
+                                </span>
+                                5. Утверждение кандидатуры студента работодателем
+                            </div>
                             <div class="partner-cabinet__vacancy-step__checkbox">
                                 <div>
                                     <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -235,10 +242,13 @@ ${require('../parts/header-logged-in.html')}
                             </div>
                             <div class="partner-cabinet__vacancy-step__time">7 рабочих дней</div>
                         </div>
-                        <div class="partner-cabinet__vacancy-step__body">
+                        <div class="partner-cabinet__vacancy-step__body candidacy-approval__block">
+                            <span>К сожалению, работодатель не готов пригласить этого кандидата. </span>
+                            <p>Попробуйте выбрать другую вакансию</p>
+                            <button class="btn partner-cabinet__btn">Выбрать другую вакансию</button>
                         </div>
                     </div>
-                    <div class="partner-cabinet__vacancy-step current">
+                    <div class="partner-cabinet__vacancy-step">
                         <div class="partner-cabinet__vacancy-step__head">
                             <div class="partner-cabinet__vacancy-step__title">
                                 <span>
@@ -269,7 +279,13 @@ ${require('../parts/header-logged-in.html')}
                     </div>
                     <div class="partner-cabinet__vacancy-step">
                         <div class="partner-cabinet__vacancy-step__head">
-                            <div class="partner-cabinet__vacancy-step__title">7. Отправка документов в офис SIP</div>
+                            <div class="partner-cabinet__vacancy-step__title">
+                                <span>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.250048 6.751L11.1895 6.751L7.2198 10.7208L8.2803 11.7813L14.0605 6.001L8.2803 0.220753L7.2198 1.28125L11.1895 5.251L0.250048 5.251L0.250048 6.751Z" fill="#5F6CFA"/>
+                                    </svg>
+                                </span>
+                                7. Отправка документов в офис WFP</div>
                             <div class="partner-cabinet__vacancy-step__checkbox">
                                 <div>
                                     <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -279,7 +295,36 @@ ${require('../parts/header-logged-in.html')}
                             </div>
                             <div class="partner-cabinet__vacancy-step__time">3 дня</div>
                         </div>
-                        <div class="partner-cabinet__vacancy-step__body">
+                        <div class="partner-cabinet__vacancy-step__body wfp-block">
+                            <strong class="wfp-title">Отправьте оригиналы документов WFP</strong>
+                            <p>Просим Вас отправить следующие документы:</p>
+                            <ul>
+                                <li>Оригинал немецко-английской справки Erklärung zur Immatrikulationsbescheinigung</li>
+                                <li>Оригинал английской справки на фирменном бланке университета</li>
+                                <li>Другие оригиналы справок из Университета, если имеются</li>
+                            </ul>
+                            <ul>
+                                <li>Распечатанная копия загран паспорта</li>
+                                <li>Распечатанная копия студенческого билета</li>
+                                <li>Распечатанная копия подтверждения студенческого билета</li>
+                                <li>Распечатанная копия  зачетной книги и оценок</li>
+                                <li>Распечатанный скин подтверждения статуса университета с анабина</li>
+                            </ul>
+                            <p class="pink">Важно! Убедитесь, что собран полный пакет документов</p>
+                            <p>
+                                <span>Отправьте документы Новой почтой или курьерской доставкой по адресу:</span>
+                                <span>г. Харьков</span>
+                                <span>ул. Клочковская, 111а</span>
+                                <span>Бизнес-центр Тетрис</span>
+                                <span>15 этаж, офис 27</span>
+                                <span>Номер телефона получателя: 050 309 66 77</span>
+                            </p>
+                            <p class="pink">Обратите внимание - доставку оплачивает отправитель</p>
+                            <div class="wfp-package">
+                                <label>Введите номер отслеживания посылки</label>
+                                <input class="input" type="search" placeholder="957348649302-14">
+                            </div>
+                            <button class="btn partner-cabinet__btn">Оригиналы документов отправлены</button>
                         </div>
                     </div>
                     <div class="partner-cabinet__vacancy-step">
