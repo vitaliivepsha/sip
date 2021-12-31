@@ -1032,7 +1032,7 @@
     position: relative;
     width: 15px;
     height: 15px;
-    border-radius: 1px;
+    border-radius: 2px;
     border: 1px solid rgba($black, 0.5);
     svg {
       display: none;
@@ -1067,7 +1067,7 @@
   color: $black;
   font-size: 13px;
   line-height: 130%;
-  padding-right: 145px;
+  padding-right: 0;
   span {
     margin-left: 15px;
   }
