@@ -66,6 +66,7 @@
 
 .header-lang__wrapper {
   position: relative;
+  z-index: 5;
   margin-right: 14px;
   &.active {
     .header-lang {
@@ -355,7 +356,7 @@
   }
 }
 
-.logged-in{
+.logged-in {
   width: 40px;
   height: 40px;
   border-radius: 50%;
