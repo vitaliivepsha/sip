@@ -3,31 +3,44 @@
 'use strict';
 
 if (process.env.NODE_ENV !== 'production') {
-  require('./assets/templates/layouts/index.html');
-  require('./assets/templates/layouts/for-partners.html');
-  require('./assets/templates/layouts/for-companies.html');
-  require('./assets/templates/layouts/contacts.html');
-  require('./assets/templates/layouts/about-us.html');
-  require('./assets/templates/layouts/impressum.html');
-  require('./assets/templates/layouts/terms.html');
-  require('./assets/templates/layouts/policy.html');
-  require('./assets/templates/layouts/partner-cabinet-information.html');
-  require('./assets/templates/layouts/partner-cabinet-information-saved.html');
-  require('./assets/templates/layouts/partner-cabinet-information-edit.html');
-  require('./assets/templates/layouts/partner-cabinet-students.html');
-  require('./assets/templates/layouts/partner-cabinet-students-vacancy-choice.html');
-  require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list.html');
-  require('./assets/templates/layouts/partner-cabinet-students-add.html');
-  require('./assets/templates/layouts/partner-cabinet-students-contol-of-the-documents.html');
-  require('./assets/templates/layouts/partner-cabinet-chats.html');
-  require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents.html');
-  require('./assets/templates/layouts/partner-cabinet-news.html');
-  require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-partner.html');
-  require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-SIP.html');
-  require('./assets/templates/layouts/partner-cabinet-students-approved-A.html');
-  require('./assets/templates/layouts/partner-cabinet-students-approved-B.html');
-  require('./assets/templates/layouts/partner-cabinet-students-approved-C.html');
-  require('./assets/templates/layouts/partner-cabinet-students-103.html');
+    require('./assets/templates/layouts/index.html');
+    require('./assets/templates/layouts/for-partners.html');
+    require('./assets/templates/layouts/for-companies.html');
+    require('./assets/templates/layouts/contacts.html');
+    require('./assets/templates/layouts/about-us.html');
+    require('./assets/templates/layouts/impressum.html');
+    require('./assets/templates/layouts/terms.html');
+    require('./assets/templates/layouts/policy.html');
+    require('./assets/templates/layouts/partner-cabinet-information.html');
+    require('./assets/templates/layouts/partner-cabinet-information-saved.html');
+    require('./assets/templates/layouts/partner-cabinet-information-edit.html');
+    require('./assets/templates/layouts/partner-cabinet-students.html');
+    require('./assets/templates/layouts/partner-cabinet-students-vacancy-choice.html');
+    require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list.html');
+    require('./assets/templates/layouts/partner-cabinet-students-add.html');
+    require('./assets/templates/layouts/partner-cabinet-students-contol-of-the-documents.html');
+    require('./assets/templates/layouts/partner-cabinet-chats.html');
+    require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents.html');
+    require('./assets/templates/layouts/partner-cabinet-news.html');
+    require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-partner.html');
+    require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-SIP.html');
+    require('./assets/templates/layouts/partner-cabinet-students-approved-A.html');
+    require('./assets/templates/layouts/partner-cabinet-students-approved-B.html');
+    require('./assets/templates/layouts/partner-cabinet-students-approved-C.html');
+    require('./assets/templates/layouts/partner-cabinet-students-103.html');
+    require('./assets/templates/layouts/partner-cabinet-student-original-on-the-way-to-company-A.html');
+    require('./assets/templates/layouts/partner-cabinet-student-original-on-the-way-to-company-B.html');
+    require('./assets/templates/layouts/partner-cabinet-student-originals-received-by-company-A.html');
+    require('./assets/templates/layouts/partner-cabinet-student-originals-received-by-company-B.html');
+    require('./assets/templates/layouts/partner-cabinet-student-company-fill-out-forms-A.html');
+    require('./assets/templates/layouts/partner-cabinet-student-company-fill-out-forms-B.html');
+    require('./assets/templates/layouts/partner-cabinet-student-documents-sent-to-ministry.html');
+    require('./assets/templates/layouts/partner-cabinet-student-access-to-SIP.html');
+    require('./assets/templates/layouts/partner-cabinet-student-permission-received-A.html');
+    require('./assets/templates/layouts/partner-cabinet-student-permission-received-B.html');
+    require('./assets/templates/layouts/partner-cabinet-student-permission-received-C.html');
+    require('./assets/templates/layouts/partner-cabinet-student-permission-received-D.html');
+
 }
 
 // Depends
@@ -55,180 +68,180 @@ import Swal from 'sweetalert2';
 require('_stylesheets/app.scss');
 
 // Are you ready?
-$(function() {
-  new Forms();
-  new Popup();
+$(function () {
+    new Forms();
+    new Popup();
     //new Fancy_select();
     //new Jscrollpane();
-  new LightGallery();
-  new Slider();
+    new LightGallery();
+    new Slider();
     //new Jslider();
     //new Fancybox();
 
-  setTimeout(function() {
-    $('body').trigger('scroll');
-  }, 100);
+    setTimeout(function () {
+        $('body').trigger('scroll');
+    }, 100);
 
     // fixed header
 
-  var header = $('.header'),
-    scrollPrev = 0;
+    var header = $('.header'),
+        scrollPrev = 0;
 
-  $(window).scroll(function() {
-    var scrolled = $(window).scrollTop();
-    if (scrolled > 60) {
-      header.addClass('fixed');
-    } else {
-      header.removeClass('fixed');
-    }
-    scrollPrev = scrolled;
-  });
+    $(window).scroll(function () {
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 60) {
+            header.addClass('fixed');
+        } else {
+            header.removeClass('fixed');
+        }
+        scrollPrev = scrolled;
+    });
 
     // languages
 
-  $('.header-lang').click(function() {
-    $(this).closest('.header-lang__wrapper').toggleClass('active');
-  });
+    $('.header-lang').click(function () {
+        $(this).closest('.header-lang__wrapper').toggleClass('active');
+    });
 
-  $(document).click(function() {
-    $('.header-lang__wrapper').removeClass('active');
-  });
+    $(document).click(function () {
+        $('.header-lang__wrapper').removeClass('active');
+    });
 
-  $(document).on('click', '.header-lang', function(e) {
-    e.stopPropagation();
-  });
+    $(document).on('click', '.header-lang', function (e) {
+        e.stopPropagation();
+    });
 
-  $(document).on('click', '.header-lang__list', function(e) {
-    e.stopPropagation();
-  });
+    $(document).on('click', '.header-lang__list', function (e) {
+        e.stopPropagation();
+    });
 
     // mobile menu
 
-  var touch = $('.mobile-menu__btn');
+    var touch = $('.mobile-menu__btn');
 
-  var toggles = document.querySelectorAll('.mobile-menu__btn');
+    var toggles = document.querySelectorAll('.mobile-menu__btn');
 
-  for (var i = toggles.length - 1; i >= 0; i--) {
-    var toggle = toggles[i];
-    toggleHandler(toggle);
-  }
+    for (var i = toggles.length - 1; i >= 0; i--) {
+        var toggle = toggles[i];
+        toggleHandler(toggle);
+    }
 
-  function toggleHandler(toggle) {
-    toggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      (this.classList.contains('active') === true) ? this.classList.remove('active') : this.classList.add('active');
+    function toggleHandler(toggle) {
+        toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            (this.classList.contains('active') === true) ? this.classList.remove('active') : this.classList.add('active');
+        });
+    }
+
+    $(touch).click(function (e) {
+        e.preventDefault();
+        $('body').toggleClass('menu-opened').removeClass('login-menu__show');
+        return false;
     });
-  }
 
-  $(touch).click(function(e) {
-    e.preventDefault();
-    $('body').toggleClass('menu-opened').removeClass('login-menu__show');
-    return false;
-  });
+    $(document).on('click', '.mobile-menu__btn', function (e) {
+        e.stopPropagation();
+    });
 
-  $(document).on('click', '.mobile-menu__btn', function(e) {
-    e.stopPropagation();
-  });
-
-  $(document).on('click', '.mobile-menu__wrapper', function(e) {
-    e.stopPropagation();
-  });
+    $(document).on('click', '.mobile-menu__wrapper', function (e) {
+        e.stopPropagation();
+    });
 
     // contacts
 
-  $('.contacts-info__phone').click(function() {
-    $(this).closest('.contacts-info__phone-wrapper').toggleClass('active');
-  });
+    $('.contacts-info__phone').click(function () {
+        $(this).closest('.contacts-info__phone-wrapper').toggleClass('active');
+    });
 
-  $(document).click(function() {
-    $('.contacts-info__phone-wrapper').removeClass('active');
-  });
+    $(document).click(function () {
+        $('.contacts-info__phone-wrapper').removeClass('active');
+    });
 
-  $(document).on('click', '.contacts-info__phone', function(e) {
-    e.stopPropagation();
-  });
+    $(document).on('click', '.contacts-info__phone', function (e) {
+        e.stopPropagation();
+    });
 
-  $(document).on('click', '.contacts-info__list', function(e) {
-    e.stopPropagation();
-  });
+    $(document).on('click', '.contacts-info__list', function (e) {
+        e.stopPropagation();
+    });
 
     // lazy load
-  var lazyload = function() {
-    var scroll = $(window).scrollTop() + $(window).height() * 3;
+    var lazyload = function () {
+        var scroll = $(window).scrollTop() + $(window).height() * 3;
 
-    $('.lazy').each(function() {
-      var $this = $(this);
-      if ($this.offset().top < scroll) {
-        $this.attr('src', $(this).data('original'));
-      }
-    });
-    $('.lazy-web').each(function() {
-      var $this = $(this);
-      if ($this.offset().top < scroll) {
-        $this.attr('srcset', $(this).data('original'));
-      }
-    });
-  };
-  $(window).scroll(lazyload);
+        $('.lazy').each(function () {
+            var $this = $(this);
+            if ($this.offset().top < scroll) {
+                $this.attr('src', $(this).data('original'));
+            }
+        });
+        $('.lazy-web').each(function () {
+            var $this = $(this);
+            if ($this.offset().top < scroll) {
+                $this.attr('srcset', $(this).data('original'));
+            }
+        });
+    };
+    $(window).scroll(lazyload);
 
     // popup "Связаться с нами" - удачная отправка
-  $('.popup-swal').click(function() {
-    Swal('Заявка принята, наш менеджер свяжется с Вами в ближайшее время');
-  });
+    $('.popup-swal').click(function () {
+        Swal('Заявка принята, наш менеджер свяжется с Вами в ближайшее время');
+    });
 
     //  popup
 
-  $('.login-link').magnificPopup({
-    delegate: 'a',
-    removalDelay: 100,
-    callbacks: {
-      beforeOpen: function() {
-        this.st.mainClass = this.st.el.attr('data-effect');
-      }
-    },
-  });
+    $('.login-link').magnificPopup({
+        delegate: 'a',
+        removalDelay: 100,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            }
+        },
+    });
 
-  $('.registration-link').magnificPopup({
-    delegate: 'a',
-    removalDelay: 100,
-    callbacks: {
-      beforeOpen: function() {
-        this.st.mainClass = this.st.el.attr('data-effect');
-      }
-    },
-  });
+    $('.registration-link').magnificPopup({
+        delegate: 'a',
+        removalDelay: 100,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            }
+        },
+    });
 
-  /* partner cabinet information */
+    /* partner cabinet information */
 
-  // add contact
+    // add contact
 
-  $('.edit-btn').click(function() {
-    $(this).closest('.input-wrapper').find('input').removeAttr('disabled');
-  });
+    $('.edit-btn').click(function () {
+        $(this).closest('.input-wrapper').find('input').removeAttr('disabled');
+    });
 
-  $('select').on('change', function() {
-    $(this).parent().addClass('active');
-  });
+    $('select').on('change', function () {
+        $(this).parent().addClass('active');
+    });
 
-  // upload file
+    // upload file
 
-  $(document).on('change', '.input-file input', function() {
-    var $file = $(this),
-      $label = $file.next('label'),
-      $labelText = $label.find('span'),
-      labelDefault = $labelText.text(),
-      fileName = $file.val().split( '\\' ).pop();
-    if ( fileName ) {
-      $labelText.text(fileName);
-    } else {
-      $labelText.text(labelDefault);
-    }
-  });
+    $(document).on('change', '.input-file input', function () {
+        var $file = $(this),
+            $label = $file.next('label'),
+            $labelText = $label.find('span'),
+            labelDefault = $labelText.text(),
+            fileName = $file.val().split('\\').pop();
+        if (fileName) {
+            $labelText.text(fileName);
+        } else {
+            $labelText.text(labelDefault);
+        }
+    });
 
-  // add contact
+    // add contact
 
-  $('.add-contact').click(function() {
-    $(this).closest('.form-row').append('<div class="new-contact">\n' +
+    $('.add-contact').click(function () {
+        $(this).closest('.form-row').append('<div class="new-contact">\n' +
             '                                <div class="form-row">\n' +
             '                                    <label>Контактное лицо - имя и фамилия</label>\n' +
             '                                    <div class="name-wrapper">\n' +
@@ -272,443 +285,443 @@ $(function() {
             '                            </div>\n' +
             '                        </div>\n' +
             '                            </div>');
-  });
-
-  // remove photo
-
-  $('.remove-photo').click(function() {
-    $(this).closest('.photo-row__wrapper').find('.upload-photo').show();
-    $(this).closest('.photo-row').remove();
-  });
-
-  $('.remove-license').click(function() {
-    $('.license-row').show();
-    $(this).closest('.cert-item').remove();
-  });
-
-  $('.remove-doc').click(function() {
-    $('.doc-row').show();
-    $(this).closest('.cert-item').remove();
-  });
-
-
-  // validation
-
-  $('.validate-form').each(function() {
-    $(this).validate({
-      highlight: function(element) {
-        $(element).parent().addClass('error');
-      },
-      unhighlight: function(element) {
-        $(element).parent().removeClass('error');
-      },
-      rules: {
-        name_ua: {
-          required: true,
-        },
-        first_name_en: {
-          required: true,
-          onlylatinletters: true
-        },
-        last_name_en: {
-          required: true,
-          onlylatinletters: true
-        },
-        date_of_birth: {
-          required: true,
-        },
-        place_of_birth: {
-          required: true,
-        },
-        city_of_birth: {
-          required: true,
-        },
-        sex: {
-          required: true,
-        },
-        phone: {
-          required: true,
-        },
-        email: {
-          required: true,
-        },
-        educational_establishment: {
-          required: true,
-        },
-        educational_establishment_name: {
-          required: true,
-        },
-        university_sitе: {
-          required: true,
-        },
-        faculty: {
-          required: true,
-        },
-        speciality: {
-          required: true,
-        },
-        admission_date: {
-          required: true,
-        },
-        graduation_date: {
-          required: true,
-        },
-        start_of_vacation: {
-          required: true,
-        },
-        end_of_vacation: {
-          required: true,
-        },
-        country_of_residence: {
-          required: true,
-        },
-        city_of_residence: {
-          required: true,
-        },
-        registration_address: {
-          required: true,
-        },
-        registration_address_city: {
-          required: true,
-        },
-        zip: {
-          required: true,
-        },
-        region: {
-          required: true,
-        },
-        country: {
-          required: true,
-        },
-        german_level: {
-          required: true,
-        },
-        english_level: {
-          required: true,
-        },
-        driving_license: {
-          required: true,
-        },
-        growth: {
-          required: true,
-        },
-        shoe_size: {
-          required: true,
-        },
-        tshirt_size: {
-          required: true,
-        },
-        pants_size: {
-          required: true,
-        },
-      },
-      messages: {
-        name_ua: {
-          required: 'Заполните эту информацию'
-        },
-        first_name_en: {
-          required: 'Заполните эту информацию',
-        },
-        last_name_en: {
-          required: 'Заполните эту информацию',
-        },
-        date_of_birth: {
-          required: 'Заполните эту информацию',
-        },
-        place_of_birth: {
-          required: 'Заполните эту информацию',
-        },
-        city_of_birth: {
-          required: 'Заполните эту информацию',
-        },
-        sex: {
-          required: 'Заполните эту информацию',
-        },
-        phone: {
-          required: 'Заполните эту информацию',
-        },
-        email: {
-          required: 'Заполните эту информацию',
-        },
-        educational_establishment: {
-          required: 'Заполните эту информацию',
-        },
-        educational_establishment_name: {
-          required: 'Заполните эту информацию',
-        },
-        university_sitе: {
-          required: 'Заполните эту информацию',
-        },
-        faculty: {
-          required: 'Заполните эту информацию',
-        },
-        speciality: {
-          required: 'Заполните эту информацию',
-        },
-        admission_date: {
-          required: 'Заполните эту информацию',
-        },
-        graduation_date: {
-          required: 'Заполните эту информацию',
-        },
-        start_of_vacation: {
-          required: 'Заполните эту информацию',
-        },
-        end_of_vacation: {
-          required: 'Заполните эту информацию',
-        },
-        country_of_residence: {
-          required: 'Заполните эту информацию',
-        },
-        city_of_residence: {
-          required: 'Заполните эту информацию',
-        },
-        registration_address: {
-          required: 'Заполните эту информацию',
-        },
-        registration_address_city: {
-          required: 'Заполните эту информацию',
-        },
-        zip: {
-          required: 'Заполните эту информацию',
-        },
-        region: {
-          required: 'Заполните эту информацию',
-        },
-        country: {
-          required: 'Заполните эту информацию',
-        },
-        german_level: {
-          required: 'Заполните эту информацию',
-        },
-        english_level: {
-          required: 'Заполните эту информацию',
-        },
-        driving_license: {
-          required: 'Заполните эту информацию',
-        },
-        growth: {
-          required: 'Заполните эту информацию',
-        },
-        shoe_size: {
-          required: 'Заполните эту информацию',
-        },
-        tshirt_size: {
-          required: 'Заполните эту информацию',
-        },
-        pants_size: {
-          required: 'Заполните эту информацию',
-        }
-      }
     });
-  });
 
-  jQuery.validator.addMethod('onlylatinletters', function(value, element) {
-    return this.optional(element) || /^[a-z ]+$/i.test(value);
-  }, 'Заполните эту информацию латиницей');
+    // remove photo
 
-  /* partner cabinet students */
-
-  // dropdown
-
-  $('.dropdown').click(function() {
-    $(this).closest('.dropdown-wrapper').toggleClass('active');
-    $('.dropdown').not(this).closest('.dropdown-wrapper').removeClass('active').removeClass('all');
-  });
-
-  $('.dropdown-more').click(function() {
-    $(this).closest('.dropdown-wrapper').addClass('all');
-  });
-
-  $('.dropdown-list__item').click(function() {
-    $(this).toggleClass('active');
-  });
-
-  $(document).click(function() {
-    $('.dropdown-wrapper').removeClass('active').removeClass('all');
-  });
-
-  $(document).on('click', '.dropdown', function(e) {
-    e.stopPropagation();
-  });
-
-  $(document).on('click', '.dropdown-list', function(e) {
-    e.stopPropagation();
-  });
-
-  // select
-
-  $('.dropdown-select').SumoSelect({
-    //okCancelInMulti: true,
-    search: true,
-    placeholder: 'Поиск',
-    csvDispCount: 3,
-    captionFormat: '{0} выбрано',
-    forceCustomRendering: true,
-    triggerChangeCombined: false
-  });
-
-  // date placeholder
-
-  $('.input.date').on('focus', function() {
-    $(this).closest('.date-choose').find('.placeholder').hide();
-  });
-  $('.input.date').on('focusout', function() {
-    $(this).closest('.date-choose').find('.placeholder').show();
-  });
-  $('.input.date').on('change', function() {
-    $(this).closest('.date-choose').removeClass('error').find('.placeholder').remove();
-    $(this).closest('.date-choose').find('label.error').remove();
-  });
-
-  // show hide block with changed name
-  $('#changed-name').on('change', function() {
-    $(this).closest('.changed-name__wrapper').find('.changed-name').toggle();
-  });
-
-  // when choose other option in select
-
-  $('.another-option').change(function() {
-    var value = $(this).val(),
-      $input = $(this).closest('.another-option__wrapper').find('.another-option__input');
-    if (value == 'another') {
-      $input.show();
-    }
-    else {
-      $input.hide();
-    }
-  });
-
-  // add job
-
-  var job_num = 2;
-  $('.add-job').click(function() {
-    job_num++;
-    $(this).closest('.experience-block').find('.experience-jobs').append('<div class="experience-job">\n' +
-                '                                    <span>Работа ' + job_num + '</span>\n' +
-                '                                    <div class="experience-job__fields partner-cabinet__students-form">\n' +
-                '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
-                '                                            <label>Название предприятия</label>\n' +
-                '                                            <div class="input-wrapper">\n' +
-                '                                                <input class="input" type="text" name="company-name" placeholder="Name">\n' +
-                '                                            </div>\n' +
-                '                                        </div>\n' +
-                '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
-                '                                            <label>Город работы</label>\n' +
-                '                                            <div class="input-wrapper">\n' +
-                '                                                <input class="input" type="text" name="city" placeholder="City">\n' +
-                '                                            </div>\n' +
-                '                                        </div>\n' +
-                '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
-                '                                            <label>Страна работы</label>\n' +
-                '                                            <div class="input-wrapper">\n' +
-                '                                                <input class="input" type="text" name="work-country" placeholder="Ukraine">\n' +
-                '                                            </div>\n' +
-                '                                        </div>\n' +
-                '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
-                '                                            <label>Должность</label>\n' +
-                '                                            <div class="input-wrapper">\n' +
-                '                                                <input class="input" type="text" name="position" placeholder="Ukraine">\n' +
-                '                                            </div>\n' +
-                '                                        </div>\n' +
-                '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
-                '                                            <label>Дата начала работы</label>\n' +
-                '                                            <div class="input-wrapper date-wrapper">\n' +
-                '                                                <div class="date-choose">\n' +
-                '                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
-                '                                                        <g opacity="0.4">\n' +
-                '                                                            <path d="M8.75 13.75H11.25V16.25H8.75V13.75ZM8.75 18.75H11.25V21.25H8.75V18.75ZM13.75 13.75H16.25V16.25H13.75V13.75ZM13.75 18.75H16.25V21.25H13.75V18.75ZM18.75 13.75H21.25V16.25H18.75V13.75ZM18.75 18.75H21.25V21.25H18.75V18.75Z" fill="#474747"></path>\n' +
-                '                                                            <path d="M6.25 27.5H23.75C25.1287 27.5 26.25 26.3787 26.25 25V7.5C26.25 6.12125 25.1287 5 23.75 5H21.25V2.5H18.75V5H11.25V2.5H8.75V5H6.25C4.87125 5 3.75 6.12125 3.75 7.5V25C3.75 26.3787 4.87125 27.5 6.25 27.5ZM23.75 10L23.7512 25H6.25V10H23.75Z" fill="#474747"></path>\n' +
-                '                                                        </g>\n' +
-                '                                                    </svg>\n' +
-                '                                                    <input name="work-start-date" type="date" class="input date">\n' +
-                '                                                    <span class="placeholder" style="">01.10.2021</span>\n' +
-                '                                                </div>\n' +
-                '                                            </div>\n' +
-                '                                        </div>\n' +
-                '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
-                '                                            <label>Дата окончания работы</label>\n' +
-                '                                            <div class="input-wrapper date-wrapper">\n' +
-                '                                                <div class="date-choose">\n' +
-                '                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
-                '                                                        <g opacity="0.4">\n' +
-                '                                                            <path d="M8.75 13.75H11.25V16.25H8.75V13.75ZM8.75 18.75H11.25V21.25H8.75V18.75ZM13.75 13.75H16.25V16.25H13.75V13.75ZM13.75 18.75H16.25V21.25H13.75V18.75ZM18.75 13.75H21.25V16.25H18.75V13.75ZM18.75 18.75H21.25V21.25H18.75V18.75Z" fill="#474747"></path>\n' +
-                '                                                            <path d="M6.25 27.5H23.75C25.1287 27.5 26.25 26.3787 26.25 25V7.5C26.25 6.12125 25.1287 5 23.75 5H21.25V2.5H18.75V5H11.25V2.5H8.75V5H6.25C4.87125 5 3.75 6.12125 3.75 7.5V25C3.75 26.3787 4.87125 27.5 6.25 27.5ZM23.75 10L23.7512 25H6.25V10H23.75Z" fill="#474747"></path>\n' +
-                '                                                        </g>\n' +
-                '                                                    </svg>\n' +
-                '                                                    <input name="work-start-date" type="date" class="input date">\n' +
-                '                                                    <span class="placeholder" style="">01.10.2021</span>\n' +
-                '                                                </div>\n' +
-                '                                            </div>\n' +
-                '                                        </div>\n' +
-                '                                    </div>\n' +
-                '                                </div>');
-  });
-
-  /* partner cabinet chats */
-
-  // tabs
-
-  $('.tabs').on('click', 'li:not(.active)', function() {
-    $(this)
-      .addClass('active').siblings().removeClass('active')
-      .closest('.tabs-wrapper').find('.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
-  });
-
-  /* partner cabinet news */
-
-  // tags
-
-  var $input = $('.partner-cabinet__tags-search > input'),
-    $content = $('.partner-cabinet__tags-list .search-results'),
-    $results,
-    currentIndex = 0;
-
-  $input.on('input', function() {
-    var searchVal = $(this).val();
-    var inputVal = searchVal.length;
-    $('.partner-cabinet__tags-list .search-results span').each(function() {
-      if ((inputVal > 0) && (!$(this).find('mark').length)) {
-        $(this).closest('li').removeClass('show');
-        $('.partner-cabinet__tags-list .search-results ul').hide();
-        $('.search-results__empty').show();
-      }
-      else {
-        $(this).closest('li').removeClass('show').closest('ul').removeClass('highlighting-results');
-        $('.partner-cabinet__tags-list .search-results ul').show();
-        $('.search-results__empty').hide();
-      }
+    $('.remove-photo').click(function () {
+        $(this).closest('.photo-row__wrapper').find('.upload-photo').show();
+        $(this).closest('.photo-row').remove();
     });
-    $('.partner-cabinet__tags-list .search-results').each(function() {
-      $(this).find('span').bind('DOMSubtreeModified', function() {
-        if ((inputVal > 0) && (!$(this).find('mark').length)) {
-          $(this).closest('li').removeClass('show');
-          $('.partner-cabinet__tags-list .search-results ul').hide();
-          $('.search-results__empty').show();
-        }
-        else if ((inputVal > 0) && ($(this).find('mark').length)) {
-          $(this).closest('li').addClass('show').closest('ul').addClass('highlighting-results');
-          $('.partner-cabinet__tags-list .search-results ul').show();
-          $('.search-results__empty').hide();
+
+    $('.remove-license').click(function () {
+        $('.license-row').show();
+        $(this).closest('.cert-item').remove();
+    });
+
+    $('.remove-doc').click(function () {
+        $('.doc-row').show();
+        $(this).closest('.cert-item').remove();
+    });
+
+
+    // validation
+
+    $('.validate-form').each(function () {
+        $(this).validate({
+            highlight: function (element) {
+                $(element).parent().addClass('error');
+            },
+            unhighlight: function (element) {
+                $(element).parent().removeClass('error');
+            },
+            rules: {
+                name_ua: {
+                    required: true,
+                },
+                first_name_en: {
+                    required: true,
+                    onlylatinletters: true
+                },
+                last_name_en: {
+                    required: true,
+                    onlylatinletters: true
+                },
+                date_of_birth: {
+                    required: true,
+                },
+                place_of_birth: {
+                    required: true,
+                },
+                city_of_birth: {
+                    required: true,
+                },
+                sex: {
+                    required: true,
+                },
+                phone: {
+                    required: true,
+                },
+                email: {
+                    required: true,
+                },
+                educational_establishment: {
+                    required: true,
+                },
+                educational_establishment_name: {
+                    required: true,
+                },
+                university_sitе: {
+                    required: true,
+                },
+                faculty: {
+                    required: true,
+                },
+                speciality: {
+                    required: true,
+                },
+                admission_date: {
+                    required: true,
+                },
+                graduation_date: {
+                    required: true,
+                },
+                start_of_vacation: {
+                    required: true,
+                },
+                end_of_vacation: {
+                    required: true,
+                },
+                country_of_residence: {
+                    required: true,
+                },
+                city_of_residence: {
+                    required: true,
+                },
+                registration_address: {
+                    required: true,
+                },
+                registration_address_city: {
+                    required: true,
+                },
+                zip: {
+                    required: true,
+                },
+                region: {
+                    required: true,
+                },
+                country: {
+                    required: true,
+                },
+                german_level: {
+                    required: true,
+                },
+                english_level: {
+                    required: true,
+                },
+                driving_license: {
+                    required: true,
+                },
+                growth: {
+                    required: true,
+                },
+                shoe_size: {
+                    required: true,
+                },
+                tshirt_size: {
+                    required: true,
+                },
+                pants_size: {
+                    required: true,
+                },
+            },
+            messages: {
+                name_ua: {
+                    required: 'Заполните эту информацию'
+                },
+                first_name_en: {
+                    required: 'Заполните эту информацию',
+                },
+                last_name_en: {
+                    required: 'Заполните эту информацию',
+                },
+                date_of_birth: {
+                    required: 'Заполните эту информацию',
+                },
+                place_of_birth: {
+                    required: 'Заполните эту информацию',
+                },
+                city_of_birth: {
+                    required: 'Заполните эту информацию',
+                },
+                sex: {
+                    required: 'Заполните эту информацию',
+                },
+                phone: {
+                    required: 'Заполните эту информацию',
+                },
+                email: {
+                    required: 'Заполните эту информацию',
+                },
+                educational_establishment: {
+                    required: 'Заполните эту информацию',
+                },
+                educational_establishment_name: {
+                    required: 'Заполните эту информацию',
+                },
+                university_sitе: {
+                    required: 'Заполните эту информацию',
+                },
+                faculty: {
+                    required: 'Заполните эту информацию',
+                },
+                speciality: {
+                    required: 'Заполните эту информацию',
+                },
+                admission_date: {
+                    required: 'Заполните эту информацию',
+                },
+                graduation_date: {
+                    required: 'Заполните эту информацию',
+                },
+                start_of_vacation: {
+                    required: 'Заполните эту информацию',
+                },
+                end_of_vacation: {
+                    required: 'Заполните эту информацию',
+                },
+                country_of_residence: {
+                    required: 'Заполните эту информацию',
+                },
+                city_of_residence: {
+                    required: 'Заполните эту информацию',
+                },
+                registration_address: {
+                    required: 'Заполните эту информацию',
+                },
+                registration_address_city: {
+                    required: 'Заполните эту информацию',
+                },
+                zip: {
+                    required: 'Заполните эту информацию',
+                },
+                region: {
+                    required: 'Заполните эту информацию',
+                },
+                country: {
+                    required: 'Заполните эту информацию',
+                },
+                german_level: {
+                    required: 'Заполните эту информацию',
+                },
+                english_level: {
+                    required: 'Заполните эту информацию',
+                },
+                driving_license: {
+                    required: 'Заполните эту информацию',
+                },
+                growth: {
+                    required: 'Заполните эту информацию',
+                },
+                shoe_size: {
+                    required: 'Заполните эту информацию',
+                },
+                tshirt_size: {
+                    required: 'Заполните эту информацию',
+                },
+                pants_size: {
+                    required: 'Заполните эту информацию',
+                }
+            }
+        });
+    });
+
+    jQuery.validator.addMethod('onlylatinletters', function (value, element) {
+        return this.optional(element) || /^[a-z ]+$/i.test(value);
+    }, 'Заполните эту информацию латиницей');
+
+    /* partner cabinet students */
+
+    // dropdown
+
+    $('.dropdown').click(function () {
+        $(this).closest('.dropdown-wrapper').toggleClass('active');
+        $('.dropdown').not(this).closest('.dropdown-wrapper').removeClass('active').removeClass('all');
+    });
+
+    $('.dropdown-more').click(function () {
+        $(this).closest('.dropdown-wrapper').addClass('all');
+    });
+
+    $('.dropdown-list__item').click(function () {
+        $(this).toggleClass('active');
+    });
+
+    $(document).click(function () {
+        $('.dropdown-wrapper').removeClass('active').removeClass('all');
+    });
+
+    $(document).on('click', '.dropdown', function (e) {
+        e.stopPropagation();
+    });
+
+    $(document).on('click', '.dropdown-list', function (e) {
+        e.stopPropagation();
+    });
+
+    // select
+
+    $('.dropdown-select').SumoSelect({
+        //okCancelInMulti: true,
+        search: true,
+        placeholder: 'Поиск',
+        csvDispCount: 3,
+        captionFormat: '{0} выбрано',
+        forceCustomRendering: true,
+        triggerChangeCombined: false
+    });
+
+    // date placeholder
+
+    $('.input.date').on('focus', function () {
+        $(this).closest('.date-choose').find('.placeholder').hide();
+    });
+    $('.input.date').on('focusout', function () {
+        $(this).closest('.date-choose').find('.placeholder').show();
+    });
+    $('.input.date').on('change', function () {
+        $(this).closest('.date-choose').removeClass('error').find('.placeholder').remove();
+        $(this).closest('.date-choose').find('label.error').remove();
+    });
+
+    // show hide block with changed name
+    $('#changed-name').on('change', function () {
+        $(this).closest('.changed-name__wrapper').find('.changed-name').toggle();
+    });
+
+    // when choose other option in select
+
+    $('.another-option').change(function () {
+        var value = $(this).val(),
+            $input = $(this).closest('.another-option__wrapper').find('.another-option__input');
+        if (value == 'another') {
+            $input.show();
         }
         else {
-          $(this).closest('li').removeClass('show').closest('ul').removeClass('highlighting-results');
-          $('.partner-cabinet__tags-list .search-results ul').show();
-          $('.search-results__empty').hide();
+            $input.hide();
         }
-      });
     });
 
-    $content.unmark({
-      done: function() {
-        $content.mark(searchVal, {
-          separateWordSearch: true,
-          done: function() {
-            $results = $content.find('mark');
-            currentIndex = 0;
-          }
-        });
-      }
+    // add job
+
+    var job_num = 2;
+    $('.add-job').click(function () {
+        job_num++;
+        $(this).closest('.experience-block').find('.experience-jobs').append('<div class="experience-job">\n' +
+            '                                    <span>Работа ' + job_num + '</span>\n' +
+            '                                    <div class="experience-job__fields partner-cabinet__students-form">\n' +
+            '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
+            '                                            <label>Название предприятия</label>\n' +
+            '                                            <div class="input-wrapper">\n' +
+            '                                                <input class="input" type="text" name="company-name" placeholder="Name">\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
+            '                                            <label>Город работы</label>\n' +
+            '                                            <div class="input-wrapper">\n' +
+            '                                                <input class="input" type="text" name="city" placeholder="City">\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
+            '                                            <label>Страна работы</label>\n' +
+            '                                            <div class="input-wrapper">\n' +
+            '                                                <input class="input" type="text" name="work-country" placeholder="Ukraine">\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
+            '                                            <label>Должность</label>\n' +
+            '                                            <div class="input-wrapper">\n' +
+            '                                                <input class="input" type="text" name="position" placeholder="Ukraine">\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
+            '                                            <label>Дата начала работы</label>\n' +
+            '                                            <div class="input-wrapper date-wrapper">\n' +
+            '                                                <div class="date-choose">\n' +
+            '                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+            '                                                        <g opacity="0.4">\n' +
+            '                                                            <path d="M8.75 13.75H11.25V16.25H8.75V13.75ZM8.75 18.75H11.25V21.25H8.75V18.75ZM13.75 13.75H16.25V16.25H13.75V13.75ZM13.75 18.75H16.25V21.25H13.75V18.75ZM18.75 13.75H21.25V16.25H18.75V13.75ZM18.75 18.75H21.25V21.25H18.75V18.75Z" fill="#474747"></path>\n' +
+            '                                                            <path d="M6.25 27.5H23.75C25.1287 27.5 26.25 26.3787 26.25 25V7.5C26.25 6.12125 25.1287 5 23.75 5H21.25V2.5H18.75V5H11.25V2.5H8.75V5H6.25C4.87125 5 3.75 6.12125 3.75 7.5V25C3.75 26.3787 4.87125 27.5 6.25 27.5ZM23.75 10L23.7512 25H6.25V10H23.75Z" fill="#474747"></path>\n' +
+            '                                                        </g>\n' +
+            '                                                    </svg>\n' +
+            '                                                    <input name="work-start-date" type="date" class="input date">\n' +
+            '                                                    <span class="placeholder" style="">01.10.2021</span>\n' +
+            '                                                </div>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="partner-cabinet__students-form__row experience-job__row">\n' +
+            '                                            <label>Дата окончания работы</label>\n' +
+            '                                            <div class="input-wrapper date-wrapper">\n' +
+            '                                                <div class="date-choose">\n' +
+            '                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+            '                                                        <g opacity="0.4">\n' +
+            '                                                            <path d="M8.75 13.75H11.25V16.25H8.75V13.75ZM8.75 18.75H11.25V21.25H8.75V18.75ZM13.75 13.75H16.25V16.25H13.75V13.75ZM13.75 18.75H16.25V21.25H13.75V18.75ZM18.75 13.75H21.25V16.25H18.75V13.75ZM18.75 18.75H21.25V21.25H18.75V18.75Z" fill="#474747"></path>\n' +
+            '                                                            <path d="M6.25 27.5H23.75C25.1287 27.5 26.25 26.3787 26.25 25V7.5C26.25 6.12125 25.1287 5 23.75 5H21.25V2.5H18.75V5H11.25V2.5H8.75V5H6.25C4.87125 5 3.75 6.12125 3.75 7.5V25C3.75 26.3787 4.87125 27.5 6.25 27.5ZM23.75 10L23.7512 25H6.25V10H23.75Z" fill="#474747"></path>\n' +
+            '                                                        </g>\n' +
+            '                                                    </svg>\n' +
+            '                                                    <input name="work-start-date" type="date" class="input date">\n' +
+            '                                                    <span class="placeholder" style="">01.10.2021</span>\n' +
+            '                                                </div>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                    </div>\n' +
+            '                                </div>');
     });
-  });
+
+    /* partner cabinet chats */
+
+    // tabs
+
+    $('.tabs').on('click', 'li:not(.active)', function () {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('.tabs-wrapper').find('.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
+    });
+
+    /* partner cabinet news */
+
+    // tags
+
+    var $input = $('.partner-cabinet__tags-search > input'),
+        $content = $('.partner-cabinet__tags-list .search-results'),
+        $results,
+        currentIndex = 0;
+
+    $input.on('input', function () {
+        var searchVal = $(this).val();
+        var inputVal = searchVal.length;
+        $('.partner-cabinet__tags-list .search-results span').each(function () {
+            if ((inputVal > 0) && (!$(this).find('mark').length)) {
+                $(this).closest('li').removeClass('show');
+                $('.partner-cabinet__tags-list .search-results ul').hide();
+                $('.search-results__empty').show();
+            }
+            else {
+                $(this).closest('li').removeClass('show').closest('ul').removeClass('highlighting-results');
+                $('.partner-cabinet__tags-list .search-results ul').show();
+                $('.search-results__empty').hide();
+            }
+        });
+        $('.partner-cabinet__tags-list .search-results').each(function () {
+            $(this).find('span').bind('DOMSubtreeModified', function () {
+                if ((inputVal > 0) && (!$(this).find('mark').length)) {
+                    $(this).closest('li').removeClass('show');
+                    $('.partner-cabinet__tags-list .search-results ul').hide();
+                    $('.search-results__empty').show();
+                }
+                else if ((inputVal > 0) && ($(this).find('mark').length)) {
+                    $(this).closest('li').addClass('show').closest('ul').addClass('highlighting-results');
+                    $('.partner-cabinet__tags-list .search-results ul').show();
+                    $('.search-results__empty').hide();
+                }
+                else {
+                    $(this).closest('li').removeClass('show').closest('ul').removeClass('highlighting-results');
+                    $('.partner-cabinet__tags-list .search-results ul').show();
+                    $('.search-results__empty').hide();
+                }
+            });
+        });
+
+        $content.unmark({
+            done: function () {
+                $content.mark(searchVal, {
+                    separateWordSearch: true,
+                    done: function () {
+                        $results = $content.find('mark');
+                        currentIndex = 0;
+                    }
+                });
+            }
+        });
+    });
 });
