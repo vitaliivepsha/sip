@@ -1869,17 +1869,16 @@
   padding: 22px 40px 25px 20px;
   > span {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
     font-family: $title;
     color: $black;
-    + p {
-      margin-top: 10px;
-    }
   }
-  p {
+  & p {
+    margin: 0;
+    margin-top: 15px;
     font-size: 12px;
     line-height: 130%;
   }
