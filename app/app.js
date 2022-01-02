@@ -36,7 +36,8 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/partner-cabinet-student-company-fill-out-forms-B.html');
     require('./assets/templates/layouts/partner-cabinet-student-documents-sent-to-ministry.html');
     require('./assets/templates/layouts/partner-cabinet-student-documents-sent-to-ministry-2.html');
-    require('./assets/templates/layouts/partner-cabinet-student-access-to-SIP.html');
+    require('./assets/templates/layouts/partner-cabinet-student-access-to-SIP-A.html');
+    require('./assets/templates/layouts/partner-cabinet-student-access-to-SIP-B.html');
     require('./assets/templates/layouts/partner-cabinet-student-permission-received-A.html');
     require('./assets/templates/layouts/partner-cabinet-student-permission-received-B.html');
     require('./assets/templates/layouts/partner-cabinet-student-permission-received-C.html');
