@@ -34,9 +34,9 @@ body {
     height: 100vh;
     overflow: hidden;
   }
-  &.menu-opened{
-    .header{
-      &.fixed{
+  &.menu-opened {
+    .header {
+      &.fixed {
         @include bp(xs) {
           margin-top: 20px;
         }
@@ -266,23 +266,23 @@ main {
   }
 }
 
-.input-wrapper{
-  select{
+.input-wrapper {
+  select {
     border: 1px solid transparent;
   }
-  &.error{
+  &.error {
     .input {
       border-color: $pink;
-      +label.error{
+      + label.error {
         font-size: 12px;
         font-weight: 400;
         color: $pink;
         margin-bottom: 0;
       }
     }
-    select{
+    select {
       border-color: $pink;
-      +label.error{
+      + label.error {
         font-size: 12px;
         font-weight: 400;
         color: $pink;
@@ -377,3 +377,4 @@ main {
 @import "partner-cabinet-students";
 @import "partner-cabinet-chats";
 @import "partner-cabinet-news";
+@import "partner-cabinet-contract";

@@ -42,6 +42,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/partner-cabinet-student-permission-received-B.html');
     require('./assets/templates/layouts/partner-cabinet-student-permission-received-C.html');
     require('./assets/templates/layouts/partner-cabinet-student-permission-received-D.html');
+    require('./assets/templates/layouts/partner-cabine-contract.html');
 
 }
 
