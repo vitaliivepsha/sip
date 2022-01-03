@@ -91,6 +91,176 @@
 }
 
 .partner-cabinet__form {
+  &-wrap {
+    margin-bottom: 20px;
+    & span {
+      font-family: $title;
+      text-align: left !important;
+    }
+
+    & .form-check {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 8px 10px;
+      background-color: $bg-gray;
+      border-radius: 5px;
+      &.date {
+        flex-direction: row;
+        align-items: center;
+        & .form-check__wrap {
+          margin-bottom: 0;
+        }
+      }
+
+      & .form-check__wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        & input {
+          display: none;
+        }
+        & input + label {
+          position: relative;
+          display: flex;
+
+          margin-bottom: 0;
+          cursor: pointer;
+        }
+        & input + label::before {
+          content: "";
+          flex-shrink: 0;
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 3px;
+          border: 1px solid rgba($black, 0.5);
+        }
+        & input:hover + label::before {
+          border: 1px solid #5f6cfa;
+        }
+        & input + label::after {
+          content: "";
+          display: block;
+        }
+        & input:checked + label::before {
+          border: 1px solid #5f6cfa;
+        }
+        & svg {
+          display: none;
+          position: absolute;
+          top: 5px;
+          left: 3px;
+        }
+        & input:checked + label svg {
+          display: block;
+        }
+        & label p {
+          margin: 0;
+          margin-top: 2px;
+          margin-left: 10px;
+          font-size: 13px;
+          line-height: 130%;
+          font-weight: 400;
+          color: rgba($text, 0.7);
+        }
+        & input:checked + label p {
+          color: $text;
+        }
+      }
+      & .form-check__date {
+        margin-left: 20px;
+        & .date-choose {
+          width: 148px;
+          position: relative;
+          &.error {
+            &:before {
+              border-color: $pink;
+            }
+            label.error {
+              min-width: max-content;
+              position: absolute;
+              top: 10px;
+              left: 150px;
+              font-size: 12px;
+              font-weight: 400;
+              color: $pink;
+              margin-bottom: 0;
+            }
+          }
+          &:before {
+            position: absolute;
+            content: "";
+            width: 90px;
+            height: 40px;
+            left: 0;
+            top: 0;
+            background: #fff;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            pointer-events: none;
+          }
+          svg {
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 14px;
+          }
+          .placeholder {
+            pointer-events: none;
+            width: 88px;
+            padding: 5px 14px;
+            position: absolute;
+            z-index: 2;
+            left: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            color: rgba($text, 0.3);
+            font-size: 12px;
+            line-height: 130%;
+          }
+          input {
+            position: relative;
+            z-index: 1;
+            padding-left: 14px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            &::-webkit-datetime-edit-day-field:focus,
+            &::-webkit-datetime-edit-month-field:focus,
+            &::-webkit-datetime-edit-year-field:focus {
+              background: transparent;
+              color: $black;
+            }
+            &::-webkit-calendar-picker-indicator {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              opacity: 0;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+            }
+            &.valid {
+              + label {
+                + .placeholder {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .form-section {
     margin-bottom: 30px;
   }
