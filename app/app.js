@@ -20,9 +20,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/partner-cabinet-students-add.html');
     require('./assets/templates/layouts/partner-cabinet-students-contol-of-the-documents.html');
     require('./assets/templates/layouts/partner-cabinet-chats.html');
-
-    require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents-A.html');
-
+    require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents.html');
     require('./assets/templates/layouts/partner-cabinet-news.html');
     require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-partner.html');
     require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-SIP.html');
@@ -554,6 +552,7 @@ $(function () {
         e.stopPropagation();
     });
 
+
     // select
 
     $('.dropdown-select').SumoSelect({
@@ -673,6 +672,7 @@ $(function () {
             .closest('.tabs-wrapper').find('.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
+
     /* partner cabinet news */
 
     // tags
@@ -729,4 +729,11 @@ $(function () {
             }
         });
     });
+
+    // spoiler partner-cabinet-students-vacancy-chosen-add-documents
+    $(".spoiler-title").click(function (event) {
+        $(this).toggleClass("active").parent().next().find($(".spoiler-content")).slideToggle(300);
+    });
 });
+
+
