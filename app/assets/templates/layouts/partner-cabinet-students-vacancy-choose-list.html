@@ -117,6 +117,9 @@
               <div class="partner-cabinet__vacancy-step__body vacancy-choose__block">
                 <span class="vacancy-choose__block__title">Спасибо за заполнение анкеты</span>
                 <span class="vacancy-choose__block__descr">Студенту подходят следующие вакансии:</span>
+
+
+
                 <div class="vacancy-choose__block-filters">
                   <div class="vacancy-choose__block-filter-btn">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,25 +129,67 @@
                     </svg>
                     Фильтр
                   </div>
-                  <div class="vacancy-choose__block-sort__wrapper">
+                  <div class="vacancy-choose__block-sort__wrapper time">
+                    <span>Начало работ</span>
+                    <div class="vacancy-choose__block-sort">
+                      <select>
+                        <option>не выбран</option>
+                        <option>январь</option>
+                        <option>февраль</option>
+                        <option>март</option>
+                        <option>апрель</option>
+                        <option>май</option>
+                        <option>июнь</option>
+                        <option>июль</option>
+                        <option>август</option>
+                        <option>сентябрь</option>
+                        <option>октябрь</option>
+                        <option>ноябрь</option>
+                        <option>декабрь</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="vacancy-choose__block-sort__wrapper time">
+                    <span>Окончание работ</span>
+                    <div class="vacancy-choose__block-sort">
+                      <select>
+                        <option>не выбран</option>
+                        <option>январь</option>
+                        <option>февраль</option>
+                        <option>март</option>
+                        <option>апрель</option>
+                        <option>май</option>
+                        <option>июнь</option>
+                        <option>июль</option>
+                        <option>август</option>
+                        <option>сентябрь</option>
+                        <option>октябрь</option>
+                        <option>ноябрь</option>
+                        <option>декабрь</option>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="vacancy-choose__block-sort__wrapper sort">
                     <span>Сортировка</span>
                     <div class="vacancy-choose__block-sort">
                       <select>
-                        <option selected>От новых к старым</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
+                        <option>От новых к старым (по дате размещения вакансии)</option>
+                        <option>От старых к новым (по дате размещения вакансии)</option>
+                        <option>По заработной плате от большего к меньшему</option>
+                        <option>По рейтингу вакансии от большего к меньшему</option>
+                        <option>По рейтингу вакансии от меньшего к большему</option>
+                        <option>По стоимости вакансии от большего к меньшему</option>
+                        <option>По стоимости вакансии от меньшего к большему</option>
+                        <option>По заработной плате от меньшего к большему</option>
                       </select>
-                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z"
-                          fill="#25222C"></path>
-                      </svg>
+
                     </div>
                   </div>
                 </div>
+
                 <div class="vacancy-choose__block-items">
+
                   <div class="vacancy-choose__block-item">
                     <div class="vacancy-choose__block-item__pic">
                       <span class="vacancy-choose__block-item__label">€ 55,23</span>
@@ -189,7 +234,56 @@
                           заявку</span></a>
                     </div>
                   </div>
+
+
+                  <div class="vacancy-choose__block-item">
+                    <div class="vacancy-choose__block-item__pic">
+                      <span class="vacancy-choose__block-item__label">€ 22,20</span>
+                      <picture>
+                        <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
+                          class="lazy-web" type="image/webp">
+                        <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
+                          class="lazy-web" type="image/jpg">
+                        <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
+                          alt="">
+                      </picture>
+                    </div>
+                    <div class="vacancy-choose__block-item__info">
+                      Eget adipiscing iaculis eget ipsum, purus massa velit.
+                    </div>
+                    <div class="vacancy-choose__block-item__buttons">
+                      <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
+                          вакансию</span></a>
+                      <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
+                          заявку</span></a>
+                    </div>
+                  </div>
                 </div>
+                <ul class="pagination ">
+                  <li class="prev disabled">
+                    <span>
+                      &lt;&lt;
+                    </span>
+                  </li>
+                  <li class="current">
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">2</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">3</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">...</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">8</a>
+                  </li>
+                  <li class="next">
+                    <a href="javascript:void(0)">>></a>
+                  </li>
+                </ul>
               </div>
             </div>
 

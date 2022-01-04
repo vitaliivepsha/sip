@@ -981,6 +981,9 @@
     }
     .partner-cabinet__vacancy-step__body {
       display: block;
+      & .pagination {
+        justify-content: flex-end;
+      }
     }
   }
 }
@@ -1097,11 +1100,17 @@
 .vacancy-choose__block-filters {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+
+  & .partner-cabinet__sort-block {
+    display: block;
+  }
 }
 
 .vacancy-choose__block-filter-btn {
   display: flex;
   align-items: center;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 130%;
   color: #8b8a8e;
@@ -1121,46 +1130,109 @@
 }
 
 .vacancy-choose__block-sort__wrapper {
-  display: flex;
-  align-items: center;
   font-size: 12px;
   line-height: 130%;
   color: #8b8a8e;
-  margin-bottom: 15px;
+  & span {
+    display: block;
+  }
 }
 
+// <<<<<<<<<<<<<sort<<<<<<<<<<<<
+
 .vacancy-choose__block-sort {
-  position: relative;
-  select {
-    margin-left: 7px;
-    font-size: 12px;
-    line-height: 130%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 0 15px 0 0;
+  & .SumoSelect {
+    max-width: 200px;
+    cursor: pointer;
+  }
+  & .SumoSelect > .CaptionCont {
     border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  & .SumoSelect.open > .CaptionCont,
+  .SumoSelect:focus > .CaptionCont,
+  .SumoSelect:hover > .CaptionCont {
+    box-shadow: none;
+  }
+
+  & .SumoSelect:hover > .CaptionCont {
+    box-shadow: none;
+  }
+  & .SumoSelect > .CaptionCont > span {
+    color: $accent;
+    cursor: pointer;
+  }
+  & & .SumoSelect > .CaptionCont > label {
+    cursor: pointer;
+  }
+  & .SumoSelect > .CaptionCont > label > i {
+    background: none;
+    background-image: url("../images/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center top 7px;
+    cursor: pointer;
+  }
+  & .SumoSelect.open > .CaptionCont > label > i {
+    transform: rotate(180deg);
+    background-position: center 0;
+  }
+  & .SumoSelect > .optWrapper {
+    top: 22px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+  }
+  & .SumoSelect > .optWrapper > .options {
+    max-height: 500px;
+    padding: 12px 0;
+  }
+  & .SumoSelect > .optWrapper > .options li.opt {
+    padding: 0;
+    border-bottom: none;
+  }
+  & .SumoSelect > .optWrapper > .options li.opt:hover {
+    background-color: #f4f4f4;
+  }
+  & .SumoSelect > .optWrapper > .options li label {
+    margin-bottom: 0;
+    padding: 6px 20px;
+    font-size: 12px;
+    line-height: 110%;
+    font-weight: 400;
+    white-space: pre-wrap;
     color: $text;
   }
-  svg {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
+}
+.time {
+  max-width: 135px;
+  .SumoSelect {
+    max-width: 135px;
+  }
+  .CaptionCont.SelectBox {
+    width: fit-content;
   }
 }
+.sort {
+  .SumoSelect > .optWrapper {
+    left: -100px;
+    width: 300px;
+  }
+}
+
+// <<<<<<<<<<<<<sort<<<<<<<<<<<<
 
 .vacancy-choose__block-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 14px;
 }
 
 .vacancy-choose__block-item {
   width: calc(50% - 5px);
   height: inherit;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background: $bg-gray;
   border-radius: 5px;
   padding: 15px 15px 25px;
@@ -1232,6 +1304,7 @@
   color: $black;
   padding: 5px 10px;
   text-align: center;
+  text-decoration: none !important;
   &:before {
     content: "";
     position: absolute;

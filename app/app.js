@@ -556,13 +556,24 @@ $(function () {
     // select
 
     $('.dropdown-select').SumoSelect({
-        //okCancelInMulti: true,
+        // okCancelInMulti: true,
         search: true,
         placeholder: 'Поиск',
         csvDispCount: 3,
         captionFormat: '{0} выбрано',
         forceCustomRendering: true,
         triggerChangeCombined: false
+    });
+
+
+    $('.vacancy-choose__block-sort select').SumoSelect({
+        okCancelInMulti: true,
+        // search: true,
+        // placeholder: 'Поиск',
+        // csvDispCount: 3,
+        captionFormat: false,
+        forceCustomRendering: true,
+        // triggerChangeCombined: false
     });
 
     // date placeholder
