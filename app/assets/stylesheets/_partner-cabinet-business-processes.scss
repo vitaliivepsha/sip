@@ -1,0 +1,69 @@
+.partner-cabinet__business-processes__title{
+  display: block;
+  margin-bottom: 26px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: $black;
+}
+
+.partner-cabinet__business-processes__list{
+  margin-bottom: 90px;
+}
+
+.partner-cabinet__business-processes__row{
+  min-height: 40px;
+  display: flex;
+  margin-bottom: 10px;
+  > div {
+    height: inherit;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.partner-cabinet__business-processes__name{
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  color: $black;
+  width: 650px;
+}
+
+.partner-cabinet__business-processes__checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $black;
+    border-radius: 2px;
+    border: $black;
+  }
+}
+
+.partner-cabinet__business-processes__counter{
+  width: 360px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  border: $black;
+}

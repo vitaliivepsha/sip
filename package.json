@@ -103,6 +103,7 @@
   "author": "Mike Chernobrov <m.chernobrov@rambler-co.ru> (http://rambler-co.ru)",
   "license": "MIT",
   "dependencies": {
+    "chart.js": "^2.9.4",
     "jquery-asRange": "^0.3.4",
     "jquery-validation": "^1.19.3",
     "jquery.nicescroll": "^3.7.6",
