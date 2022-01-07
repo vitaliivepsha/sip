@@ -44,6 +44,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/partner-cabinet-student-permission-received-D.html');
   require('./assets/templates/layouts/partner-cabine-contract.html');
   require('./assets/templates/layouts/partner-cabinet-bussiness-processes.html');
+  require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents-A.html');
 }
 
 // Depends
@@ -749,6 +750,9 @@ $(function() {
     // spoiler partner-cabinet-students-vacancy-chosen-add-documents
   $('.spoiler-title').click(function() {
     $(this).toggleClass('active').parent().next().find($('.spoiler-content')).slideToggle(300);
+  });
+  $('.partner-cabinet__vacancy-steps-spoiler').click(function() {
+    $(this).toggleClass('active').next().slideToggle(300);
   });
 
   // pie chart

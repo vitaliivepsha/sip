@@ -1010,6 +1010,7 @@
   line-height: 130%;
   color: rgba($black, 0.5);
   width: 650px;
+  min-width: 650px;
   span {
     display: none;
     align-items: center;
@@ -2436,5 +2437,35 @@
       color: #000;
       text-decoration: underline;
     }
+  }
+}
+
+.partner-cabinet__vacancy-steps-spoiler{
+  display: flex;
+  cursor: pointer;
+  width: 650px;
+  min-height: 82px;
+  background: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: $pink;
+  border-radius: 5px;
+  padding: 30px 100px 32px 32px;
+  position: relative;
+  margin-bottom: 10px;
+  &.next{
+    margin-top: 160px;
+  }
+  &.active{
+    svg{
+      transform: scale(1, 1);
+    }
+  }
+  svg{
+    position: absolute;
+    top: 34px;
+    right: 48px;
+    transform: scale(1, -1)
   }
 }
