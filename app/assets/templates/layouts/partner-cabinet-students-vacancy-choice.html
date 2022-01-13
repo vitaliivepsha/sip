@@ -286,7 +286,7 @@ ${require('../parts/header-logged-in.html')}
                                 </svg>
                                 Назад к списку вакансий
                             </a>
-                            <span class="btn partner-cabinet__btn">Подать заявку</span>
+                            <span class="btn partner-cabinet__btn popup-btn" data-mfp-src="#vacancy-order">Подать заявку</span>
                         </div>
                     </div>
                 </div>
@@ -297,7 +297,19 @@ ${require('../parts/header-logged-in.html')}
 ${require('../parts/footer.html')}
 
 <div class="overlay"></div>
-<div class="mfp-hide"></div>
+<div class="mfp-hide">
+    <div class="popup vacancy-order__popup" id="vacancy-order">
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        <div class="vacancy-order__popup-head">Внимание</div>
+        <div class="vacancy-order__popup-body">
+            <p>Вы выбрали вакансию, которая требует утверждения резюме студента работодателем. Пжалуйста, заполните информацию об опыте работы студента</p>
+            <div class="vacancy-order__popup-footer">
+                <div class="vacancy-order__popup-cancel mfp-close">Отмена</div>
+                <a href="" class="vacancy-order__popup-submit">Перейти к заполнению информации</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
