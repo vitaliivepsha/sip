@@ -183,3 +183,32 @@
     color: $black;
   }
 }
+
+.notification-popup{
+  position: relative;
+  margin: 0 auto;
+  width: 540px;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+  border-radius: 5px;
+  padding: 50px 30px 40px;
+  .mfp-close {
+    margin-top: 0;
+    margin-right: 0;
+    color: $text;
+    opacity: 1;
+  }
+  .btn{
+    width: 228px;
+    margin: 0 auto;
+  }
+}
+
+.notification-popup__title{
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}

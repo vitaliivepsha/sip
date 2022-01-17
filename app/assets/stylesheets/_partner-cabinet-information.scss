@@ -20,18 +20,30 @@
       height: 100%;
       border-right: 1px solid #fff;
       &:last-child {
-        border-right-color: transparent;
+        border-right: none;
       }
       &:hover {
         background-color: rgba(255, 255, 255, 0.4);
         &:last-child {
-          border-right-color: rgba(255, 255, 255, 0.4);
+          border-right: none;
+          a {
+            &:after{
+              position: absolute;
+              content: '';
+              height: 100%;
+              width: 1px;
+              left: 100%;
+              top: 0;
+              background-color: rgba(255, 255, 255, 0.4);
+            }
+          }
         }
       }
       &.current {
         background-color: #fff;
       }
       a {
+        position: relative;
         display: flex;
         height: 100%;
         align-items: center;
@@ -68,6 +80,7 @@
     line-height: 130%;
     text-decoration: underline;
     color: $accent;
+    cursor: pointer;
     svg {
       margin-right: 9px;
     }
@@ -280,9 +293,15 @@
       color: $black;
       margin-bottom: 0;
       padding-right: 10px;
+      span{
+        color: #8B8A8E;
+      }
     }
     .input-wrapper {
       width: calc(100% - 190px);
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 130%;
     }
     .name-wrapper {
       display: flex;

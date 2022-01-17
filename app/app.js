@@ -45,6 +45,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/partner-cabine-contract.html');
   require('./assets/templates/layouts/partner-cabinet-bussiness-processes.html');
   require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents-A.html');
+  require('./assets/templates/layouts/student-cabinet-information.html');
 }
 
 // Depends
