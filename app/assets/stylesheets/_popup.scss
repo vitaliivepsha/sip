@@ -289,3 +289,41 @@
     color: $black;
   }
 }
+
+.new-password__body{
+  padding: 40px 90px 90px;
+}
+
+.new-password__form{
+  width: 100%;
+  .notification-popup__btn{
+    width: 215px;
+    margin: 20px 0 0;
+  }
+  .prompt{
+    > p{
+      text-align: left;
+    }
+  }
+  .input-wrapper{
+    &.error{
+      .input{
+        +label{
+          &.error{
+            position: absolute;
+            height: 33px;
+            width: calc(100% - 2px);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            left: 1px;
+            top: 1px;
+            padding-left: 14px;
+            background-color: #fff;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}

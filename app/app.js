@@ -228,6 +228,27 @@ $(function() {
     }
   });
 
+  setTimeout(function() {
+    if ($('#new-password').length) {
+      $.magnificPopup.open({
+        items: {
+          src: '#new-password'
+        },
+        type: 'inline'
+      });
+    }
+  }, 10);
+
+  $('.new-password__form .input').on('input', function() {
+    if ($(this).val().length) {
+      $(this).next('label.error').css('opacity', 0);
+    }
+  });
+
+  $('.new-password__form').on('submit', function() {
+    $(this).find('label.error').css('opacity', 1);
+  });
+
     /* partner cabinet information */
 
     // add contact
@@ -431,6 +452,13 @@ $(function() {
         pants_size: {
           required: true,
         },
+        new_password: {
+          required: true,
+        },
+        re_password: {
+          required: true,
+          equalTo: '#new_password'
+        }
       },
       messages: {
         name_ua: {
@@ -528,6 +556,13 @@ $(function() {
         },
         pants_size: {
           required: 'Заполните эту информацию',
+        },
+        new_password: {
+          required: 'Введите новый пароль',
+        },
+        re_password: {
+          required: 'Подтвердите новый пароль',
+          equalTo: 'Введенные пароли не совпадают, попробуйте ещё раз'
         }
       }
     });

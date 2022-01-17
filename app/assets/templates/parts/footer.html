@@ -71,6 +71,23 @@
       <div class="notification-popup__btn mfp-close">Ок</div>
     </div>
   </div>
+    <div class="popup notification-popup form-popup" id="new-password">
+        <div class="notification-popup__head">Восстановление пароля</div>
+        <div class="notification-popup__body new-password__body">
+            <form class="validate-form new-password__form">
+                <div class="input-wrapper prompt">
+                    <input class="input" type="password" name="new_password" placeholder="Пароль" id="new_password">
+                    <span>?</span>
+                    <p>Пароль должен содержать минимум 7 символов, 1 заглавную букву, 1 маленькую букву, 1 цифру.</p>
+                </div>
+                <div class="input-wrapper">
+                    <input class="input" type="password" name="re_password" placeholder="Подтверждение пароля">
+                </div>
+                <button type="submit" class="notification-popup__btn">Сохранить пароль</button>
+            </form>
+        </div>
+
+    </div>
 </div>
 
 <!-- попап Вход -->
