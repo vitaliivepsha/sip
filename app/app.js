@@ -216,6 +216,18 @@ $(function() {
     },
   });
 
+  $('#employer').change(function() {
+    if ($(this).is(':checked')) {
+      $('.form-popup__register-as__yellow').show();
+    }
+  });
+
+  $('#partner').change(function() {
+    if ($(this).is(':checked')) {
+      $('.form-popup__register-as__yellow').hide();
+    }
+  });
+
     /* partner cabinet information */
 
     // add contact

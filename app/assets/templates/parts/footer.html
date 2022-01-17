@@ -63,6 +63,14 @@
   </div>
 </footer>
 <div class="mfp-hide">
+  <div class="popup notification-popup" id="forgot-password">
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    <div class="notification-popup__head">Восстановление пароля</div>
+    <div class="notification-popup__body">
+      <p>На Ваш электронный адрес, указанный при регистрации, отправлена ссылка для восстановления пароля</p>
+      <div class="notification-popup__btn mfp-close">Ок</div>
+    </div>
+  </div>
 </div>
 
 <!-- попап Вход -->
@@ -85,7 +93,7 @@
       </div>
       <div class="form-popup__text">
         <span>Нет аккаунта? <a href="javascript:void(0)">Зарегистрируйтесь</a></span>
-        <span><a href="javascript:void(0)">Забыли пароль?</a></span>
+        <span><a href="javascript:void(0)" class="popup-btn" data-mfp-src="#forgot-password">Забыли пароль?</a></span>
       </div>
 
       <button type="submit" class="form-popup__btn">Войти</button>
@@ -114,7 +122,19 @@
             <label for="employer">Работодатель</label>
           </div>
         </div>
-
+      </div>
+      <div class="form-popup__register-as form-popup__register-as__yellow">
+        <label>Вид работодателя:</label>
+        <div class="form-popup__register-as-wrap">
+          <div class="form-popup__register-as-inner form-popup__register-as-inner__yellow">
+            <input id="agency" type="radio" name="reg-type" checked>
+            <label for="agency">Агентство</label>
+          </div>
+          <div class="form-popup__register-as-inner form-popup__register-as-inner__yellow">
+            <input id="direct-employer" type="radio" name="reg-type">
+            <label for="direct-employer">Прямой работодатель</label>
+          </div>
+        </div>
       </div>
       <div class="input-wrapper">
         <input class="input" type="text" name="title" data-title="Name" placeholder="Название"

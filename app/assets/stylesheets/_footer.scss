@@ -308,6 +308,10 @@
     padding: 10px;
     border-radius: 5px;
     border: 1px solid $accent;
+    &__yellow{
+      display: none;
+      border-color: #FFD53D;
+    }
     @media (max-width: 575px) {
       margin-bottom: 10px;
     }
@@ -365,6 +369,24 @@
             height: 6px;
             border-radius: 50%;
             background-color: $accent;
+          }
+        }
+      }
+      &__yellow{
+        label {
+          &::before {
+            border-color: #FFD53D;
+          }
+        }
+        input:checked {
+          & + label {
+            &::before {
+              border-color: #FFD53D;
+            }
+            &::after {
+              content: "";
+              background-color: #FFD53D;
+            }
           }
         }
       }
