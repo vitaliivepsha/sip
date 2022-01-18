@@ -1,0 +1,342 @@
+.student-stages__main{
+  width: 730px;
+  margin: 0 auto;
+}
+
+.student-stages__step {
+  margin-bottom: 10px;
+  &.checked {
+    .student-stages__step-title {
+      color: $accent;
+    }
+    .student-stages__step-checkbox {
+      > div {
+        border-color: $accent;
+        svg {
+          display: block;
+        }
+      }
+    }
+  }
+  &.current {
+    .student-stages__step-title {
+      span {
+        display: flex;
+      }
+    }
+    .student-stages__step-body {
+      display: block;
+      & .pagination {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.student-stages__step-head{
+  min-height: 40px;
+  display: flex;
+  > div {
+    height: inherit;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.student-stages__step-title {
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  color: rgba($black, 0.5);
+  width: 650px;
+  min-width: 650px;
+  span {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border: 1px solid $accent;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+}
+
+.student-stages__step-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid rgba($black, 0.5);
+    svg {
+      display: none;
+    }
+  }
+}
+
+.student-stages__step-body {
+  display: none;
+  width: 650px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.student-stages__welcome{
+  padding: 23px 30px 40px 44px;
+}
+
+.student-stages__welcome-title{
+  font-family: $title;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  display: block;
+  margin-bottom: 22px;
+  color: $black;
+}
+
+.student-stages__welcome-main{
+  display: flex;
+  margin-bottom: 30px;
+  picture{
+    display: flex;
+    width: 76px;
+    min-width: 76px;
+    height: 76px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 22px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  div{
+    font-size: 12px;
+    line-height: 130%;
+    p{
+      margin-bottom: 8px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.student-stages__welcome-ok{
+  width: 282px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  text-align: center;
+  border: 1px solid $accent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 19px;
+  color: $black;
+}
+
+.student-stages__approve{
+  padding: 28px 32px;
+}
+
+.student-stages__approve-pic{
+  display: flex;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 22px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.student-stages__approve-state1{
+  display: flex;
+  >div{
+    span{
+      font-family: $title;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 130%;
+      display: block;
+      color: $black;
+      margin-bottom: 5px;
+    }
+    small{
+      font-size: 12px;
+      line-height: 130%;
+      display: block;
+    }
+  }
+}
+
+.student-stages__approve-state2{
+  display: flex;
+  >div{
+    span{
+      font-family: $title;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 130%;
+      display: block;
+      color: $black;
+      margin-bottom: 12px;
+    }
+    input{
+      width: 108px;
+      height: 40px;
+      border-radius: 5px;
+      font-size: 12px;
+      line-height: 130%;
+      padding: 0 16px;
+      color: $black;
+      border: 1px solid rgba($text, 0.3);
+      &:disabled{
+        background-color: #fff;
+        border-color: rgba($text, 0.3);
+      }
+    }
+  }
+}
+
+.student-stages__approve-state2__footer{
+  display: flex;
+  margin-top: 20px;
+}
+
+.student-stages__approve-state2__btn-submit{
+  width: 174px;
+  margin-right: 20px;
+}
+
+.student-stages__approve-state2__btn-cancel{
+  width: 296px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(95, 108, 250, 0.3);
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 19px;
+  color: $black;
+  transition: linear .2s;
+  &:hover{
+    background-color: rgba(95, 108, 250, 0.3);
+  }
+}
+
+.student-stages__approve-state3{
+  display: flex;
+}
+.student-stages__approve-state3__body{
+  >span{
+    font-family: $title;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    display: block;
+    color: $black;
+    margin-bottom: 8px;
+  }
+  >div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    span{
+      margin-right: 5px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 130%;
+      font-family: $title;
+      color: $black;
+    }
+  }
+  >p{
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 8px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    a{
+      color: $accent;
+      text-decoration: none;
+      &:hover{
+        color: $accent;
+        text-decoration: unset;
+      }
+    }
+  }
+  input{
+    width: 108px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 130%;
+    padding: 0 16px;
+    color: $black;
+    border: 1px solid rgba($text, 0.3);
+    margin-right: 15px;
+    &:disabled{
+      background-color: #fff;
+      border-color: rgba($text, 0.3);
+    }
+  }
+}
+
+.student-stages__approve-state3__footer{
+  display: flex;
+  margin-top: 25px;
+  .input-file{
+    width: 292px;
+    margin-right: 12px;
+    height: 50px;
+  }
+  .btn-cancel{
+    width: 264px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(95, 108, 250, 0.3);
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 19px;
+    color: $black;
+    transition: linear .2s;
+    &:hover{
+      background-color: rgba(95, 108, 250, 0.3);
+    }
+  }
+}

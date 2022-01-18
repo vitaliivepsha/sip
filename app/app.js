@@ -46,6 +46,10 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/partner-cabinet-bussiness-processes.html');
   require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents-A.html');
   require('./assets/templates/layouts/student-cabinet-information.html');
+  require('./assets/templates/layouts/student-stages.html');
+  require('./assets/templates/layouts/student-stages-forming-a-group-0.html');
+  require('./assets/templates/layouts/student-stages-forming-a-group-1.html');
+  require('./assets/templates/layouts/student-stages-forming-a-group-2.html');
 }
 
 // Depends
@@ -228,7 +232,7 @@ $(function() {
     }
   });
 
-  setTimeout(function() {
+  /*setTimeout(function() {
     if ($('#new-password').length) {
       $.magnificPopup.open({
         items: {
@@ -237,7 +241,7 @@ $(function() {
         type: 'inline'
       });
     }
-  }, 10);
+  }, 10);*/
 
   $('.new-password__form .input').on('input', function() {
     if ($(this).val().length) {
