@@ -1,6 +1,6 @@
 .partner-cabinet__business-processes__title{
   display: block;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
   font-weight: 600;
   font-size: 28px;
   line-height: 130%;
@@ -9,6 +9,22 @@
 
 .partner-cabinet__business-processes__list{
   margin-bottom: 90px;
+}
+
+.partner-cabinet__business-processes__head{
+  display: flex;
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 150%;
+  > div {
+    margin-right: 15px;
+    &:first-child {
+      width: 735px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .partner-cabinet__business-processes__row{
@@ -34,7 +50,7 @@
   font-size: 13px;
   line-height: 130%;
   color: $black;
-  width: 650px;
+  width: 735px;
 }
 
 .partner-cabinet__business-processes__checkbox{
