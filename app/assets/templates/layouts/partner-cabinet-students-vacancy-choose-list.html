@@ -115,191 +115,398 @@
                 <div class="partner-cabinet__vacancy-step__time"></div>
               </div>
               <div class="partner-cabinet__vacancy-step__body vacancy-choose__block">
-                <span class="vacancy-choose__block__title">Спасибо за заполнение анкеты</span>
-                <span class="vacancy-choose__block__descr">Студенту подходят следующие вакансии:</span>
+                <div class="vacancy-choose__block-main">
+                  <span class="vacancy-choose__block__title">Спасибо за заполнение анкеты</span>
+                  <span class="vacancy-choose__block__descr">Студенту подходят следующие вакансии:</span>
 
-
-
-                <div class="vacancy-choose__block-filters">
-                  <div class="vacancy-choose__block-filter-btn__wrapper dropdown-wrapper">
-                    <div class="vacancy-choose__block-filter-btn dropdown">
-                      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7.58333 13H5.41667C5.12935 13 4.8538 12.8859 4.65063 12.6827C4.44747 12.4795 4.33333 12.204 4.33333 11.9167V7.80542L0.319583 3.79167C0.11614 3.58944 0.00120943 3.31477 0 3.02792V1.08333C0 0.796016 0.114137 0.520465 0.317301 0.317301C0.520465 0.114137 0.796016 0 1.08333 0H11.9167C12.204 0 12.4795 0.114137 12.6827 0.317301C12.8859 0.520465 13 0.796016 13 1.08333V3.02792C12.9988 3.31477 12.8839 3.58944 12.6804 3.79167L8.66667 7.80542V11.9167C8.66667 12.204 8.55253 12.4795 8.34937 12.6827C8.1462 12.8859 7.87065 13 7.58333 13ZM1.08333 1.08333V3.02792L5.41667 7.36125V11.9167H7.58333V7.36125L11.9167 3.02792V1.08333H1.08333Z"
-                          fill="#8B8A8E" />
-                      </svg>
-                      Фильтр
-                    </div>
-                    <div class="vacancy-choose__block-filter__list dropdown-list">
-                      <span>
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.49518 2.91602L4.99935 4.41185L3.50352 2.91602L2.91602 3.50352L4.41185 4.99935L2.91602 6.49518L3.50352 7.08268L4.99935 5.58685L6.49518 7.08268L7.08268 6.49518L5.58685 4.99935L7.08268 3.50352L6.49518 2.91602Z" fill="#474747"/>
+                  <div class="vacancy-choose__block-filters">
+                    <div class="vacancy-choose__block-filter-btn__wrapper dropdown-wrapper">
+                      <div class="vacancy-choose__block-filter-btn dropdown">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.58333 13H5.41667C5.12935 13 4.8538 12.8859 4.65063 12.6827C4.44747 12.4795 4.33333 12.204 4.33333 11.9167V7.80542L0.319583 3.79167C0.11614 3.58944 0.00120943 3.31477 0 3.02792V1.08333C0 0.796016 0.114137 0.520465 0.317301 0.317301C0.520465 0.114137 0.796016 0 1.08333 0H11.9167C12.204 0 12.4795 0.114137 12.6827 0.317301C12.8859 0.520465 13 0.796016 13 1.08333V3.02792C12.9988 3.31477 12.8839 3.58944 12.6804 3.79167L8.66667 7.80542V11.9167C8.66667 12.204 8.55253 12.4795 8.34937 12.6827C8.1462 12.8859 7.87065 13 7.58333 13ZM1.08333 1.08333V3.02792L5.41667 7.36125V11.9167H7.58333V7.36125L11.9167 3.02792V1.08333H1.08333Z"
+                            fill="#8B8A8E" />
                         </svg>
-                        Очистить
+                        Фильтр
+                      </div>
+                      <div class="vacancy-choose__block-filter__list dropdown-list">
+                        <span>
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.49518 2.91602L4.99935 4.41185L3.50352 2.91602L2.91602 3.50352L4.41185 4.99935L2.91602 6.49518L3.50352 7.08268L4.99935 5.58685L6.49518 7.08268L7.08268 6.49518L5.58685 4.99935L7.08268 3.50352L6.49518 2.91602Z" fill="#474747"/>
+                          </svg>
+                          Очистить
+                        </span>
+                        <ul>
+                          <li>Горящие</li>
+                          <li>Топ</li>
+                          <li>Практика</li>
+                          <li>Работа на каникулах</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="vacancy-choose__block-sort__wrapper start">
+                      <div class="vacancy-choose__block-sort">
+                        <select>
+                          <option selected disabled>Начало работ</option>
+                          <option>не выбран</option>
+                          <option>январь</option>
+                          <option>февраль</option>
+                          <option>март</option>
+                          <option>апрель</option>
+                          <option>май</option>
+                          <option>июнь</option>
+                          <option>июль</option>
+                          <option>август</option>
+                          <option>сентябрь</option>
+                          <option>октябрь</option>
+                          <option>ноябрь</option>
+                          <option>декабрь</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="vacancy-choose__block-sort__wrapper end">
+                      <div class="vacancy-choose__block-sort">
+                        <select>
+                          <option selected disabled>Окончание работ</option>
+                          <option>не выбран</option>
+                          <option>январь</option>
+                          <option>февраль</option>
+                          <option>март</option>
+                          <option>апрель</option>
+                          <option>май</option>
+                          <option>июнь</option>
+                          <option>июль</option>
+                          <option>август</option>
+                          <option>сентябрь</option>
+                          <option>октябрь</option>
+                          <option>ноябрь</option>
+                          <option>декабрь</option>
+                        </select>
+
+                      </div>
+                    </div>
+                    <div class="vacancy-choose__block-sort__wrapper sort">
+                      <span>Сортировка</span>
+                      <div class="vacancy-choose__block-sort">
+                        <select>
+                          <option selected>От новых к старым (по дате размещения вакансии)</option>
+                          <option>От старых к новым (по дате размещения вакансии)</option>
+                          <option>По заработной плате от большего к меньшему</option>
+                          <option>По рейтингу вакансии от большего к меньшему</option>
+                          <option>По рейтингу вакансии от меньшего к большему</option>
+                          <option>По стоимости вакансии от большего к меньшему</option>
+                          <option>По стоимости вакансии от меньшего к большему</option>
+                          <option>По заработной плате от меньшего к большему</option>
+                        </select>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="vacancy-choose__block-items">
+
+                    <div class="vacancy-choose__block-item">
+                      <div class="vacancy-choose__block-item__pic">
+                        <span class="vacancy-choose__block-item__label">€ 55,23</span>
+                        <picture>
+                          <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
+                            class="lazy-web" type="image/webp">
+                          <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
+                            class="lazy-web" type="image/jpg">
+                          <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
+                            alt="">
+                        </picture>
+                      </div>
+                      <div class="vacancy-choose__block-item__info">
+                        Eget adipiscing iaculis eget ipsum, purus massa velit.
+                      </div>
+                      <div class="vacancy-choose__block-item__buttons">
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
+                            вакансию</span></a>
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
+                            заявку</span></a>
+                      </div>
+                    </div>
+                    <div class="vacancy-choose__block-item">
+                      <div class="vacancy-choose__block-item__pic">
+                        <span class="vacancy-choose__block-item__label">€ 22,20</span>
+                        <picture>
+                          <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
+                            class="lazy-web" type="image/webp">
+                          <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
+                            class="lazy-web" type="image/jpg">
+                          <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
+                            alt="">
+                        </picture>
+                      </div>
+                      <div class="vacancy-choose__block-item__info">
+                        Eget adipiscing iaculis eget ipsum, purus massa velit.
+                      </div>
+                      <div class="vacancy-choose__block-item__buttons">
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
+                            вакансию</span></a>
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
+                            заявку</span></a>
+                      </div>
+                    </div>
+                    <div class="vacancy-choose__block-item">
+                      <div class="vacancy-choose__block-item__pic">
+                        <span class="vacancy-choose__block-item__label">€ 22,20</span>
+                        <picture>
+                          <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
+                            class="lazy-web" type="image/webp">
+                          <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
+                            class="lazy-web" type="image/jpg">
+                          <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
+                            alt="">
+                        </picture>
+                      </div>
+                      <div class="vacancy-choose__block-item__info">
+                        Eget adipiscing iaculis eget ipsum, purus massa velit.
+                      </div>
+                      <div class="vacancy-choose__block-item__buttons">
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
+                            вакансию</span></a>
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
+                            заявку</span></a>
+                      </div>
+                    </div>
+                    <div class="vacancy-choose__block-item does-not-match">
+                      <div class="vacancy-choose__block-item__pic">
+                        <span class="vacancy-choose__block-item__label">€ 22,20</span>
+                        <picture>
+                          <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
+                            class="lazy-web" type="image/webp">
+                          <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
+                            class="lazy-web" type="image/jpg">
+                          <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
+                            alt="">
+                        </picture>
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6.91041 38.7297C-1.87663 29.9427 -1.87663 15.6969 6.91041 6.9099C15.6974 -1.87714 29.9432 -1.87714 38.7302 6.9099C47.5173 15.6969 47.5173 29.9427 38.7302 38.7297C29.9432 47.5167 15.6974 47.5167 6.91041 38.7297ZM36.1337 25.0695C36.3837 23.5801 36.3837 22.0595 36.1337 20.5701H9.5069C9.25691 22.0595 9.25691 23.5801 9.5069 25.0695H36.1337Z" fill="#25222C"/>
+                        </svg>
+                        <div class="vacancy-choose__block-item__tooltip">Не соответствует требование "название поля несоответствия"</div>
+                      </div>
+                      <div class="vacancy-choose__block-item__info">
+                        Eget adipiscing iaculis eget ipsum, purus massa velit.
+                      </div>
+                      <div class="vacancy-choose__block-item__buttons">
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
+                            вакансию</span></a>
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
+                            заявку</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="pagination ">
+                    <li class="prev disabled">
+                      <span>
+                        &lt;&lt;
                       </span>
-                      <ul>
-                        <li>Горящие</li>
-                        <li>Топ</li>
-                        <li>Практика</li>
-                        <li>Работа на каникулах</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="vacancy-choose__block-sort__wrapper start">
-                    <div class="vacancy-choose__block-sort">
-                      <select>
-                        <option selected disabled>Начало работ</option>
-                        <option>не выбран</option>
-                        <option>январь</option>
-                        <option>февраль</option>
-                        <option>март</option>
-                        <option>апрель</option>
-                        <option>май</option>
-                        <option>июнь</option>
-                        <option>июль</option>
-                        <option>август</option>
-                        <option>сентябрь</option>
-                        <option>октябрь</option>
-                        <option>ноябрь</option>
-                        <option>декабрь</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="vacancy-choose__block-sort__wrapper end">
-                    <div class="vacancy-choose__block-sort">
-                      <select>
-                        <option selected disabled>Окончание работ</option>
-                        <option>не выбран</option>
-                        <option>январь</option>
-                        <option>февраль</option>
-                        <option>март</option>
-                        <option>апрель</option>
-                        <option>май</option>
-                        <option>июнь</option>
-                        <option>июль</option>
-                        <option>август</option>
-                        <option>сентябрь</option>
-                        <option>октябрь</option>
-                        <option>ноябрь</option>
-                        <option>декабрь</option>
-                      </select>
-
-                    </div>
-                  </div>
-                  <div class="vacancy-choose__block-sort__wrapper sort">
-                    <span>Сортировка</span>
-                    <div class="vacancy-choose__block-sort">
-                      <select>
-                        <option selected>От новых к старым (по дате размещения вакансии)</option>
-                        <option>От старых к новым (по дате размещения вакансии)</option>
-                        <option>По заработной плате от большего к меньшему</option>
-                        <option>По рейтингу вакансии от большего к меньшему</option>
-                        <option>По рейтингу вакансии от меньшего к большему</option>
-                        <option>По стоимости вакансии от большего к меньшему</option>
-                        <option>По стоимости вакансии от меньшего к большему</option>
-                        <option>По заработной плате от меньшего к большему</option>
-                      </select>
-
-                    </div>
-                  </div>
+                    </li>
+                    <li class="current">
+                      <span>1</span>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">2</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">3</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">...</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">8</a>
+                    </li>
+                    <li class="next">
+                      <a href="javascript:void(0)">>></a>
+                    </li>
+                  </ul>
                 </div>
-
-                <div class="vacancy-choose__block-items">
-
-                  <div class="vacancy-choose__block-item">
-                    <div class="vacancy-choose__block-item__pic">
-                      <span class="vacancy-choose__block-item__label">€ 55,23</span>
-                      <picture>
-                        <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
-                          class="lazy-web" type="image/webp">
-                        <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
-                          class="lazy-web" type="image/jpg">
-                        <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
-                          alt="">
-                      </picture>
+                <div class="vacancy-choose__block-main">
+                  <span class="vacancy-choose__block__title">Возможно, студента заинтересуют вакансии:</span>
+                  <div class="vacancy-choose__block-filters">
+                    <div class="vacancy-choose__block-filter-btn__wrapper dropdown-wrapper">
+                      <div class="vacancy-choose__block-filter-btn dropdown">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.58333 13H5.41667C5.12935 13 4.8538 12.8859 4.65063 12.6827C4.44747 12.4795 4.33333 12.204 4.33333 11.9167V7.80542L0.319583 3.79167C0.11614 3.58944 0.00120943 3.31477 0 3.02792V1.08333C0 0.796016 0.114137 0.520465 0.317301 0.317301C0.520465 0.114137 0.796016 0 1.08333 0H11.9167C12.204 0 12.4795 0.114137 12.6827 0.317301C12.8859 0.520465 13 0.796016 13 1.08333V3.02792C12.9988 3.31477 12.8839 3.58944 12.6804 3.79167L8.66667 7.80542V11.9167C8.66667 12.204 8.55253 12.4795 8.34937 12.6827C8.1462 12.8859 7.87065 13 7.58333 13ZM1.08333 1.08333V3.02792L5.41667 7.36125V11.9167H7.58333V7.36125L11.9167 3.02792V1.08333H1.08333Z"
+                            fill="#8B8A8E" />
+                        </svg>
+                        Фильтр
+                      </div>
+                      <div class="vacancy-choose__block-filter__list dropdown-list">
+                        <span>
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.49518 2.91602L4.99935 4.41185L3.50352 2.91602L2.91602 3.50352L4.41185 4.99935L2.91602 6.49518L3.50352 7.08268L4.99935 5.58685L6.49518 7.08268L7.08268 6.49518L5.58685 4.99935L7.08268 3.50352L6.49518 2.91602Z" fill="#474747"/>
+                          </svg>
+                          Очистить
+                        </span>
+                        <ul>
+                          <li>Горящие</li>
+                          <li>Топ</li>
+                          <li>Практика</li>
+                          <li>Работа на каникулах</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="vacancy-choose__block-item__info">
-                      Eget adipiscing iaculis eget ipsum, purus massa velit.
+                    <div class="vacancy-choose__block-sort__wrapper start">
+                      <div class="vacancy-choose__block-sort">
+                        <select>
+                          <option selected disabled>Начало работ</option>
+                          <option>не выбран</option>
+                          <option>январь</option>
+                          <option>февраль</option>
+                          <option>март</option>
+                          <option>апрель</option>
+                          <option>май</option>
+                          <option>июнь</option>
+                          <option>июль</option>
+                          <option>август</option>
+                          <option>сентябрь</option>
+                          <option>октябрь</option>
+                          <option>ноябрь</option>
+                          <option>декабрь</option>
+                        </select>
+                      </div>
                     </div>
-                    <div class="vacancy-choose__block-item__buttons">
-                      <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
-                          вакансию</span></a>
-                      <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
-                          заявку</span></a>
+                    <div class="vacancy-choose__block-sort__wrapper end">
+                      <div class="vacancy-choose__block-sort">
+                        <select>
+                          <option selected disabled>Окончание работ</option>
+                          <option>не выбран</option>
+                          <option>январь</option>
+                          <option>февраль</option>
+                          <option>март</option>
+                          <option>апрель</option>
+                          <option>май</option>
+                          <option>июнь</option>
+                          <option>июль</option>
+                          <option>август</option>
+                          <option>сентябрь</option>
+                          <option>октябрь</option>
+                          <option>ноябрь</option>
+                          <option>декабрь</option>
+                        </select>
+
+                      </div>
+                    </div>
+                    <div class="vacancy-choose__block-sort__wrapper sort">
+                      <span>Сортировка</span>
+                      <div class="vacancy-choose__block-sort">
+                        <select>
+                          <option selected>От новых к старым (по дате размещения вакансии)</option>
+                          <option>От старых к новым (по дате размещения вакансии)</option>
+                          <option>По заработной плате от большего к меньшему</option>
+                          <option>По рейтингу вакансии от большего к меньшему</option>
+                          <option>По рейтингу вакансии от меньшего к большему</option>
+                          <option>По стоимости вакансии от большего к меньшему</option>
+                          <option>По стоимости вакансии от меньшего к большему</option>
+                          <option>По заработной плате от меньшего к большему</option>
+                        </select>
+
+                      </div>
                     </div>
                   </div>
-                  <div class="vacancy-choose__block-item">
-                    <div class="vacancy-choose__block-item__pic">
-                      <span class="vacancy-choose__block-item__label">€ 22,20</span>
-                      <picture>
-                        <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
-                          class="lazy-web" type="image/webp">
-                        <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
-                          class="lazy-web" type="image/jpg">
-                        <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
-                          alt="">
-                      </picture>
+
+                  <div class="vacancy-choose__block-items">
+
+                    <div class="vacancy-choose__block-item">
+                      <div class="vacancy-choose__block-item__pic">
+                        <span class="vacancy-choose__block-item__label">€ 55,23</span>
+                        <picture>
+                          <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
+                            class="lazy-web" type="image/webp">
+                          <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
+                            class="lazy-web" type="image/jpg">
+                          <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
+                            alt="">
+                        </picture>
+                      </div>
+                      <div class="vacancy-choose__block-item__info">
+                        Eget adipiscing iaculis eget ipsum, purus massa velit.
+                      </div>
+                      <div class="vacancy-choose__block-item__buttons">
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
+                            вакансию</span></a>
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
+                            заявку</span></a>
+                      </div>
                     </div>
-                    <div class="vacancy-choose__block-item__info">
-                      Eget adipiscing iaculis eget ipsum, purus massa velit.
+                    <div class="vacancy-choose__block-item">
+                      <div class="vacancy-choose__block-item__pic">
+                        <span class="vacancy-choose__block-item__label">€ 22,20</span>
+                        <picture>
+                          <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
+                            class="lazy-web" type="image/webp">
+                          <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
+                            class="lazy-web" type="image/jpg">
+                          <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
+                            alt="">
+                        </picture>
+                      </div>
+                      <div class="vacancy-choose__block-item__info">
+                        Eget adipiscing iaculis eget ipsum, purus massa velit.
+                      </div>
+                      <div class="vacancy-choose__block-item__buttons">
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
+                            вакансию</span></a>
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
+                            заявку</span></a>
+                      </div>
                     </div>
-                    <div class="vacancy-choose__block-item__buttons">
-                      <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
-                          вакансию</span></a>
-                      <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
-                          заявку</span></a>
-                    </div>
-                  </div>
 
 
-                  <div class="vacancy-choose__block-item">
-                    <div class="vacancy-choose__block-item__pic">
-                      <span class="vacancy-choose__block-item__label">€ 22,20</span>
-                      <picture>
-                        <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
-                          class="lazy-web" type="image/webp">
-                        <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
-                          class="lazy-web" type="image/jpg">
-                        <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
-                          alt="">
-                      </picture>
-                    </div>
-                    <div class="vacancy-choose__block-item__info">
-                      Eget adipiscing iaculis eget ipsum, purus massa velit.
-                    </div>
-                    <div class="vacancy-choose__block-item__buttons">
-                      <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
-                          вакансию</span></a>
-                      <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
-                          заявку</span></a>
+                    <div class="vacancy-choose__block-item">
+                      <div class="vacancy-choose__block-item__pic">
+                        <span class="vacancy-choose__block-item__label">€ 22,20</span>
+                        <picture>
+                          <source srcset="../../images/pixel.webp" data-original="../../images/vacancy-001.webp"
+                            class="lazy-web" type="image/webp">
+                          <source srcset="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg"
+                            class="lazy-web" type="image/jpg">
+                          <img src="../../images/pixel.jpg" data-original="../../images/vacancy-001.jpg" class="lazy"
+                            alt="">
+                        </picture>
+                      </div>
+                      <div class="vacancy-choose__block-item__info">
+                        Eget adipiscing iaculis eget ipsum, purus massa velit.
+                      </div>
+                      <div class="vacancy-choose__block-item__buttons">
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Посмотреть
+                            вакансию</span></a>
+                        <a href="javascript:void(0)" class="vacancy-choose__block-item__btn"><span>Отправить
+                            заявку</span></a>
+                      </div>
                     </div>
                   </div>
+                  <ul class="pagination ">
+                    <li class="prev disabled">
+                      <span>
+                        &lt;&lt;
+                      </span>
+                    </li>
+                    <li class="current">
+                      <span>1</span>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">2</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">3</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">...</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">8</a>
+                    </li>
+                    <li class="next">
+                      <a href="javascript:void(0)">>></a>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="pagination ">
-                  <li class="prev disabled">
-                    <span>
-                      &lt;&lt;
-                    </span>
-                  </li>
-                  <li class="current">
-                    <span>1</span>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">2</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">3</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">...</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">8</a>
-                  </li>
-                  <li class="next">
-                    <a href="javascript:void(0)">>></a>
-                  </li>
-                </ul>
               </div>
             </div>
 
