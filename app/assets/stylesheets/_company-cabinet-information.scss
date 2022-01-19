@@ -1,0 +1,22 @@
+.company-cabinet__top {
+  background: linear-gradient(259.34deg, #FFAD70 22.31%, #FFD53D 57.92%);
+  border-radius: 5px;
+  padding: 172px 0 52px;
+  .page-title {
+    margin-bottom: 24px;
+  }
+}
+
+.company-cabinet__navigation{
+  width: 990px;
+  margin: 0 auto;
+}
+
+.company-cabinet__btn {
+  border: none;
+  background: linear-gradient(259.34deg, #FFAD70 22.31%, #FFD53D 57.92%);
+  &:hover {
+    color: $black;
+    background: linear-gradient(259.34deg, #FFD53D 22.31%, #FFAD70 57.92%);
+  }
+}
