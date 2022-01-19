@@ -1,0 +1,123 @@
+.company-cabinet__contract-title{
+  font-family: $title;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+  color: $black;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.company-cabinet__contract-main{
+  width: 740px;
+  border: 1px solid rgba($text, 0.3);
+  margin: 0 auto 70px;
+  padding: 30px;
+  border-radius: 5px;
+  >span{
+    display: block;
+    text-align: center;
+    margin: 0 auto 22px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: $black;
+  }
+  >a{
+    display: flex;
+    align-items: center;
+    padding: 12px 32px;
+    text-align: center;
+    width: 232px;
+    height: 40px;
+    border: 1px solid $purple;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 17px;
+    color: $purple;
+    margin: 0 auto 32px;
+    svg{
+      min-width: 14px;
+      margin-right: 10px;
+      position: relative;
+    }
+    span{
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.company-cabinet__contract-main__footer{
+  display: flex;
+  justify-content: center;
+  >div{
+    text-align: center;
+    margin: 0 32px;
+    span{
+      display: block;
+      font-size: 12px;
+      line-height: 130%;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 130%;
+      color: $black;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.company-cabinet__contract-subtitle{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  display: block;
+  text-align: center;
+  color: $black;
+  margin-bottom: 22px;
+}
+
+.company-cabinet__contract-additional{
+  width: 740px;
+  border: 1px solid rgba($text, 0.3);
+  margin: 0 auto;
+  padding: 30px 30px 40px;
+  border-radius: 5px;
+  >span{
+    display: block;
+    text-align: center;
+    margin: 0 auto 22px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: $black;
+  }
+  >a{
+    display: flex;
+    align-items: center;
+    padding: 12px 32px;
+    text-align: center;
+    width: 232px;
+    height: 40px;
+    border: 1px solid $purple;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 17px;
+    color: $purple;
+    margin: 0 auto 10px;
+    svg{
+      min-width: 14px;
+      margin-right: 10px;
+      position: relative;
+    }
+    span{
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

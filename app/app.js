@@ -53,6 +53,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/company-cabinet-information.html');
   require('./assets/templates/layouts/company-cabinet-information-edit.html');
   require('./assets/templates/layouts/company-cabinet-information-saved.html');
+  require('./assets/templates/layouts/company-cabinet-contract.html');
 }
 
 // Depends
