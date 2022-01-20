@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>SIP</title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon.png" type="image/png">
+    <meta name="theme-color" content="#5F6CFA">
+    <meta name="msapplication-navbutton-color" content="#5F6CFA">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5F6CFA">
+</head>
+<body>
+
+${require('../parts/header-logged-in-company.html')}
+<main class="main">
+    <div class="section company-cabinet__top">
+        <div class="container">
+            <div class="page-title">Личный кабинет предприятия</div>
+            <nav class="partner-cabinet__navigation company-cabinet__navigation">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">Информация о предприятии</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Вакансии</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Документы</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Бизнес-процессы</a>
+                    </li>
+                    <li class="current">
+                        <a href="javascript:void(0)">
+                            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="7.11834" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <ellipse cx="10.9972" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <ellipse cx="14.8801" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                <path d="M19.25 1.37319C19.6147 1.37319 20.2223 1.77538 20.2223 1.77538C20.4801 2.03291 20.625 2.38218 20.625 2.74637V13.7319C20.625 14.0961 20.4801 14.4453 20.2223 14.7029C19.9644 14.9604 19.6147 15.1051 19.25 15.1051H6.06925C5.33996 15.1052 4.6406 15.3947 4.125 15.9097L1.375 18.6561V2.74637C1.375 2.38218 1.51987 2.03291 1.77773 1.77538C2.03559 1.51786 2.38533 1.37319 2.75 1.37319H19.25ZM2.75 0C2.02065 0 1.32118 0.289349 0.805456 0.804394C0.289731 1.31944 0 2.01799 0 2.74637L0 20.3136C2.88955e-05 20.4494 0.0404148 20.5822 0.116046 20.6951C0.191678 20.8081 0.299155 20.896 0.424874 20.9479C0.550594 20.9998 0.688904 21.0133 0.8223 20.9867C0.955695 20.96 1.07818 20.8945 1.17425 20.7983L5.09713 16.8806C5.35493 16.623 5.70461 16.4783 6.06925 16.4782H19.25C19.9793 16.4782 20.6788 16.1889 21.1945 15.6738C21.7103 15.1588 22 14.4603 22 13.7319V2.74637C22 2.01799 21.7103 1.31944 21.1945 0.804394C20.6788 0.289349 19.9793 0 19.25 0L2.75 0Z" fill="#25222C"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="section partner-cabinet__info">
+        <div class="container">
+            <div class="company-cabinet__chats-alert">
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 13.8C17 14.19 16.86 14.4875 16.58 14.6925C16.2999 14.8975 15.9563 15 15.549 15H1.45103C1.04373 15 0.70006 14.895 0.420036 14.685C0.140012 14.475 0 14.18 0 13.8C0 13.5 0.0916442 13.195 0.274933 12.885L7.31626 0.825C7.65229 0.275 8.04942 0 8.50764 0C8.96586 0 9.3528 0.275 9.66846 0.825L16.7251 12.9C16.9084 13.22 17 13.52 17 13.8ZM9.56155 6.135V3.945H7.43845V6.135C7.43845 6.275 7.44864 6.4075 7.469 6.5325C7.48937 6.6575 7.51737 6.7975 7.55301 6.9525C7.58865 7.1075 7.61665 7.24 7.63702 7.35L8.03414 9.78H8.93531L9.34771 7.35C9.36807 7.25 9.39862 7.12 9.43935 6.96C9.48008 6.8 9.51063 6.6575 9.531 6.5325C9.55136 6.4075 9.56155 6.275 9.56155 6.135ZM9.56155 11.94C9.56155 11.65 9.45717 11.405 9.24843 11.205C9.03968 11.005 8.78766 10.905 8.49236 10.905C8.20725 10.905 7.96032 11.005 7.75157 11.205C7.54283 11.405 7.43845 11.65 7.43845 11.94C7.43845 12.23 7.54283 12.4775 7.75157 12.6825C7.96032 12.8875 8.20725 12.99 8.49236 12.99C8.78766 12.99 9.03968 12.8875 9.24843 12.6825C9.45717 12.4775 9.56155 12.23 9.56155 11.94Z" fill="#F459A4"/>
+                </svg>
+                Если Вы хотите добавить чат, обратитесь к менеджеру платформы
+            </div>
+            <div class="row company-cabinet__chats tabs-wrapper">
+                <div class="col-lg-5">
+                    <div class="company-cabinet__chats-list">
+                        <ul class="tabs">
+                            <li class="active"><span>Чат с менеджерами SIP</span></li>
+                            <li><span>Чат группы “Упаковщики выезд 01.06.2022”</span></li>
+                            <li><span>Чат группы “Клубника выезд 31.05.2022”</span></li>
+                            <li><span>Чат группы “Помощники на производство выезд 01.07.2022”</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="company-cabinet__chats-main">
+                        <div class="tabs-content active">
+                            <div class="company-cabinet__chats-main__head">Чат с менеджерами SIP</div>
+                            <div class="company-cabinet__chats-main__body"></div>
+                        </div>
+                        <div class="tabs-content">
+                            <div class="company-cabinet__chats-main__head">Чат группы “Упаковщики выезд 01.06.2022”</div>
+                            <div class="company-cabinet__chats-main__body"></div>
+                        </div>
+                        <div class="tabs-content">
+                            <div class="company-cabinet__chats-main__head">Чат группы “Клубника выезд 31.05.2022</div>
+                            <div class="company-cabinet__chats-main__body"></div>
+                        </div>
+                        <div class="tabs-content">
+                            <div class="company-cabinet__chats-main__head">Чат группы “Помощники на производство выезд 01.07.2022”</div>
+                            <div class="company-cabinet__chats-main__body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+${require('../parts/footer.html')}
+
+<div class="overlay"></div>
+<div class="mfp-hide"></div>
+
+</body>
+</html>
