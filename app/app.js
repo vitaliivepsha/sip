@@ -50,11 +50,13 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/student-stages-forming-a-group-0.html');
   require('./assets/templates/layouts/student-stages-forming-a-group-1.html');
   require('./assets/templates/layouts/student-stages-forming-a-group-2.html');
+  require('./assets/templates/layouts/student-stages-download-a-ticket.html');
   require('./assets/templates/layouts/company-cabinet-information.html');
   require('./assets/templates/layouts/company-cabinet-information-edit.html');
   require('./assets/templates/layouts/company-cabinet-information-saved.html');
   require('./assets/templates/layouts/company-cabinet-contract.html');
   require('./assets/templates/layouts/company-cabinet-vacancies.html');
+  require('./assets/templates/layouts/company-cabinet-vacancy2.html');
   require('./assets/templates/layouts/company-cabinet-chats.html');
 }
 

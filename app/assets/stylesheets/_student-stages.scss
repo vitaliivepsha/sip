@@ -340,3 +340,22 @@
     }
   }
 }
+
+.student-stages__ticket-download{
+  .partner-cabinet__form{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 245px;
+  }
+  .input-file{
+    margin-bottom: 0;
+    width: 205px;
+    > label{
+      span{
+        max-width: 110px;
+      }
+    }
+  }
+}
