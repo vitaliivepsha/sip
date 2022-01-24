@@ -118,6 +118,7 @@ $(function() {
 
   $('.header-lang').click(function() {
     $(this).closest('.header-lang__wrapper').toggleClass('active');
+    $('.logged-in').removeClass('active');
   });
 
   $(document).click(function() {
@@ -129,6 +130,25 @@ $(function() {
   });
 
   $(document).on('click', '.header-lang__list', function(e) {
+    e.stopPropagation();
+  });
+
+  // logout menu
+
+  $('.logged-in > svg').click(function() {
+    $(this).closest('.logged-in').toggleClass('active');
+    $('.header-lang__wrapper').removeClass('active');
+  });
+
+  $(document).click(function() {
+    $('.logged-in').removeClass('active');
+  });
+
+  $(document).on('click', '.logged-in > svg', function(e) {
+    e.stopPropagation();
+  });
+
+  $(document).on('click', '.logged-in__menu', function(e) {
     e.stopPropagation();
   });
 

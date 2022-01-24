@@ -364,4 +364,63 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  >svg{
+    cursor: pointer;
+  }
+  &.active{
+    .logged-in__menu{
+      opacity: 1;
+      visibility: visible;
+      top: calc(100% + 10px);
+    }
+  }
+}
+
+.logged-in__menu{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 30px);
+  background: $bg-gray;
+  box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+  border-radius: 5px;
+  width: 95px;
+  padding: 23px 0;
+  transition: linear 0.2s;
+  &:before {
+    position: absolute;
+    content: "";
+    border-bottom: 7px solid $bg-gray;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: 100%;
+    right: 17px;
+  }
+  li {
+    color: $black;
+    font-size: 14px;
+    line-height: 19px;
+    a {
+      display: flex;
+      align-items: center;
+      color: $black;
+      text-decoration: none;
+      padding: 4px 12px;
+      svg{
+        margin-right: 5px;
+      }
+      &:hover {
+        text-decoration: none;
+        color: $black;
+        background-color: #fff;
+      }
+    }
+    span {
+      display: block;
+      font-weight: 700;
+      padding: 3px 49px 5px;
+    }
+  }
 }
