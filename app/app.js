@@ -58,6 +58,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/company-cabinet-vacancies.html');
   require('./assets/templates/layouts/company-cabinet-vacancy2.html');
   require('./assets/templates/layouts/company-cabinet-vacancy3.html');
+  require('./assets/templates/layouts/company-cabinet-vacancy4.html');
   require('./assets/templates/layouts/company-cabinet-chats.html');
 }
 
@@ -856,63 +857,82 @@ $(function() {
 
   // pie chart
 
-  var chartCanvas = document.getElementById('business-processes-chart');
+  if ($('#business-processes-chart').length) {
+    var chartCanvas = document.getElementById('business-processes-chart');
 
-  var chartData = {
-    labels: [
-      'Заполнение анкеты',
-      'Подбор вакансии',
-      'Загрузка документов студента',
-      'Контроль документов',
-      'Утверждение кандидатуры студента работодателем',
-      'Получение оригиналов документов партнером',
-      'Отправка документов в офис WFP',
-      'Контроль оригиналов документов',
-      'Отправка пакета документов студента работодателю',
-      'Заполнение формуляров работодателем',
-      'Подача документов в Министерство труда Германии работодателем',
-      'Оформление разрешения на работу от Министерства труда Германии',
-      'Информирование студента о получении разрешения на работу',
-      'Формирование доступов для студента для личного входа'
-    ],
-    datasets: [
-      {
-        data: [20, 20, 20, 20, 20, 20, 20, 20, 20, 11, 11, 11, 11, 4],
-        backgroundColor: [
-          '#FF6384',
-          '#ff7d20',
-          '#84FF63',
-          '#8463FF',
-          '#007bff',
-          '#ff2b12',
-          '#9fffce',
-          '#c686ff',
-          '#ffbb5c',
-          '#f9ff2b',
-          '#c16333',
-          '#897a3d',
-          '#456f30'
-        ]
-      }]
-  };
+    var chartData = {
+      labels: [
+        'Заполнение анкеты',
+        'Подбор вакансии',
+        'Загрузка документов студента',
+        'Контроль документов',
+        'Утверждение кандидатуры студента работодателем',
+        'Получение оригиналов документов партнером',
+        'Отправка документов в офис WFP',
+        'Контроль оригиналов документов',
+        'Отправка пакета документов студента работодателю',
+        'Заполнение формуляров работодателем',
+        'Подача документов в Министерство труда Германии работодателем',
+        'Оформление разрешения на работу от Министерства труда Германии',
+        'Информирование студента о получении разрешения на работу',
+        'Формирование доступов для студента для личного входа'
+      ],
+      datasets: [
+        {
+          data: [20, 20, 20, 20, 20, 20, 20, 20, 20, 11, 11, 11, 11, 4],
+          backgroundColor: [
+            '#FF6384',
+            '#ff7d20',
+            '#84FF63',
+            '#8463FF',
+            '#007bff',
+            '#ff2b12',
+            '#9fffce',
+            '#c686ff',
+            '#ffbb5c',
+            '#f9ff2b',
+            '#c16333',
+            '#897a3d',
+            '#456f30'
+          ]
+        }]
+    };
 
-  var pieChart = new Chart(chartCanvas, {
-    type: 'pie',
-    data: chartData,
-    options: {
-      title: {
-        display: true,
-        text: 'Заголовок диаграммы',
-        fontSize: 18,
-        padding: 20,
-        fontColor: '#25222C',
-        fontStyle: 'Normal',
-        fontFamily: 'Montserrat',
-        fullWidth: true
-      },
-      legend: {
-        display: false
-      },
+    var pieChart = new Chart(chartCanvas, {
+      type: 'pie',
+      data: chartData,
+      options: {
+        title: {
+          display: true,
+          text: 'Заголовок диаграммы',
+          fontSize: 18,
+          padding: 20,
+          fontColor: '#25222C',
+          fontStyle: 'Normal',
+          fontFamily: 'Montserrat',
+          fullWidth: true
+        },
+        legend: {
+          display: false
+        },
+      }
+    });
+  }
+
+  /*company cabinet vacancy*/
+
+  setTimeout(function() {
+    if ($('#company-cabinet__vacancy-change').length) {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $('.partner-cabinet__info').offset().top - 100
+      }, 2000);
+      $('#company-cabinet__vacancy-change').fadeIn('slow');
+      $('.partner-cabinet__info > .overlay').addClass('show');
+
+      $(document).click(function() {
+        $('#company-cabinet__vacancy-change').fadeOut('slow');
+        $('.partner-cabinet__info > .overlay').removeClass('show');
+      });
     }
-  });
+  }, 10);
 });

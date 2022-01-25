@@ -339,3 +339,26 @@
     margin-bottom: 28px;
   }
 }
+
+.company-cabinet__alert__wrapper{
+  position: relative;
+  z-index: 6;
+  display: none;
+  margin-bottom: 55px;
+}
+
+.company-cabinet__alert{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgba($text, 0.2);
+  height: 40px;
+  font-size: 11px;
+  line-height: 15px;
+  color: $pink;
+  margin-bottom: 15px;
+  svg{
+    margin-right: 15px;
+  }
+}
