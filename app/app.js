@@ -57,6 +57,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/company-cabinet-contract.html');
   require('./assets/templates/layouts/company-cabinet-vacancies.html');
   require('./assets/templates/layouts/company-cabinet-vacancy2.html');
+  require('./assets/templates/layouts/company-cabinet-vacancy3.html');
   require('./assets/templates/layouts/company-cabinet-chats.html');
 }
 
@@ -490,6 +491,14 @@ $(function() {
         re_password: {
           required: true,
           equalTo: '#new_password'
+        },
+        start_of_work: {
+          required: true,
+          time: true
+        },
+        end_of_work: {
+          required: true,
+          time: true
         }
       },
       messages: {
@@ -595,6 +604,12 @@ $(function() {
         re_password: {
           required: 'Подтвердите новый пароль',
           equalTo: 'Введенные пароли не совпадают, попробуйте ещё раз'
+        },
+        start_of_work: {
+          required: 'Заполните эту информацию',
+        },
+        end_of_work: {
+          required: 'Заполните эту информацию',
         }
       }
     });
@@ -603,6 +618,10 @@ $(function() {
   jQuery.validator.addMethod('onlylatinletters', function(value, element) {
     return this.optional(element) || /^[a-z ]+$/i.test(value);
   }, 'Заполните эту информацию латиницей');
+
+  jQuery.validator.addMethod('time', function(value, element, param) {
+    return value == '' || value.match(/^([01][0-9]|2[0-3]):[0-5][0-9]$/);
+  }, 'Enter a valid time: hh:mm');
 
     /* partner cabinet students */
 

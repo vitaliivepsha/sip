@@ -1674,6 +1674,85 @@
         }
       }
     }
+    &.time-wrapper{
+      display: flex;
+      justify-content: space-between;
+      .date-choose {
+        width: 103px;
+        position: relative;
+        &.error {
+          &:before {
+            border-color: $pink;
+          }
+          label.error {
+            position: static;
+          }
+        }
+        &:before {
+          position: absolute;
+          content: "";
+          width: 60px;
+          height: 40px;
+          left: 0;
+          top: 0;
+          background: #fff;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          pointer-events: none;
+        }
+        svg {
+          pointer-events: none;
+          position: absolute;
+          top: 7px;
+          transform: none;
+          right: 0;
+        }
+        .placeholder {
+          pointer-events: none;
+          width: 58px;
+          padding: 5px 11px;
+          position: absolute;
+          z-index: 2;
+          left: 1px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: #fff;
+          color: rgba($text, 0.3);
+          font-size: 12px;
+          line-height: 130%;
+        }
+        input {
+          position: relative;
+          z-index: 1;
+          padding-left: 11px;
+          background-color: transparent;
+          cursor: pointer;
+          &::-webkit-datetime-edit-day-field:focus,
+          &::-webkit-datetime-edit-month-field:focus,
+          &::-webkit-datetime-edit-year-field:focus {
+            background: transparent;
+            color: $black;
+          }
+          &::-webkit-calendar-picker-indicator {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+          }
+          &.valid {
+            + label {
+              + .placeholder {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .checkbox-wrapper {
     input {
