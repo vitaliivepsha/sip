@@ -1,0 +1,117 @@
+.company-cabinet__stages-item{
+  margin-bottom: 40px;
+}
+
+.company-cabinet__stages-head{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 130%;
+  font-family: $title;
+  svg{
+    margin-left: 28px;
+    transform: scale(1, -1);
+  }
+  &.active{
+    svg{
+      transform: scale(1, 1);
+    }
+  }
+}
+
+.company-cabinet__stages-body{
+  padding: 40px 0 20px;
+}
+
+.company-cabinet__stages-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-cabinet__stages-chart{
+  width: 484px;
+}
+
+.company-cabinet__stages-list{
+  width: 550px;
+}
+
+.company-cabinet__stages-list__head{
+  min-height: 40px;
+  display: flex;
+  margin-bottom: 10px;
+  > div {
+    height: inherit;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 12px;
+    padding: 5px 15px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 130%;
+    color: $purple;
+    display: flex;
+    align-items: center;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.company-cabinet__stages-list__name{
+  width: 380px;
+}
+
+.company-cabinet__stages-list__count{
+  width: 157px;
+}
+
+.company-cabinet__stages-list__subhead{
+  display: flex;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 10px;
+  >div{
+    margin-right: 12px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.company-cabinet__stages-list__row{
+  min-height: 40px;
+  display: flex;
+  margin-bottom: 10px;
+  .company-cabinet__stages-list__row{
+    &.highlighted{
+      > div {
+        color: $purple;
+        font-weight: 600;
+      }
+    }
+  }
+  > div {
+    height: inherit;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 12px;
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 130%;
+    color: $black;
+    display: flex;
+    align-items: center;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

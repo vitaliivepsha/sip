@@ -60,6 +60,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/company-cabinet-vacancy3.html');
   require('./assets/templates/layouts/company-cabinet-vacancy4.html');
   require('./assets/templates/layouts/company-cabinet-chats.html');
+  require('./assets/templates/layouts/company-cabinet-stages.html');
 }
 
 // Depends
@@ -919,6 +920,230 @@ $(function() {
     });
   }
 
+  if ($('#all-vacancies').length) {
+    var chartCanvas1 = document.getElementById('all-vacancies');
+
+    var chartData = {
+      labels: [
+        'Утверждение кандидатов',
+        'Сбор оригиналов документов',
+        'Отправка документов работодателю',
+        'Оформление разрешения на работу',
+        'Получение разрешения на работу',
+        'Утверждение даты приезда',
+        'Утверждение группы студентов перед выездом',
+        'Кандидаты в пути',
+        'Кандидаты прибыли',
+        'Всего найдено кандидатов',
+        'Завершение работы с группой - отъезд'
+      ],
+      datasets: [
+        {
+          data: [20, 20, 20, 20, 20, 20, 20, 11, 11, 11, 11],
+          backgroundColor: [
+            '#FF6384',
+            '#ff7d20',
+            '#84FF63',
+            '#8463FF',
+            '#007bff',
+            '#ff2b12',
+            '#9fffce',
+            '#c686ff',
+            '#ffbb5c',
+            '#f9ff2b',
+          ]
+        }]
+    };
+
+    var pieChart = new Chart(chartCanvas1, {
+      type: 'pie',
+      data: chartData,
+      options: {
+        title: {
+          display: true,
+          text: 'Заголовок диаграммы',
+          fontSize: 16,
+          padding: 18,
+          fontColor: '#25222C',
+          fontStyle: 'Normal',
+          fontFamily: 'Montserrat',
+          fullWidth: true
+        },
+        legend: {
+          display: false
+        },
+      }
+    });
+  }
+
+  if ($('#vacancy-00057').length) {
+    var chartCanvas2 = document.getElementById('vacancy-00057');
+
+    var chartData = {
+      labels: [
+        'Утверждение кандидатов',
+        'Сбор оригиналов документов',
+        'Отправка документов работодателю',
+        'Оформление разрешения на работу',
+        'Получение разрешения на работу',
+        'Утверждение даты приезда',
+        'Утверждение группы студентов перед выездом',
+        'Кандидаты в пути',
+        'Кандидаты прибыли',
+        'Всего найдено кандидатов',
+        'Завершение работы с группой - отъезд'
+      ],
+      datasets: [
+        {
+          data: [20, 20, 20, 20, 20, 20, 20, 11, 11, 11, 11],
+          backgroundColor: [
+            '#FF6384',
+            '#ff7d20',
+            '#84FF63',
+            '#8463FF',
+            '#007bff',
+            '#ff2b12',
+            '#9fffce',
+            '#c686ff',
+            '#ffbb5c',
+            '#f9ff2b',
+          ]
+        }]
+    };
+
+    var pieChart = new Chart(chartCanvas2, {
+      type: 'pie',
+      data: chartData,
+      options: {
+        title: {
+          display: true,
+          text: 'Заголовок диаграммы',
+          fontSize: 16,
+          padding: 18,
+          fontColor: '#25222C',
+          fontStyle: 'Normal',
+          fontFamily: 'Montserrat',
+          fullWidth: true
+        },
+        legend: {
+          display: false
+        },
+      }
+    });
+  }
+
+  if ($('#vacancy-00251').length) {
+    var chartCanvas3 = document.getElementById('vacancy-00251');
+
+    var chartData = {
+      labels: [
+        'Утверждение кандидатов',
+        'Сбор оригиналов документов',
+        'Отправка документов работодателю',
+        'Оформление разрешения на работу',
+        'Получение разрешения на работу',
+        'Утверждение даты приезда',
+        'Утверждение группы студентов перед выездом',
+        'Кандидаты в пути',
+        'Кандидаты прибыли',
+        'Всего найдено кандидатов',
+        'Завершение работы с группой - отъезд'
+      ],
+      datasets: [
+        {
+          data: [20, 20, 20, 20, 20, 20, 20, 11, 11, 11, 11],
+          backgroundColor: [
+            '#FF6384',
+            '#ff7d20',
+            '#84FF63',
+            '#8463FF',
+            '#007bff',
+            '#ff2b12',
+            '#9fffce',
+            '#c686ff',
+            '#ffbb5c',
+            '#f9ff2b',
+          ]
+        }]
+    };
+
+    var pieChart = new Chart(chartCanvas3, {
+      type: 'pie',
+      data: chartData,
+      options: {
+        title: {
+          display: true,
+          text: 'Заголовок диаграммы',
+          fontSize: 16,
+          padding: 18,
+          fontColor: '#25222C',
+          fontStyle: 'Normal',
+          fontFamily: 'Montserrat',
+          fullWidth: true
+        },
+        legend: {
+          display: false
+        },
+      }
+    });
+  }
+
+  if ($('#vacancy-00356').length) {
+    var chartCanvas4 = document.getElementById('vacancy-00356');
+
+    var chartData = {
+      labels: [
+        'Утверждение кандидатов',
+        'Сбор оригиналов документов',
+        'Отправка документов работодателю',
+        'Оформление разрешения на работу',
+        'Получение разрешения на работу',
+        'Утверждение даты приезда',
+        'Утверждение группы студентов перед выездом',
+        'Кандидаты в пути',
+        'Кандидаты прибыли',
+        'Всего найдено кандидатов',
+        'Завершение работы с группой - отъезд'
+      ],
+      datasets: [
+        {
+          data: [20, 20, 20, 20, 20, 20, 20, 11, 11, 11, 11],
+          backgroundColor: [
+            '#FF6384',
+            '#ff7d20',
+            '#84FF63',
+            '#8463FF',
+            '#007bff',
+            '#ff2b12',
+            '#9fffce',
+            '#c686ff',
+            '#ffbb5c',
+            '#f9ff2b',
+          ]
+        }]
+    };
+
+    var pieChart = new Chart(chartCanvas4, {
+      type: 'pie',
+      data: chartData,
+      options: {
+        title: {
+          display: true,
+          text: 'Заголовок диаграммы',
+          fontSize: 16,
+          padding: 18,
+          fontColor: '#25222C',
+          fontStyle: 'Normal',
+          fontFamily: 'Montserrat',
+          fullWidth: true
+        },
+        legend: {
+          display: false
+        },
+      }
+    });
+  }
+
   /*company cabinet vacancy*/
 
   setTimeout(function() {
@@ -935,4 +1160,10 @@ $(function() {
       });
     }
   }, 10);
+
+  /*company cabinet stages*/
+
+  $('.company-cabinet__stages-head').click(function() {
+    $(this).toggleClass('active').next('.company-cabinet__stages-body').slideToggle();
+  });
 });
