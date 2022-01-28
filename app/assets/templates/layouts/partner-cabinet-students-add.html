@@ -472,6 +472,15 @@ ${require('../parts/header-logged-in.html')}
                         </div>
                     </div>
                     <button type="submit" class="btn partner-cabinet__btn">Сохранить</button>
+                    <div class="partner-cabinet__students-add__footer">
+                        <p>
+                            Если Вы хотите поехать вместе с друзьями, Вы можете создать группу и пригласить в неё друзей или присоединиться к группе, созданной Вашим другом. Мы не гарантируем, что сможем найти для Вас вакансии у одного работодателя, но сделаем всё возможное для этого
+                        </p>
+                        <div>
+                            <span class="btn popup-btn" data-mfp-src="#create-group">Создать группу</span>
+                            <span class="btn popup-btn" data-mfp-src="#join-group">Присоединиться к группе</span>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -480,7 +489,29 @@ ${require('../parts/header-logged-in.html')}
 ${require('../parts/footer.html')}
 
 <div class="overlay"></div>
-<div class="mfp-hide"></div>
+<div class="mfp-hide">
+    <div class="popup vacancy-order__popup students-add__popup" id="create-group">
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        <div class="vacancy-order__popup-head">Создание группы</div>
+        <div class="vacancy-order__popup-body">
+            <p>Код Вашей группы <span>"код"</span>. Запишите его и сообщите своим друзьям, чтобы они смогли присоединиться к группе</p>
+            <div class="vacancy-order__popup-footer">
+                <a href="" class="students-add__popup-btn mfp-close">Ок</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup vacancy-order__popup students-add__popup" id="join-group">
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        <div class="vacancy-order__popup-head">Присоединиться к группе</div>
+        <form class="vacancy-order__popup-body">
+            <p>Введите код группы</p>
+            <input type="text" class="input" placeholder="Ввести код">
+            <div class="vacancy-order__popup-footer">
+                <button type="submit" class="students-add__popup-btn">Ок</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>

@@ -1883,6 +1883,36 @@
   color: $black;
 }
 
+.partner-cabinet__students-add__footer{
+  border-top: 1px solid rgba($text, .3);
+  margin-top: 46px;
+  padding-top: 34px;
+  >p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    font-family: $title;
+    color: $black;
+    margin-bottom: 22px;
+  }
+  >div{
+    display: flex;
+    .btn{
+      margin-right: 20px;
+      margin-top: 0;
+      border-color: #78BDBC;
+      &:hover{
+        border-color: rgba(117, 215, 214, 0.5);
+        background-color: rgba(117, 215, 214, 0.5);
+        color: $black;
+      }
+      &:last-child{
+        width: 270px;
+      }
+    }
+  }
+}
+
 .documents-control__block {
   padding: 25px 20px 45px;
 }

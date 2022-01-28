@@ -184,6 +184,67 @@
   }
 }
 
+.students-add__popup{
+  min-height: 360px;
+  .vacancy-order__popup-body{
+    p{
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 130%;
+      font-family: $title;
+      color: $text;
+      width: 320px;
+      margin: 0 auto 30px;
+      span{
+        color: $purple;
+      }
+    }
+  }
+  .input{
+    display: block;
+    width: 360px;
+    margin: 0 auto 20px;
+    border-color: rgba($text, .2);
+    &::placeholder{
+      color: $black;
+    }
+    &:focus{
+      &::placeholder{
+        color: transparent;
+      }
+    }
+  }
+}
+
+.students-add__popup-btn{
+  width: 220px;
+  height: 50px;
+  border: 1px solid $black;
+  border-radius: 30px;
+  transition: linear .2s;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  color: #75D7D6;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: static;
+  padding: 0;
+  margin: 0 auto;
+  &.mfp-close{
+    color: #75D7D6;
+    margin: 0 auto;
+  }
+  &:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: $black;
+  }
+}
+
 .student-edit__popup{
   position: relative;
   margin: 0 auto;
