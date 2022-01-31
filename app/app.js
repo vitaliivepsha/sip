@@ -56,6 +56,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/company-cabinet-information-saved.html');
   require('./assets/templates/layouts/company-cabinet-contract.html');
   require('./assets/templates/layouts/company-cabinet-vacancies.html');
+  require('./assets/templates/layouts/company-cabinet-vacancy1.html');
   require('./assets/templates/layouts/company-cabinet-vacancy2.html');
   require('./assets/templates/layouts/company-cabinet-vacancy3.html');
   require('./assets/templates/layouts/company-cabinet-vacancy4.html');
