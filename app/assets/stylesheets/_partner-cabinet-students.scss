@@ -1883,6 +1883,58 @@
       padding-top: 10px;
     }
   }
+  .SumoSelect{
+    display: flex;
+    width: 100%;
+    &:hover, &:focus{
+      border: none;
+      box-shadow: none;
+    }
+    &.open{
+      border: none;
+      box-shadow: none;
+      >.optWrapper{
+        top: 100%;
+      }
+    }
+    >.CaptionCont{
+      width: 100%;
+      border: none;
+      box-shadow: none;
+      height: 40px;
+      line-height: 40px;
+      font-size: 12px;
+      padding: 0 40px 0 15px;
+      border-radius: 5px;
+      >label{
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    >.optWrapper{
+      &.multiple{
+        >.options{
+          li{
+            font-size: 12px;
+            line-height: 130%;
+            &.opt{
+              &.selected{
+                span{
+                  i{
+                    background-color: $purple;
+                  }
+                }
+              }
+            }
+            label{
+              font-weight: normal;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .partner-cabinet__students-form__subtitle {

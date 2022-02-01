@@ -674,7 +674,6 @@ $(function() {
     triggerChangeCombined: false
   });
 
-
   $('.vacancy-choose__block-sort select').SumoSelect({
     okCancelInMulti: true,
         // search: true,
@@ -683,6 +682,11 @@ $(function() {
     captionFormat: false,
     forceCustomRendering: true,
         // triggerChangeCombined: false
+  });
+
+  $('.multiselect').SumoSelect({
+    forceCustomRendering: true,
+    placeholder: ' '
   });
 
     // date placeholder
