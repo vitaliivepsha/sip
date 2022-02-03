@@ -63,6 +63,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/company-cabinet-chats.html');
   require('./assets/templates/layouts/company-cabinet-stages.html');
   require('./assets/templates/layouts/company-cabinet-employer-edit.html');
+  require('./assets/templates/layouts/company-cabinet-bussiness-processes.html');
 }
 
 // Depends
@@ -1171,5 +1172,19 @@ $(function() {
 
   $('.company-cabinet__stages-head').click(function() {
     $(this).toggleClass('active').next('.company-cabinet__stages-body').slideToggle();
+  });
+
+  /* company cabinet business processes */
+
+  $('.company-cabinet__business-processes__head').click(function() {
+    $(this).toggleClass('active').next('.company-cabinet__business-processes__body').slideToggle();
+  });
+
+  $('.company-cabinet__business-processes__checkbox').click(function() {
+    $(this).toggleClass('checked');
+  });
+
+  $('.select-all').click(function() {
+    $(this).closest('.company-cabinet__business-processes__body').find('.check-me').toggleClass('checked');
   });
 });
