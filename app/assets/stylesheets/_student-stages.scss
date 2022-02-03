@@ -352,10 +352,15 @@
   .input-file{
     margin-bottom: 0;
     width: 205px;
+    height: 50px;
     > label{
       span{
         max-width: 110px;
       }
     }
+  }
+  .btn{
+    width: 173px;
+    margin-left: 12px;
   }
 }
