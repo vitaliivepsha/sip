@@ -1188,4 +1188,32 @@ $(function() {
   $('.select-all').click(function() {
     $(this).closest('.company-cabinet__business-processes__body').find('.check-me').toggleClass('checked');
   });
+
+  $('.company-cabinet__business-processes__vacancy-head').click(function() {
+    $(this).toggleClass('active').next('.company-cabinet__business-processes__vacancy-body').slideToggle();
+  });
+
+  $('.add-employer').click(function() {
+    $(this).closest('.company-cabinet__business-processes__vacancy-body').find('.company-cabinet__business-processes__vacancy-fields').append('<div class="company-cabinet__business-processes__vacancy-fields__row">\n' +
+        '                                    <div>\n' +
+        '                                        <label>Работодатель</label>\n' +
+        '                                        <div class="input-wrapper select-wrapper">\n' +
+        '                                            <select name="do_all_candidates_have_to_be_vaccinated">\n' +
+        '                                                <option selected disabled></option>\n' +
+        '                                                <option>1</option>\n' +
+        '                                                <option>2</option>\n' +
+        '                                            </select>\n' +
+        '                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#25222C"/>\n' +
+        '                                            </svg>\n' +
+        '                                        </div>\n' +
+        '                                    </div>\n' +
+        '                                    <div>\n' +
+        '                                        <label>Количество</label>\n' +
+        '                                        <div class="input-wrapper">\n' +
+        '                                            <input class="input" type="text" name="comment_on_vaccination">\n' +
+        '                                        </div>\n' +
+        '                                    </div>\n' +
+        '                                </div>');
+  });
 });
