@@ -232,3 +232,12 @@
     }
   }
 }
+
+.student-company__btn-back{
+  width: 227px;
+  border-color: $accent;
+  &:hover{
+    background-color: $accent;
+    border-color: $accent;
+  }
+}
