@@ -65,17 +65,11 @@ body {
     }
   }
   &.show-filters {
-    @include bp(xs) {
-      overflow: hidden;
-      height: 100vw;
-    }
-    .main-wrapper {
-      @include bp(xs) {
-        overflow: hidden;
-      }
-    }
-    .catalog-filters {
+    overflow: hidden;
+    height: 100vw;
+    .partner-cabinet__vacancy-filters{
       right: 0;
+      box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
     }
     .overlay {
       opacity: 1;
@@ -146,7 +140,8 @@ main {
 }
 
 .overlay {
-  background: rgba(51, 51, 51, 0.7);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
   position: fixed;
   left: 0;
   right: 0;

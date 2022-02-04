@@ -386,7 +386,6 @@ $(function() {
     $(this).closest('.cert-item').remove();
   });
 
-
     // validation
 
   $('.validate-form').each(function() {
@@ -668,6 +667,36 @@ $(function() {
     $(this).toggleClass('active');
   });
 
+
+    // vacancies filters
+
+  $('.vacancy-choose__block-filter-btn').click(function() {
+    $('body').addClass('show-filters');
+  });
+
+  $('.partner-cabinet__vacancy-filters__close').click(function() {
+    $('body').removeClass('show-filters');
+  });
+
+  $(document).click(function() {
+    $('body').removeClass('show-filters');
+  });
+
+  $(document).on('click', '.vacancy-choose__block-filter-btn', function(e) {
+    e.stopPropagation();
+  });
+
+  $(document).on('click', '.partner-cabinet__vacancy-filters', function(e) {
+    e.stopPropagation();
+  });
+
+  $('.partner-cabinet__vacancy-filter__head').click(function() {
+    $(this).toggleClass('active').next('.partner-cabinet__vacancy-filter__body').slideToggle();
+  });
+
+  $('.partner-cabinet__vacancy-filter__body li').click(function() {
+    $(this).toggleClass('checked');
+  });
 
     // select
 
