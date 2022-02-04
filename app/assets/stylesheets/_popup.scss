@@ -351,6 +351,80 @@
   }
 }
 
+.student-group__popup{
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+  border-radius: 5px;
+  width: 540px;
+  position: relative;
+  margin: 0 auto;
+  .mfp-close {
+    margin-top: 0;
+    margin-right: 0;
+    color: $text;
+    opacity: 1;
+    &.student-group__popup-cancel{
+      color: $accent;
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+}
+
+.student-group__popup-head{
+  border-bottom: 1px solid rgba($text, .1);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: $title;
+  color: $black;
+}
+
+.student-group__popup-body{
+  padding: 48px 48px 38px;
+  p{
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 130%;
+    color: $black;
+  }
+}
+
+.student-group__popup-footer{
+  display: flex;
+  margin-top: 40px;
+}
+
+.student-group__popup-cancel{
+  width: 215px;
+  height: 50px;
+  border: 1px solid $accent;
+  border-radius: 30px;
+  transition: linear .2s;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  color: $accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  position: static;
+  padding: 0;
+  &:hover{
+    text-decoration: none;
+    background-color: $accent;
+    color: #fff;
+  }
+}
+
 .new-password__body{
   padding: 40px 90px 90px;
 }

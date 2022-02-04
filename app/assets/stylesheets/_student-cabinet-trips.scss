@@ -1,0 +1,234 @@
+.student-cabinet__trips-table__head {
+  display: flex;
+  background: rgba(95, 108, 250, 0.3);
+  border-radius: 5px 5px 0 0;
+  min-height: 66px;
+  .dropdown-wrapper {
+    &.active {
+      .dropdown {
+        color: $purple;
+        svg {
+          transform: scale(1, -1);
+          path {
+            fill: $purple;
+          }
+        }
+      }
+    }
+  }
+  > div {
+    position: relative;
+    font-family: $title;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    color: rgba($text, 0.7);
+    &.number {
+      width: 93px;
+      >span{
+        padding-left: 16px;
+      }
+    }
+    &.vacancy {
+      width: 190px;
+    }
+    &.company {
+      width: 174px;
+    }
+    &.period {
+      width: 212px;
+    }
+    &.permission {
+      width: 242px;
+    }
+    &.group{
+      width: 190px;
+    }
+    > span {
+      display: block;
+      padding: 12px 10px;
+    }
+    .dropdowns {
+      display: flex;
+      margin-top: -3px;
+      padding: 0 10px;
+      .dropdown {
+        padding: 3px 0;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 130%;
+      }
+      &.two-cols {
+        .dropdown-wrapper {
+          width: 50%;
+        }
+      }
+      &.three-cols {
+        .dropdown-wrapper {
+          width: 33.33333%;
+        }
+      }
+    }
+    .dropdown {
+      display: flex;
+      justify-content: flex-start;
+      padding: 6px 8px;
+      cursor: pointer;
+      word-break: break-word;
+      svg {
+        min-width: 8px;
+        margin-left: 3px;
+        margin-top: 3px;
+      }
+    }
+  }
+}
+
+.student-cabinet__trips-table__body {
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  background-color: #fff;
+  .student-cabinet__trips-table__row {
+    display: flex;
+    min-height: 40px;
+    &:nth-child(even) {
+      background: rgba($text, 0.1);
+    }
+    &.inactive{
+      pointer-events: none;
+      > div {
+        color: #C4C4C4;
+        >a{
+          color: #C4C4C4;
+        }
+        &.two-cols {
+          > div {
+            color: #C4C4C4;
+            &.alert {
+              color: #C4C4C4;
+            }
+            >a{
+              color: #C4C4C4;
+            }
+          }
+        }
+        &.three-cols {
+          color: #C4C4C4;
+          > div {
+            color: #C4C4C4;
+            &.alert {
+              color: #C4C4C4;
+            }
+            >a{
+              color: #C4C4C4;
+            }
+          }
+        }
+      }
+    }
+    > div {
+      padding: 12px 10px;
+      font-size: 11px;
+      line-height: 130%;
+      color: $text;
+      display: flex;
+      align-items: center;
+      >a {
+        text-decoration: underline;
+        color: $text;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover {
+          color: $accent;
+          text-decoration: none;
+        }
+      }
+      >span{
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &.number {
+        width: 93px;
+        padding-left: 16px;
+      }
+      &.vacancy {
+        width: 190px;
+      }
+      &.company {
+        width: 174px;
+      }
+      &.period {
+        width: 212px;
+      }
+      &.permission {
+        width: 242px;
+      }
+      &.group{
+        width: 190px;
+      }
+      &.two-cols {
+        > div {
+          width: 50%;
+          &.alert{
+            color: $pink;
+            padding: 0;
+            margin: 0;
+            border: none;
+          }
+          >a {
+            text-decoration: underline;
+            color: $text;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:hover {
+              color: $accent;
+              text-decoration: none;
+            }
+          }
+          >span{
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+      &.three-cols {
+        > div {
+          width: 33.33333%;
+          &.alert{
+            color: $pink;
+            padding: 0;
+            margin: 0;
+            border: none;
+          }
+          >a {
+            text-decoration: underline;
+            color: $text;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:hover {
+              color: $accent;
+              text-decoration: none;
+            }
+          }
+          >span{
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
