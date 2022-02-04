@@ -153,7 +153,7 @@ ${require('../parts/header-logged-in-company.html')}
                             </div>
                         </div>
                         <div class="partner-cabinet__students-form__row">
-                            <label>Von welche länder?</label>
+                            <label>Von welchen Ländern?</label>
                             <div class="input-wrapper select-wrapper">
                                 <select class="multiselect" name="from_which_countries" multiple>
                                     <option>Option 1</option>
@@ -167,9 +167,41 @@ ${require('../parts/header-logged-in-company.html')}
                             </div>
                         </div>
                         <div class="partner-cabinet__students-form__row">
-                            <label>Brauchen sie die lebensläufe von den</label>
+                            <label>Müssen alle Kandidaten geimpft sein?</label>
                             <div class="input-wrapper select-wrapper">
-                                <select name="do_you_need_the_cvs">
+                                <select name="do_all_candidates_have_to_be_vaccinated">
+                                    <option selected disabled></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#25222C"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="partner-cabinet__students-form__row">
+                            <label>Kommentar zur Impfung  </label>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" name="comment_on_vaccination">
+                            </div>
+                        </div>
+                        <div class="partner-cabinet__students-form__row">
+                            <label>Möchten Sie Kandidaten bestätigen?</label>
+                            <div class="input-wrapper select-wrapper">
+                                <select name="do_you_want_to_confirm_candidates">
+                                    <option selected disabled></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.99984L1.99992 2.33317L3.99992 4.33317L5.99992 2.33317L6.66658 2.99984L3.99992 5.6665L1.33325 2.99984Z" fill="#25222C"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="partner-cabinet__students-form__row">
+                            <label>Wenn ja, wie oft?</label>
+                            <div class="input-wrapper select-wrapper">
+                                <select name="if_yes_how_often">
                                     <option selected disabled></option>
                                     <option>1</option>
                                     <option>2</option>
