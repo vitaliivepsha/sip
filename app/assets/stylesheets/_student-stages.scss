@@ -364,3 +364,82 @@
     margin-left: 12px;
   }
 }
+
+.student-stages__insurance{
+  padding: 28px 102px 20px 32px;
+  .student-cabinet__btn{
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+.student-stages__insurance-head{
+  display: flex;
+  align-items: center;
+  >picture{
+    display: block;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 22px;
+  }
+  >div{
+    >strong{
+      display: block;
+      font-family: $title;
+      color: $black;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 130%;
+    }
+    >span{
+      margin-top: 7px;
+      display: block;
+      font-size: 12px;
+      line-height: 130%;
+    }
+  }
+}
+
+.student-stages__insurance-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  .btn{
+    width: 216px;
+    border-color: rgba($accent, 0.3);
+    &:hover{
+      border-color: $accent;
+      background-color: $accent;
+    }
+  }
+  .input-file{
+    height: 50px;
+    width: 262px;
+    > label{
+      span{
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+.student-stages__insurance-download{
+  padding-left: 62px;
+  margin-top: 15px;
+  a{
+    display: block;
+    font-family: $title;
+    color: $accent;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    text-decoration: underline;
+    &:hover{
+      color: $purple;
+      text-decoration: none;
+    }
+  }
+}
