@@ -152,8 +152,23 @@
     &.b5_ready {
       width: 169px;
     }
-    &.b5_date {
-      width: 305px;
+    &.b7_employer {
+      width: 216px;
+      >span{
+        padding-left: 35px;
+      }
+    }
+    &.b7_vacancy {
+      width: 196px;
+    }
+    &.b7_fio {
+      width: 196px;
+    }
+    &.b7_permission {
+      width: 158px;
+    }
+    &.b7_last_day {
+      width: 130px;
     }
     > span {
       display: block;
@@ -285,6 +300,25 @@
       }
       &.b5_date {
         width: 305px;
+      }
+      &.b7_employer {
+        width: 216px;
+        padding-left: 35px;
+      }
+      &.b7_vacancy {
+        width: 196px;
+      }
+      &.b7_fio {
+        width: 196px;
+        a{
+          color: $text;
+        }
+      }
+      &.b7_permission {
+        width: 158px;
+      }
+      &.b7_last_day {
+        width: 130px;
       }
     }
   }
@@ -626,4 +660,8 @@
       }
     }
   }
+}
+
+.company-cabinet__business-processes__search{
+  margin-right: 15px;
 }
