@@ -167,6 +167,33 @@
     &.b5_ready {
       width: 169px;
     }
+    &.b6_fact_date {
+      width: 138px;
+      >span{
+        padding-left: 35px;
+      }
+    }
+    &.b6_arrive_date {
+      width: 138px;
+    }
+    &.b6_flight {
+      width: 147px;
+    }
+    &.b6_group {
+      width: 105px;
+    }
+    &.b6_city {
+      width: 127px;
+    }
+    &.b6_address {
+      width: 157px;
+    }
+    &.b6_responsible {
+      width: 197px;
+    }
+    &.b6_arrived_date {
+      width: 101px;
+    }
     &.b7_employer {
       width: 216px;
       >span{
@@ -329,6 +356,31 @@
       &.b5_date {
         width: 305px;
       }
+      &.b6_fact_date {
+        width: 138px;
+        padding-left: 35px;
+      }
+      &.b6_arrive_date {
+        width: 138px;
+      }
+      &.b6_flight {
+        width: 147px;
+      }
+      &.b6_group {
+        width: 105px;
+      }
+      &.b6_city {
+        width: 127px;
+      }
+      &.b6_address {
+        width: 157px;
+      }
+      &.b6_responsible {
+        width: 197px;
+      }
+      &.b6_arrived_date {
+        width: 101px;
+      }
       &.b7_employer {
         width: 216px;
         padding-left: 35px;
@@ -469,6 +521,11 @@
   background-color: #fff;
   border-radius: 5px;
   padding: 28px 28px 66px 38px;
+  &.student-groups{
+    padding: 28px 0 66px;
+    background-color: transparent;
+    border-radius: 0;
+  }
 }
 
 .company-cabinet__business-processes__vacancy-fields{

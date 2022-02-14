@@ -462,3 +462,84 @@
     }
   }
 }
+
+.group-popup{
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+  border-radius: 5px;
+  width: 438px;
+  position: relative;
+  margin: 0 auto;
+  .mfp-close {
+    margin-top: 0;
+    margin-right: 0;
+    color: $text;
+    opacity: 1;
+  }
+}
+
+.group-popup__head{
+  border-bottom: 1px solid rgba($text, .1);
+  height: 56px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.group-popup__checkbox{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 130%;
+  color: rgba($text, 0.5);
+  >div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid rgba($black, 0.5);
+    margin-right: 8px;
+    svg {
+      display: none;
+    }
+  }
+  &.checked{
+    >div{
+      border-color: $accent;
+      svg {
+        display: block;
+      }
+    }
+  }
+}
+
+.group-popup__body{
+  padding: 24px 30px;
+  height: 228px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    overflow-y: scroll;
+    background: transparent;
+    width: 4px;
+    transition: linear 0.2s;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    border-radius: 0;
+    width: 4px;
+    transition: linear 0.2s;
+    cursor: grab;
+  }
+  ul{
+    li{
+      margin-bottom: 10px;
+      &.group-popup__checkbox{
+        color: $text;
+      }
+    }
+  }
+}

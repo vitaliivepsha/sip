@@ -1250,4 +1250,20 @@ $(function() {
         '                                    </div>\n' +
         '                                </div>');
   });
+
+  // group popup checkboxes
+
+  $('.group-popup .check-me').click(function() {
+    $(this).toggleClass('checked');
+  });
+
+  $('.group-popup .check-all').click(function() {
+    $(this).toggleClass('checked');
+    if ($(this).hasClass('checked')) {
+      $(this).closest('.group-popup').find('.check-me').addClass('checked');
+    }
+    else {
+      $(this).closest('.group-popup').find('.check-me').removeClass('checked');
+    }
+  });
 });
