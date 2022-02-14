@@ -137,6 +137,21 @@
     &.b2_receiving_date {
       width: 171px;
     }
+    &.b3_fio {
+      width: 213px;
+      >span{
+        padding-left: 16px;
+      }
+    }
+    &.b3_vacancy {
+      width: 243px;
+    }
+    &.b3_fill {
+      width: 180px;
+    }
+    &.b3_date {
+      width: 169px;
+    }
     &.b5_fio {
       width: 213px;
       >span{
@@ -285,6 +300,19 @@
       &.b2_receiving_date {
         width: 171px;
       }
+      &.b3_fio {
+        width: 213px;
+        padding-left: 16px;
+      }
+      &.b3_vacancy {
+        width: 243px;
+      }
+      &.b3_fill {
+        width: 180px;
+      }
+      &.b3_date {
+        width: 169px;
+      }
       &.b5_fio {
         width: 213px;
         padding-left: 16px;
@@ -389,6 +417,10 @@
   margin-top: 15px;
   .btn{
     width: 227px;
+    &.btn-sign{
+      width: 320px;
+      margin-left: 54px;
+    }
   }
 }
 
