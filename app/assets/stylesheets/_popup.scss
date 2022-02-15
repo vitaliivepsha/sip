@@ -487,31 +487,40 @@
 }
 
 .group-popup__checkbox{
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-size: 12px;
-  line-height: 130%;
-  color: rgba($text, 0.5);
-  >div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 15px;
-    height: 15px;
-    border-radius: 2px;
-    border: 1px solid rgba($black, 0.5);
-    margin-right: 8px;
-    svg {
-      display: none;
+  input{
+    display: none;
+    &:checked{
+      +label{
+        >div{
+          border-color: $accent;
+          svg {
+            display: block;
+          }
+        }
+      }
     }
-  }
-  &.checked{
-    >div{
-      border-color: $accent;
-      svg {
-        display: block;
+    +label{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 130%;
+      color: rgba($text, 0.5);
+      margin-bottom: 0;
+      font-weight: 400;
+      >div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 15px;
+        height: 15px;
+        border-radius: 2px;
+        border: 1px solid rgba($black, 0.5);
+        margin-right: 8px;
+        svg {
+          display: none;
+        }
       }
     }
   }
@@ -538,7 +547,11 @@
     li{
       margin-bottom: 10px;
       &.group-popup__checkbox{
-        color: $text;
+        input{
+          +label{
+            color: $text;
+          }
+        }
       }
     }
   }

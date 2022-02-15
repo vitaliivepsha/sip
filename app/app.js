@@ -1211,16 +1211,16 @@ $(function() {
 
   /* company cabinet business processes */
 
-  $('.company-cabinet__business-processes__head').click(function() {
-    $(this).toggleClass('active').next('.company-cabinet__business-processes__body').slideToggle();
-  });
-
-  $('.company-cabinet__business-processes__checkbox').click(function() {
+  /*$('.company-cabinet__business-processes__checkbox').click(function() {
     $(this).toggleClass('checked').find(':checkbox').each(function() { this.checked = !this.checked; });
   });
 
   $('.select-all').click(function() {
     $(this).closest('.company-cabinet__business-processes__body').find('.check-me').toggleClass('checked').find(':checkbox').each(function() { this.checked = !this.checked; });
+  });*/
+
+  $('.company-cabinet__business-processes__head').click(function() {
+    $(this).toggleClass('active').next('.company-cabinet__business-processes__body').slideToggle();
   });
 
   $('.company-cabinet__business-processes__vacancy-head').click(function() {
@@ -1253,7 +1253,7 @@ $(function() {
 
   // group popup checkboxes
 
-  $('.group-popup .check-me').click(function() {
+  /*$('.group-popup .check-me').click(function() {
     $(this).toggleClass('checked');
   });
 
@@ -1265,9 +1265,9 @@ $(function() {
     else {
       $(this).closest('.group-popup').find('.check-me').removeClass('checked');
     }
-  });
+  });*/
 
-    // add uploading fields
+  // add uploading fields
 
   $('.add-uploading-fileds').click(function() {
     $(this).closest('.company-cabinet__business-processes__docs')

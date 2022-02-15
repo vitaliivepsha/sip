@@ -403,25 +403,41 @@
     }
   }
   .company-cabinet__business-processes__checkbox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 15px;
-    height: 15px;
-    border-radius: 2px;
-    border: 1px solid rgba($black, 0.5);
-    cursor: pointer;
-    svg {
-      display: none;
-    }
     input{
       display: none;
-    }
-    &.checked{
-      border-color: $accent;
-      svg {
-        display: block;
+      &:checked{
+        +label{
+          >div{
+            border-color: $accent;
+            svg {
+              display: block;
+            }
+          }
+        }
+      }
+      +label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 130%;
+        color: rgba($text, 0.5);
+        margin-bottom: 0;
+        font-weight: 400;
+        >div{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          width: 15px;
+          height: 15px;
+          border-radius: 2px;
+          border: 1px solid rgba($black, 0.5);
+          margin-right: 8px;
+          svg {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -433,34 +449,40 @@
   justify-content: flex-end;
   margin-bottom: 15px;
   .company-cabinet__business-processes__checkbox{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 12px;
-    line-height: 130%;
-    color: rgba($text, 0.5);
-    >div{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      width: 15px;
-      height: 15px;
-      border-radius: 2px;
-      border: 1px solid rgba($black, 0.5);
-      margin-right: 8px;
-      svg {
-        display: none;
+    input{
+      display: none;
+      &:checked{
+        +label{
+          >div{
+            border-color: $accent;
+            svg {
+              display: block;
+            }
+          }
+        }
       }
-      input{
-        display: none;
-      }
-    }
-    &.checked{
-      >div{
-        border-color: $accent;
-        svg {
-          display: block;
+      +label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 130%;
+        color: rgba($text, 0.5);
+        margin-bottom: 0;
+        font-weight: 400;
+        >div{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          width: 15px;
+          height: 15px;
+          border-radius: 2px;
+          border: 1px solid rgba($black, 0.5);
+          margin-right: 8px;
+          svg {
+            display: none;
+          }
         }
       }
     }
