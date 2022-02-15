@@ -415,6 +415,9 @@
     svg {
       display: none;
     }
+    input{
+      display: none;
+    }
     &.checked{
       border-color: $accent;
       svg {
@@ -447,6 +450,9 @@
       border: 1px solid rgba($black, 0.5);
       margin-right: 8px;
       svg {
+        display: none;
+      }
+      input{
         display: none;
       }
     }

@@ -1216,11 +1216,11 @@ $(function() {
   });
 
   $('.company-cabinet__business-processes__checkbox').click(function() {
-    $(this).toggleClass('checked');
+    $(this).toggleClass('checked').find(':checkbox').each(function() { this.checked = !this.checked; });
   });
 
   $('.select-all').click(function() {
-    $(this).closest('.company-cabinet__business-processes__body').find('.check-me').toggleClass('checked');
+    $(this).closest('.company-cabinet__business-processes__body').find('.check-me').toggleClass('checked').find(':checkbox').each(function() { this.checked = !this.checked; });
   });
 
   $('.company-cabinet__business-processes__vacancy-head').click(function() {
@@ -1269,8 +1269,8 @@ $(function() {
 
     // add uploading fields
 
-    $('.add-uploading-fileds').click(function() {
-        $(this).closest('.company-cabinet__business-processes__docs')
+  $('.add-uploading-fileds').click(function() {
+    $(this).closest('.company-cabinet__business-processes__docs')
             .find('.company-cabinet__business-processes__docs-uploading')
             .append('<div class="company-cabinet__business-processes__docs-uploading__fields">\n' +
                 '                                <div class="partner-cabinet__form">\n' +
@@ -1292,5 +1292,5 @@ $(function() {
                 '                                    </div>\n' +
                 '                                </div>\n' +
                 '                            </div>');
-    });
+  });
 });
