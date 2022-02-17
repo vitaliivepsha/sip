@@ -272,6 +272,15 @@
           text-decoration: none;
         }
       }
+      input[type="text"]{
+        width: 100%;
+        font-size: 11px;
+        line-height: 130%;
+        border: 1px solid rgba(71, 71, 71, 0.3);
+        border-radius: 2px;
+        height: 22px;
+        padding: 0 8px;
+      }
       &.b1_fio {
         width: 173px;
         padding-left: 16px;
