@@ -848,6 +848,66 @@
   }
 }
 
+.rating > input ~ label {
+  cursor: pointer;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  display: block;
+  content: '';
+  width: 12px;
+  height: 12px;
+  -webkit-mask: url("../images/icons/star-empty.svg");
+  mask: url("../images/icons/star-empty.svg");
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: #ffd53d;
+  margin-right: 5px;
+}
+
+.rating > label {
+  width: auto;
+  float: right;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.rating:not(:checked) > label:hover:before,
+.rating:not(:checked) > label:hover ~ label:before,
+.rating > input:checked + label:hover:before,
+.rating > input:checked ~ label:before,
+.rating > input:checked ~ label:hover:before,
+.rating > input:checked ~ label:hover ~ label:before,
+.rating > label:hover ~ input:checked ~ label:before {
+  -webkit-mask: url("../images/icons/star-full.svg");
+  mask: url("../images/icons/star-full.svg");
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.rating > input:checked ~ label:before {
+  -webkit-mask: url("../images/icons/star-full.svg");
+  mask: url("../images/icons/star-full.svg");
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
 .partner-cabinet__vacancy-team-lead {
   display: flex;
   align-items: center;

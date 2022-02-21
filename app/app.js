@@ -70,6 +70,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/company-cabinet-employers.html');
   require('./assets/templates/layouts/company-cabinet-employer-edit.html');
   require('./assets/templates/layouts/company-cabinet-bussiness-processes.html');
+  require('./assets/templates/layouts/employer-review.html');
 }
 
 // Depends
