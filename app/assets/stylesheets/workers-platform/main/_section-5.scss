@@ -1,0 +1,116 @@
+.workers-why__section{
+  padding: 0 30px;
+  font-family: $title;
+  @include bp(xs){
+    padding: 0;
+  }
+}
+
+.workers-why__inner{
+  padding: 44px 0 54px;
+  background: #EFEFEF;
+  border-radius: 5px;
+  @include bp(xs){
+    padding: 70px 0;
+    border-radius: 0;
+  }
+}
+
+.workers-why__title{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $blue-dark;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 40px;
+  @include bp(xs){
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.workers-why__wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 814px;
+  max-width: 100%;
+  @include bp(md){
+    padding: 0 15px;
+  }
+  @include bp(sm){
+    flex-direction: column;
+    align-items: center;
+  }
+  @include bp(xs){
+    padding: 0 5px;
+  }
+}
+
+.workers-why__list{
+  width: calc(100% - 285px);
+  padding-right: 30px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: $blue-dark;
+  @include bp(sm){
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  @include bp(xs){
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 17px;
+    padding-right: 0;
+  }
+  li{
+    position: relative;
+    padding-left: 41px;
+    margin-bottom: 20px;
+    @include bp(sm){
+      min-height: 25px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    i{
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: normal;
+      width: 25px;
+      height: 25px;
+      color: #fff;
+      background-color: $red;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+}
+
+.workers-why__pic{
+  width: 285px;
+  height: 267px;
+  @include bp(xs){
+    width: 249px;
+    height: 233px;
+  }
+  picture{
+    width: 100%;
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

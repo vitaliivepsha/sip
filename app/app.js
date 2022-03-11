@@ -71,6 +71,10 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/company-cabinet-employer-edit.html');
   require('./assets/templates/layouts/company-cabinet-bussiness-processes.html');
   require('./assets/templates/layouts/employer-review.html');
+  require('./assets/templates/layouts/workers-platform-main.html');
+  require('./assets/templates/layouts/workers-platform-main-ru.html');
+  require('./assets/templates/layouts/workers-platform-main-de.html');
+  require('./assets/templates/layouts/workers-platform-main-en.html');
 }
 
 // Depends

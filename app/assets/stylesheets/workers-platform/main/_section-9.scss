@@ -1,0 +1,44 @@
+.workers-agression__section{
+  padding: 0 30px;
+  font-family: $title;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  @include bp(xs){
+    padding: 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.workers-agression__inner{
+  background: linear-gradient(360deg, #60010D -18.03%, #D2374A 106.69%);
+  border-radius: 5px;
+  padding: 60px 0;
+  @include bp(md){
+    padding: 60px 15px;
+  }
+  @include bp(xs){
+    border-radius: 0;
+    padding: 40px 0 70px;
+  }
+  .container{
+    p{
+      margin: 0 auto 20px;
+      &:nth-child(1){
+        max-width: 780px;
+      }
+      &:nth-child(2){
+        max-width: 970px;
+      }
+      &:nth-child(3){
+        max-width: 660px;
+      }
+      &:nth-child(4){
+        max-width: 660px;
+      }
+    }
+  }
+}

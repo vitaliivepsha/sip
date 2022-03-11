@@ -1,0 +1,33 @@
+.workers-header{
+  height: 70px;
+  position: relative;
+  z-index: 2;
+  @include bp(xs){
+    height: 46px;
+  }
+  .container{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    @include bp(sm){
+      justify-content: center;
+    }
+    @include bp(xs){
+      height: 46px;
+    }
+  }
+}
+
+.workers-header__logo{
+  display: flex;
+  width: 162px;
+  height: 46px;
+  @include bp(xs){
+    width: 96px;
+    height: 27px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,150 @@
+.workers-info__section{
+  padding: 0 30px;
+  font-family: $title;
+  @include bp(xs){
+    padding: 0;
+  }
+  &.red{
+    .workers-info__inner{
+      background: linear-gradient(360deg, #60010D -18.03%, #D2374A 106.69%), #0A1C27;
+    }
+    .workers-info__list{
+      li{
+        @include bp(xs){
+          border-color: $blue-dark;
+        }
+        >i{
+          background-color: $blue-dark;
+          @include bp(xs){
+            background-color: transparent;
+          }
+          svg{
+            path{
+              @include bp(xs){
+                fill: $blue-dark;
+              }
+            }
+          }
+        }
+        >div{
+          border-color: $blue-dark;
+          span{
+            color: $blue-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+.workers-info__inner{
+  background-color: $blue-dark;
+  border-radius: 5px;
+  padding: 100px 0;
+  @include bp(xs){
+    padding: 45px 0 60px;
+    border-radius: 0;
+  }
+}
+
+.workers-info__title{
+  display: block;
+  text-align: center;
+  margin-bottom: 55px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  @include bp(xs){
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+.workers-info__wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  @include bp(md){
+    flex-direction: column;
+    padding: 0 60px;
+  }
+  @include bp(xs){
+    padding: 0;
+  }
+}
+
+.workers-info__list{
+  width: 470px;
+  @include bp(lg){
+    width: 430px;
+  }
+  @include bp(md){
+    width: 100%;
+  }
+  li{
+    display: flex;
+    min-height: 60px;
+    margin-bottom: 20px;
+    @include bp(xs){
+      border: 1px solid $red;
+      border-radius: 5px;
+    }
+    >i{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 65px;
+      background-color: $red;
+      border-radius: 5px 0 0 5px;
+      @include bp(xs){
+        min-width: 44px;
+        border-radius: 0;
+        background-color: transparent;
+      }
+      svg{
+        path{
+          @include bp(xs){
+            fill: $red;
+          }
+        }
+      }
+    }
+    >div{
+      width: calc(100% - 65px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 12px 20px 12px 15px;
+      color: #fff;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      border: 1px solid $red;
+      border-left: none;
+      border-radius: 0 5px 5px 0;
+      @include bp(xs){
+        border: none;
+        border-radius: 0;
+        width: calc(100% - 44px);
+        padding: 11px 8px 11px 0;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      span{
+        display: block;
+        font-size: 12px;
+        line-height: 15px;
+        color: $red-accent;
+        margin-top: 3px;
+        @include bp(xs){
+          font-size: 12px;
+          line-height: 15px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

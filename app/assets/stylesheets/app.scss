@@ -30,6 +30,11 @@ body {
   @include bp(xs) {
     padding: 10px;
   }
+  ::selection {
+    background: rgba($accent, 0.5);
+    color: #fff;
+    text-shadow: none;
+  }
   &.active {
     height: 100vh;
     overflow: hidden;
@@ -74,6 +79,19 @@ body {
     .overlay {
       opacity: 1;
       z-index: 1022;
+    }
+  }
+  &.workers-platform{
+    padding: 0;
+    ::selection {
+      background: rgba($red, 0.5);
+      color: #fff;
+      text-shadow: none;
+    }
+    .section{
+      @include bp(xs){
+        margin-bottom: 30px;
+      }
     }
   }
 }
@@ -259,6 +277,20 @@ main {
       color: $black;
     }
   }
+  &.w-btn {
+    background-color: #fff;
+    border-color: #fff;
+    color: $red-dark;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: $title;
+    &:hover {
+      background-color: $red-accent;
+      border-color: $red-accent;
+      color: #fff;
+    }
+  }
 }
 
 .input-wrapper {
@@ -334,12 +366,6 @@ main {
   }
 }
 
-::selection {
-  background: rgba($accent, 0.5);
-  color: #fff;
-  text-shadow: none;
-}
-
 // Header
 @import "header";
 
@@ -389,3 +415,20 @@ main {
 @import "company-cabinet-stages";
 @import "company-cabinet-employer";
 @import "company-cabinet-business-processes";
+
+// Workers Platform Main
+@import "workers-platform/main/section-1";
+@import "workers-platform/main/section-2";
+@import "workers-platform/main/section-3";
+@import "workers-platform/main/section-4";
+@import "workers-platform/main/section-5";
+@import "workers-platform/main/section-6";
+@import "workers-platform/main/section-7";
+@import "workers-platform/main/section-8";
+@import "workers-platform/main/section-9";
+
+// Workers Platform Header
+@import "workers-platform/header";
+
+// Workers Platform Footer
+@import "workers-platform/footer";

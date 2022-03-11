@@ -1,0 +1,111 @@
+.workers-ukraine__section{
+  height: 530px;
+  background: $blue-dark;
+  position: relative;
+  font-family: $title;
+  overflow-x: hidden;
+  @include bp(sm){
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  &:before{
+    display: none;
+    position: absolute;
+    content: '';
+    width: 455px;
+    height: 250px;
+    left: -226px;
+    top: 137px;
+    background: #61000D;
+    opacity: 0.7;
+    transform: rotate(118.88deg);
+    @include bp(xs){
+      display: block;
+    }
+  }
+}
+
+.workers-ukraine__bg{
+  width: 55%;
+  height: 530px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  @media only screen and (max-width: 1679px){
+    margin-right: -10vw;
+  }
+  @include bp(xl){
+    margin-right: -33vw;
+  }
+  @include bp(md){
+    margin-right: -66vw;
+  }
+  @include bp(sm){
+    position: static;
+    width: 100%;
+    margin: 0;
+    height: 74vw;
+  }
+  picture{
+    height: 100%;
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.workers-ukraine__info{
+  width: 50%;
+  padding-top: 118px;
+  position: relative;
+  z-index: 1;
+  @include bp(md){
+    padding-top: 70px;
+  }
+  @include bp(sm){
+    width: 100%;
+    padding: 60px 15px;
+  }
+  @include bp(xs){
+    height: 523px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.workers-ukraine__title{
+  display: block;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 12px;
+  @include bp(xs){
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.workers-ukraine__descr{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  max-width: 485px;
+  @include bp(xs){
+    font-size: 14px;
+    line-height: 17px;
+  }
+  p{
+    margin-bottom: 8px;
+    @include bp(xs){
+      margin-bottom: 10px;
+    }
+  }
+}

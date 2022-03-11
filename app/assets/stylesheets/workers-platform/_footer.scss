@@ -1,0 +1,41 @@
+.workers-footer{
+  padding: 53px 0;
+  background-color: $blue-dark;
+  @include bp(xs){
+    padding: 30px 0;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include bp(xs){
+      justify-content: center;
+    }
+  }
+}
+
+.workers-footer__logo{
+  @include bp(xs){
+    display: none;
+  }
+}
+
+.workers-footer__socials{
+  display: flex;
+  li{
+    margin-right: 20px;
+    &:last-child{
+      margin-right: 0;
+      a{
+        display: flex;
+        &:hover{
+          svg{
+            path{
+              fill: $red-accent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
