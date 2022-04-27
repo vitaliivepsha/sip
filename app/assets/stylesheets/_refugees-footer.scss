@@ -1,0 +1,40 @@
+.refugees-footer {
+  background-color: $blue-dark;
+  padding: 50px 0;
+}
+
+.refugees-footer__menu{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #fff;
+  letter-spacing: 0.03em;
+  margin: 0 auto 15px;
+  li{
+    a{
+      display: block;
+      padding: 10px 15px;
+      color: #fff;
+      text-decoration: none;
+      &:hover{
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.refugees-footer__socials{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  li{
+    margin: 0 10px 10px;
+    a{
+      display: flex;
+    }
+  }
+}

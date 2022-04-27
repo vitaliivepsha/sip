@@ -76,6 +76,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/workers-platform-main-de.html');
   require('./assets/templates/layouts/workers-platform-main-en.html');
   require('./assets/templates/layouts/refugees-cabinet-profile.html');
+  require('./assets/templates/layouts/refugees-cabinet-documents.html');
 }
 
 // Depends
@@ -1367,5 +1368,11 @@ $(function() {
 
   $(document).on('click', '.refugees-header__lang', function(e) {
     e.stopPropagation();
+  });
+
+  // remove document
+
+  $('.refugees-remove-doc').click(function() {
+    $(this).closest('li').remove();
   });
 });
