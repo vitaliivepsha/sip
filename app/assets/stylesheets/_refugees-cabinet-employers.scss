@@ -1,0 +1,219 @@
+.refugees-cabinet__employers{
+  width: 100%;
+  border: 1px solid rgba(10, 28, 39, 0.2);
+  border-radius: 5px;
+}
+
+.refugees-cabinet__employers-table{
+  width: 100%;
+}
+
+.refugees-cabinet__employers-table__head {
+  display: flex;
+  background: $red;
+  border-radius: 5px 5px 0 0;
+  min-height: 40px;
+  width: calc(100% + 2px);
+  margin-left: -1px;
+  .dropdown-wrapper {
+    &.active {
+      .dropdown {
+        svg {
+          transform: scale(1, -1);
+        }
+      }
+    }
+  }
+  > div {
+    position: relative;
+    font-family: $title;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    color: #fff;
+    &.number {
+      width: 130px;
+      >span{
+        padding-left: 18px;
+      }
+    }
+    &.vacancy {
+      width: 220px;
+    }
+    &.company {
+      width: 210px;
+    }
+    &.period {
+      width: 170px;
+    }
+    > span {
+      display: block;
+      padding: 12px 10px 6px;
+    }
+    .dropdowns {
+      display: flex;
+      //margin-top: -3px;
+      padding: 0 10px;
+      .dropdown {
+        padding: 0 0 10px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 130%;
+      }
+      &.two-cols {
+        .dropdown-wrapper {
+          width: 50%;
+        }
+      }
+      &.three-cols {
+        .dropdown-wrapper {
+          width: 33.33333%;
+        }
+      }
+    }
+    .dropdown {
+      display: flex;
+      justify-content: flex-start;
+      padding: 12px 10px 6px;
+      cursor: pointer;
+      word-break: break-word;
+      svg {
+        min-width: 8px;
+        margin-left: 3px;
+        margin-top: 3px;
+      }
+    }
+    .dropdown-list{
+      color: $blue-dark;
+      max-height: 182px;
+      ul li.active:after{
+        background-color: $red;
+      }
+      .select-wrapper .SumoSelect > .CaptionCont .search-txt{
+        color: $blue-dark;
+      }
+      .select-wrapper .SumoSelect > .optWrapper > .options li.opt.selected:after{
+        background-color: $red;
+      }
+    }
+    .dropdown-more{
+      background-color: $red;
+      color: #fff;
+    }
+  }
+}
+
+.refugees-cabinet__employers-table__body {
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  background-color: #fff;
+  width: 100%;
+  .refugees-cabinet__employers-table__row {
+    display: flex;
+    min-height: 40px;
+    &:nth-child(even) {
+      background: #F4F4F4;
+    }
+    &.inactive{
+      pointer-events: none;
+      opacity: .5;
+    }
+    > div {
+      padding: 12px 10px;
+      font-size: 11px;
+      line-height: 130%;
+      color: $blue-dark;
+      display: flex;
+      align-items: center;
+      >a {
+        text-decoration: underline;
+        color: $blue-dark;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover {
+          color: $red;
+          text-decoration: none;
+        }
+      }
+      >span{
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &.number {
+        width: 130px;
+        padding-left: 18px;
+      }
+      &.vacancy {
+        width: 220px;
+      }
+      &.company {
+        width: 210px;
+      }
+      &.period {
+        width: 170px;
+      }
+      &.two-cols {
+        > div {
+          width: 50%;
+          &.alert{
+            color: $pink;
+            padding: 0;
+            margin: 0;
+            border: none;
+          }
+          >a {
+            text-decoration: underline;
+            color: $text;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:hover {
+              color: $accent;
+              text-decoration: none;
+            }
+          }
+          >span{
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+      &.three-cols {
+        > div {
+          width: 33.33333%;
+          &.alert{
+            color: $pink;
+            padding: 0;
+            margin: 0;
+            border: none;
+          }
+          >a {
+            text-decoration: underline;
+            color: $text;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:hover {
+              color: $accent;
+              text-decoration: none;
+            }
+          }
+          >span{
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
