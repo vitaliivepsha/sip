@@ -94,6 +94,16 @@ body {
       }
     }
   }
+  &.refugees-cabinet{
+    padding: 0;
+    color: $blue-dark;
+    font-family: $title;
+    ::selection {
+      background: rgba($red, 0.5);
+      color: #fff;
+      text-shadow: none;
+    }
+  }
 }
 
 ol,
@@ -415,6 +425,10 @@ main {
 @import "company-cabinet-stages";
 @import "company-cabinet-employer";
 @import "company-cabinet-business-processes";
+
+// Refugees Cabinet
+@import "refugees-header";
+@import "refugees-cabinet-profile";
 
 // Workers Platform Main
 @import "workers-platform/main/section-1";

@@ -1,0 +1,398 @@
+.refugees-cabinet__main-wrap{
+  padding: 55px 0 40px;
+}
+
+.refugees-cabinet__main-wrap{
+  display: flex;
+  gap: 30px;
+}
+
+.refugees-cabinet__sidebar{
+  width: 255px;
+  border-right: 1px solid rgba(10, 28, 39, 0.1);
+}
+
+.refugees-cabinet__user{
+  display: flex;
+  align-items: center;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(10, 28, 39, 0.1);
+  >picture{
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 14px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  >div{
+    font-weight: 400;
+    color: $blue-dark;
+    span{
+      display: block;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    small{
+      font-size: 11px;
+      line-height: 13px;
+      display: block;
+      opacity: .7;
+    }
+  }
+}
+
+.refugees-cabinet__menu{
+  padding: 35px 0;
+  >li{
+    margin-bottom: 15px;
+    >a{
+      display: flex;
+      align-items: center;
+      padding: 5px 12px;
+      position: relative;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: $blue-dark;
+      &:hover, &.current{
+        text-decoration: none;
+        &:after{
+          opacity: 1;
+        }
+      }
+      &:after{
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 3px;
+        background-color: $red;
+        opacity: 0;
+        transition: linear .2s;
+      }
+      i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        margin-right: 14px;
+        border-radius: 50%;
+        background: #F4F4F4;
+      }
+    }
+  }
+}
+
+.refugees-cabinet__info{
+  width: calc(100% - 255px);
+  display: flex;
+  flex-direction: column;
+}
+
+.refugees-cabinet__info-head{
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  padding: 7px 0 30px;
+  svg{
+    min-width: 17px;
+    margin-right: 14px;
+  }
+}
+
+.refugees-cabinet__info-body{
+  border: 1px solid rgba(10, 28, 39, 0.1);
+  border-radius: 5px;
+  flex: 1 0 auto;
+}
+
+.refugees-cabinet__info-profile{
+  padding: 27px 50px 50px;
+}
+
+.refugees-cabinet__form{
+  width: 530px;
+  .partner-cabinet__students-form__row{
+    flex-direction: row-reverse;
+    margin-bottom: 5px;
+    &.align-top{
+      align-items: flex-start;
+      >label{
+        margin-top: 5px;
+      }
+    }
+    >label{
+      width: calc(100% - 290px);
+      font-weight: 400;
+      .accent{
+        color: $red;
+      }
+    }
+    >.input-wrapper{
+      width: 290px;
+      &.select-wrapper{
+        >svg{
+          top: 17px;
+          right: 17px;
+          z-index: 1;
+        }
+        select{
+          border: 1px solid rgba(71, 71, 71, 0.3);
+          color: $text;
+        }
+      }
+      &.multiselect-wrapper{
+        .SumoSelect{
+          flex-direction: column-reverse;
+        }
+      }
+      &.date-wrapper{
+        .date-choose{
+          width: 154px;
+          @-moz-document url-prefix() {
+            width: 164px;
+          }
+          &:before{
+            width: 100px;
+            border-color: rgba(71, 71, 71, 0.3);
+            @-moz-document url-prefix() {
+              width: 110px;
+            }
+          }
+          svg{
+            background-color: transparent;
+          }
+          &.error{
+            &:before{
+              border-color: $red;
+            }
+            label{
+              &.error{
+                color: $red;
+                font-size: 10px;
+                line-height: 130%;
+                top: 15px;
+              }
+            }
+          }
+        }
+      }
+      &.error{
+        .input, select{
+          border-color: $red;
+          +label{
+            &.error{
+              margin-top: 2px;
+              color: $red;
+              font-size: 10px;
+              line-height: 130%;
+              display: block;
+            }
+          }
+        }
+        +label{
+          margin-top: -15px;
+        }
+      }
+      .input{
+        border: 1px solid rgba(71, 71, 71, 0.3);
+        color: $text;
+        &.date{
+          border-color: transparent;
+        }
+      }
+      .textarea{
+        border: 1px solid rgba(71, 71, 71, 0.3);
+        color: $text;
+        &.comment-group{
+          display: block;
+          height: 110px;
+        }
+      }
+      .SumoSelect{
+        >.CaptionCont{
+          border: 1px solid rgba(71, 71, 71, 0.3);
+        }
+        >.optWrapper{
+          >.options{
+            li{
+              &.opt{
+                border: none;
+                &.disabled{
+                  display: none;
+                }
+                &.selected{
+                  span{
+                    i{
+                      background-color: $red;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.error{
+          >.CaptionCont{
+            border-color: $red;
+          }
+        }
+        select{
+          +label{
+            &.error{
+              font-weight: 400;
+              color: $red;
+              margin-bottom: 0;
+              margin-top: 2px;
+              font-size: 10px;
+              line-height: 130%;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .checkbox-wrapper{
+    &.refugees-cabinet__form-checkbox{
+      input{
+        +label{
+          padding-left: 48px;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 20px;
+          color: $blue-dark;
+          &:before{
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            border-color: $blue-dark;
+          }
+          &:after{
+            width: 14px;
+            height: 10px;
+            left: 3px;
+            top: 5px;
+            background-color: $red;
+          }
+        }
+        &:checked{
+          +label{
+
+          }
+        }
+      }
+    }
+  }
+  .partner-cabinet__form{
+    .input-file{
+      border-color: rgba($red, .5);
+      margin-bottom: 10px;
+      &:hover{
+        box-shadow: 0 4px 10px rgba($red, .2);
+      }
+      > label{
+        > svg{
+          path{
+            fill: $red;
+          }
+        }
+        span{
+          text-align: left;
+          small{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 130%;
+            color: #8B8A8E;
+          }
+        }
+      }
+      .tooltip{
+        background-color: $red;
+        &:before{
+          border-bottom-color: $red;
+        }
+      }
+      +.checkbox-wrapper{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      +.refugees-cabinet__form-radio{
+        margin-top: 20px;
+      }
+    }
+  }
+  .btn{
+    &.refugees-cabinet__form-btn{
+      background-color: $red;
+      border-color: $red;
+      color: #fff;
+      &:hover{
+        background-color: $red-dark;
+        border-color: $red-dark;
+      }
+    }
+    &:disabled{
+      opacity: .2;
+    }
+  }
+}
+
+.refugees-cabinet__form-radio{
+  display: flex;
+  gap: 45px;
+  .radio-wrapper{
+    input{
+      display: none;
+      +label{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 0;
+        position: relative;
+        padding-left: 25px;
+        &:before{
+          position: absolute;
+          content: '';
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          border: 1px solid $blue-dark;
+          left: 0;
+          top: 0;
+        }
+        &:after{
+          position: absolute;
+          content: '';
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background-color: $red;
+          left: 3px;
+          top: 3px;
+          opacity: 0;
+          transition: linear .2s;
+        }
+      }
+      &:checked{
+        +label{
+          &:after{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

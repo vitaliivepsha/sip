@@ -75,6 +75,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/workers-platform-main-ru.html');
   require('./assets/templates/layouts/workers-platform-main-de.html');
   require('./assets/templates/layouts/workers-platform-main-en.html');
+  require('./assets/templates/layouts/refugees-cabinet-profile.html');
 }
 
 // Depends
@@ -514,7 +515,26 @@ $(function() {
         end_of_work: {
           required: true,
           time: true
-        }
+        },
+        first_name: {
+          required: true,
+        },
+        last_name: {
+          required: true,
+        },
+        name_en: {
+          required: true,
+          onlylatinletters: true
+        },
+        host_country: {
+          required: true,
+        },
+        host_city: {
+          required: true,
+        },
+        date_germany: {
+          required: true,
+        },
       },
       messages: {
         name_ua: {
@@ -625,6 +645,24 @@ $(function() {
         },
         end_of_work: {
           required: 'Заполните эту информацию',
+        },
+        first_name: {
+          required: 'Заполните эту информацию',
+        },
+        last_name: {
+          required: 'Заполните эту информацию',
+        },
+        name_en: {
+          required: 'Заполните эту информацию',
+        },
+        host_country: {
+          required: 'Заполните эту информацию',
+        },
+        host_city: {
+          required: 'Заполните эту информацию',
+        },
+        date_germany: {
+          required: 'Заполните эту информацию',
         }
       }
     });
@@ -638,10 +676,26 @@ $(function() {
     return value == '' || value.match(/^([01][0-9]|2[0-3]):[0-5][0-9]$/);
   }, 'Enter a valid time: hh:mm');
 
+  $('.refugees-cabinet__form .btn').click(function() {
+    setTimeout(function() {
+      if ($('.refugees-cabinet__form').find('.input-wrapper.error').length) {
+        $('.refugees-cabinet__form').find('.btn').attr('disabled', 'disabled');
+      }
+    }, 100);
+  });
+
+  $('.refugees-cabinet__form .input, .refugees-cabinet__form .textarea, .refugees-cabinet__form select').on('keyup change', function() {
+    if ($('.refugees-cabinet__form .input-wrapper.error').length) {
+      $('.refugees-cabinet__form').find('.btn').attr('disabled', 'disabled');
+    }
+    else {
+      $('.refugees-cabinet__form').find('.btn').removeAttr('disabled');
+    }
+  });
+
     /* partner cabinet students */
 
     // dropdown
-
   $('.dropdown').click(function() {
     $('.SumoSelect').removeClass('open');
     $(this).closest('.dropdown-wrapper').toggleClass('active');
@@ -1297,5 +1351,21 @@ $(function() {
                 '                                    </div>\n' +
                 '                                </div>\n' +
                 '                            </div>');
+  });
+
+  /*----- refugees -----*/
+
+    // lang
+
+  $('.refugees-header__lang-current').click(function() {
+    $(this).parent().toggleClass('active');
+  });
+
+  $(document).click(function() {
+    $('.refugees-header__lang').removeClass('active');
+  });
+
+  $(document).on('click', '.refugees-header__lang', function(e) {
+    e.stopPropagation();
   });
 });
