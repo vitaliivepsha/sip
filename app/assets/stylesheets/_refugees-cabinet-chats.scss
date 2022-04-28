@@ -1,29 +1,14 @@
-.partner-cabinet__chats-alert{
+.refugees-cabinet__chats{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  border: 1px solid rgba($text, 0.2);
-  height: 40px;
-  font-size: 11px;
-  line-height: 15px;
-  color: $pink;
-  margin-bottom: 15px;
-  svg{
-    margin-right: 15px;
-  }
+  justify-content: space-between;
 }
 
-.partner-cabinet__chats{
-  display: flex;
-}
-
-.partner-cabinet__chats-list{
-  width: 100%;
+.refugees-cabinet__chats-list{
+  width: 238px;
   height: 328px;
-  background: rgba(255, 255, 255, 0.5);
+  background: #F9F9F9;
   border-radius: 5px;
-  padding: 16px;
+  padding: 16px 15px;
   &::-webkit-scrollbar {
     overflow-y: scroll;
     background: transparent;
@@ -48,21 +33,23 @@
       line-height: 130%;
       font-family: $title;
       color: $black;
-      padding: 5px 15px;
-      border: 1px solid rgba(117, 215, 214, 0.5);
+      padding: 5px 10px;
+      border: 1px solid $blue-dark;
       cursor: pointer;
       margin-bottom: 10px;
-      text-align: center;
+      text-align: left;
       &.active{
-        background: rgba(117, 215, 214, 0.5);
+        background: $red;
+        border-color: $red;
+        color: #fff;
       }
     }
   }
 }
 
-.partner-cabinet__chats-main{
-  width: 100%;
-  background: rgba(255, 255, 255, 0.5);
+.refugees-cabinet__chats-main{
+  width: calc(100% - 248px);
+  background: #F9F9F9;
   border-radius: 5px;
   .tabs-content{
     display: none;
@@ -72,7 +59,7 @@
   }
 }
 
-.partner-cabinet__chats-main__head{
+.refugees-cabinet__chats-main__head{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,7 +74,7 @@
   padding: 10px 15px;
 }
 
-.partner-cabinet__chats-main__body{
+.refugees-cabinet__chats-main__body{
   height: 440px;
   padding: 16px;
   font-size: 12px;

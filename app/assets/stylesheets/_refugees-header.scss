@@ -85,4 +85,33 @@
   justify-content: center;
   border-radius: 50%;
   background-color: $red;
+  .logged-in__menu{
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(210, 55, 74, 0.15);
+    padding: 18px 0;
+    li{
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        &:hover{
+          background-color: #F4F4F4;
+          color: $red;
+          svg{
+            path{
+              fill: $red;
+            }
+          }
+        }
+        i{
+          display: flex;
+          width: 21px;
+          svg{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }
