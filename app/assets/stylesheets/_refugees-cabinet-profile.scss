@@ -124,6 +124,9 @@
 
 .refugees-cabinet__form{
   width: 530px;
+  &.disabled{
+    pointer-events: none;
+  }
   .partner-cabinet__students-form__row{
     flex-direction: row-reverse;
     margin-bottom: 5px;
@@ -131,6 +134,24 @@
       align-items: flex-start;
       >label{
         margin-top: 5px;
+      }
+    }
+    .name-wrapper{
+      display: flex;
+      justify-content: space-between;
+      width: 290px;
+      .input-wrapper{
+        width: 85px;
+        .input{
+          border: 1px solid rgba(71, 71, 71, 0.3);
+          color: $text;
+          &.date{
+            border-color: transparent;
+          }
+        }
+        +.input-wrapper{
+          width: calc(100% - 90px);
+        }
       }
     }
     >label{
@@ -264,6 +285,9 @@
         }
       }
     }
+    +.partner-cabinet__students-form__subtitle{
+      margin-top: 15px;
+    }
   }
   .checkbox-wrapper{
     &.refugees-cabinet__form-checkbox{
@@ -334,19 +358,30 @@
       }
     }
   }
-  .btn{
-    &.refugees-cabinet__form-btn{
-      background-color: $red;
-      border-color: $red;
-      color: #fff;
+}
+.btn{
+  &.refugees-cabinet__form-btn{
+    background-color: $red;
+    border-color: $red;
+    color: #fff;
+    width: 226px;
+    margin-top: 50px;
+    &:hover{
+      background-color: $red-dark;
+      border-color: $red-dark;
+    }
+    &__transparent{
+      background-color: transparent;
+      color: $red;
       &:hover{
-        background-color: $red-dark;
-        border-color: $red-dark;
+        color: #fff;
+        background-color: $red;
+        border-color: $red;
       }
     }
-    &:disabled{
-      opacity: .2;
-    }
+  }
+  &:disabled{
+    opacity: .2;
   }
 }
 

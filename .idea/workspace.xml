@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a77155b-1874-4360-9727-0bcb6c0f93f1" name="Changes" comment="refugees cabinet employers">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/templates/layouts/refugees-cabinet-employer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/_refugees-cabinet-profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/_refugees-cabinet-profile.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26Ee4Xj1JrATEGDPMdFG9LKl6zo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/templates/layouts" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\sip\app\assets\templates\layouts" />
+      <recent name="C:\projects\sip\app\assets\stylesheets" />
+      <recent name="C:\projects\sip\app\assets\templates\parts" />
+      <recent name="C:\projects\sip\app\assets\stylesheets\workers-platform\main" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a77155b-1874-4360-9727-0bcb6c0f93f1" name="Changes" comment="" />
+      <created>1646992982784</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646992982784</updated>
+      <workItem from="1646992984060" duration="30404000" />
+      <workItem from="1647248805213" duration="1087000" />
+      <workItem from="1647338816704" duration="17000" />
+      <workItem from="1647339113804" duration="16000" />
+      <workItem from="1647856362295" duration="554000" />
+      <workItem from="1648479492158" duration="63000" />
+      <workItem from="1648479578270" duration="423000" />
+      <workItem from="1648481182973" duration="75000" />
+      <workItem from="1648553555638" duration="12000" />
+      <workItem from="1648555188993" duration="20000" />
+      <workItem from="1648632856476" duration="104000" />
+      <workItem from="1648729681007" duration="288000" />
+      <workItem from="1648730063011" duration="1000" />
+      <workItem from="1649153252418" duration="96000" />
+      <workItem from="1649172244233" duration="56000" />
+      <workItem from="1649172895391" duration="109000" />
+      <workItem from="1649853718953" duration="678000" />
+      <workItem from="1649862562526" duration="10000" />
+      <workItem from="1650111279152" duration="3000" />
+      <workItem from="1650296566883" duration="44000" />
+      <workItem from="1650297392104" duration="15000" />
+      <workItem from="1650971242274" duration="21306000" />
+      <workItem from="1651046818755" duration="6395000" />
+      <workItem from="1651068709809" duration="6359000" />
+      <workItem from="1651138811017" duration="3207000" />
+    </task>
+    <task id="LOCAL-00001" summary="workers platform">
+      <created>1647025608265</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647025608265</updated>
+    </task>
+    <task id="LOCAL-00002" summary="workers platform scheme pics">
+      <created>1647249721831</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647249721831</updated>
+    </task>
+    <task id="LOCAL-00003" summary="refugees cabinet profile">
+      <created>1651053066387</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651053066387</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refugees cabinet documents">
+      <created>1651070826106</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651070826106</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refugees cabinet employers">
+      <created>1651074502464</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651074502464</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="workers platform" />
+    <MESSAGE value="workers platform scheme pics" />
+    <MESSAGE value="refugees cabinet profile" />
+    <MESSAGE value="refugees cabinet documents" />
+    <MESSAGE value="refugees cabinet employers" />
+    <option name="LAST_COMMIT_MESSAGE" value="refugees cabinet employers" />
+  </component>
+</project>
