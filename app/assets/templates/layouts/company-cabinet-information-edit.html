@@ -18,43 +18,77 @@
 
 ${require('../parts/header-logged-in-company.html')}
   <main class="main">
-    <div class="section company-cabinet__top">
-      <div class="container">
-        <div class="page-title">Личный кабинет предприятия</div>
-        <nav class="partner-cabinet__navigation company-cabinet__navigation">
-          <ul>
-            <li class="current">
-              <a href="javascript:void(0)">Информация о предприятии</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Документы</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Работодатели</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Вакансии</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Этапы рекрутинга</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Бизнес-процессы</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <ellipse cx="7.11834" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
-                  <ellipse cx="10.9972" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
-                  <ellipse cx="14.8801" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
-                  <path d="M19.25 1.37319C19.6147 1.37319 20.2223 1.77538 20.2223 1.77538C20.4801 2.03291 20.625 2.38218 20.625 2.74637V13.7319C20.625 14.0961 20.4801 14.4453 20.2223 14.7029C19.9644 14.9604 19.6147 15.1051 19.25 15.1051H6.06925C5.33996 15.1052 4.6406 15.3947 4.125 15.9097L1.375 18.6561V2.74637C1.375 2.38218 1.51987 2.03291 1.77773 1.77538C2.03559 1.51786 2.38533 1.37319 2.75 1.37319H19.25ZM2.75 0C2.02065 0 1.32118 0.289349 0.805456 0.804394C0.289731 1.31944 0 2.01799 0 2.74637L0 20.3136C2.88955e-05 20.4494 0.0404148 20.5822 0.116046 20.6951C0.191678 20.8081 0.299155 20.896 0.424874 20.9479C0.550594 20.9998 0.688904 21.0133 0.8223 20.9867C0.955695 20.96 1.07818 20.8945 1.17425 20.7983L5.09713 16.8806C5.35493 16.623 5.70461 16.4783 6.06925 16.4782H19.25C19.9793 16.4782 20.6788 16.1889 21.1945 15.6738C21.7103 15.1588 22 14.4603 22 13.7319V2.74637C22 2.01799 21.7103 1.31944 21.1945 0.804394C20.6788 0.289349 19.9793 0 19.25 0L2.75 0Z" fill="#25222C"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <div class="section company-cabinet__top">
+          <div class="container">
+              <div class="page-title">Личный кабинет предприятия</div>
+              <nav class="company-cabinet__navigation">
+                  <ul>
+                      <li class="current">
+                          <a href="javascript:void(0)">Информация о предприятии</a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">Документы</a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">Работодатели</a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">Вакансии</a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">Этапы рекрутинга для студентов</a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">Бизнес-процессы для студентов</a>
+                      </li>
+                      <li class="chats">
+                          <a href="javascript:void(0)">
+                              <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <ellipse cx="7.11834" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                  <ellipse cx="10.9972" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                  <ellipse cx="14.8801" cy="8.39983" rx="1.29412" ry="1.29241" fill="#5F6CFA"/>
+                                  <path d="M19.25 1.37319C19.6147 1.37319 20.2223 1.77538 20.2223 1.77538C20.4801 2.03291 20.625 2.38218 20.625 2.74637V13.7319C20.625 14.0961 20.4801 14.4453 20.2223 14.7029C19.9644 14.9604 19.6147 15.1051 19.25 15.1051H6.06925C5.33996 15.1052 4.6406 15.3947 4.125 15.9097L1.375 18.6561V2.74637C1.375 2.38218 1.51987 2.03291 1.77773 1.77538C2.03559 1.51786 2.38533 1.37319 2.75 1.37319H19.25ZM2.75 0C2.02065 0 1.32118 0.289349 0.805456 0.804394C0.289731 1.31944 0 2.01799 0 2.74637L0 20.3136C2.88955e-05 20.4494 0.0404148 20.5822 0.116046 20.6951C0.191678 20.8081 0.299155 20.896 0.424874 20.9479C0.550594 20.9998 0.688904 21.0133 0.8223 20.9867C0.955695 20.96 1.07818 20.8945 1.17425 20.7983L5.09713 16.8806C5.35493 16.623 5.70461 16.4783 6.06925 16.4782H19.25C19.9793 16.4782 20.6788 16.1889 21.1945 15.6738C21.7103 15.1588 22 14.4603 22 13.7319V2.74637C22 2.01799 21.7103 1.31944 21.1945 0.804394C20.6788 0.289349 19.9793 0 19.25 0L2.75 0Z" fill="#25222C"/>
+                              </svg>
+                          </a>
+                      </li>
+                      <li class="more">
+                          <a href="javascript:void(0)">
+                              <svg width="11" height="3" viewBox="0 0 11 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <ellipse cx="1.29412" cy="1.29241" rx="1.29412" ry="1.29241" fill="#0A1C27"/>
+                                  <ellipse cx="5.17302" cy="1.29241" rx="1.29412" ry="1.29241" fill="#0A1C27"/>
+                                  <ellipse cx="9.05584" cy="1.29241" rx="1.29412" ry="1.29241" fill="#0A1C27"/>
+                              </svg>
+                              Больше
+                          </a>
+                          <div class="more-menu company-cabinet__navigation-more__menu">
+                              <div>
+                                  <ul>
+                                      <li>
+                                          <a href="javascript:void(0)">Этапы рекрутинга для беженцев из Украины</a>
+                                      </li>
+                                      <li>
+                                          <a href="javascript:void(0)">Бизнес-процессы для беженцев из Украины</a>
+                                      </li>
+                                      <li>
+                                          <a href="javascript:void(0)">Этапы рекрутинга для беженцев из других стран</a>
+                                      </li>
+                                      <li>
+                                          <a href="javascript:void(0)">Бизнес-процессы для беженцев из других стран</a>
+                                      </li>
+                                      <li>
+                                          <a href="javascript:void(0)">Этапы рекрутинга для граждан других стран ЕС</a>
+                                      </li>
+                                      <li>
+                                          <a href="javascript:void(0)">Бизнес-процессы для граждан других стран ЕС</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
       </div>
-    </div>
     <div class="section partner-cabinet__info">
       <div class="container">
         <div class="partner-cabinet__info-main">
