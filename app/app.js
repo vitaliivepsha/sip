@@ -57,6 +57,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/student-stages-reviews-1.html');
   require('./assets/templates/layouts/student-stages-reviews-2.html');
   require('./assets/templates/layouts/student-stages-travel-back.html');
+  require('./assets/templates/layouts/student-stages-upload-photo.html');
   require('./assets/templates/layouts/student-cabinet-trips.html');
   require('./assets/templates/layouts/student-cabinet-company-information.html');
   require('./assets/templates/layouts/company-cabinet-information.html');

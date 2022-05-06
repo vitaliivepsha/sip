@@ -548,3 +548,17 @@
     }
   }
 }
+
+.student-stages__upload-photo{
+  padding: 28px 26px 28px 32px;
+  .input-file{
+    width: 204px;
+    max-width: 515px;
+    margin: 20px auto 0;
+    height: 50px;
+  }
+  .btn{
+    width: 515px;
+    margin: 25px auto 0;
+  }
+}
