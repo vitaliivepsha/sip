@@ -294,6 +294,9 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 10px;
+    &.align-top{
+      align-items: flex-start;
+    }
     &-bt {
       margin-bottom: 80px;
     }
@@ -315,6 +318,51 @@
       font-weight: 500;
       font-size: 12px;
       line-height: 130%;
+      .checkbox-wrapper{
+        margin-bottom: 10px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        input{
+          display: none;
+          +label{
+            position: relative;
+            font-weight: 400;
+            font-size: 12px;
+            margin-bottom: 0;
+            line-height: 20px;
+            color: $blue-dark;
+            padding-left: 28px;
+            cursor: pointer;
+            svg{
+              position: absolute;
+              left: 2px;
+              top: 4px;
+              pointer-events: none;
+              opacity: 0;
+              width: 15px;
+              height: 12px;
+            }
+            &:before{
+              position: absolute;
+              content: '';
+              left: 0;
+              top: 0;
+              width: 20px;
+              height: 20px;
+              border: 1px solid $blue-dark;
+              border-radius: 2px;
+            }
+          }
+          &:checked{
+            +label{
+              svg{
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
     }
     .name-wrapper {
       display: flex;
