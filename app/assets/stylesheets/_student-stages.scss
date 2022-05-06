@@ -459,3 +459,33 @@
     }
   }
 }
+
+.student-stages__review{
+  height: 128px;
+  min-height: 128px;
+  padding: 42px 75px;
+}
+
+.student-stages__review-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-family: $title;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  p{
+    margin-bottom: 0;
+  }
+  a{
+    text-decoration: underline;
+    color: $black;
+    &:hover{
+      text-decoration: none;
+      color: $accent;
+    }
+  }
+}
