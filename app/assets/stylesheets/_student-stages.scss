@@ -316,10 +316,26 @@
 .student-stages__approve-state3__footer{
   display: flex;
   margin-top: 25px;
-  .input-file{
+  .btn-attach{
     width: 292px;
     margin-right: 12px;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(95, 108, 250, 0.3);
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 19px;
+    color: $black;
+    transition: linear .2s;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      background-color: rgba(95, 108, 250, 0.3);
+    }
   }
   .btn-cancel{
     width: 264px;
