@@ -1,0 +1,59 @@
+.insurance{
+  background: $bg-gray;
+  border-radius: 5px;
+  padding: 70px 0 45px;
+  font-family: $title;
+  .page-title{
+    margin-bottom: 95px;
+  }
+  .btn{
+    width: 227px;
+    @include bp(xs){
+      margin: 0 auto;
+    }
+  }
+}
+
+.insurance-list{
+  width: 540px;
+  max-width: 100%;
+  margin: 0 auto 75px;
+  >li{
+    margin-bottom: 50px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    >span{
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 26px;
+      color: $black;
+    }
+    >div{
+      text-align: center;
+      padding: 15px;
+      border: 1px solid $black;
+      width: 100%;
+      border-radius: 5px;
+      a{
+        display: block;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 130%;
+        color: rgba($black, .5);
+        word-break: break-word;
+        &:hover{
+          text-decoration: none;
+          color: $accent;
+        }
+        +a{
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

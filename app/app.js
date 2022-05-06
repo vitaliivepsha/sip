@@ -87,6 +87,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/refugees-cabinet-employers.html');
   require('./assets/templates/layouts/refugees-cabinet-employer.html');
   require('./assets/templates/layouts/refugees-cabinet-chats.html');
+  require('./assets/templates/layouts/insurance.html');
 }
 
 // Depends
