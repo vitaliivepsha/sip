@@ -192,6 +192,9 @@
       font-size: 12px;
       line-height: 130%;
       display: block;
+      +small{
+        margin-top: 5px;
+      }
     }
   }
 }
@@ -486,6 +489,62 @@
     &:hover{
       text-decoration: none;
       color: $accent;
+    }
+  }
+}
+
+.student-stages__return{
+  padding: 28px 56px 42px 32px;
+}
+
+.student-stages__return-date{
+  background: $bg-gray;
+  border-radius: 5px;
+  padding: 20px 20px 15px;
+  width: 454px;
+  margin-left: 62px;
+  margin-top: 12px;
+  .input-wrapper{
+    &.date-wrapper {
+      .date-choose {
+        width: 202px;
+        @-moz-document url-prefix() {
+          width: 202px;
+        }
+        &:before {
+          width: 152px;
+          @-moz-document url-prefix() {
+            width: 152px;
+          }
+        }
+        .placeholder {
+          width: 150px;
+          @-moz-document url-prefix() {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.student-stages__return-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 454px;
+  margin-left: 62px;
+  margin-top: 22px;
+  .btn{
+    width: 245px;
+    margin-top: 0;
+    border: 1px solid rgba(95, 108, 250, 0.3);
+    color: $black;
+    &:hover{
+      text-decoration: none;
+      background-color: rgba(95, 108, 250, 0.3);
+    }
+    +.btn{
+      width: 173px;
     }
   }
 }
