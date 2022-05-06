@@ -92,29 +92,32 @@
         padding-left: 16px;
       }
     }
+    &.b1_rating {
+      width: 99px;
+    }
     &.b1_resume {
       width: 133px;
     }
     &.b1_docs {
-      width: 100px;
+      width: 89px;
     }
     &.b1_vacancy {
-      width: 190px;
+      width: 180px;
     }
     &.b1_from {
       width: 85px;
     }
     &.b1_to {
-      width: 98px;
+      width: 89px;
     }
     &.b1_date {
-      width: 130px;
+      width: 111px;
     }
     &.b1_approve {
-      width: 105px;
+      width: 85px;
     }
     &.b1_decline {
-      width: 95px;
+      width: 75px;
     }
     &.b2_ttn {
       width: 173px;
@@ -285,11 +288,21 @@
         width: 173px;
         padding-left: 16px;
       }
+      &.b1_rating {
+        width: 99px;
+        a{
+          font-size: 12px;
+          line-height: 130%;
+          color: $purple;
+          margin: 0 auto;
+          text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
       &.b1_resume {
         width: 133px;
       }
       &.b1_docs {
-        width: 100px;
+        width: 89px;
         span{
           display: flex;
           align-items: center;
@@ -300,22 +313,22 @@
         }
       }
       &.b1_vacancy {
-        width: 190px;
+        width: 180px;
       }
       &.b1_from {
         width: 85px;
       }
       &.b1_to {
-        width: 98px;
+        width: 89px;
       }
       &.b1_date {
-        width: 130px;
+        width: 111px;
       }
       &.b1_approve {
-        width: 105px;
+        width: 85px;
       }
       &.b1_decline {
-        width: 95px;
+        width: 75px;
       }
       &.b2_ttn {
         width: 173px;
