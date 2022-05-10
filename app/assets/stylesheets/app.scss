@@ -3,9 +3,21 @@
 @import "fonts";
 @import "mixin";
 
+:root {
+  --space: 1rem;
+}
+
 html {
   //width: 100vw;
   //overflow-x: hidden;
+  &.mfp-open{
+    .mfp-container{
+      padding: 0;
+    }
+    .vacancy-filters__wrap-right{
+      --offset: auto;
+    }
+  }
 }
 
 body {
@@ -81,16 +93,40 @@ body {
       z-index: 1022;
     }
   }
-  &.workers-platform{
+  &.workers-platform {
     padding: 0;
     ::selection {
       background: rgba($red, 0.5);
       color: #fff;
       text-shadow: none;
     }
-    .section{
-      @include bp(xs){
+    .section {
+      @include bp(xs) {
         margin-bottom: 30px;
+      }
+    }
+  }
+  &.workers-menu-opened{
+    height: 100vh;
+    overflow: hidden;
+    .workers-menu__mobile{
+      display: flex;
+    }
+  }
+  &.vacancy-filers__show {
+    @include bp(xxl) {
+      overflow: hidden;
+      height: 100vw;
+    }
+    header{
+      @include bp(xxl) {
+        overflow: hidden;
+      }
+    }
+    .overlay {
+      @include bp(xxl) {
+        opacity: 1;
+        z-index: 1022;
       }
     }
   }
@@ -449,5 +485,18 @@ main {
 // Workers Platform Header
 @import "workers-platform/header";
 
+// Workers Platform breadcrumbs
+@import "workers-platform/breadcrumbs";
+
 // Workers Platform Footer
 @import "workers-platform/footer";
+
+// Workers Platform Pages
+@import "workers-platform/employer";
+@import "workers-platform/partners";
+@import "workers-platform/contacts";
+@import "workers-platform/vacancies";
+@import "workers-platform/vacancy-with-filters";
+@import "workers-platform/vacancy";
+@import "workers-platform/for-ukrainians";
+@import "workers-platform/program";

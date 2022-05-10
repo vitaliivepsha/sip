@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/index.html');
   require('./assets/templates/layouts/for-partners.html');
   require('./assets/templates/layouts/for-companies.html');
-  require('./assets/templates/layouts/contacts.html');
+  require('./assets/templates/layouts/contacts-old.html');
   require('./assets/templates/layouts/about-us.html');
   require('./assets/templates/layouts/impressum.html');
   require('./assets/templates/layouts/terms.html');
@@ -88,6 +88,20 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/refugees-cabinet-employer.html');
   require('./assets/templates/layouts/refugees-cabinet-chats.html');
   require('./assets/templates/layouts/insurance.html');
+  require('./assets/templates/layouts/employer.html');
+  require('./assets/templates/layouts/partners.html');
+  require('./assets/templates/layouts/contacts.html');
+  require('./assets/templates/layouts/vacancies.html');
+  require('./assets/templates/layouts/vacancy-with-filters.html');
+  require('./assets/templates/layouts/vacancy-with-filters-uregistered.html');
+  require('./assets/templates/layouts/vacancy-with-filters-role.html');
+  require('./assets/templates/layouts/vacancy-with-filters-no-reviews.html');
+  require('./assets/templates/layouts/vacancy-with-filters-no-actual-vacancies.html');
+  require('./assets/templates/layouts/vacancy.html');
+  require('./assets/templates/layouts/for-ukranians.html');
+  require('./assets/templates/layouts/program-refugees.html');
+  require('./assets/templates/layouts/program-practice.html');
+  require('./assets/templates/layouts/program-vacation.html');
 }
 
 // Depends
@@ -104,7 +118,7 @@ var LightGallery = require('_modules/lightgallery');
 //var Jslider = require('_modules/jslider');
 //var Fancybox = require('_modules/fancybox');
 require('../node_modules/sumoselect/jquery.sumoselect.min');
-//require('../node_modules/ion-rangeslider/js/ion.rangeSlider');
+require('../node_modules/ion-rangeslider/js/ion.rangeSlider');
 //import PerfectScrollbar from 'perfect-scrollbar';
 require('../node_modules/mark.js/dist/jquery.mark.min');
 require('../node_modules/jquery-validation/dist/jquery.validate.min');
@@ -211,6 +225,36 @@ $(function() {
   });
 
   $(document).on('click', '.mobile-menu__wrapper', function(e) {
+    e.stopPropagation();
+  });
+
+  var touch_w = $('.workers-mobile-menu__btn');
+
+  var toggles_w = document.querySelectorAll('.workers-mobile-menu__btn');
+
+  for (var i = toggles_w.length - 1; i >= 0; i--) {
+    var toggle_w = toggles_w[i];
+    toggleHandler_w(toggle_w);
+  }
+
+  function toggleHandler_w(toggle_w) {
+    toggle_w.addEventListener('click', function(e) {
+      e.preventDefault();
+      (this.classList.contains('active') === true) ? this.classList.remove('active') : this.classList.add('active');
+    });
+  }
+
+  $(touch_w).click(function(e) {
+    e.preventDefault();
+    $('body').toggleClass('workers-menu-opened').removeClass('login-menu__show');
+    return false;
+  });
+
+  $(document).on('click', '.workers-mobile-menu__btn', function(e) {
+    e.stopPropagation();
+  });
+
+  $(document).on('click', '.workers-mobile-menu__wrapper', function(e) {
     e.stopPropagation();
   });
 
@@ -676,6 +720,37 @@ $(function() {
         date_germany: {
           required: 'Заполните эту информацию',
         }
+      },
+      submitHandler: function() {
+        if ($('#refugees-form').length) {
+          $.ajax({
+            data: $('#refugees-form').serialize(),
+            success: function(data)
+                  {
+              $.magnificPopup.open({
+                items: {
+                  src: '#refugees-form-success'
+                }
+              });
+              $('html, body').animate({
+                scrollTop: $('#refugees-form-success').offset().top - 200
+              }, 200);
+            }
+          });
+        }
+          /*if ($('#employer-review-form').length) {
+              $('input[name=grade01]:checked, input[name=grade02]:checked, input[name=grade03]:checked, input[name=grade04]:checked').each(function() {
+                  var $rating_input = $(this);
+                  console.log($rating_input.val());
+                  if($rating_input.val() == 0 || $rating_input.val() == 1 || $rating_input.val() == 2 || $rating_input.val() == 3 || $rating_input.val() == 4){
+                      alert("Please select atleast one");
+                      return false;
+                  }
+                  else{
+                      alert("radio button selected value: " + $rating_input.val());
+                  }
+              });
+          }*/
       }
     });
   });
@@ -688,20 +763,20 @@ $(function() {
     return value == '' || value.match(/^([01][0-9]|2[0-3]):[0-5][0-9]$/);
   }, 'Enter a valid time: hh:mm');
 
-  $('.refugees-cabinet__form .btn').click(function() {
+  $('#refugees-cabinet-form .btn').click(function() {
     setTimeout(function() {
-      if ($('.refugees-cabinet__form').find('.input-wrapper.error').length) {
-        $('.refugees-cabinet__form').find('.btn').attr('disabled', 'disabled');
+      if ($('#refugees-cabinet-form').find('.input-wrapper.error').length) {
+        $('#refugees-cabinet-form').find('.btn').attr('disabled', 'disabled');
       }
     }, 100);
   });
 
-  $('.refugees-cabinet__form .input, .refugees-cabinet__form .textarea, .refugees-cabinet__form select').on('keyup change', function() {
-    if ($('.refugees-cabinet__form .input-wrapper.error').length) {
-      $('.refugees-cabinet__form').find('.btn').attr('disabled', 'disabled');
+  $('#refugees-cabinet-form .input, #refugees-cabinet-form .textarea, #refugees-cabinet-form select').on('keyup change', function() {
+    if ($('#refugees-cabinet-form .input-wrapper.error').length) {
+      $('#refugees-cabinet-form').find('.btn').attr('disabled', 'disabled');
     }
     else {
-      $('.refugees-cabinet__form').find('.btn').removeAttr('disabled');
+      $('#refugees-cabinet-form').find('.btn').removeAttr('disabled');
     }
   });
 
@@ -791,9 +866,19 @@ $(function() {
         // triggerChangeCombined: false
   });
 
+  $('.wp-select select').SumoSelect({
+    okCancelInMulti: true,
+    captionFormat: false,
+    forceCustomRendering: true,
+  });
+
   $('.multiselect').SumoSelect({
     forceCustomRendering: true,
     placeholder: ' '
+  });
+
+  $('.what-job, .where-job').SumoSelect({
+    forceCustomRendering: true
   });
 
     // date placeholder
@@ -1365,6 +1450,20 @@ $(function() {
                 '                            </div>');
   });
 
+    // lang
+
+  $('.workers-header__lang-current').click(function() {
+    $(this).parent().toggleClass('active');
+  });
+
+  $(document).click(function() {
+    $('.workers-header__lang').removeClass('active');
+  });
+
+  $(document).on('click', '.workers-header__lang', function(e) {
+    e.stopPropagation();
+  });
+
   /*----- refugees -----*/
 
     // lang
@@ -1385,5 +1484,208 @@ $(function() {
 
   $('.refugees-remove-doc').click(function() {
     $(this).closest('li').remove();
+  });
+
+    // show more text
+
+  setTimeout(function() {
+    $('.txt-hidden').each(function() {
+      var txt_height = $(this).height();
+      $('.txt-more__btn').click(function() {
+        var btn_txt = $(this);
+        btn_txt.html() == 'Показать все' ? btn_txt.html('Скрыть') : btn_txt.html('Показать все');
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+          $(this).closest('.txt-main__wrapper').find('.txt-main').css({ 'height': txt_height, 'max-height': 'unset', 'overflow': 'unset' });
+        }
+        else {
+          $(this).closest('.txt-main__wrapper').find('.txt-main').removeAttr('style');
+        }
+      });
+    });
+  }, 1000);
+
+    // vacancy slider
+  if ($('.vacancy-filters__main-slider').length) {
+    const settings = {
+      arrows: true,
+      dots: false,
+      infinite: true,
+      slidesToScroll: 1,
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 574,
+          settings: 'unslick'
+        }
+      ]
+    };
+
+    const sl = $('.vacancy-filters__main-slider').slick(settings);
+
+    setTimeout(function() {
+      $('body').trigger('resize');
+      if ($(window).width() > 574 && !sl.hasClass('slick-initialized')) {
+        $('.vacancy-filters__main-slider').slick(settings);
+      }
+    }, 50);
+
+    $(window).on('resize orientationChange', function() {
+      if ($(window).width() > 574 && !sl.hasClass('slick-initialized')) {
+        $('.vacancy-filters__main-slider').slick(settings);
+      }
+    });
+  }
+  if ($(window).width() < 575) {
+    setTimeout(function() {
+      $('.lightgallery').lightGallery({
+        download: false
+      }).trigger('resize');
+    }, 400);
+  }
+  $(window).on('resize orientationChange', function() {
+    $('.lightgallery').lightGallery({
+      download: false
+    });
+  });
+
+    // vacancy filters
+
+  $('.vacancy-filters__show').click(function() {
+    var btn_txt = $(this).find('span');
+    btn_txt.html() == 'Показать фильтры' ? btn_txt.html('Скрыть фильтры') : btn_txt.html('Показать фильтры');
+    $('.vacancy-filters__wrap').toggleClass('filters-shown');
+    $('body').toggleClass('vacancy-filers__show');
+    setTimeout(function() {
+      $('body').trigger('resize');
+      $('.slick-slider').slick('setPosition');
+    }, 350);
+  });
+
+  $('.vacancy-filters__close').click(function() {
+    $('.vacancy-filters__show > span').html('Показать фильтры');
+    $('.vacancy-filters__wrap').removeClass('filters-shown');
+    $('body').removeClass('vacancy-filers__show');
+    setTimeout(function() {
+      $('body').trigger('resize');
+      $('.slick-slider').slick('setPosition');
+    }, 350);
+  });
+
+  $('.vacancy-filters__menu-filter__head').click(function() {
+    $(this).toggleClass('active').next('.vacancy-filters__menu-filter__body').slideToggle();
+  });
+
+  $('.vacancy-filters__menu-filter__body li').click(function() {
+    $(this).toggleClass('checked');
+  });
+
+  if ($('#vacancy-range1').length) {
+    var $range = $('#vacancy-range1'),
+      $from = $range.closest('.vacancy-range__wrapper').find('.js-from'),
+      $to = $range.closest('.vacancy-range__wrapper').find('.js-to'),
+      range,
+      min = 100,
+      max = 3000,
+      from,
+      to;
+
+    var updateValues = function() {
+      $from.prop('value', from);
+      $to.prop('value', to);
+    };
+
+    $range.ionRangeSlider({
+      type: 'double',
+      min: min,
+      max: max,
+      from: 100,
+      to: 2000,
+      hide_min_max: true,
+      hide_from_to: true,
+      prettify: function(num) {
+        num = Math.round(num);
+        return num;
+      }
+    });
+
+    range = $range.data('ionRangeSlider');
+
+    var updateRange = function() {
+      range.update({
+        from: from,
+        to: to
+      });
+    };
+
+    $range.data('ionRangeSlider').update({
+      onFinish: function() {
+        $from.val(range.result.from);
+        $to.val(range.result.to);
+      }
+    });
+  }
+
+  if ($('#vacancy-range2').length) {
+    var $range2 = $('#vacancy-range2'),
+      $from2 = $range2.closest('.vacancy-range__wrapper').find('.js-from'),
+      $to2 = $range2.closest('.vacancy-range__wrapper').find('.js-to'),
+      range2,
+      min2 = 100,
+      max2 = 3000,
+      from2,
+      to2;
+
+    var updateValues2 = function() {
+      $from2.prop('value', from2);
+      $to2.prop('value', to2);
+    };
+
+    $range2.ionRangeSlider({
+      type: 'double',
+      min: min2,
+      max: max2,
+      from: 100,
+      to: 2000,
+      hide_min_max: true,
+      hide_from_to: true,
+      prettify: function(num) {
+        num = Math.round(num);
+        return num;
+      }
+    });
+
+    range2 = $range2.data('ionRangeSlider');
+
+    var updateRange2 = function() {
+      range2.update({
+        from: from2,
+        to: to2
+      });
+    };
+
+    $range2.data('ionRangeSlider').update({
+      onFinish: function() {
+        $from2.val(range2.result.from);
+        $to2.val(range2.result.to);
+      }
+    });
+  }
+
+  $('.popup-btn').each(function() {
+    $(this).magnificPopup({
+      callbacks: {
+        beforeOpen: function() {
+          $('html').addClass('mfp-open');
+        },
+        afterClose: function() {
+          $('html').removeClass('mfp-open');
+        }
+      },
+    });
+  });
+
+  $('.popup .btn-ok').click(function() {
+    $(this).closest('.popup').find('.mfp-close').trigger('click');
   });
 });

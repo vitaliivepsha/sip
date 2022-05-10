@@ -1,0 +1,343 @@
+.workers-employer-main__section{
+  +.workers-contacts__section{
+    margin-bottom: 60px;
+    @include bp(xs){
+      margin-bottom: 0 !important;
+    }
+    .workers-contacts__inner{
+      background-color: #fff;
+      padding: 55px 0 65px;
+    }
+  }
+}
+
+.contacts-refugee__section{
+  padding: 0 30px;
+  @include bp(xs){
+    padding: 0;
+  }
+}
+
+.contacts-refugee__inner{
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 60px;
+  height: 570px;
+  position: relative;
+  color: #fff;
+  padding-top: 152px;
+  @include bp(xs){
+    margin-bottom: 30px;
+    height: auto;
+    padding: 130px 0 202px;
+    border-radius: 0;
+  }
+  >picture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .container{
+    position: relative;
+    z-index: 1;
+    @include bp(sm){
+      padding: 0 15px;
+    }
+  }
+}
+
+.contacts-refugee__title{
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  @include bp(xs){
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 27px;
+  }
+}
+
+.contacts-refugee__descr{
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  @include bp(xs){
+    font-size: 14px;
+    line-height: 17px;
+  }
+  a{
+    color: #fff;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+      color: $red;
+    }
+  }
+}
+
+.contacts-refugee__link{
+  display: block;
+  margin: 0 auto;
+  width: 540px;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  @include bp(xs){
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &:hover{
+    text-decoration: none;
+    background-color: $red;
+    border-color: $red;
+    color: #fff;
+  }
+}
+
+.contacts-form__section{
+  padding: 0 30px;
+  @include bp(xs){
+    padding: 0;
+  }
+}
+
+.contacts-form__inner{
+  padding: 65px 0 85px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  background: linear-gradient(360deg, #60010D -18.03%, #D2374A 106.69%), #0A1C27;
+  @include bp(xs){
+    border-radius: 0;
+    padding: 45px 0 65px;
+    margin-bottom: 30px;
+  }
+  .container{
+    @include bp(sm){
+      padding: 0 15px;
+    }
+  }
+}
+
+.contacts-form{
+  width: 520px;
+  max-width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  .btn{
+    margin: 42px auto 0;
+    border-color: #fff;
+    background-color: #fff;
+    color: $red-dark;
+    width: 227px;
+    @include bp(xs){
+      width: 100%;
+      margin-top: 35px;
+    }
+    &:hover{
+      background-color: transparent;
+      color: #fff;
+    }
+  }
+}
+
+.contacts-form__title{
+  width: 420px;
+  max-width: 100%;
+  margin: 0 auto 42px;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  @include bp(xs){
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.contacts-form__row{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  @include bp(xs){
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  >label{
+    padding-right: 10px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    width: calc(100% - 290px);
+    @include bp(xs){
+      width: 100%;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+  }
+  .input-wrapper{
+    width: 290px;
+    @include bp(xs){
+      width: 100%;
+    }
+    &.err{
+      .input{
+        border-color: #fff;
+
+      }
+    }
+    .validate-error{
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      color: $red-accent;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      pointer-events: none;
+    }
+  }
+  input{
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    &::placeholder{
+      color: rgba(255, 255, 255, 0.3);
+    }
+    &:focus{
+      &::placeholder{
+        color: transparent;
+      }
+    }
+  }
+}
+
+.wp-select{
+  .SumoSelect{
+    width: 100%;
+    display: block;
+    &.open{
+      >.CaptionCont{
+        >label{
+          >i{
+            background-color: #fff;
+          }
+        }
+      }
+      .optWrapper{
+        top: 100%;
+      }
+    }
+    &.active{
+      >.CaptionCont{
+        >span{
+          color: #fff;
+        }
+      }
+    }
+    >.CaptionCont{
+      font-size: 12px;
+      line-height: 130%;
+      background-color: transparent;
+      height: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      border-radius: 5px;
+      >label{
+        >i{
+          background: none;
+          cursor: pointer;
+          -webkit-mask: url("../images/icons/arrow-down.svg");
+          mask: url("../images/icons/arrow-down.svg");
+          width: 8px;
+          height: 8px;
+          -webkit-mask-position: center;
+          mask-position: center;
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-size: contain;
+          mask-size: contain;
+          background-color: #fff;
+          margin-right: 14px;
+        }
+      }
+      >span{
+        &.placeholder{
+          color: transparent;
+        }
+      }
+    }
+    >.optWrapper{
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgb(152, 18, 18);
+      &.isFloating{
+        position: absolute;
+        bottom: auto;
+        width: 100%;
+        max-height: unset;
+      }
+      >.options{
+        padding: 12px 0;
+        max-height: 292px;
+        li{
+          &.opt{
+            padding: 0;
+            border-bottom: none;
+            &.disabled{
+              display: none;
+            }
+            &:hover{
+              background-color: #f4f4f4;
+            }
+          }
+          label{
+            margin-bottom: 0;
+            padding: 6px 20px;
+            font-size: 12px;
+            line-height: 110%;
+            font-weight: 400;
+            white-space: pre-wrap;
+            color: $text;
+
+          }
+        }
+      }
+    }
+  }
+}

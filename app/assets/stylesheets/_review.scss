@@ -1,19 +1,13 @@
 .section-review{
-  background-color: $bg-gray;
-  border-radius: 5px;
+  font-family: $title;
+  color: $blue-dark;
   padding: 130px 0;
   .section-title{
-    text-align: center;
-    margin-bottom: 40px;
-    /*position: relative;
-    span{
-      background-color: #fff;
-      mix-blend-mode: difference;
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-    }*/
+    text-align: left;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
@@ -21,11 +15,12 @@
   .btn{
     margin-top: 70px;
     color: #fff;
-    background-color: $black;
+    background-color: $red;
+    border-color: $red;
     width: 230px;
     &:hover{
-      color: $black;
-      background-color: transparent;
+      background-color: $red-dark;
+      border-color: $red-dark;
     }
   }
 }
@@ -35,6 +30,7 @@
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 30px 190px 30px 95px;
+  border: 1px solid rgba($text, .3);
 }
 
 .review-links{
@@ -51,18 +47,17 @@
       padding-left: 10px;
       font-size: 12px;
       line-height: 130%;
-      
+
     }
     >a{
-      font-family: $title;
-      font-weight: 600;
+      font-weight: 400;
       font-size: 14px;
       line-height: 130%;
-      color: $purple;
+      color: $red-dark2;
       text-decoration: underline;
       width: calc(100% - 110px);
       &:hover{
-        color: $accent;
+        color: $red-dark;
         text-decoration: none;
       }
     }
@@ -70,8 +65,7 @@
 }
 
 .review-block__title{
-  font-family: $title;
-  color: $black;
+  font-weight: 600;
   font-size: 18px;
   line-height: 130%;
   margin-bottom: 5px;
@@ -99,6 +93,9 @@
       min-width: 234px;
       padding-right: 8px;
     }
+  }
+  .rating > label:before{
+    background-color: $red;
   }
 }
 
@@ -146,7 +143,7 @@
           height: 10px;
           left: 0;
           top: 2px;
-          border: 1px solid rgba(95, 108, 250, 0.5);
+          border: 1px solid $red;
           border-radius: 50%;
         }
         &:after{

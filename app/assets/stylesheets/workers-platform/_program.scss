@@ -1,0 +1,140 @@
+.workers-program__section{
+  padding-bottom: 80px;
+  @include bp(sm) {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+.workers-program__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $red-dark;
+  margin-bottom: 10px;
+  @include bp(xs) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.workers-program__container{
+  width: 730px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  @include bp(xs) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  p{
+    margin-bottom: 20px;
+    @include bp(xs) {
+      margin-bottom: 15px;
+    }
+    strong{
+      font-weight: 600;
+    }
+    small{
+      font-size: 12px;
+      line-height: 15px;
+      @include bp(xs) {
+        font-size: 10px;
+        line-height: 13px;
+      }
+    }
+    .accent{
+      color: $red-dark2;
+    }
+  }
+  ul{
+    list-style-type: disc;
+    padding-left: 18px;
+    margin-bottom: 20px;
+    @include bp(xs) {
+      margin-left: -6px;
+      margin-bottom: 15px;
+    }
+    >li{
+      margin-bottom: 10px;
+      @include bp(xs) {
+        margin-bottom: 5px;
+      }
+      &::marker{
+        font-size: 8px;
+      }
+    }
+  }
+  picture{
+    max-width: 100%;
+  }
+  img{
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 30px auto;
+    @include bp(xs) {
+      margin: 20px auto;
+    }
+  }
+}
+
+.workers-program__subtitle{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 42px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  @include bp(xs) {
+    margin-top: 30px;
+  }
+}
+
+.workers-program__footnote{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  @include bp(xs) {
+    margin-top: 40px;
+  }
+  span{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 20px;
+    color: $red-dark2;
+    @include bp(xs) {
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+  a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $blue-dark;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-decoration: underline;
+    word-break: break-word;
+    @include bp(xs) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &:hover{
+      color: $red;
+      text-decoration: none;
+    }
+  }
+}

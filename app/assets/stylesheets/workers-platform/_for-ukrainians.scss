@@ -1,0 +1,1050 @@
+.ukrainians-help__section{
+  margin-bottom: 50px;
+  @include bp(sm) {
+    margin-top: 40px;
+  }
+  @include bp(xs) {
+    margin-bottom: 30px;
+  }
+}
+
+.ukrainians-help__title{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: $red-dark;
+  display: block;
+  @include bp(xs) {
+    font-size: 21px;
+    line-height: 26px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto 40px;
+  }
+}
+
+.ukrainians-help__wrapper{
+  background: linear-gradient(0deg, #0A1C27, #0A1C27), linear-gradient(360deg, #60010D -18.03%, #D2374A 106.69%);
+  position: relative;
+  height: 610px;
+  @include bp(md) {
+    height: auto;
+  }
+  >picture{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    @include bp(xxxl) {
+      left: calc(((100vw - 1088px) / 2) - 25vw);
+    }
+    @include bp(xxl) {
+      left: calc(((100vw - 1088px) / 2) - 30vw);
+    }
+    @include bp(xl) {
+      left: calc(((100vw - 1088px) / 2) - 35vw);
+    }
+    @include bp(lg) {
+      left: calc(((100vw - 1088px) / 2) - 40vw);
+    }
+    @include bp(md) {
+      display: none;
+    }
+    img{
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.ukrainians-help__inner{
+  display: flex;
+  flex-wrap: wrap;
+  @include bp(sm) {
+    padding: 0 10px;
+  }
+}
+
+.ukrainians-help__info{
+  padding-top: 80px;
+  color: #fff;
+  @include bp(md) {
+    padding: 80px 15px;
+  }
+  @include bp(xs) {
+    padding: 45px 15px 55px;
+  }
+}
+
+.ukrainians-help__subtitle{
+  display: block;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  @include bp(xs) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.ukrainians-help__descr{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  @include bp(xs) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  p{
+    margin-bottom: 20px;
+    @include bp(xs) {
+      margin-bottom: 17px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  strong{
+    font-weight: 700;
+  }
+}
+
+.ukrainians-help__footnote{
+  border: 1px solid #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 34px;
+  border-radius: 5px;
+  margin-top: 30px;
+  @include bp(xs) {
+    padding: 18px 20px 26px;
+    margin-top: 25px;
+  }
+}
+
+.ukrainians-steps__section {
+  margin: 0 30px 50px;
+  padding-top: 80px;
+  padding-bottom: 96px;
+  border-radius: 5px;
+  background-color: #efefef;
+  @include bp(sm){
+    margin: 0 0 50px;
+    border-radius: 0;
+    overflow: hidden;
+    padding-bottom: 60px;
+  }
+  @include bp(xs) {
+    margin-bottom: 30px;
+    padding: 40px 10px 50px;
+  }
+  .workers-employer-condidat__list{
+    width: 1060px;
+    max-width: 100%;
+    margin: 0 auto;
+    @include bp(md){
+      flex-direction: column;
+      align-items: center;
+    }
+    li{
+      width: 222px;
+      @include bp(md){
+        margin-bottom: 30px;
+      }
+      @include bp(xs) {
+        width: 274px;
+        margin-bottom: 7px;
+      }
+      &:last-child{
+        width: calc(100% - 666px);
+        @include bp(lg) {
+          justify-content: flex-end;
+        }
+        @include bp(md){
+          justify-content: center;
+          width: 230px;
+          margin-bottom: 0;
+        }
+        .workers-employer-condidat__item{
+          @include bp(lg) {
+            align-items: flex-end;
+          }
+        }
+      }
+      svg{
+        @include bp(md){
+          display: none;
+        }
+      }
+      .workers-employer-condidat__item-text{
+        @include bp(md){
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+      .workers-employer-condidat__item-num {
+        @include bp(md){
+          width: 40px;
+          height: 40px;
+          font-size: 18px;
+        }
+      }
+      .btn{
+        width: 230px;
+        color: #fff;
+        border-color: $red;
+        background-color: $red;
+        @include bp(lg) {
+          width: 150px;
+          margin-right: 30px;
+        }
+        @include bp(md){
+          margin: 30px 0 0;
+          width: 100%;
+        }
+        &:hover{
+          border-color: $red-dark;
+          background-color: $red-dark;
+        }
+      }
+    }
+  }
+}
+
+.ukrainians-steps__title{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 46px;
+  @include bp(xs) {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 10px;
+  }
+  &.red{
+    color: $red-dark;
+    margin-bottom: 96px;
+    @include bp(md){
+      margin-bottom: 60px;
+    }
+    @include bp(xs) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.ukrainian-advantages__section{
+  background: linear-gradient(360deg, #60010D -18.03%, #D2374A 106.69%), #0A1C27;
+  border-radius: 5px;
+  margin: 0 30px 50px;
+  padding: 80px 0;
+  @include bp(sm){
+    margin: 0 0 50px;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  @include bp(xs) {
+    margin-bottom: 30px;
+    padding: 48px 0 85px;
+  }
+}
+
+.ukrainians-advantages__inner{
+  width: 885px;
+  max-width: 100%;
+  margin: 0 auto;
+  @include bp(sm){
+    padding: 0 10px;
+  }
+}
+
+.ukrainians-advantages__list{
+  text-align: center;
+  color: #fff;
+  li{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include bp(xs) {
+      margin-bottom: 38px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    svg{
+      margin-bottom: 30px;
+      @include bp(xs) {
+        margin-bottom: 32px;
+      }
+    }
+    span{
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 26px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      @include bp(xs) {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 18px;
+      }
+    }
+    p{
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      @include bp(xs) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+
+.ukrainian-task__section{
+  padding: 0 30px;
+  @include bp(sm){
+    padding: 0;
+  }
+}
+
+.ukrainian-task__main{
+  background: $blue-dark;
+  border-radius: 5px;
+  position: relative;
+  padding: 80px 0 96px;
+  @include bp(sm){
+    border-radius: 0;
+  }
+  @include bp(xs) {
+    padding: 50px 0;
+  }
+}
+
+.ukrainian-task__bg{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 38px;
+  pointer-events: none;
+  @include bp(md){
+    display: none;
+  }
+  @include bp(sm){
+    margin-left: -10px;
+  }
+  @include bp(xs){
+    top: 42px;
+  }
+  &-mob{
+    display: none;
+    @include bp(md){
+      display: block;
+    }
+  }
+}
+
+.ukrainian-task__title{
+  display: block;
+  margin-bottom: 74px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  @include bp(xs) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+.ukrainian-task__list{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff;
+  @include bp(xs) {
+    flex-direction: column;
+    align-items: center;
+  }
+  li{
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include bp(xs) {
+      width: 260px;
+      margin-bottom: 50px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    i{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      width: 100px;
+      height: 100px;
+      border-radius: 3px;
+      margin-bottom: 25px;
+      @include bp(xs) {
+        width: 60px;
+        height: 60px;
+        padding: 13px;
+        margin-bottom: 15px;
+      }
+      svg{
+        @include bp(xs) {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+    span{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      @include bp(xs) {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 4px;
+      }
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0;
+      padding: 0 10px;
+      @include bp(xs) {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.ukrainians-why__section {
+  margin: 0 30px 50px;
+  padding-top: 145px;
+  padding-bottom: 130px;
+  border-radius: 5px;
+  background-color: #efefef;
+  @include bp(sm){
+    margin: 0 0 50px;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  @include bp(xs) {
+    margin-bottom: 30px;
+    padding: 86px 24px;
+  }
+}
+
+.ukrainians-why__inner{
+  width: 660px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ukrainians-why__title{
+  display: block;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $red-dark;
+  @include bp(xs) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 22px;
+  }
+}
+
+.ukrainians-why__descr{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  @include bp(xs) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.ukrainians-support__section {
+  margin: 0 30px 50px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 570px;
+  @include bp(sm){
+    margin: 0 0 50px;
+    border-radius: 0;
+  }
+  @include bp(xs) {
+    margin-bottom: 30px;
+    height: 147vw;
+  }
+  >picture{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  >.container{
+    position: relative;
+    z-index: 1;
+    span{
+      display: block;
+      margin: 0 auto;
+      width: 454px;
+      max-width: 100%;
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      @include bp(xs) {
+        width: calc(100% - 80px);
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+/* popup */
+
+.ua-popup{
+  width: 1110px;
+  max-width: calc(100vw - 18px);
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 10px 10px rgba(10, 28, 39, 0.15);
+  border-radius: 5px;
+  padding: 75px 30px 70px;
+  @include bp(xs) {
+    padding: 60px 10px 40px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .mfp-close{
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include bp(xs) {
+      right: 0;
+      top: 0;
+    }
+    svg{
+      pointer-events: none;
+    }
+  }
+
+  .refugees-cabinet__form{
+    width: 520px;
+    max-width: 100%;
+    margin: 0 auto;
+    &.disabled{
+      pointer-events: none;
+    }
+    .partner-cabinet__students-form__section{
+      margin-bottom: 20px;
+    }
+    .partner-cabinet__students-form__row{
+      flex-direction: row-reverse;
+      margin-bottom: 5px;
+      @include bp(xs) {
+        flex-direction: column-reverse;
+        margin-bottom: 15px;
+      }
+      &.align-top{
+        align-items: flex-start;
+        >label{
+          margin-top: 5px;
+        }
+      }
+      .name-wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 290px;
+        @include bp(xs) {
+          width: 100%;
+        }
+        .input-wrapper{
+          width: 85px;
+          .input{
+            border: 1px solid rgba(71, 71, 71, 0.3);
+            color: $text;
+            &.date{
+              border-color: transparent;
+            }
+          }
+          +.input-wrapper{
+            width: calc(100% - 90px);
+          }
+        }
+      }
+      >label{
+        width: calc(100% - 290px);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        @include bp(xs) {
+          width: 100%;
+          margin-bottom: 2px;
+          padding-right: 0;
+        }
+        .accent{
+          color: $red;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 130%;
+        }
+        .sm{
+          font-size: 12px;
+          line-height: 130%;
+          font-weight: 400;
+          color: $blue-dark;
+          small{
+            font-size: 9px;
+            line-height: 130%;
+          }
+        }
+      }
+      >.input-wrapper{
+        width: 290px;
+        @include bp(xs) {
+          width: 100%;
+        }
+        &.select-wrapper{
+          >svg{
+            top: 17px;
+            right: 17px;
+            z-index: 1;
+          }
+          select{
+            border: 1px solid rgba(71, 71, 71, 0.3);
+            color: rgba($blue-dark, 0.3);
+          }
+          &.active{
+            select{
+              color: $blue-dark;
+            }
+          }
+        }
+        &.multiselect-wrapper{
+          .SumoSelect{
+            flex-direction: column-reverse;
+            .placeholder{
+              color: rgba($blue-dark, 0.3);
+              font-style: normal;
+            }
+          }
+        }
+        &.date-wrapper{
+          .date-choose{
+            width: 154px;
+            @-moz-document url-prefix() {
+              width: 164px;
+            }
+            &:before{
+              width: 100px;
+              border-color: rgba(71, 71, 71, 0.3);
+              @-moz-document url-prefix() {
+                width: 110px;
+              }
+            }
+            svg{
+              background-color: transparent;
+            }
+            &.error{
+              &:before{
+                border-color: $red;
+              }
+              label{
+                &.error{
+                  color: $red;
+                  font-size: 10px;
+                  line-height: 130%;
+                  top: 15px;
+                }
+              }
+            }
+            .placeholder{
+              width: 98px;
+              color: rgba($blue-dark, 0.3);
+              font-family: $title;
+              @-moz-document url-prefix() {
+                width: 108px;
+              }
+            }
+          }
+        }
+        &.error{
+          .input, select{
+            border-color: $red;
+            +label{
+              &.error{
+                margin-top: 2px;
+                color: $red;
+                font-size: 10px;
+                line-height: 130%;
+                display: block;
+              }
+            }
+          }
+          +label{
+            margin-top: -15px;
+            @include bp(xs) {
+              margin-top: 0;
+            }
+          }
+        }
+        .input{
+          border: 1px solid rgba(71, 71, 71, 0.3);
+          color: $text;
+          &.date{
+            border-color: transparent;
+          }
+        }
+        .textarea{
+          border: 1px solid rgba(71, 71, 71, 0.3);
+          color: $text;
+          &.comment-group{
+            display: block;
+            height: 110px;
+          }
+        }
+        .SumoSelect{
+          >.CaptionCont{
+            border: 1px solid rgba(71, 71, 71, 0.3);
+          }
+          >.optWrapper{
+            >.options{
+              li{
+                &.opt{
+                  border: none;
+                  &.disabled{
+                    display: none;
+                  }
+                  &.selected{
+                    span{
+                      i{
+                        background-color: $red;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &.error{
+            >.CaptionCont{
+              border-color: $red;
+            }
+          }
+          select{
+            +label{
+              &.error{
+                font-weight: 400;
+                color: $red;
+                margin-bottom: 0;
+                margin-top: 2px;
+                font-size: 10px;
+                line-height: 130%;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      +.partner-cabinet__students-form__subtitle{
+        margin-top: 15px;
+      }
+    }
+    .checkbox-wrapper{
+      &.refugees-cabinet__form-checkbox{
+        input{
+          +label{
+            padding-left: 48px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: $blue-dark;
+            @include bp(xs) {
+              padding-left: 43px;
+            }
+            @include bp(xxs) {
+              line-height: 130%;
+            }
+            &:before{
+              width: 20px;
+              height: 20px;
+              border-radius: 2px;
+              border-color: $blue-dark;
+              @include bp(xxs) {
+                top: 5px;
+              }
+            }
+            &:after{
+              width: 14px;
+              height: 10px;
+              left: 3px;
+              top: 5px;
+              background-color: $red;
+              @include bp(xxs) {
+                top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .partner-cabinet__form{
+      .input-file{
+        border-color: rgba($red, .5);
+        margin-bottom: 10px;
+        &:hover{
+          box-shadow: 0 4px 10px rgba($red, .2);
+        }
+        > label{
+          > svg{
+            path{
+              fill: $red;
+            }
+          }
+          span{
+            text-align: left;
+            small{
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 130%;
+              color: #8B8A8E;
+            }
+          }
+        }
+        .tooltip{
+          background-color: $red;
+          &:before{
+            border-bottom-color: $red;
+          }
+        }
+        +.checkbox-wrapper{
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        +.refugees-cabinet__form-radio{
+          margin-top: 20px;
+        }
+      }
+    }
+    .btn{
+      width: 227px;
+      margin-top: 50px;
+      background-color: $red;
+      border-color: $red;
+      color: #fff;
+      @include bp(xs) {
+        width: 100%;
+        margin-top: 25px;
+      }
+      &:hover{
+        background-color: $red-dark;
+        border-color: $red-dark;
+      }
+    }
+  }
+
+  .refugees-cabinet__form-radio{
+    display: flex;
+    gap: 45px;
+    .radio-wrapper{
+      input{
+        display: none;
+        +label{
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          margin-bottom: 0;
+          position: relative;
+          padding-left: 25px;
+          &:before{
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid $blue-dark;
+            left: 0;
+            top: 0;
+          }
+          &:after{
+            position: absolute;
+            content: '';
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: $red;
+            left: 3px;
+            top: 3px;
+            opacity: 0;
+            transition: linear .2s;
+          }
+        }
+        &:checked{
+          +label{
+            &:after{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ua-popup__title{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 50px;
+  @include bp(xs) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.ua-popup__alert{
+  width: 520px;
+  max-width: 100%;
+  min-height: 40px;
+  margin: 0 auto 25px;
+  border: 1px solid rgba(10, 28, 39, 0.3);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  @include bp(xs) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  svg{
+    min-width: 17px;
+    margin-right: 15px;
+  }
+  .required{
+    color: $red;
+  }
+}
+
+.ua-popup__success{
+  width: 540px;
+  max-width: calc(100vw - 18px);
+  height: 305px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 10px 10px rgba(10, 28, 39, 0.15);
+  border-radius: 5px;
+  @include bp(xs) {
+    height: 250px;
+  }
+  .mfp-close{
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include bp(xs) {
+      right: 0;
+      top: 0;
+    }
+    svg{
+      pointer-events: none;
+    }
+  }
+}
+
+.ua-popup__success-header{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  border-bottom: 1px solid rgba(71, 71, 71, 0.1);
+  @include bp(xs) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.ua-popup__success-body{
+  padding: 65px 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  p{
+    max-width: 360px;
+    margin: 0 auto;
+    a{
+      color: $blue-dark;
+      text-decoration: underline;
+      &:hover{
+        color: $red;
+        text-decoration: none;
+      }
+    }
+  }
+}
