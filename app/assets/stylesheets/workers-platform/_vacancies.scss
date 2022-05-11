@@ -511,7 +511,14 @@ margin-top: 30px;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-
+    a{
+      color: #FFFFFF;
+      text-decoration: none;
+      &:hover{
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
     @media (max-width: 574px) {
       font-size: 12px;
       line-height: 15px;
