@@ -738,19 +738,46 @@ $(function() {
             }
           });
         }
-          /*if ($('#employer-review-form').length) {
-              $('input[name=grade01]:checked, input[name=grade02]:checked, input[name=grade03]:checked, input[name=grade04]:checked').each(function() {
-                  var $rating_input = $(this);
-                  console.log($rating_input.val());
-                  if($rating_input.val() == 0 || $rating_input.val() == 1 || $rating_input.val() == 2 || $rating_input.val() == 3 || $rating_input.val() == 4){
-                      alert("Please select atleast one");
-                      return false;
-                  }
-                  else{
-                      alert("radio button selected value: " + $rating_input.val());
-                  }
-              });
-          }*/
+          if ($('#employer-review-form').length) {
+              var $input01 = $('input[name=grade01]:checked'),
+                  $input02 = $('input[name=grade02]:checked'),
+                  $input03 = $('input[name=grade03]:checked'),
+                  $input04 = $('input[name=grade04]:checked'),
+                  $input05 = $('input[name=grade05]:checked'),
+                  $input06 = $('input[name=grade06]:checked'),
+                  $input07 = $('input[name=grade07]:checked'),
+                  $input08 = $('input[name=grade08]:checked');
+
+              if($input01.val() == 0 || $input01.val() == 1 || $input01.val() == 2 || $input01.val() == 3 || $input01.val() == 4
+                  || $input02.val() == 0 || $input02.val() == 1 || $input02.val() == 2 || $input02.val() == 3 || $input02.val() == 4
+                  || $input03.val() == 0 || $input03.val() == 1 || $input03.val() == 2 || $input03.val() == 3 || $input03.val() == 4
+                  || $input04.val() == 0 || $input04.val() == 1 || $input04.val() == 2 || $input04.val() == 3 || $input04.val() == 4){
+                  $('#alert01').show();
+                  $('html, body').animate({
+                      scrollTop: $('#alert01').offset().top - 20
+                  }, 200);
+              }
+              else if($input05.val() == 0 || $input05.val() == 1 || $input05.val() == 2 || $input05.val() == 3 || $input05.val() == 4
+                  || $input06.val() == 0 || $input06.val() == 1 || $input06.val() == 2 || $input06.val() == 3 || $input06.val() == 4
+                  || $input07.val() == 0 || $input07.val() == 1 || $input07.val() == 2 || $input07.val() == 3 || $input07.val() == 4
+                  || $input08.val() == 0 || $input08.val() == 1 || $input08.val() == 2 || $input08.val() == 3 || $input08.val() == 4){
+                  $('#alert02').show();
+                  $('html, body').animate({
+                      scrollTop: $('#alert02').offset().top - 20
+                  }, 200);
+              }
+              else{
+                  $.ajax({
+                      success: function() {
+                          $.magnificPopup.open({
+                              items: {
+                                  src: '#review-success-popup'
+                              }
+                          });
+                      }
+                  });
+              }
+          }
       }
     });
   });
