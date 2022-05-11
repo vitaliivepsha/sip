@@ -48,6 +48,25 @@ margin-top: 30px;
       margin-bottom: 17px;
       margin-right: 0;
     }
+    .input{
+      height: 50px;
+      color: $blue-dark;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 130%;
+      font-family: $title;
+      @media (max-width: 767px) {
+        height: 40px;
+      }
+      &::placeholder{
+        color: #8B8A8E;
+      }
+      &:focus{
+        &::placeholder{
+          color: transparent;
+        }
+      }
+    }
 
     & + .input-wrapper {
       margin-right: 16px;
