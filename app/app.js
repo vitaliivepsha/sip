@@ -103,6 +103,8 @@ if (process.env.NODE_ENV !== 'production') {
   require('./assets/templates/layouts/program-refugees.html');
   require('./assets/templates/layouts/program-practice.html');
   require('./assets/templates/layouts/program-vacation.html');
+  require('./assets/templates/layouts/employer-rating.html');
+  require('./assets/templates/layouts/student-rating.html');
 }
 
 // Depends
@@ -1717,8 +1719,6 @@ $(function() {
     $(this).closest('.popup').find('.mfp-close').trigger('click');
   });
 
-
-
     // add job
 
     var photo_num = 1;
@@ -1739,5 +1739,14 @@ $(function() {
             '                                <input type="text" class="input" name="file-comment[]" placeholder="Комментарий">\n' +
             '                            </div>\n' +
             '                        </div>');
+    });
+
+    // rating gallery
+
+    var $lg = $('.rating-gallery');
+
+    $lg.lightGallery({
+        selector: '.rating-gal',
+        download: false
     });
 });
