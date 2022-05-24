@@ -1757,4 +1757,14 @@ $(function() {
         btn_txt.html() == 'Скрыть меню' ? btn_txt.html('Отобразить меню') : btn_txt.html('Скрыть меню');
         $(this).toggleClass('active').closest('.refugees-cabinet__main-wrap').toggleClass('active');
     });
+
+    $('.horizontal-scroll').on('mousewheel DOMMouseScroll', function(e){
+        var delta = Math.max(-1, Math.min(1, (e.originalEvent.wheelDelta || -e.originalEvent.detail)));
+        $(this).scrollLeft( $(this).scrollLeft() - ( delta * 40 ) );
+        e.preventDefault();
+    });
+
+    $('.dropdown-list').on('mousewheel DOMMouseScroll', function(e){
+        e.stopPropagation();
+    });
 });

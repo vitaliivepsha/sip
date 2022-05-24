@@ -552,3 +552,21 @@
     }
   }
 }
+
+.refugees-cabinet__info-students{
+  padding: 30px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    overflow-y: scroll;
+    background: transparent;
+    height: 4px;
+    transition: linear .2s;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    border-radius: 0;
+    height: 4px;
+    transition: linear .2s;
+    cursor: grab;
+  }
+}

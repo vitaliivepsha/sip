@@ -1,3 +1,8 @@
+.partner-cabinet__students{
+  min-width: 1047px;
+  max-width: 1047px;
+}
+
 .partner-cabinet__students-top {
   display: flex;
   justify-content: space-between;
@@ -5,21 +10,22 @@
   margin-bottom: 12px;
 }
 
-.partner-cabinet__students-add__student {
+.partner-cabinet__students-add__student{
   display: flex;
   align-items: center;
   font-size: 12px;
   line-height: 130%;
   cursor: pointer;
   &:hover {
+    text-decoration: none;
     span {
       text-decoration: none;
-      color: $purple;
+      color: $red;
     }
   }
   span {
     transition: linear 0.2s;
-    color: $black;
+    color: $blue-dark;
     text-decoration: underline;
     margin-left: 13px;
   }
@@ -40,19 +46,24 @@
   &:hover {
     span {
       text-decoration: none;
-      color: $accent;
+      color: $red-dark;
     }
     svg {
       path {
-        fill: $accent;
+        fill: $red-dark;
       }
     }
   }
   span {
     transition: linear 0.2s;
-    color: #8b8a8e;
+    color: $red;
     text-decoration: underline;
     margin-left: 8px;
+  }
+  svg {
+    path {
+      fill: $red;
+    }
   }
 }
 
@@ -64,17 +75,17 @@
   input {
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(71, 71, 71, 0.2);
+    border: 1px solid rgba($blue-dark, 0.1);
     border-radius: 5px;
     background-color: transparent;
     font-size: 11px;
     line-height: 130%;
     padding: 0 35px 0 12px;
     &::placeholder {
-      color: rgba(71, 71, 71, 0.5);
+      color: rgba($blue-dark, 0.3);
     }
     &:focus {
-      border-color: $accent;
+      border-color: $red;
       &::placeholder {
         color: transparent;
       }
@@ -95,7 +106,7 @@
     &:hover {
       svg {
         path {
-          fill: $accent;
+          fill: $red;
         }
       }
     }
@@ -104,54 +115,67 @@
 
 .partner-cabinet__students-table__head {
   display: flex;
-  background: linear-gradient(0deg, rgba(120, 189, 188, 0.2), rgba(120, 189, 188, 0.2));
+  background: #8B8A8E;
   border-radius: 5px 5px 0 0;
   min-height: 40px;
   .dropdown-wrapper {
+    .dropdown {
+      transition: linear .2s;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
     &.active {
       .dropdown {
-        color: $purple;
+        color: $red;
         svg {
           transform: scale(1, -1);
           path {
-            fill: $purple;
+            fill: $red;
           }
         }
+      }
+    }
+    &:last-child{
+      .dropdown-list{
+        right: 0;
       }
     }
   }
   > div {
     position: relative;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 10px;
     line-height: 130%;
-    color: rgba(71, 71, 71, 0.7);
+    color: #fff;
     &.fio {
       width: 170px;
     }
     &.stage {
-      width: 104px;
+      width: 110px;
     }
     &.profession {
-      width: 192px;
+      width: 177px;
     }
     &.period {
-      width: 142px;
+      width: 124px;
     }
     &.permission {
-      width: 158px;
+      width: 152px;
     }
     &.planned-departure {
-      width: 90px;
+      width: 75px;
     }
     &.departure {
-      width: 76px;
+      width: 69px;
     }
     &.return {
       width: 84px;
     }
     &.docs {
-      width: 94px;
+      width: 92px;
     }
     > span {
       display: block;
@@ -160,9 +184,7 @@
     .dropdowns {
       display: flex;
       .dropdown {
-        padding: 3px 8px;
-        font-style: italic;
-        font-weight: 400;
+        padding: 5px;
       }
       &.two-cols {
         .dropdown-wrapper {
@@ -198,20 +220,20 @@
     display: flex;
     min-height: 40px;
     &:nth-child(even) {
-      background: rgba(71, 71, 71, 0.1);
+      background: #f3f3f3;
     }
     > div {
       padding: 6px 8px;
       font-size: 11px;
       line-height: 130%;
-      color: $text;
+      color: $blue-dark;
       display: flex;
       align-items: center;
       a {
         text-decoration: underline;
-        color: $text;
+        color: $blue-dark;
         &:hover {
-          color: $accent;
+          color: $red;
           text-decoration: none;
         }
       }
@@ -237,10 +259,10 @@
         }
       }
       &.stage {
-        width: 104px;
+        width: 110px;
       }
       &.profession {
-        width: 192px;
+        width: 177px;
         div {
           white-space: nowrap;
           overflow: hidden;
@@ -248,22 +270,22 @@
         }
       }
       &.period {
-        width: 142px;
+        width: 124px;
       }
       &.permission {
-        width: 158px;
+        width: 152px;
       }
       &.planned-departure {
-        width: 90px;
+        width: 75px;
       }
       &.departure {
-        width: 76px;
+        width: 69px;
       }
       &.return {
         width: 84px;
       }
       &.docs {
-        width: 94px;
+        width: 92px;
       }
       &.two-cols {
         > div {
@@ -293,9 +315,9 @@
       &.current {
         a,
         span {
-          border-color: $text;
+          border-color: $blue-dark;
           &:hover {
-            color: $text;
+            color: $blue-dark;
           }
         }
       }
@@ -303,9 +325,9 @@
         cursor: default;
         a,
         span {
-          color: rgba(71, 71, 71, 0.4);
+          color: rgba($blue-dark, 0.3);
           &:hover {
-            color: rgba(71, 71, 71, 0.4);
+            color: rgba($blue-dark, 0.3);
           }
         }
       }
@@ -324,7 +346,7 @@
         color: $text;
         &:hover {
           text-decoration: none;
-          color: $accent;
+          color: $red;
         }
       }
       span {
@@ -364,7 +386,7 @@
   border-radius: 5px;
   filter: drop-shadow(0px 4px 4px rgba(71, 71, 71, 0.15));
   width: 168px;
-  max-height: 180px;
+  max-height: 181px;
   overflow: auto;
   &::-webkit-scrollbar {
     overflow-y: scroll;
@@ -392,16 +414,19 @@
         background: $bg-gray;
       }
       &.active {
+        &:before{
+          border-color: $blue-dark;
+        }
         &:after {
           position: absolute;
           content: "";
           top: 50%;
           transform: translateY(-50%);
-          left: 11px;
-          width: 8px;
-          height: 8px;
+          left: 12px;
+          width: 6px;
+          height: 6px;
           border-radius: 1px;
-          background-color: $accent;
+          background-color: $blue-dark;
         }
       }
       &:nth-child(-n + 3) {
@@ -416,7 +441,7 @@
         width: 14px;
         height: 14px;
         left: 8px;
-        border: 1px solid rgba(71, 71, 71, 0.2);
+        border: 1px solid rgba($blue-dark, 0.3);
         border-radius: 1px;
       }
       span {
@@ -425,7 +450,7 @@
         padding: 0 8px;
         font-size: 11px;
         color: $text;
-        flex: 1 0 auto;
+        width: 116px;
         font-weight: 400;
         background: $bg-gray;
         white-space: nowrap;
@@ -486,11 +511,12 @@
         padding: 9px 8px;
         .search-txt {
           padding: 9px 34px 9px 8px;
+          color: $blue-dark;
         }
         span {
-          color: $text;
+          color: $blue-dark;
           &.placeholder {
-            color: rgba(71, 71, 71, 0.5);
+            color: rgba($blue-dark, 0.3);
             font-weight: 400;
             font-style: normal;
           }
@@ -524,11 +550,11 @@
                   content: "";
                   top: 50%;
                   transform: translateY(-50%);
-                  left: 11px;
-                  width: 8px;
-                  height: 8px;
+                  left: 12px;
+                  width: 6px;
+                  height: 6px;
                   border-radius: 1px;
-                  background-color: $purple;
+                  background-color: $blue-dark;
                 }
               }
               span {
@@ -541,8 +567,8 @@
                 line-height: 25px;
                 padding: 0 8px;
                 font-size: 11px;
-                color: $text;
-                flex: 1 0 auto;
+                color: $blue-dark;
+                width: 160px;
                 background: $bg-gray;
                 white-space: nowrap;
                 overflow: hidden;
@@ -552,6 +578,9 @@
           }
         }
       }
+      .no-match{
+        color: $blue-dark;
+      }
     }
   }
 }
@@ -559,6 +588,9 @@
 .dropdown-more {
   border-top: 1px solid rgba(71, 71, 71, 0.1);
   height: 36px;
+  font-size: 11px;
+  line-height: 130%;
+  color: $blue-dark;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1131,6 +1163,7 @@
   line-height: 130%;
   color: $blue-dark;
   width: 70px;
+  white-space: nowrap;
 }
 
 .partner-cabinet__vacancy-step__body {
