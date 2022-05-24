@@ -1,15 +1,53 @@
 .refugees-cabinet__main-wrap{
   padding: 55px 0 40px;
-}
-
-.refugees-cabinet__main-wrap{
+  position: relative;
+  overflow: hidden;
   display: flex;
   gap: 30px;
+  &.active{;
+    gap: 0;
+    .refugees-cabinet__sidebar{
+      width: 0;
+      transform: translateX(-255px);
+    }
+    .refugees-cabinet__info{
+      width: 100%;
+    }
+  }
+}
+
+.refugees-cabinet__sidebar-hide{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  gap: 8px;
+  color: #474747;
+  cursor: pointer;
+  &:hover{
+    color: $red;
+    svg{
+      path{
+        fill: $red;
+      }
+    }
+  }
+  &.active{
+    flex-direction: row-reverse;
+    svg{
+      transform: scale(-1, 1);
+    }
+  }
 }
 
 .refugees-cabinet__sidebar{
   width: 255px;
   border-right: 1px solid rgba(10, 28, 39, 0.1);
+  transition: ease-in-out .3s;
 }
 
 .refugees-cabinet__user{
@@ -94,9 +132,10 @@
 }
 
 .refugees-cabinet__info{
-  width: calc(100% - 255px);
+  width: calc(100% - 285px);
   display: flex;
   flex-direction: column;
+  transition: ease-in-out .3s;
 }
 
 .refugees-cabinet__info-head{
@@ -157,12 +196,44 @@
     >label{
       width: calc(100% - 290px);
       font-weight: 400;
+      color: $blue-dark;
       .accent{
         color: $red;
       }
     }
     >.input-wrapper{
       width: 290px;
+      &.another-option__wrapper{
+        .input-wrapper{
+          &.error{
+            .input, select{
+              border-color: $red;
+              +label{
+                &.error{
+                  margin-top: 2px;
+                  color: $red;
+                  font-size: 10px;
+                  line-height: 130%;
+                  display: block;
+                }
+              }
+            }
+            +label{
+              margin-top: -15px;
+            }
+          }
+          &.select-wrapper{
+            select{
+              border: 1px solid rgba(71, 71, 71, 0.3);
+              color: $text;
+            }
+            svg{
+              right: 17px;
+              top: 17px;
+            }
+          }
+        }
+      }
       &.select-wrapper{
         >svg{
           top: 17px;
@@ -290,6 +361,32 @@
     }
   }
   .checkbox-wrapper{
+    >input{
+      + label{
+        line-height: 20px;
+        padding-left: 38px;
+        color: $blue-dark;
+        &:before{
+          width: 20px;
+          height: 20px;
+          border-color: rgba($blue-dark, .3);
+        }
+        &:after{
+          background-color: $red;
+          width: 13px;
+          height: 8px;
+          left: 3px;
+          top: 6px;
+        }
+      }
+      &:checked{
+        +label{
+          &:before{
+            border-color: $red;
+          }
+        }
+      }
+    }
     &.refugees-cabinet__form-checkbox{
       input{
         +label{
@@ -358,12 +455,36 @@
       }
     }
   }
+  .another-option__input{
+    margin-top: 5px;
+  }
+  .changed-name{
+    .input-wrapper{
+      margin-bottom: 5px;
+    }
+  }
+  .partner-cabinet__students-add__footer{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    > div{
+      .btn{
+        border-color: $red;
+        font-weight: 500;
+        &:hover{
+          background-color: $red;
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 .btn{
   &.refugees-cabinet__form-btn{
     background-color: $red;
     border-color: $red;
     color: #fff;
+    font-weight: 500;
     width: 226px;
     margin-top: 50px;
     &:hover{

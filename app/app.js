@@ -1749,4 +1749,12 @@ $(function() {
         selector: '.rating-gal',
         download: false
     });
+
+    // cabinet sidebar show/hide
+
+    $('.refugees-cabinet__sidebar-hide').on('click', function () {
+        var btn_txt = $(this).find('span');
+        btn_txt.html() == 'Скрыть меню' ? btn_txt.html('Отобразить меню') : btn_txt.html('Скрыть меню');
+        $(this).toggleClass('active').closest('.refugees-cabinet__main-wrap').toggleClass('active');
+    });
 });
