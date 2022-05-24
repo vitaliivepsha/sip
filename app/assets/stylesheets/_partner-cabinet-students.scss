@@ -964,69 +964,75 @@
   }
 }
 
-.partner-cabinet__vacancy-steps {
-  padding-left: 92px;
+.partners-cabinet__steps{
+  background-color: $bg-gray;
+  padding: 25px 22px 45px;
+}
+
+.partner-cabinet__vacancy-steps__head-wrap{
+  max-width: 783px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .partner-cabinet__vacancy-steps__head {
-  max-width: 650px;
   span {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 130%;
     color: $black;
   }
   a {
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 10px;
     line-height: 130%;
     text-decoration: underline;
-    color: $accent;
+    color: $text;
     margin-left: 10px;
     &:hover {
       text-decoration: none;
-      color: $purple;
+      color: $red;
     }
   }
 }
 
 .partner-cabinet__vacancy-steps__main__top {
   display: flex;
+  align-items: flex-start;
   justify-content: flex-end;
-  margin-bottom: 10px;
 }
 
 .partner-cabinet__vacancy-steps__main__days {
-  width: 130px;
-  max-width: 130px;
-  margin-left: 14px;
+  width: 80px;
+  max-width: 80px;
+  margin-left: 4px;
   &:last-child {
     display: flex;
     align-items: flex-end;
-    width: 128px;
-    max-width: 128px;
+    width: 60px;
+    max-width: 60px;
     span {
       width: 100%;
     }
   }
   span {
-    width: 150px;
     display: block;
-    font-size: 9px;
+    font-size: 8px;
     line-height: 130%;
-    color: rgba($black, 0.5);
+    color: $blue-dark;
   }
 }
 
 .partner-cabinet__vacancy-step {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   &.checked {
     .partner-cabinet__vacancy-step__title {
-      color: $accent;
+      color: $red;
     }
     .partner-cabinet__vacancy-step__checkbox {
       > div {
-        border-color: $accent;
+        border-color: $red;
         svg {
           display: block;
         }
@@ -1035,6 +1041,7 @@
   }
   &.current {
     .partner-cabinet__vacancy-step__title {
+      color: $blue-dark;
       span {
         display: flex;
       }
@@ -1054,7 +1061,8 @@
     height: inherit;
     background-color: #fff;
     border-radius: 5px;
-    margin-right: 15px;
+    margin-right: 5px;
+    border: 1px solid rgba(10, 28, 39, 0.1);
     &:last-child {
       margin-right: 0;
     }
@@ -1068,19 +1076,26 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 130%;
-  color: rgba($black, 0.5);
-  width: 650px;
-  min-width: 650px;
+  color: rgba($blue-dark, 0.5);
+  width: 563px;
+  min-width: 563px;
   span {
     display: none;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    min-width: 30px;
-    height: 30px;
-    border: 1px solid $accent;
+    width: 23px;
+    min-width: 23px;
+    height: 23px;
+    border: 1px solid $red;
     border-radius: 5px;
     margin-right: 15px;
+    svg{
+      width: 11px;
+      height: 9px;
+      path{
+        fill: $red
+      }
+    }
   }
 }
 
@@ -1097,41 +1112,45 @@
     width: 15px;
     height: 15px;
     border-radius: 2px;
-    border: 1px solid rgba($black, 0.5);
+    border: 1px solid rgba($blue-dark, 0.3);
     svg {
       display: none;
+      path{
+        fill: $red;
+      }
     }
   }
 }
 
 .partner-cabinet__vacancy-step__time {
-  padding: 5px 15px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 11px;
   line-height: 130%;
-  color: rgba($black, 0.5);
-  width: 130px;
+  color: $blue-dark;
+  width: 70px;
 }
 
 .partner-cabinet__vacancy-step__body {
   display: none;
-  width: 650px;
+  width: 783px;
   background-color: #fff;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .partner-cabinet__vacancy-steps__main__bot {
-  margin-top: 20px;
+  margin-top: 38px;
   display: flex;
   justify-content: flex-end;
-  font-weight: 700;
-  color: $black;
+  font-weight: 400;
+  color: $blue-dark;
   font-size: 13px;
   line-height: 130%;
   padding-right: 0;
+  width: 783px;
   span {
     margin-left: 15px;
   }
