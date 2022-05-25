@@ -340,6 +340,7 @@
         min-width: 23px;
         height: 24px;
         padding: 5px;
+        border-radius: 2px;
         border: 1px solid transparent;
         font-size: 12px;
         line-height: 150%;
@@ -1216,7 +1217,7 @@
 }
 
 .vacancy-choose__block-main{
-  border-bottom: 1px solid $pink;
+  border-bottom: 1px solid $red;
   margin-bottom: 28px;
   padding-bottom: 30px;
   &:last-child{
@@ -1239,10 +1240,16 @@
 }
 
 .vacancy-choose__block__descr {
-  display: block;
   font-size: 12px;
   line-height: 130%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  strong{
+    font-weight: 600;
+    width: max-content;
+    font-size: 14px;
+    margin-right: 15px;
+  }
 }
 
 .vacancy-choose__block-filters {
@@ -1258,10 +1265,10 @@
 .vacancy-choose__block-filter-btn__wrapper{
   &.active{
     .vacancy-choose__block-filter-btn {
-      color: $accent;
+      color: $red;
       svg {
         path {
-          fill: $accent;
+          fill: $red;
         }
       }
     }
@@ -1280,14 +1287,14 @@
       height: 15px;
       padding-left: 3px;
       cursor: pointer;
-      color: $text;
+      color: $blue-dark;
       background-color: $bg-gray;
       border-radius: 1px;
       &:hover{
-        color: $accent;
+        color: $red;
         svg{
           path{
-            fill: $accent;
+            fill: $red;
           }
         }
       }
@@ -1313,14 +1320,14 @@
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 130%;
-  color: #8b8a8e;
+  color: $blue-dark;
   cursor: pointer;
   transition: linear 0.2s;
   &:hover {
-    color: $accent;
+    color: $red;
     svg {
       path {
-        fill: $accent;
+        fill: $red;
       }
     }
   }
@@ -1332,28 +1339,29 @@
 .vacancy-choose__block-sort__wrapper {
   font-size: 12px;
   line-height: 130%;
-  color: #8b8a8e;
+  color: $blue-dark;
   display: flex;
   >span {
+    color: #8B8A8E;
     margin-right: 7px;
   }
   &.start {
-    width: 100px;
+    //width: 100px;
     .SumoSelect {
       width: auto;
       max-width: 100%;
       >.optWrapper{
-        width: 120px;
+        width: 126px;
       }
     }
   }
   &.end{
-    width: 120px;
+    //width: 120px;
     .SumoSelect {
       width: auto;
       max-width: 100%;
       >.optWrapper{
-        width: 120px;
+        width: 126px;
       }
     }
   }
@@ -1392,22 +1400,22 @@
   }
   .SumoSelect.active > .CaptionCont{
     > span{
-      color: $text;
+      color: $blue-dark;
     }
   }
   .SumoSelect.open > .CaptionCont{
     > span{
-      color: $accent;
+      color: $red;
     }
   }
   .SumoSelect.open > .CaptionCont > label > i{
-    background-color: $accent;
+    background-color: $red;
   }
   & .SumoSelect:hover > .CaptionCont {
     box-shadow: none;
   }
   & .SumoSelect > .CaptionCont > span {
-    color: #8B8A8E;
+    color: $blue-dark;;
     cursor: pointer;
     padding-right: 12px;
     &.placeholder{
@@ -1434,7 +1442,7 @@
     mask-repeat: no-repeat;
     -webkit-mask-size: contain;
     mask-size: contain;
-    background-color: #8B8A8E;
+    background-color: $blue-dark;
     margin-right: -2px;
   }
   & .SumoSelect.open > .CaptionCont > label > i {
@@ -1445,7 +1453,8 @@
     top: 22px;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+    box-shadow: 0 4px 10px rgba($text, 0.2);
+    z-index: 5;
   }
   & .SumoSelect > .optWrapper > .options {
     max-height: 500px;
@@ -1459,7 +1468,7 @@
     }
   }
   & .SumoSelect > .optWrapper > .options li.opt:hover {
-    background-color: #f4f4f4;
+    background-color: $bg-gray;
   }
   & .SumoSelect > .optWrapper > .options li label {
     margin-bottom: 0;
@@ -1468,7 +1477,7 @@
     line-height: 110%;
     font-weight: 400;
     white-space: pre-wrap;
-    color: $text;
+    color: $blue-dark;
   }
 }
 
@@ -1488,11 +1497,11 @@
   margin-bottom: 10px;
   background: $bg-gray;
   border-radius: 5px;
-  padding: 15px 15px 25px;
+  padding: 15px 15px 35px;
   display: flex;
   flex-direction: column;
   &:hover{
-    filter: drop-shadow(0px 4px 10px rgba(95, 108, 250, 0.2));
+    box-shadow: 0 4px 20px rgba(10, 28, 39, 0.2);
     .vacancy-choose__block-item__tooltip{
       top: calc(100% + 10px);
       opacity: 1;
@@ -1528,6 +1537,7 @@
       }
     }
     .vacancy-choose__block-item__buttons {
+      pointer-events: none;
       &:before{
         position: absolute;
         content: '';
@@ -1544,7 +1554,7 @@
 }
 
 .vacancy-choose__block-item__pic {
-  width: 270px;
+  width: 100%;
   height: 170px;
   position: relative;
   picture {
@@ -1562,8 +1572,8 @@
   svg{
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    bottom: 25px;
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 4;
   }
 }
@@ -1580,10 +1590,10 @@
   min-width: 50px;
   height: 33px;
   border-radius: 60px / 40px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 10px;
   line-height: 130%;
-  color: $black;
+  color: $blue-dark;
   background-color: #ffd53d;
 }
 
@@ -1594,9 +1604,9 @@
   top: calc(100% + 25px);
   left: 0;
   color: #fff;
-  background-color: $pink;
+  background-color: $red;
   width: 100%;
-  filter: drop-shadow(0px 4px 10px rgba(95, 108, 250, 0.2));
+  filter: drop-shadow(0px 4px 10px rgba(10, 28, 39, 0.2));
   border-radius: 5px;
   font-size: 12px;
   line-height: 130%;
@@ -1608,7 +1618,7 @@
     content: '';
     bottom: 100%;
     left: 30px;
-    border-bottom: 10px solid $pink;
+    border-bottom: 10px solid $red;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
   }
@@ -1617,7 +1627,7 @@
 .vacancy-choose__block-item__info {
   flex: 1 0 auto;
   padding: 20px 0 15px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12px;
   line-height: 130%;
   color: $black;
@@ -1632,43 +1642,27 @@
 
 .vacancy-choose__block-item__btn {
   width: calc(50% - 5px);
-  background: linear-gradient(87.34deg, rgba(117, 215, 214, 0.25) -133.67%, rgba(95, 108, 250, 0.5) 91.95%);
   border-radius: 5px;
   position: relative;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 19px;
-  color: $black;
-  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: $blue-dark;
+  padding: 5px 20px;
+  border: 1px solid $red;
+  background-color: transparent;
   text-align: center;
   text-decoration: none !important;
-  &:before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background: $bg-gray;
-    width: calc(100% - 2px);
-    height: calc(100% - 2px);
-    top: 1px;
-    left: 1px;
-    border-radius: 5px;
-  }
   span {
     z-index: 2;
   }
   &:hover {
     text-decoration: none;
-    color: $black;
-    &:before {
-      background: linear-gradient(87.34deg, rgba(117, 215, 214, 0.25) -133.67%, rgba(95, 108, 250, 0.5) 91.95%);
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-    }
+    color: #fff;
+    background-color: $red;
   }
 }
 
@@ -2903,7 +2897,7 @@
   display: flex;
   align-items: center;
   font-family: $title;
-  color: $black;
+  color: $blue-dark;
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
@@ -2922,10 +2916,15 @@
   position: absolute;
   right: -3px;
   top: -11px;
+  svg{
+    path{
+      fill: $blue-dark;
+    }
+  }
   &:hover{
     svg{
       path{
-        fill: $accent;
+        fill: $red;
       }
     }
   }
@@ -2942,7 +2941,7 @@
     transition: linear 0.2s;
   }
   &::-webkit-scrollbar-thumb {
-    background: #75D7D6;
+    background: $red;
     border-radius: 0;
     width: 4px;
     transition: linear 0.2s;
@@ -2961,23 +2960,23 @@
   height: 15px;
   padding-left: 3px;
   cursor: pointer;
-  color: $text;
+  color: $blue-dark;
   background-color: $bg-gray;
   border-radius: 1px;
   &:hover{
-    color: $accent;
+    color: $red;
     svg{
       path{
-        fill: $accent;
+        fill: $red;
       }
     }
   }
 }
 
 .partner-cabinet__vacancy-filter{
-  border-top: 1px solid rgba(196, 196, 196, 0.5);
+  border-top: 1px solid rgba($blue-dark, 0.1);
   &:last-child{
-    border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+    border-bottom: 1px solid rgba($blue-dark, 0.1);
   }
 }
 
@@ -2990,7 +2989,7 @@
   font-size: 14px;
   line-height: 16px;
   font-family: $title;
-  color: $black;
+  color: $blue-dark;
   padding: 15px 0;
   &.active{
     svg{
@@ -3008,7 +3007,7 @@
       font-size: 14px;
       line-height: 16px;
       &.checked{
-        color: $accent;
+        color: $red;
       }
       &.checkbox{
         display: flex;
@@ -3026,7 +3025,7 @@
           width: 18px;
           height: 18px;
           left: 0;
-          border: 1px solid #C4C4C4;
+          border: 1px solid rgba($blue-dark, .2);
           border-radius: 1px;
         }
         &.checked{
@@ -3039,7 +3038,7 @@
             width: 10px;
             height: 10px;
             border-radius: 1px;
-            background-color: $accent;
+            background-color: $red;
           }
         }
       }
@@ -3053,17 +3052,25 @@
 .partner-cabinet__vacancy-filters__footer{
   height: 180px;
   padding: 26px 38px 38px 44px;
+  box-shadow: 4px 0 10px rgba(10, 28, 39, 0.2);
   .btn{
     width: 100%;
     margin-top: 0;
-    border-color: #78BDBC;
+    border-color: $red;
+    color: $blue-dark;
     &:hover{
-      border-color: rgba(117, 215, 214, 0.5);
-      background-color: rgba(117, 215, 214, 0.5);
-      color: $black;
+      border-color: $red;
+      background-color: $red;
+      color: #fff;
     }
     &.partner-cabinet__btn{
       margin-bottom: 15px;
+      background: $red;
+      color: #fff;
+      &:hover{
+        background: $red-dark;
+        color: #fff;
+      }
     }
   }
 
