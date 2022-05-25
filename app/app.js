@@ -17,6 +17,8 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/partner-cabinet-students.html');
     require('./assets/templates/layouts/partner-cabinet-students-vacancy-choice.html');
     require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list.html');
+    require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list-friends.html');
+    require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list-not-found.html');
     require('./assets/templates/layouts/partner-cabinet-students-add.html');
     require('./assets/templates/layouts/partner-cabinet-students-contol-of-the-documents.html');
     require('./assets/templates/layouts/partner-cabinet-chats.html');

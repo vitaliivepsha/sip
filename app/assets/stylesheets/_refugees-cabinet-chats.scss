@@ -1,12 +1,15 @@
+.refugees-cabinet__info-chats{
+  padding: 15px 15px 50px;
+}
+
 .refugees-cabinet__chats{
   display: flex;
   justify-content: space-between;
 }
 
 .refugees-cabinet__chats-list{
-  width: 238px;
-  height: 328px;
-  background: #F9F9F9;
+  width: 250px;
+  border: 1px solid rgba($blue-dark, 0.1);
   border-radius: 5px;
   padding: 16px 15px;
   &::-webkit-scrollbar {
@@ -25,19 +28,21 @@
   ul{
     li{
       border-radius: 5px;
-      display: flex;
       align-items: center;
-      min-height: 40px;
+      height: 40px;
       font-weight: 500;
       font-size: 12px;
       line-height: 130%;
       font-family: $title;
       color: $black;
-      padding: 5px 10px;
-      border: 1px solid $blue-dark;
+      padding: 11px 10px;
+      border: 1px solid rgba($blue-dark, 0.1);
       cursor: pointer;
       margin-bottom: 10px;
       text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       &.active{
         background: $red;
         border-color: $red;
@@ -48,9 +53,9 @@
 }
 
 .refugees-cabinet__chats-main{
-  width: calc(100% - 248px);
-  background: #F9F9F9;
+  width: calc(100% - 260px);
   border-radius: 5px;
+  border: 1px solid rgba($blue-dark, 0.1);
   .tabs-content{
     display: none;
     &.active{
@@ -70,7 +75,7 @@
   font-family: $title;
   color: $black;
   height: 56px;
-  border-bottom: 1px solid rgba($text, 0.1);
+  border-bottom: 1px solid rgba($blue-dark, 0.1);
   padding: 10px 15px;
 }
 

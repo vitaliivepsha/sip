@@ -12,19 +12,24 @@
       font-size: 12px;
       line-height: 150%;
       padding: 0;
+      border-radius: 2px;
       border: 1px solid transparent;
       background-color: transparent;
-      color: $text;
+      color: $blue-dark;
       text-decoration: none;
       &:hover{
         background-color: transparent;
-        color: $accent;
+        border-color: transparent;
+        color: $red;
+      }
+      &:focus{
+        border-color: transparent;
       }
     }
     &.current{
       a, span{
-        border-color: $text;
-        color: $text;
+        border-color: $blue-dark;
+        color: $blue-dark;
         text-decoration: none;
         cursor: default;
       }
@@ -32,13 +37,17 @@
     &.disabled{
       cursor: default;
       a, span{
-        color: rgba($text, 0.4);
+        color: rgba($blue-dark, 0.3);
         text-decoration: none;
         cursor: default;
         border-color: transparent;
         background-color: transparent;
         &:hover{
           background-color: transparent;
+          border-color: transparent;
+        }
+        &:focus{
+          border-color: transparent;
         }
       }
     }

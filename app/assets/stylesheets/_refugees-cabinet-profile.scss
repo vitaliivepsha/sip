@@ -46,7 +46,7 @@
 
 .refugees-cabinet__sidebar{
   width: 255px;
-  border-right: 1px solid rgba(10, 28, 39, 0.1);
+  border-right: 1px solid rgba($blue-dark, 0.1);
   transition: ease-in-out .3s;
 }
 
@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   padding-bottom: 22px;
-  border-bottom: 1px solid rgba(10, 28, 39, 0.1);
+  border-bottom: 1px solid rgba($blue-dark, 0.1);
   >picture{
     width: 42px;
     min-width: 42px;
@@ -152,7 +152,7 @@
 }
 
 .refugees-cabinet__info-body{
-  border: 1px solid rgba(10, 28, 39, 0.1);
+  border: 1px solid rgba($blue-dark, 0.1);
   border-radius: 5px;
   flex: 1 0 auto;
 }
@@ -569,4 +569,10 @@
     transition: linear .2s;
     cursor: grab;
   }
+}
+
+.refugees-cabinet__vacancy-choice{
+  padding: 60px 0 120px;
+  width: 730px;
+  margin: 0 auto;
 }
