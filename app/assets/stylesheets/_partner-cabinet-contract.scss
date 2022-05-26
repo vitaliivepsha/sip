@@ -1,58 +1,27 @@
-.partner-cabinet__contract {
-  background-color: $bg-gray;
-  border-radius: 5px;
-  padding: 70px 0 60px;
-  & .container {
-    max-width: 740px;
-  }
 
-  & a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 232px;
-    width: fit-content;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    height: 40px;
-    padding: 10px 20px;
-    border: 1px solid $accent;
-    border-radius: 5px;
-    text-decoration: none;
-
-    & svg {
-      margin-right: 10px;
-      margin-bottom: 0;
-    }
-    & span {
-      font-family: $title;
-      font-size: 12px;
-      line-height: 130%;
-      font-weight: 400;
-      color: $purple;
-    }
-  }
-}
 
 .partner-cabinet__doc {
   margin-bottom: 70px;
+  margin-top: 12px;
   &:last-child {
     margin-bottom: 0;
+    margin-top: 0;
     & a {
       margin-bottom: 10px;
+    }
+    & .partner-cabinet__doc-wrapper{
+      padding-bottom: 38px;
     }
   }
 }
 
 .partner-cabinet__doc-title {
   display: block;
-  margin-bottom: 30px;
-  font-family: $title;
-  font-size: 28px;
-  line-height: 130%;
-  font-weight: 600;
-  text-align: center;
-  color: $black;
+  margin-bottom: 25px;
+  font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: $blue-dark;
 }
 
 .partner-cabinet__doc-wrapper {
@@ -62,15 +31,47 @@
   padding: 30px;
   border: 1px solid rgba($text, 0.3);
   border-radius: 5px;
+  
   & p {
     margin: 0;
-    margin-bottom: 30px;
-    font-family: $title;
-    font-size: 14px;
-    line-height: 18%;
+    margin-bottom: 23px;
     font-weight: 600;
-    text-align: center;
-    color: $text;
+      font-size: 14px;
+      line-height: 130%;
+      text-align: center;
+      color: $blue-dark;
+  }
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 232px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba($red, 0.5);
+    text-decoration: none;
+    transition: border linear 0.2s;
+      overflow: hidden;
+    &:hover {
+      border: 1px solid $red;
+    }
+    & svg {
+      flex-shrink: 0;
+    }
+    & span {
+      margin-left: 12px;
+      font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: $blue-dark;
+        white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+    }
   }
 }
 
@@ -89,15 +90,15 @@
     & b {
       margin-bottom: 10px;
       font-weight: 400;
-      font-size: 12px;
-      line-height: 130%;
-      color: $text;
+        font-size: 12px;
+        line-height: 130%;
+        color: $blue-dark;
     }
     & span {
       font-weight: 400;
-      font-size: 14px;
-      line-height: 130%;
-      color: $black;
+        font-size: 14px;
+        line-height: 130%;
+        color: $blue-dark;
     }
   }
 }
