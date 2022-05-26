@@ -20,3 +20,37 @@
     background: linear-gradient(87.34deg, rgba(95, 108, 250, 0.5) -133.67%, rgba(117, 215, 214, 0.25) -73.74%, rgba(95, 108, 250, 0.5) 91.95%), #ffffff;
   }
 }
+
+.students-cabinet__info-profile{
+  padding: 30px 30px 50px;
+  position: relative;
+  .edit-btn__top {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    text-decoration: underline;
+    color: $red;
+    cursor: pointer;
+    svg {
+      margin-right: 9px;
+    }
+    &:hover {
+      color: $red-dark;
+      text-decoration: none;
+      svg {
+        path {
+          fill: $red-dark;
+        }
+      }
+    }
+  }
+  .partner-cabinet__form{
+    width: 605px;
+    max-width: 100%;
+  }
+}
