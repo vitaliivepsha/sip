@@ -2387,16 +2387,16 @@ transition: text-decoration linear 0.2s;
   font-size: 14px;
   line-height: 130%;
   font-family: $title;
-  color: $black;
-  margin-bottom: 18px;
+  color: $blue-dark;
+  margin-bottom: 16px;
   a {
     font-size: 14px;
     line-height: 130%;
-    color: $accent;
+    color: $blue-dark;
     text-decoration: underline;
     &:hover {
       text-decoration: none;
-      color: $purple;
+      color: $red;
     }
   }
 }
@@ -2416,6 +2416,9 @@ transition: text-decoration linear 0.2s;
     }
     & svg {
       transform: rotate(180deg);
+      path{
+        fill: $red;
+      }
     }
   }
 }
@@ -2425,7 +2428,7 @@ transition: text-decoration linear 0.2s;
 }
 
 .add-documents__block-btn {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
   & input {
     display: none;
   }
@@ -2437,31 +2440,34 @@ transition: text-decoration linear 0.2s;
     width: 270px;
     padding: 10px;
     font-size: 14px;
-    line-height: 19px;
-    font-weight: 400;
-    color: $text;
-    border: 1px solid rgba($text, 0.2);
-    transition: border 0.3s;
+    line-height: 17px;
+    font-weight: 500;
+    color: $blue-dark;
+    border: 1px solid $blue-dark;
+    transition: linear 0.3s;
     border-radius: 5px;
     cursor: pointer;
     &:hover {
-      color: $pink;
-      border: 1px solid $pink;
+      color: $red;
+      border: 1px solid $red;
       & svg path {
-        fill: $pink;
+        fill: $red;
       }
     }
     & svg {
       margin-top: 1px;
-      margin-right: 10px;
+      margin-right: 5px;
+      path{
+        fill: $blue-dark;
+      }
     }
   }
 
   & input:checked + label {
-    color: $pink;
-    border: 1px solid $pink;
+    color: $red;
+    border: 1px solid $red;
     & svg path {
-      fill: $pink;
+      fill: $red;
     }
   }
 }
@@ -2473,7 +2479,7 @@ transition: text-decoration linear 0.2s;
     column-gap: 0;
   }
   & li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     & input {
       display: none;
     }
@@ -2482,10 +2488,10 @@ transition: text-decoration linear 0.2s;
       font-size: 12px;
       line-height: 16px;
       font-weight: 400;
-      color: $text;
+      color: $blue-dark;
       cursor: pointer;
       &:hover span {
-        border: 1px solid rgba($accent, 0.2);
+        border: 1px solid rgba($blue-dark, 0.3);
       }
     }
 
@@ -2495,12 +2501,12 @@ transition: text-decoration linear 0.2s;
       width: 15px;
       height: 15px;
       margin-right: 17px;
-      border: 1px solid rgba($text, 0.2);
+      border: 1px solid rgba($blue-dark, 0.2);
       border-radius: 50%;
     }
 
     & input:checked + label span {
-      border: 1px solid rgba($accent, 0.7);
+      border: 1px solid rgba($red, 0.7);
     }
 
     & input:checked + label span {
@@ -2512,7 +2518,7 @@ transition: text-decoration linear 0.2s;
         width: 9px;
         height: 9px;
         border-radius: 50%;
-        background: $accent;
+        background: $red;
       }
     }
   }
@@ -2523,19 +2529,27 @@ transition: text-decoration linear 0.2s;
   gap: 10px;
   & input {
     height: 50px;
-    border: 1px solid rgba($text, 0.2);
+    border: 1px solid rgba($blue-dark, 0.3);
     padding: 20px;
+    background-color: transparent;
+    &::placeholder{
+      color: rgba($blue-dark, 0.3);
+    }
     &:focus {
-      border: 1px solid $accent;
+      border: 1px solid $red;
+      &::placeholder{
+        color: transparent;
+      }
     }
   }
   & button {
     width: 100%;
     border: none;
-    background: linear-gradient(14.13deg, rgba(117, 215, 214, 0.5) 32.87%, rgba(95, 108, 250, 0.5) 205%), #ffffff;
+    background: $red;
+    color: #fff;
     &:hover {
-      color: #25222c;
-      background: linear-gradient(176.13deg, rgba(117, 215, 214, 0.5) 205%, rgba(95, 108, 250, 0.5) 32.87%), #ffffff;
+      background: $red-dark;
+      color: #fff;
     }
   }
 }
@@ -2546,13 +2560,13 @@ transition: text-decoration linear 0.2s;
   .input-file {
     cursor: pointer;
     width: 100%;
-    border: 1px solid rgba($accent, 0.3);
+    border: 1px solid rgba($red, 0.5);
     border-radius: 5px;
     height: 40px;
     margin-bottom: 20px;
     transition: box-shadow 0.3s;
     &:hover {
-      box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+      box-shadow: 0 4px 10px rgba(10, 28, 39, 0.2);
     }
     > label {
       font-weight: 400;
@@ -2567,10 +2581,13 @@ transition: text-decoration linear 0.2s;
       > svg {
         min-width: 20px;
         margin-right: 15px;
+        path{
+          fill: $red;
+        }
       }
       span {
         text-align: center;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 12px;
         line-height: 130%;
         color: $black;
@@ -2592,20 +2609,20 @@ transition: text-decoration linear 0.2s;
     height: 6px;
     margin-bottom: 10px;
     border-radius: 2px;
-    background-color: #f3f3f3;
+    background-color: #fff;
     & > span {
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
       border-radius: 2px;
-      background-color: $purple;
+      background-color: $red;
     }
   }
   > span {
     font-size: 13px;
     line-height: 130%;
-    color: rgba($text, 0.7);
+    color: rgba($blue-dark, 0.7);
   }
 }
 
@@ -2615,43 +2632,80 @@ transition: text-decoration linear 0.2s;
   & .btn {
     padding-left: 25px;
     padding-right: 25px;
+    border-color: $red;
+    color: $blue-dark;
+    &:hover{
+      border-color: $red;
+      background: $red;
+      color: #fff;
+    }
   }
   & button[type="button"] {
     width: 100%;
     height: 50px;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(14.13deg, rgba(117, 215, 214, 0.5) 32.87%, rgba(95, 108, 250, 0.5) 205%), #ffffff;
+    background: $red;
+    color: #fff;
     &:hover {
-      color: #25222c;
-      background: linear-gradient(176.13deg, rgba(117, 215, 214, 0.5) 205%, rgba(95, 108, 250, 0.5) 32.87%), #ffffff;
+      background: $red-dark;
+      color: #fff;
     }
   }
 }
 
 .add-documents__descr {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 130%;
-  margin-bottom: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  width: 590px;
+  max-width: 100%;
 }
 
 .add-documents__form {
+  width: 590px;
+  max-width: 100%;
   .input-file {
     justify-content: flex-start;
     padding: 5px 30px;
     transition: linear 0.2s;
+    border-color: rgba($red, .5);
+    z-index: 3;
     &:hover {
-      box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+      border-color: $red;
+      box-shadow: 0 4px 10px rgba(10, 28, 39, 0.2);
       border-radius: 5px;
+      > label {
+        span{
+          color: $red;
+        }
+      }
     }
     > label {
       justify-content: flex-start;
       padding: 0;
+      svg{
+        path{
+          fill: $red;
+        }
+      }
       span {
+        font-weight: 400;
         max-width: 100%;
+        transition: linear 0.2s;
       }
     }
   }
+}
+
+.add-documents__bot-block{
+  border-radius: 5px;
+  background-color: $bg-gray;
+  width: 650px;
+  max-width: 100%;
+  padding: 30px 40px 55px 20px;
+  margin-top: 40px;
 }
 
 .tooltip {
@@ -2660,12 +2714,12 @@ transition: text-decoration linear 0.2s;
   visibility: hidden;
   transition: linear 0.2s;
   z-index: 1;
-  width: 274px;
+  width: 310px;
   font-size: 12px;
   line-height: 130%;
   color: #fff;
-  background: #f459a4;
-  filter: drop-shadow(0 4px 10px rgba(95, 108, 250, 0.2));
+  background: $red;
+  filter: drop-shadow(0px 4px 10px rgba(95, 108, 250, 0.2));
   border-radius: 5px;
   padding: 10px;
   left: 0;
@@ -2673,7 +2727,7 @@ transition: text-decoration linear 0.2s;
   &:before {
     position: absolute;
     content: "";
-    border-bottom: 10px solid #f459a4;
+    border-bottom: 10px solid $red;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     left: 32px;
@@ -3137,17 +3191,19 @@ transition: text-decoration linear 0.2s;
 .partner-cabinet__vacancy-steps-spoiler{
   display: flex;
   cursor: pointer;
-  width: 650px;
+  width: 100%;
   min-height: 82px;
-  background: #fff;
+  background: transparent;
+  border: 1px solid rgba($blue-dark, .1);
   font-weight: 600;
   font-size: 14px;
   line-height: 130%;
-  color: $pink;
+  color: $blue-dark;
   border-radius: 5px;
   padding: 30px 100px 32px 32px;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   &.next{
     margin-top: 160px;
   }
@@ -3160,7 +3216,10 @@ transition: text-decoration linear 0.2s;
     position: absolute;
     top: 34px;
     right: 48px;
-    transform: scale(1, -1)
+    transform: scale(1, -1);
+    path{
+      fill: $red;
+    }
   }
 }
 
