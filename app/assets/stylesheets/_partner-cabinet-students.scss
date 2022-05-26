@@ -3052,7 +3052,7 @@ transition: text-decoration linear 0.2s;
     font-size: 14px;
     line-height: 130%;
     font-family: $title;
-    color: $black;
+    color: $blue-dark;
   }
   & p {
     margin: 0;
@@ -3068,12 +3068,12 @@ transition: text-decoration linear 0.2s;
   width: fit-content;
   min-height: 40px;
   padding: 5px 15px;
-  border: 1px solid rgba($text, 0.3);
+  border: 1px solid rgba($blue-dark, 0.3);
   border-radius: 5px;
   font-size: 12px;
   line-height: 130%;
   font-weight: 400;
-  color: $black;
+  color: $blue-dark;
 }
 
 .partner-cabinet-access-to-sip {
