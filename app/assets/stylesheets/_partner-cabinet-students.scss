@@ -2802,6 +2802,12 @@ transition: text-decoration linear 0.2s;
   }
   .btn {
     width: 445px;
+    background: $red;
+    color: #fff;
+    &:hover{
+      background: $red-dark;
+      color: #fff;
+    }
   }
 }
 
@@ -2821,8 +2827,10 @@ transition: text-decoration linear 0.2s;
   background: $bg-gray;
   border-radius: 5px;
   margin-bottom: 27px;
+  width: 580px;
+  max-width: 100%;
   label {
-    color: $black;
+    color: $blue-dark;
     font-weight: 500;
     font-size: 12px;
     line-height: 130%;
@@ -2831,6 +2839,10 @@ transition: text-decoration linear 0.2s;
   }
   input {
     width: 240px;
+    border-color: rgba($blue-dark, .1);
+    &::placeholder{
+      color: rgba($blue-dark, .3);
+    }
   }
 }
 
