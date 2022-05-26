@@ -2755,7 +2755,7 @@ transition: text-decoration linear 0.2s;
     font-size: 14px;
     line-height: 130%;
     font-family: $title;
-    color: $black;
+    color: $blue-dark;
     margin-bottom: 25px;
   }
   > ul {
@@ -2770,6 +2770,12 @@ transition: text-decoration linear 0.2s;
   .btn {
     width: 445px;
     margin-top: 34px;
+    background: $red;
+    color: #fff;
+    &:hover{
+      background: $red-dark;
+      color: #fff;
+    }
   }
 }
 
@@ -2780,7 +2786,7 @@ transition: text-decoration linear 0.2s;
   p {
     margin-bottom: 15px;
     &.pink {
-      color: $pink;
+      color: $red;
     }
     span {
       display: block;
