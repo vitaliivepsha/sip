@@ -378,8 +378,12 @@
           font-weight: 600;
           font-size: 16px;
           line-height: 130%;
-          color: $purple;
-          text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          color: $red;
+          svg{
+            path{
+              fill: $red;
+            }
+          }
         }
         .rate-link{
           display: flex;
@@ -387,16 +391,16 @@
           font-weight: 500;
           font-size: 12px;
           line-height: 130%;
-          color: $accent;
+          color: $blue-dark;
           text-decoration: underline;
-          &:hover{
-            color: $purple;
-            text-decoration: none;
-            svg{
-              path{
-                fill: $purple;
-              }
+          svg{
+            path{
+              fill: $red;
             }
+          }
+          &:hover{
+            color: $red;
+            text-decoration: none;
           }
           svg{
             margin-right: 6px;

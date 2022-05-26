@@ -3,7 +3,7 @@
 'use strict';
 
 if (process.env.NODE_ENV !== 'production') {
-    /*require('./assets/templates/layouts/index.html');
+    require('./assets/templates/layouts/index.html');
     require('./assets/templates/layouts/for-partners.html');
     require('./assets/templates/layouts/for-companies.html');
     require('./assets/templates/layouts/contacts-old.html');
@@ -20,8 +20,10 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list-friends.html');
     require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list-not-found.html');
     require('./assets/templates/layouts/partner-cabinet-students-add.html');
+    require('./assets/templates/layouts/partner-cabinet-students-contol-of-the-documents.html');
     require('./assets/templates/layouts/partner-cabinet-chats.html');
-    require('./assets/templates/layouts/partner-cabinet-news.html');*/
+    require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents.html');
+    require('./assets/templates/layouts/partner-cabinet-news.html');
     require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-partner.html');
     require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-SIP.html');
     require('./assets/templates/layouts/partner-cabinet-students-approved-A.html');
@@ -44,12 +46,9 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/partner-cabinet-student-permission-received-D.html');
     require('./assets/templates/layouts/partner-cabine-contract.html');
     require('./assets/templates/layouts/partner-cabinet-bussiness-processes.html');
-    require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents.html');
     require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents-A.html');
-    require('./assets/templates/layouts/partner-cabinet-students-contol-of-the-documents.html');
-    require('./assets/templates/layouts/partner-cabinet-students-contol-of-the-documents-A.html');
     require('./assets/templates/layouts/student-cabinet-information.html');
-    /*require('./assets/templates/layouts/student-stages.html');
+    require('./assets/templates/layouts/student-stages.html');
     require('./assets/templates/layouts/student-stages-forming-a-group-0.html');
     require('./assets/templates/layouts/student-stages-forming-a-group-1.html');
     require('./assets/templates/layouts/student-stages-forming-a-group-2.html');
@@ -66,6 +65,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/student-stages-ready-to-go.html');
     require('./assets/templates/layouts/student-cabinet-trips.html');
     require('./assets/templates/layouts/student-cabinet-company-information.html');
+    require('./assets/templates/layouts/student-cabinet-company-information-2.html');
     require('./assets/templates/layouts/company-cabinet-information.html');
     require('./assets/templates/layouts/company-cabinet-information-edit.html');
     require('./assets/templates/layouts/company-cabinet-information-saved.html');
@@ -107,7 +107,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/program-practice.html');
     require('./assets/templates/layouts/program-vacation.html');
     require('./assets/templates/layouts/employer-rating.html');
-    require('./assets/templates/layouts/student-rating.html');*/
+    require('./assets/templates/layouts/student-rating.html');
 }
 
 // Depends
