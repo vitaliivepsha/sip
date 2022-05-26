@@ -2836,7 +2836,7 @@ transition: text-decoration linear 0.2s;
     font-size: 14px;
     line-height: 130%;
     font-family: $title;
-    color: $black;
+    color: $blue-dark;
     + p {
       margin-top: 10px;
     }
@@ -2848,6 +2848,12 @@ transition: text-decoration linear 0.2s;
   }
   .btn {
     width: 330px;
+    background: $red;
+    color: #fff;
+    &:hover{
+      background: $red-dark;
+      color: #fff;
+    }
   }
 }
 
