@@ -2545,19 +2545,19 @@
 }
 
 .experience-block {
-  padding: 20px 30px 60px 17px;
+  padding: 20px 20px 46px;
   > p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 12px;
     line-height: 130%;
-    color: $black;
+    color: $blue-dark;
   }
   .add-job {
     margin-top: 20px;
     width: 480px;
     max-width: 100%;
     cursor: pointer;
-    border: 1px solid rgba($accent, 0.3);
+    border: 1px solid rgba($red, 0.3);
     border-radius: 5px;
     height: 40px;
     margin-bottom: 5px;
@@ -2567,32 +2567,43 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 130%;
-    color: $black;
+    color: $blue-dark;
     padding: 5px;
     > svg {
       min-width: 25px;
       margin-right: 20px;
+      rect{
+        fill: $red;
+        +rect{
+          fill: #fff;
+        }
+      }
     }
   }
   .btn {
     width: 330px;
+    background: $red;
+    color: #fff;
     margin-top: 25px;
+    &:hover{
+      background: $red-dark;
+    }
   }
 }
 
 .experience-title {
   display: block;
   font-family: $title;
-  color: $black;
+  color: $blue-dark;
   font-weight: 600;
   font-size: 12px;
   line-height: 130%;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   a {
-    color: $purple;
+    color: $red;
     text-decoration: underline;
     &:hover {
-      color: $purple;
+      color: $red;
       text-decoration: none;
     }
   }
@@ -2602,7 +2613,7 @@
   margin-top: 30px;
   > span {
     font-family: $title;
-    color: $black;
+    color: $blue-dark;
     display: block;
     font-weight: 500;
     font-size: 12px;
@@ -2615,13 +2626,15 @@
   padding: 26px 64px 26px 30px;
   background: $bg-gray;
   border-radius: 5px;
+  border: 1px solid rgba($blue-dark, 0.1);
   .experience-job__row {
+    width: 486px;
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     > label {
       font-family: $title;
-      color: $black;
+      color: $blue-dark;
       font-weight: 500;
       font-size: 12px;
       line-height: 130%;
@@ -2632,6 +2645,33 @@
   }
   .input-wrapper {
     width: 290px;
+    .input{
+      border: 1px solid rgba($blue-dark, 0.1);
+      color: $blue-dark;
+      &::placeholder{
+        color: rgba($blue-dark, 0.3);
+      }
+    }
+    &.date-wrapper{
+      .date-choose{
+        width: 158px;
+        &:before{
+          width: 100px;
+          border-color: rgba($blue-dark, 0.1);
+        }
+        svg{
+          path{
+            fill: $blue-dark;
+          }
+        }
+        .input{
+          border-color: transparent;
+        }
+        .placeholder{
+          width: 98px;
+        }
+      }
+    }
   }
 }
 
