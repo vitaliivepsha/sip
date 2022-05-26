@@ -468,6 +468,7 @@ transition: text-decoration linear 0.2s;
 .partner-cabinet__students-table__body {
   border-radius: 0 0 5px 5px;
   overflow: hidden;
+  border: 1px solid rgba($blue-dark, .1);
   background-color: #fff;
   .partner-cabinet__students-table__row {
     display: flex;

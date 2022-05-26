@@ -1,63 +1,66 @@
 .student-cabinet__trips-table__head {
   display: flex;
-  background: rgba(95, 108, 250, 0.3);
+  background: #8B8A8E;
   border-radius: 5px 5px 0 0;
-  min-height: 66px;
+  min-height: 40px;
   .dropdown-wrapper {
+    .dropdown {
+      transition: linear .2s;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
     &.active {
       .dropdown {
-        color: $purple;
+        color: $red;
         svg {
           transform: scale(1, -1);
           path {
-            fill: $purple;
+            fill: $red;
           }
         }
+      }
+    }
+    &:last-child{
+      .dropdown-list{
+        right: 0;
       }
     }
   }
   > div {
     position: relative;
-    font-family: $title;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 130%;
-    color: rgba($text, 0.7);
+    color: #fff;
     &.number {
-      width: 93px;
-      >span{
-        padding-left: 16px;
-      }
+      width: 156px;
     }
     &.vacancy {
-      width: 190px;
+      width: 140px;
     }
     &.company {
-      width: 174px;
+      width: 177px;
     }
     &.period {
-      width: 212px;
+      width: 174px;
     }
     &.permission {
-      width: 242px;
+      width: 192px;
     }
     &.group{
-      width: 190px;
+      width: 200px;
     }
     > span {
       display: block;
-      padding: 12px 10px;
+      padding: 6px 8px 0;
     }
     .dropdowns {
       display: flex;
-      margin-top: -3px;
-      padding: 0 10px;
       .dropdown {
-        padding: 3px 0;
-        font-style: italic;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 130%;
+        padding: 5px;
       }
       &.two-cols {
         .dropdown-wrapper {
@@ -89,60 +92,57 @@
   border-radius: 0 0 5px 5px;
   overflow: hidden;
   background-color: #fff;
+  border: 1px solid rgba($blue-dark, .1);
   .student-cabinet__trips-table__row {
     display: flex;
     min-height: 40px;
     &:nth-child(even) {
-      background: rgba($text, 0.1);
+      background: #f3f3f3;
     }
     &.inactive{
       pointer-events: none;
       > div {
-        color: #C4C4C4;
+        color: #8B8A8E;
         >a{
-          color: #C4C4C4;
+          color: #8B8A8E;
         }
         &.two-cols {
           > div {
-            color: #C4C4C4;
+            color: #8B8A8E;
             &.alert {
-              color: #C4C4C4;
+              color: #8B8A8E;
             }
             >a{
-              color: #C4C4C4;
+              color: #8B8A8E;
             }
           }
         }
         &.three-cols {
-          color: #C4C4C4;
+          color: #8B8A8E;
           > div {
-            color: #C4C4C4;
+            color: #8B8A8E;
             &.alert {
-              color: #C4C4C4;
+              color: #8B8A8E;
             }
             >a{
-              color: #C4C4C4;
+              color: #8B8A8E;
             }
           }
         }
       }
     }
     > div {
-      padding: 12px 10px;
+      padding: 6px 8px;
       font-size: 11px;
       line-height: 130%;
-      color: $text;
+      color: $blue-dark;
       display: flex;
       align-items: center;
       >a {
         text-decoration: underline;
-        color: $text;
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        color: $blue-dark;
         &:hover {
-          color: $accent;
+          color: $red;
           text-decoration: none;
         }
       }
@@ -153,42 +153,45 @@
         white-space: nowrap;
       }
       &.number {
-        width: 93px;
-        padding-left: 16px;
+        width: 156px;
       }
       &.vacancy {
-        width: 190px;
+        width: 140px;
+        >span{
+          overflow: visible;
+          white-space: normal;
+        }
       }
       &.company {
-        width: 174px;
+        width: 177px;
       }
       &.period {
-        width: 212px;
+        width: 174px;
       }
       &.permission {
-        width: 242px;
+        width: 192px;
       }
       &.group{
-        width: 190px;
+        width: 200px;
       }
       &.two-cols {
         > div {
           width: 50%;
           &.alert{
-            color: $pink;
+            color: $red;
             padding: 0;
             margin: 0;
             border: none;
           }
           >a {
             text-decoration: underline;
-            color: $text;
+            color: $blue-dark;
             display: block;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             &:hover {
-              color: $accent;
+              color: $red;
               text-decoration: none;
             }
           }
@@ -204,20 +207,20 @@
         > div {
           width: 33.33333%;
           &.alert{
-            color: $pink;
+            color: $red;
             padding: 0;
             margin: 0;
             border: none;
           }
           >a {
             text-decoration: underline;
-            color: $text;
+            color: $blue-dark;
             display: block;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             &:hover {
-              color: $accent;
+              color: $red;
               text-decoration: none;
             }
           }
