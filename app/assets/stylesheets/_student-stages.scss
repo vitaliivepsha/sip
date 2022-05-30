@@ -609,14 +609,46 @@
 .student-stages__upload-photo{
   padding: 28px 26px 28px 32px;
   .input-file{
-    width: 204px;
+    width: 250px;
     max-width: 515px;
     margin: 20px auto 0;
     height: 50px;
+    border-color: $red;
+    input{
+      +label{
+        svg{
+          path{
+            fill: $red;
+          }
+        }
+        span{
+          color: $blue-dark;
+          font-weight: 500;
+        }
+      }
+    }
   }
   .btn{
     width: 515px;
     margin: 25px auto 0;
+    background: $red;
+    font-weight: 500;
+    color: #fff;
+    &:hover{
+      background: $red-dark;
+      color: #fff;
+    }
+  }
+}
+
+.student-stages__upload-photo__name{
+  display: block;
+  padding-left: 62px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  +.student-stages__upload-photo__name{
+    margin-top: 8px;
   }
 }
 
