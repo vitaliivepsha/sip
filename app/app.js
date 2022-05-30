@@ -372,7 +372,7 @@ $(function () {
         $(this).closest('.input-wrapper').find('input').removeAttr('disabled');
     });
 
-    $('select').on('change', function () {
+    $(document).on('change', 'select', function () {
         $(this).parent().addClass('active');
     });
 
