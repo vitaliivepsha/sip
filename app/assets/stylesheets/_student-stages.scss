@@ -193,18 +193,17 @@
   display: flex;
   >div{
     span{
-      font-family: $title;
       font-weight: 600;
       font-size: 14px;
       line-height: 130%;
       display: block;
-      color: $black;
+      color: $blue-dark;
       margin-bottom: 5px;
       a{
-        color: $accent;
+        color: $red;
         text-decoration: underline;
         &:hover{
-          color: $accent;
+          color: $red-dark;
           text-decoration: none;
         }
       }
@@ -224,13 +223,12 @@
   display: flex;
   >div{
     span{
-      font-family: $title;
       font-weight: 600;
       font-size: 14px;
       line-height: 130%;
       display: block;
-      color: $black;
-      margin-bottom: 12px;
+      color: $blue-dark;
+      margin-bottom: 17px;
     }
     input{
       width: 108px;
@@ -239,11 +237,11 @@
       font-size: 12px;
       line-height: 130%;
       padding: 0 16px;
-      color: $black;
-      border: 1px solid rgba($text, 0.3);
+      color: $blue-dark;
+      border: 1px solid rgba($blue-dark, 0.3);
       &:disabled{
         background-color: #fff;
-        border-color: rgba($text, 0.3);
+        border-color: rgba($blue-dark, 0.3);
       }
     }
   }
@@ -251,30 +249,37 @@
 
 .student-stages__approve-state2__footer{
   display: flex;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .student-stages__approve-state2__btn-submit{
   width: 174px;
-  margin-right: 20px;
+  margin-right: 10px;
+  background: $red;
+  color: #fff;
+  &:hover{
+    background: $red-dark;
+    color: #fff;
+  }
 }
 
 .student-stages__approve-state2__btn-cancel{
-  width: 296px;
+  width: 410px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  border: 1px solid rgba(95, 108, 250, 0.3);
+  border: 1px solid $red;
   border-radius: 5px;
   font-size: 14px;
   line-height: 19px;
-  color: $black;
+  color: $blue-dark;
   transition: linear .2s;
   &:hover{
-    background-color: rgba(95, 108, 250, 0.3);
+    background: $red;
+    color: #fff;
   }
 }
 
@@ -283,25 +288,23 @@
 }
 .student-stages__approve-state3__body{
   >span{
-    font-family: $title;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
     display: block;
-    color: $black;
-    margin-bottom: 8px;
+    color: $blue-dark;
+    margin-bottom: 12px;
   }
   >div{
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 26px;
     span{
       margin-right: 5px;
       font-weight: 600;
       font-size: 14px;
       line-height: 130%;
-      font-family: $title;
-      color: $black;
+      color: $blue-dark;
     }
   }
   >p{
@@ -312,11 +315,11 @@
       margin-bottom: 0;
     }
     a{
-      color: $accent;
-      text-decoration: none;
+      color: $red;
+      text-decoration: underline;
       &:hover{
-        color: $accent;
-        text-decoration: unset;
+        color: $red-dark;
+        text-decoration: none;
       }
     }
   }
@@ -327,19 +330,19 @@
     font-size: 12px;
     line-height: 130%;
     padding: 0 16px;
-    color: $black;
-    border: 1px solid rgba($text, 0.3);
-    margin-right: 15px;
+    color: $blue-dark;
+    border: 1px solid rgba($blue-dark, 0.3);
+    margin-right: 12px;
     &:disabled{
       background-color: #fff;
-      border-color: rgba($text, 0.3);
+      border-color: rgba($blue-dark, 0.3);
     }
   }
 }
 
 .student-stages__approve-state3__footer{
   display: flex;
-  margin-top: 25px;
+  margin-top: 20px;
   .btn-attach{
     width: 292px;
     margin-right: 12px;
@@ -349,34 +352,39 @@
     justify-content: center;
     text-align: center;
     cursor: pointer;
-    border: 1px solid rgba(95, 108, 250, 0.3);
+    border: 1px solid $red;
     border-radius: 5px;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 19px;
-    color: $black;
+    line-height: 17px;
+    color: $blue-dark;
     transition: linear .2s;
     text-decoration: none;
     &:hover{
       text-decoration: none;
-      background-color: rgba(95, 108, 250, 0.3);
+      background-color: $red;
+      color: #fff;
     }
   }
   .btn-cancel{
-    width: 264px;
+    width: 392px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     cursor: pointer;
-    border: 1px solid rgba(95, 108, 250, 0.3);
+    border: 1px solid $red;
     border-radius: 5px;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 19px;
-    color: $black;
+    line-height: 17px;
+    color: $blue-dark;
     transition: linear .2s;
     &:hover{
-      background-color: rgba(95, 108, 250, 0.3);
+      text-decoration: none;
+      background-color: $red;
+      color: #fff;
     }
   }
 }
