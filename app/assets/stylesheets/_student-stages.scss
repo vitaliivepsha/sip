@@ -639,6 +639,12 @@
   .btn{
     width: 515px;
     margin-top: 20px;
+    background: $red;
+    color: #fff;
+    &:hover{
+      background: $red-dark;
+      color: #fff;
+    }
   }
 }
 
@@ -657,7 +663,7 @@
         font-size: 12px;
         line-height: 20px;
         font-weight: 400;
-        color: $text;
+        color: $blue-dark;
         position: relative;
         padding-left: 35px;
         cursor: pointer;
@@ -667,7 +673,7 @@
           width: 20px;
           height: 20px;
           border-radius: 3px;
-          border: 1px solid rgba($accent, 0.5);
+          border: 1px solid rgba($blue-dark, .3);
           left: 0;
           top: 0;
         }
@@ -683,7 +689,7 @@
           mask-repeat: no-repeat;
           -webkit-mask-size: contain;
           mask-size: contain;
-          background-color: $black;
+          background-color: $red;
           width: 15px;
           height: 9px;
           left: 3px;
@@ -692,10 +698,10 @@
       }
       &:checked {
         + label {
-          color: $text;
+          color: $blue-dark;
           &:before {
-            border: none;
-            background: linear-gradient(87.34deg, rgba(117, 215, 214, 0.25) -133.67%, rgba(95, 108, 250, 0.5) 91.95%), #ffffff;
+            border: 1px solid $red;
+            background: transparent;
           }
           &:after {
             display: block;
@@ -709,16 +715,45 @@
 .student-stages__ready-to-go{
   padding: 28px 102px 60px 32px;
   .btn{
-    width: 100%;
+    width: 515px;
     margin-top: 23px;
-    &.to-chat{
-      border-color: rgba(95, 108, 250, 0.3);
+    &.student-cabinet__btn{
+      background: $red;
+      color: #fff;
       &:hover{
-        background-color: rgba(95, 108, 250, 0.3);
-        color: $black;
+        background: $red-dark;
+        color: #fff;
+      }
+    }
+    &.to-chat{
+      border-color: $red;
+      &:hover{
+        background-color: $red;
+        color: #fff;
       }
       +.student-stages__employer-checkboxes{
         margin-top: 30px;
+        .checkbox-wrapper{
+          input{
+            + label{
+              color: $blue-dark;
+              &:before{
+                border-color: rgba($blue-dark, .3);
+              }
+              &:after{
+                background-color: $red;
+              }
+            }
+            &:checked{
+              +label{
+                &:before{
+                  border: 1px solid $red;
+                  background: transparent;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
