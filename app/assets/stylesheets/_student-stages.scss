@@ -432,6 +432,12 @@
   .student-cabinet__btn{
     width: 100%;
     margin-top: 15px;
+    background: $red;
+    color: #fff;
+    &:hover{
+      background: $red-dark;
+      color: #fff;
+    }
   }
 }
 
@@ -449,8 +455,7 @@
   >div{
     >strong{
       display: block;
-      font-family: $title;
-      color: $black;
+      color: $blue-dark;
       font-weight: 600;
       font-size: 14px;
       line-height: 130%;
@@ -466,23 +471,33 @@
 
 .student-stages__insurance-buttons{
   display: flex;
-  justify-content: space-between;
   margin-top: 30px;
   .btn{
-    width: 216px;
-    border-color: rgba($accent, 0.3);
+    width: 235px;
+    margin-right: 15px;
+    border-color: $red;
+    font-weight: 500;
     &:hover{
-      border-color: $accent;
-      background-color: $accent;
+      border-color: $red;
+      background-color: $red;
+      color: #fff;
     }
   }
   .input-file{
     height: 50px;
-    width: 262px;
+    width: 370px;
+    border-color: $red;
+    margin-bottom: 0;
     > label{
+      svg{
+        path{
+          fill: $red;
+        }
+      }
       span{
         font-size: 14px;
-        line-height: 19px;
+        line-height: 17px;
+        font-weight: 500;
       }
     }
   }
@@ -493,14 +508,13 @@
   margin-top: 15px;
   a{
     display: block;
-    font-family: $title;
-    color: $accent;
+    color: $red;
     font-weight: 500;
     font-size: 12px;
     line-height: 130%;
     text-decoration: underline;
     &:hover{
-      color: $purple;
+      color: $red-dark;
       text-decoration: none;
     }
   }
