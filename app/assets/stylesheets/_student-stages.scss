@@ -709,16 +709,45 @@
 .student-stages__ready-to-go{
   padding: 28px 102px 60px 32px;
   .btn{
-    width: 100%;
+    width: 515px;
     margin-top: 23px;
-    &.to-chat{
-      border-color: rgba(95, 108, 250, 0.3);
+    &.student-cabinet__btn{
+      background: $red;
+      color: #fff;
       &:hover{
-        background-color: rgba(95, 108, 250, 0.3);
-        color: $black;
+        background: $red-dark;
+        color: #fff;
+      }
+    }
+    &.to-chat{
+      border-color: $red;
+      &:hover{
+        background-color: $red;
+        color: #fff;
       }
       +.student-stages__employer-checkboxes{
         margin-top: 30px;
+        .checkbox-wrapper{
+          input{
+            + label{
+              color: $blue-dark;
+              &:before{
+                border-color: rgba($blue-dark, .3);
+              }
+              &:after{
+                background-color: $red;
+              }
+            }
+            &:checked{
+              +label{
+                &:before{
+                  border: 1px solid $red;
+                  background: transparent;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
