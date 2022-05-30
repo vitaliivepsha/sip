@@ -558,7 +558,7 @@
   background: $bg-gray;
   border-radius: 5px;
   padding: 20px 20px 15px;
-  width: 454px;
+  width: 558px;
   margin-left: 62px;
   margin-top: 12px;
   .input-wrapper{
@@ -570,12 +570,19 @@
         }
         &:before {
           width: 152px;
+          border: 1px solid rgba($blue-dark, .1);
           @-moz-document url-prefix() {
             width: 152px;
           }
         }
+        svg{
+          path{
+            fill: $blue-dark;
+          }
+        }
         .placeholder {
           width: 150px;
+          color: rgba($blue-dark, .3);
           @-moz-document url-prefix() {
             width: 150px;
           }
@@ -587,21 +594,22 @@
 
 .student-stages__return-buttons{
   display: flex;
-  justify-content: space-between;
-  width: 454px;
   margin-left: 62px;
   margin-top: 22px;
+  gap: 10px;
   .btn{
-    width: 245px;
+    width: 294px;
     margin-top: 0;
-    border: 1px solid rgba(95, 108, 250, 0.3);
-    color: $black;
+    border: 1px solid $red;
+    font-weight: 500;
+    color: $blue-dark;
     &:hover{
       text-decoration: none;
-      background-color: rgba(95, 108, 250, 0.3);
+      background-color: $red;
+      color: #fff;
     }
     +.btn{
-      width: 173px;
+      width: 254px;
     }
   }
 }
