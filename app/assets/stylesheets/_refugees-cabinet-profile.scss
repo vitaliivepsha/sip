@@ -136,6 +136,9 @@
   display: flex;
   flex-direction: column;
   transition: ease-in-out .3s;
+  >.company-cabinet__alert{
+    margin-bottom: 10px;
+  }
 }
 
 .refugees-cabinet__info-head{

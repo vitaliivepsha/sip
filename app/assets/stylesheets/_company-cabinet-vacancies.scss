@@ -260,13 +260,16 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  border: 1px solid rgba($text, 0.2);
+  border: 1px solid rgba($blue-dark, .1);
   height: 40px;
   font-size: 11px;
   line-height: 15px;
-  color: $pink;
+  color: $red;
   margin-bottom: 15px;
   svg{
     margin-right: 15px;
+    path{
+      fill: $red;
+    }
   }
 }
