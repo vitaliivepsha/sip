@@ -194,12 +194,13 @@
 
 .company-cabinet__vacancy{
   width: 570px;
+  margin: 0;
   .partner-cabinet__students-form__row{
     > label{
-      width: calc(100% - 285px);
+      width: calc(100% - 350px);
     }
     > .input-wrapper{
-      width: 285px;
+      width: 350px;
     }
   }
 }
