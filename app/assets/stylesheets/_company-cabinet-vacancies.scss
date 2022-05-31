@@ -193,14 +193,14 @@
 }
 
 .company-cabinet__vacancy{
-  width: 570px;
+  width: 605px;
   margin: 0;
   .partner-cabinet__students-form__row{
     > label{
-      width: calc(100% - 350px);
+      width: calc(100% - 315px);
     }
     > .input-wrapper{
-      width: 350px;
+      width: 315px;
     }
   }
 }
@@ -238,15 +238,31 @@
       }
     }
   }
+  &.company-cabinet__vacancy-form__upload-footer{
+    width: 100%;
+    gap: 44px;
+    margin-top: -10px;
+    .btn{
+      margin: 0;
+      width: calc(50% - 22px);
+    }
+  }
 }
 
 .company-cabinet__vacancy-form__upload{
-  margin-top: 80px;
+  margin-top: 50px;
+  width: 100%;
   >span{
     display: block;
     font-size: 11px;
     line-height: 130%;
     margin-bottom: 28px;
+  }
+  .input-file{
+    > label{
+      justify-content: center;
+      padding: 5px 30px;
+    }
   }
 }
 

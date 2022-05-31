@@ -1930,6 +1930,14 @@ transition: text-decoration linear 0.2s;
   .input-wrapper {
     .input, .textarea{
       border: 1px solid rgba($blue-dark, 0.3);
+      &::placeholder{
+        color: rgba($blue-dark, 0.3);
+      }
+      &:focus{
+        &::placeholder{
+          color: transparent;
+        }
+      }
     }
     .textarea{
       display: block;
