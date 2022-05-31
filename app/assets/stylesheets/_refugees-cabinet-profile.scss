@@ -139,6 +139,14 @@
   >.company-cabinet__alert{
     margin-bottom: 10px;
   }
+  .partner-cabinet__info{
+    padding: 0;
+    background: #fff;
+    .overlay{
+      -webkit-backdrop-filter: unset;
+      backdrop-filter: unset;
+    }
+  }
 }
 
 .refugees-cabinet__info-head{
