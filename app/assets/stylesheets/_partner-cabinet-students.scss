@@ -2282,11 +2282,11 @@ transition: text-decoration linear 0.2s;
     display: flex;
     width: 100%;
     &:hover, &:focus{
-      border: none;
+      border-color: rgba($blue-dark, .3);
       box-shadow: none;
     }
     &.open{
-      border: none;
+      border-color: rgba($blue-dark, .3);
       box-shadow: none;
       >.optWrapper{
         top: 100%;
@@ -2294,7 +2294,7 @@ transition: text-decoration linear 0.2s;
     }
     >.CaptionCont{
       width: 100%;
-      border: none;
+      border-color: rgba($blue-dark, .3);
       box-shadow: none;
       height: 40px;
       line-height: 40px;
@@ -2316,7 +2316,7 @@ transition: text-decoration linear 0.2s;
               &.selected{
                 span{
                   i{
-                    background-color: $purple;
+                    background-color: $red;
                   }
                 }
               }
