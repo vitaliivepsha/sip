@@ -12,17 +12,24 @@
 
 .company-cabinet__vacancies-table__head {
   display: flex;
-  background: rgba(255, 213, 61, 0.2);
+  background: #8B8A8E;
   border-radius: 5px 5px 0 0;
-  min-height: 66px;
+  min-height: 40px;
   .dropdown-wrapper {
+    .dropdown {
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
     &.active {
       .dropdown {
-        color: $purple;
+        color: $red;
         svg {
           transform: scale(1, -1);
           path {
-            fill: $purple;
+            fill: $red;
           }
         }
       }
@@ -31,47 +38,47 @@
   > div {
     position: relative;
     font-weight: 500;
-    font-family: $title;
     font-size: 12px;
     line-height: 130%;
-    color: rgba(71, 71, 71, 0.7);
+    color: #fff;
     &.vacancy_num {
-      width: 93px;
-      >span{
-        padding-left: 16px;
-      }
+      width: 92px;
     }
     &.vacancy_name {
-      width: 265px;
+      width: 160px;
     }
     &.period {
-      width: 210px;
+      width: 156px;
       >span{
-        text-align: center;
+        //text-align: center;
+        padding-bottom: 1px;
+      }
+      .dropdown{
+        padding: 0 10px;
       }
     }
     &.status {
-      width: 110px;
+      width: 138px;
     }
     &.employees_needed {
-      width: 105px;
+      width: 145px;
+      span{
+        padding-right: 0;
+      }
     }
     &.employees_found {
-      width: 115px;
+      width: 166px;
     }
     &.free_places {
       width: 200px;
     }
     > span {
       display: block;
-      padding: 12px 10px 4px;
+      padding: 4px 10px;
     }
     .dropdowns {
       display: flex;
       .dropdown {
-        padding: 3px 8px;
-        font-style: italic;
-        font-weight: 400;
       }
       &.two-cols {
         .dropdown-wrapper {
@@ -81,9 +88,6 @@
     }
     .dropdown {
       display: flex;
-      justify-content: center;
-      padding: 8px;
-      font-size: 10px;
       cursor: pointer;
       word-break: break-word;
       svg {
@@ -97,48 +101,55 @@
 
 .company-cabinet__vacancies-table__body {
   border-radius: 0 0 5px 5px;
+  border: 1px solid rgba($blue-dark, 0.1);
   overflow: hidden;
   background-color: #fff;
   .company-cabinet__vacancies-table__row {
     display: flex;
     min-height: 40px;
     &:nth-child(even) {
-      background: rgba(71, 71, 71, 0.1);
+      background: #F4F4F4;
     }
     > div {
       padding: 12px 10px;
       font-size: 11px;
       line-height: 130%;
-      color: $text;
       display: flex;
       align-items: center;
       a {
         text-decoration: none;
-        color: $accent;
+        color: $red;
         &:hover {
-          color: $purple;
+          color: $red-dark;
           text-decoration: underline;
         }
       }
       &.vacancy_num {
-        width: 93px;
-        padding-left: 16px;
+        width: 92px;
+        a {
+          text-decoration: underline;
+          color: $blue-dark;
+          &:hover {
+            color: $red;
+            text-decoration: none;
+          }
+        }
       }
       &.vacancy_name {
-        width: 265px;
+        width: 160px;
       }
       &.period {
-        width: 210px;
-        text-align: center;
+        width: 156px;
+        //text-align: center;
       }
       &.status {
-        width: 110px;
+        width: 138px;
       }
       &.employees_needed {
-        width: 105px;
+        width: 145px;
       }
       &.employees_found {
-        width: 115px;
+        width: 166px;
       }
       &.free_places {
         width: 200px;
