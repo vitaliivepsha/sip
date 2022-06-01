@@ -1,34 +1,56 @@
+.company-cabinet__business-processes{
+  background: $bg-gray;
+  padding: 30px 30px 60px;
+}
+
+.company-cabinet__business-processes__inner{
+  width: 1046px;
+}
+
 .company-cabinet__business-processes__head{
   display: flex;
   align-items: center;
   border-radius: 5px;
   background-color: #fff;
   height: 50px;
-  padding: 10px 50px 10px 32px;
+  padding: 10px 25px 10px 32px;
   cursor: pointer;
   margin-bottom: 10px;
+  border: 1px solid rgba($blue-dark, .3);
   span{
-    font-weight: 600;
-    font-family: $title;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 13px;
     line-height: 130%;
     flex: 1 0 auto;
-    color: $black;
-    opacity: .5;
+    color: #8B8A8E;
   }
   .alert-icon{
     min-width: 17px;
     margin-right: 34px;
+    path{
+      fill: #8B8A8E;
+    }
   }
   .arrow{
     transform: scale(1, -1);
+    path{
+      fill: $blue-dark;
+    }
   }
   &.active{
     span{
-      opacity: 1;
+      color: $blue-dark;
     }
     .arrow{
       transform: scale(1, 1);
+      path{
+        fill: $red;
+      }
+    }
+    .alert-icon{
+      path{
+        fill: $red;
+      }
     }
   }
 }
@@ -63,17 +85,24 @@
 
 .company-cabinet__business-processes__table-head {
   display: flex;
-  background: rgba(255, 213, 61, 0.2);
+  background: #8B8A8E;
   border-radius: 5px 5px 0 0;
-  min-height: 66px;
+  min-height: 40px;
   .dropdown-wrapper {
+    .dropdown {
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
     &.active {
       .dropdown {
-        color: $purple;
+        color: $red;
         svg {
           transform: scale(1, -1);
           path {
-            fill: $purple;
+            fill: $red;
           }
         }
       }
@@ -82,27 +111,23 @@
   > div {
     position: relative;
     font-weight: 500;
-    font-family: $title;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 130%;
-    color: rgba(71, 71, 71, 0.7);
+    color: #fff;
     &.b1_fio {
-      width: 173px;
-      >span{
-        padding-left: 16px;
-      }
+      width: 155px;
     }
     &.b1_rating {
-      width: 99px;
+      width: 72px;
     }
     &.b1_resume {
-      width: 133px;
+      width: 120px;
     }
     &.b1_docs {
-      width: 89px;
+      width: 90px;
     }
     &.b1_vacancy {
-      width: 180px;
+      width: 186px;
     }
     &.b1_from {
       width: 85px;
@@ -112,12 +137,20 @@
     }
     &.b1_date {
       width: 111px;
+      >span{
+        padding-right: 0;
+      }
     }
     &.b1_approve {
-      width: 85px;
+      width: 66px;
+      word-break: break-all;
     }
     &.b1_decline {
-      width: 75px;
+      width: 71px;
+      word-break: break-all;
+      >span{
+        padding-right: 20px;
+      }
     }
     &.b2_ttn {
       width: 173px;
@@ -217,7 +250,7 @@
     }
     > span {
       display: block;
-      padding: 12px 10px 4px;
+      padding: 6px 10px 4px;
     }
     .dropdowns {
       display: flex;
@@ -244,19 +277,19 @@
 
 .company-cabinet__business-processes__table-body {
   border-radius: 0 0 5px 5px;
+  border: 1px solid rgba($blue-dark, 0.1);
   overflow: hidden;
   background-color: #fff;
   .company-cabinet__business-processes__table-row {
     display: flex;
     min-height: 40px;
     &:nth-child(even) {
-      background: rgba(71, 71, 71, 0.1);
+      background: #F4F4F4;
     }
     > div {
       padding: 12px 10px;
       font-size: 11px;
       line-height: 130%;
-      color: $text;
       display: flex;
       align-items: center;
       span{
@@ -269,9 +302,9 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         text-decoration: underline;
-        color: $accent;
+        color: $red;
         &:hover {
-          color: $purple;
+          color: $red;
           text-decoration: none;
         }
       }
@@ -285,35 +318,41 @@
         padding: 0 8px;
       }
       &.b1_fio {
-        width: 173px;
-        padding-left: 16px;
+        width: 155px;
       }
       &.b1_rating {
-        width: 99px;
+        width: 72px;
         a{
           font-size: 12px;
           line-height: 130%;
-          color: $purple;
+          color: $red;
           margin: 0 auto;
-          text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          svg{
+            path{
+              fill: $red;
+            }
+          }
         }
       }
       &.b1_resume {
-        width: 133px;
+        width: 120px;
       }
       &.b1_docs {
-        width: 89px;
+        width: 90px;
         span{
           display: flex;
           align-items: center;
           svg{
             min-width: 15px;
             margin-right: 5px;
+            path{
+              fill: $blue-dark;
+            }
           }
         }
       }
       &.b1_vacancy {
-        width: 180px;
+        width: 186px;
       }
       &.b1_from {
         width: 85px;
@@ -325,10 +364,15 @@
         width: 111px;
       }
       &.b1_approve {
-        width: 85px;
+        width: 66px;
+        word-break: break-all;
       }
       &.b1_decline {
-        width: 75px;
+        width: 71px;
+        word-break: break-all;
+        >span{
+          padding-right: 20px;
+        }
       }
       &.b2_ttn {
         width: 173px;
@@ -430,7 +474,7 @@
       &:checked{
         +label{
           >div{
-            border-color: $accent;
+            border-color: $red;
             svg {
               display: block;
             }
@@ -443,7 +487,7 @@
         cursor: pointer;
         font-size: 12px;
         line-height: 130%;
-        color: rgba($text, 0.5);
+        color: rgba($blue-dark, 0.5);
         margin-bottom: 0;
         font-weight: 400;
         >div{
@@ -454,10 +498,13 @@
           width: 15px;
           height: 15px;
           border-radius: 2px;
-          border: 1px solid rgba($black, 0.5);
+          border: 1px solid #8B8A8E;
           margin-right: 8px;
           svg {
             display: none;
+            path{
+              fill: $red;
+            }
           }
         }
       }
@@ -519,6 +566,13 @@
   margin-top: 15px;
   .btn{
     width: 227px;
+    background: $red;
+    color: #fff;
+    font-weight: 500;
+    &:hover{
+      background: $red-dark;
+      color: #fff;
+    }
     &.btn-sign{
       width: 320px;
       margin-left: 54px;
