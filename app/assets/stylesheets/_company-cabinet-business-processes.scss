@@ -72,7 +72,7 @@
   p{
     margin-bottom: 15px;
     span{
-      color: $accent;
+      color: $red;
     }
   }
   strong{
@@ -153,97 +153,85 @@
       }
     }
     &.b2_ttn {
-      width: 173px;
-      >span{
-        padding-left: 16px;
-      }
+      width: 124px;
     }
     &.b2_docs {
-      width: 133px;
+      width: 111px;
     }
     &.b2_shipping_date {
-      width: 169px;
+      width: 110px;
     }
     &.b2_tracking {
-      width: 280px;
+      width: 213px;
     }
     &.b2_notification {
-      width: 184px;
+      width: 146px;
     }
     &.b2_receiving_date {
-      width: 171px;
+      width: 334px;
     }
     &.b3_fio {
-      width: 213px;
-      >span{
-        padding-left: 16px;
-      }
+      width: 184px;
     }
     &.b3_vacancy {
-      width: 243px;
+      width: 264px;
     }
     &.b3_fill {
-      width: 180px;
+      width: 146px;
     }
     &.b3_date {
       width: 169px;
     }
     &.b5_fio {
-      width: 213px;
-      >span{
-        padding-left: 16px;
-      }
+      width: 184px;
     }
     &.b5_vacancy {
-      width: 243px;
+      width: 232px;
     }
     &.b5_ttn {
-      width: 180px;
+      width: 232px;
     }
     &.b5_ready {
-      width: 169px;
+      width: 146px;
+    }
+    &.b6_date {
+      width: 146px;
     }
     &.b6_fact_date {
-      width: 138px;
-      >span{
-        padding-left: 35px;
-      }
+      width: 107px;
     }
     &.b6_arrive_date {
-      width: 138px;
+      width: 108px;
     }
     &.b6_flight {
-      width: 147px;
+      width: 117px;
     }
     &.b6_group {
-      width: 105px;
+      width: 75px;
     }
     &.b6_city {
-      width: 127px;
+      width: 89px;
     }
     &.b6_address {
-      width: 157px;
+      width: 167px;
     }
     &.b6_responsible {
       width: 197px;
     }
     &.b6_arrived_date {
-      width: 101px;
+      width: 138px;
     }
     &.b7_employer {
-      width: 216px;
-      >span{
-        padding-left: 35px;
-      }
+      width: 176px;
     }
     &.b7_vacancy {
-      width: 196px;
+      width: 176px;
     }
     &.b7_fio {
-      width: 196px;
+      width: 249px;
     }
     &.b7_permission {
-      width: 158px;
+      width: 127px;
     }
     &.b7_last_day {
       width: 130px;
@@ -312,7 +300,8 @@
         width: 100%;
         font-size: 11px;
         line-height: 130%;
-        border: 1px solid rgba(71, 71, 71, 0.3);
+        border: 1px solid rgba($blue-dark, 0.1);
+        background-color: transparent;
         border-radius: 2px;
         height: 22px;
         padding: 0 8px;
@@ -375,93 +364,91 @@
         }
       }
       &.b2_ttn {
-        width: 173px;
-        padding-left: 16px;
+        width: 124px;
       }
       &.b2_docs {
-        width: 133px;
+        width: 111px;
       }
       &.b2_shipping_date {
-        width: 169px;
+        width: 110px;
       }
       &.b2_tracking {
-        width: 280px;
+        width: 213px;
       }
       &.b2_notification {
-        width: 184px;
+        width: 146px;
       }
       &.b2_receiving_date {
-        width: 171px;
+        width: 334px;
       }
       &.b3_fio {
-        width: 213px;
-        padding-left: 16px;
+        width: 184px;
       }
       &.b3_vacancy {
-        width: 243px;
+        width: 264px;
       }
       &.b3_fill {
-        width: 180px;
+        width: 146px;
       }
       &.b3_date {
         width: 169px;
       }
       &.b5_fio {
-        width: 213px;
-        padding-left: 16px;
+        width: 184px;
       }
       &.b5_vacancy {
-        width: 243px;
+        width: 232px;
       }
       &.b5_ttn {
-        width: 180px;
+        width: 232px;
       }
       &.b5_ready {
-        width: 169px;
+        width: 146px;
       }
-      &.b5_date {
-        width: 305px;
+      &.b6_date {
+        width: 146px;
+      }
+      &.b6_date {
+        width: 146px;
       }
       &.b6_fact_date {
-        width: 138px;
-        padding-left: 35px;
+        width: 107px;
       }
       &.b6_arrive_date {
-        width: 138px;
+        width: 108px;
       }
       &.b6_flight {
-        width: 147px;
+        width: 117px;
       }
       &.b6_group {
-        width: 105px;
+        width: 75px;
       }
       &.b6_city {
-        width: 127px;
+        width: 89px;
       }
       &.b6_address {
-        width: 157px;
+        width: 167px;
       }
       &.b6_responsible {
         width: 197px;
       }
       &.b6_arrived_date {
-        width: 101px;
+        width: 138px;
       }
       &.b7_employer {
-        width: 216px;
-        padding-left: 35px;
+        width: 176px;
       }
       &.b7_vacancy {
-        width: 196px;
+        width: 176px;
       }
       &.b7_fio {
-        width: 196px;
+        width: 249px;
         a{
-          color: $text;
+          color: $blue-dark;
         }
       }
       &.b7_permission {
-        width: 158px;
+        width: 127px;
       }
       &.b7_last_day {
         width: 130px;
@@ -523,7 +510,7 @@
       &:checked{
         +label{
           >div{
-            border-color: $accent;
+            border-color: $red;
             svg {
               display: block;
             }
@@ -551,12 +538,15 @@
           margin-right: 8px;
           svg {
             display: none;
+            path{
+              fill: $red;
+            }
           }
         }
       }
     }
     +.company-cabinet__business-processes__checkbox{
-      margin-left: 75px;
+      margin-left: 35px;
     }
   }
 }
@@ -575,7 +565,7 @@
     }
     &.btn-sign{
       width: 320px;
-      margin-left: 54px;
+      margin-left: 20px;
     }
   }
 }
@@ -584,6 +574,13 @@
   width: 920px;
   max-width: 100%;
   margin: 0 auto;
+  &.student-groups{
+    width: 1010px;
+    .company-cabinet__business-processes__vacancy-head{
+      width: 920px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .company-cabinet__business-processes__vacancy-head{
@@ -595,22 +592,32 @@
   padding: 10px 26px 10px 34px;
   cursor: pointer;
   margin-bottom: 10px;
-  span{
+  border: 1px solid rgba($blue-dark, .3);
+  >span{
     font-weight: 600;
-    font-family: $title;
     font-size: 14px;
     line-height: 130%;
     flex: 1 0 auto;
-    color: $black;
+    display: flex;
+    gap: 100px;
   }
   .plus{
     width: 22px;
     min-width: 22px;
     height: 22px;
-    margin-right: 34px;
+    margin-right: 26px;
+    rect{
+      fill: $red;
+      +rect{
+        fill: #fff;
+      }
+    }
   }
   .arrow{
     transform: scale(1, -1);
+    path{
+      fill: $blue-dark;
+    }
   }
   &.active{
     .arrow{
@@ -625,9 +632,11 @@
   background-color: #fff;
   border-radius: 5px;
   padding: 28px 28px 66px 38px;
+  border: 1px solid rgba($blue-dark, .3);
   &.student-groups{
-    padding: 28px 0 66px;
+    padding: 50px 0 66px;
     background-color: transparent;
+    border-color: transparent;
     border-radius: 0;
   }
 }
@@ -717,36 +726,51 @@
       width: 227px;
     }
     &.btn-finish{
-      width: 300px;
-      margin-left: 30px;
+      width: 327px;
+      margin-left: 17px;
     }
   }
   .btn-add{
     height: 50px;
-    width: 245px;
-    border: 1px solid $accent;
+    width: 281px;
+    border: 1px solid $red;
     border-radius: 5px;
-    margin-right: 16px;
+    margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-family: $title;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 130%;
-    color: $black;
+    color: $blue-dark;
     &:hover{
-      color: $accent;
+      color: $red;
     }
     svg{
-      margin-right: 20px;
+      margin-right: 18px;
+      rect{
+        fill: $red;
+        +rect{
+          fill: #fff;
+        }
+      }
+    }
+  }
+  .company-cabinet__btn{
+    background: $red;
+    color: #fff;
+    font-weight: 500;
+    width: 355px;
+    &:hover{
+      background: $red-dark;
+      color: #fff;
     }
   }
 }
 
 .company-cabinet__business-processes__vacancy-alerts{
-  width: 582px;
+  width: 648px;
 }
 
 .company-cabinet__business-processes__vacancy-alert{
@@ -755,16 +779,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid $pink;
+  border: 1px solid $red;
   border-radius: 5px;
-  color: $pink;
+  color: $red;
   padding: 10px;
   font-size: 14px;
   line-height: 19px;
   text-align: center;
   &.success{
-    color: $accent;
-    border-color: $accent;
+    color: $blue-dark;
+    border-color: $blue-dark;
   }
   +.company-cabinet__business-processes__vacancy-alert{
     margin-top: 10px;
@@ -772,53 +796,63 @@
 }
 
 .company-cabinet__business-processes__vacancy-tables{
-  margin-bottom: 20px;
+  margin-bottom: 45px;
+  +.company-cabinet__business-processes__vacancy-buttons{
+    margin-bottom: 55px;
+    .btn{
+      &.btn-add-group{
+        border: 1px solid $red;
+        background: #fff;
+        color: $blue-dark;
+        &:hover{
+          background: $red;
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 
 .company-cabinet__business-processes__vacancy-table{
-  border: 1px solid rgba($text, 0.1);
   border-radius: 5px;
-  width: 430px;
+  width: 648px;
   max-width: 100%;
   +.company-cabinet__business-processes__vacancy-table{
-    margin-top: 34px;
+    margin-top: 40px;
   }
 }
 
 .company-cabinet__business-processes__vacancy-table__head{
   display: flex;
-  background: rgba(255, 213, 61, 0.2);
+  background: #8B8A8E;
   border-radius: 5px 5px 0 0;
-  min-height: 66px;
+  min-height: 40px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 130%;
-  font-family: $title;
-  color: rgba($text, 0.7);
+  color: #fff;
   >div{
-    padding: 12px 10px 6px;
+    padding: 6px 10px;
     &.permission{
-      padding-left: 38px;
-      width: 174px;
+      width: 185px;
     }
     &.amount{
-      width: 256px;
+      width: 110px;
     }
     &.city{
-      padding-left: 38px;
-      width: 140px;
+      width: 185px;
     }
     &.date{
-      width: 146px;
+      width: 157px;
     }
     &.amount_in_group{
-      width: 146px;
+      width: 157px;
     }
   }
 }
 
 .company-cabinet__business-processes__vacancy-table__body {
-  border-radius: 0 0 5px 5px;
+  border: 1px solid rgba($blue-dark, 0.1);
   overflow: hidden;
   background-color: #fff;
   .company-cabinet__business-processes__vacancy-table__row {
@@ -826,30 +860,27 @@
     min-height: 40px;
     font-size: 11px;
     line-height: 130%;
-    color: $text;
     &:nth-child(even) {
-      background: rgba(71, 71, 71, 0.1);
+      background: #F4F4F4;
     }
     >div{
       display: flex;
       align-items: center;
       padding: 5px 10px;
       &.permission{
-        padding-left: 38px;
-        width: 174px;
+        width: 185px;
       }
       &.amount{
-        width: 256px;
+        width: 110px;
       }
       &.city{
-        padding-left: 38px;
-        width: 140px;
+        width: 185px;
       }
       &.date{
-        width: 146px;
+        width: 157px;
       }
       &.amount_in_group{
-        width: 146px;
+        width: 157px;
       }
     }
   }
@@ -869,6 +900,7 @@
   background-color: #fff;
   border-radius: 5px;
   padding: 28px 40px 34px;
+  border: 1px solid rgba($blue-dark, .1);
   .company-cabinet__business-processes__docs-uploaded__field{
     &:last-child{
       margin-bottom: 0;
@@ -884,6 +916,9 @@
   svg{
     min-width: 16px;
     margin-right: 15px;
+    path{
+      fill: $red;
+    }
   }
   span{
     display: block;
@@ -910,8 +945,14 @@
   }
   .partner-cabinet__form{
     width: 238px;
-    .input-file > label span{
-      max-width: 150px;
+    .input-file{
+      > label{
+        padding: 5px 20px;
+        justify-content: center;
+        span{
+          max-width: 150px;
+        }
+      }
     }
   }
   .partner-cabinet__students-form__row{
@@ -921,6 +962,9 @@
     }
     .input-wrapper{
       width: calc(100% - 100px);
+      .input{
+        border: 1px solid rgba($blue-dark, .1);
+      }
     }
   }
 }
@@ -933,7 +977,7 @@
   .add-uploading-fileds {
     width: 238px;
     cursor: pointer;
-    border: 1px solid rgba($accent, 0.3);
+    border: 1px solid $red;
     border-radius: 5px;
     height: 40px;
     margin-bottom: 5px;
@@ -948,9 +992,24 @@
     > svg {
       min-width: 25px;
       margin-right: 20px;
+      rect{
+        fill: $red;
+        +rect{
+          fill: #fff;
+        }
+      }
     }
   }
   .btn{
     width: 227px;
+    &.company-cabinet__btn{
+      background: $red;
+      color: #fff;
+      font-weight: 500;
+      &:hover{
+        background: $red-dark;
+        color: #fff;
+      }
+    }
   }
 }
