@@ -245,7 +245,7 @@ main {
     }
   }
   .validate-error {
-    color: $accent;
+    color: $red-dark;
     font-size: 12px;
     line-height: 14px;
     left: 0;
@@ -379,13 +379,37 @@ main {
   color: $black;
   -webkit-appearance: none;
   appearance: none;
-  &::placeholder {
-    color: rgba($gray, 0.3);
-  }
-  &:focus {
-    &::placeholder {
-      color: transparent;
+    &::-webkit-input-placeholder {
+      color: rgba($gray, 0.3);
     }
+  
+    &::-moz-placeholder {
+      color: rgba($gray, 0.3);
+    }
+  
+    &:-ms-input-placeholder {
+      color: rgba($gray, 0.3);
+    }
+  
+    &:-moz-placeholder {
+      color: rgba($gray, 0.3);
+    }
+  &:focus {
+        &::-webkit-input-placeholder {
+          color: transparent;
+        }
+    
+        &::-moz-placeholder {
+          color: transparent;
+        }
+    
+        &:-ms-input-placeholder {
+          color: transparent;
+        }
+    
+        &:-moz-placeholder {
+          color: transparent;
+        }
   }
 }
 

@@ -342,6 +342,21 @@ $(function () {
             $('.form-popup__register-as__yellow').hide();
         }
     });
+    $('#refugee-ua').change(function () {
+        if ($(this).is(':checked')) {
+            $('.form-popup__register-as__yellow').hide();
+        }
+    });
+    $('#refugee-other').change(function () {
+        if ($(this).is(':checked')) {
+            $('.form-popup__register-as__yellow').hide();
+        }
+    });
+    $('#eu-citizen').change(function () {
+        if ($(this).is(':checked')) {
+            $('.form-popup__register-as__yellow').hide();
+        }
+    });
 
     /*setTimeout(function() {
       if ($('#new-password').length) {
@@ -468,6 +483,13 @@ $(function () {
                 $(element).parent().removeClass('error');
             },
             rules: {
+                xnew_password: {
+                    required: true,
+                },
+                xnew_password_confirm: {
+                    required: true,
+                    equalTo: '#xnew_password'
+                },
                 name_ua: {
                     required: true,
                 },
@@ -602,6 +624,10 @@ $(function () {
                 },
             },
             messages: {
+                xnew_password_confirm: {
+                    required: '',
+                    equalTo: 'Введенные пароли не совпадают, попробуйте ещё раз'
+                },
                 name_ua: {
                     required: 'Заполните эту информацию'
                 },
@@ -1769,3 +1795,7 @@ $(function () {
         e.stopPropagation();
     });
 });
+
+// $('.input-wrapper.confirm.error .input').on('blur', function {
+//     $(this).css('color', 'transparent');
+// })
