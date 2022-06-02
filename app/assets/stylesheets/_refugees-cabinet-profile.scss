@@ -4,14 +4,20 @@
   overflow: hidden;
   display: flex;
   gap: 30px;
+  min-height: 575px;
   &.active{;
     gap: 0;
     .refugees-cabinet__sidebar{
       width: 0;
       transform: translateX(-255px);
+      box-shadow: none;
     }
     .refugees-cabinet__info{
       width: 100%;
+      &:before{
+        opacity: 0;
+        pointer-events: none;
+      }
     }
   }
 }
@@ -28,6 +34,50 @@
   gap: 8px;
   color: #474747;
   cursor: pointer;
+  >div{
+    transition: background 0.3s;
+    position: relative;
+    width: 31px;
+    height: 20px;
+    i {
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: none;
+      transition: background 0.3s;
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: $red;
+        transition-duration: 0.3s, 0.3s;
+        transition-property: top, transform;
+        top: 0;
+        transform: rotate(45deg);
+        transition-delay: 0, 0.3s;
+      }
+      &:after {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: $red;
+        content: "";
+        transition-duration: 0.3s, 0.3s;
+        transition-property: top, transform;
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition-delay: 0, 0.3s;
+      }
+    }
+  }
   &:hover{
     color: $red;
     svg{
@@ -37,9 +87,29 @@
     }
   }
   &.active{
-    flex-direction: row-reverse;
+    //flex-direction: row-reverse;
+    >div{
+      order: 1;
+      i{
+        background: $red;
+        &:before {
+          top: -6px;
+          transform: none;
+          transition-delay: 0.3s, 0;
+        }
+        &:after {
+          bottom: -6px;
+          transform: none;
+          transition-delay: 0.3s, 0;
+        }
+      }
+    }
     svg{
+      order: 2;
       transform: scale(-1, 1);
+    }
+    >span{
+      order: 3;
     }
   }
 }
@@ -48,6 +118,13 @@
   width: 255px;
   border-right: 1px solid rgba($blue-dark, 0.1);
   transition: ease-in-out .3s;
+  position: absolute;
+  background: #fff;
+  height: calc(100% - 95px);
+  min-height: 480px;
+  box-shadow: 1px 7px 10px rgba($blue-dark, 0.31);
+  top: 55px;
+  z-index: 10;
 }
 
 .refugees-cabinet__user{
@@ -132,10 +209,20 @@
 }
 
 .refugees-cabinet__info{
-  width: calc(100% - 285px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   transition: ease-in-out .3s;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: '';
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background: #fff;
+  }
   >.company-cabinet__alert{
     margin-bottom: 10px;
   }

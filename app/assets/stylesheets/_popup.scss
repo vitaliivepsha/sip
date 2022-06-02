@@ -478,7 +478,7 @@
 
 .group-popup{
   background: #fff;
-  box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+  box-shadow: 0 4px 10px rgba($blue-dark, 0.15);
   border-radius: 5px;
   width: 438px;
   position: relative;
@@ -492,7 +492,7 @@
 }
 
 .group-popup__head{
-  border-bottom: 1px solid rgba($blue-dark, .1);
+  border-bottom: 1px solid #8B8A8E;
   height: 56px;
   padding: 0 30px;
   display: flex;
@@ -505,7 +505,7 @@
     &:checked{
       +label{
         >div{
-          border-color: $accent;
+          border-color: $red;
           svg {
             display: block;
           }
@@ -533,6 +533,9 @@
         margin-right: 8px;
         svg {
           display: none;
+          path{
+            fill: $red;
+          }
         }
       }
     }
