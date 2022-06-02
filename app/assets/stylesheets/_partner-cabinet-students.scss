@@ -1,7 +1,6 @@
 .refugees-cabinet__main {
   & .partner-cabinet__vacancy-step__body {
     &.student-access {
-      width: 100%;
       padding: 30px;
       padding-bottom: 40px;
       border: 1px solid rgba(10, 28, 39, 0.1);
@@ -82,7 +81,6 @@
     }
 
     &.permission-received {
-      width: 100%;
       padding: 30px;
       padding-top: 27px;
       padding-right: 73px;
@@ -150,7 +148,7 @@
         line-height: 150%;
         text-decoration: underline;
         color: $blue-dark;
-transition: text-decoration linear 0.2s;
+        transition: text-decoration linear 0.2s;
         &:hover {
           text-decoration: none;
         }
@@ -1273,6 +1271,56 @@ transition: text-decoration linear 0.2s;
 .partners-cabinet__steps{
   background-color: $bg-gray;
   padding: 25px 22px 45px;
+}
+
+.partners-cabinet__business-processes{
+  padding: 30px 40px 60px;
+  .partner-cabinet__vacancy-steps{
+    margin-bottom: 60px;
+    .partner-cabinet__vacancy-steps__head-wrap{
+      .partner-cabinet__vacancy-steps__head{
+        span{
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 150%;
+          color: $blue-dark;
+        }
+      }
+      .partner-cabinet__vacancy-steps__main__top{
+        width: 175px;
+        justify-content: flex-start;
+        .partner-cabinet__vacancy-steps__main__candidats{
+          span{
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 150%;
+            color: $blue-dark;
+          }
+        }
+      }
+    }
+    .partner-cabinet__vacancy-step__title{
+      width: 565px;
+      min-width: 565px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 130%;
+      color: $blue-dark;
+    }
+    .partner-cabinet__vacancy-step__time{
+      width: 175px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 130%;
+      color: $blue-dark;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}
+
+.partners-cabinet__business-processes__inner{
+  width: 745px;
 }
 
 .partner-cabinet__vacancy-steps__head-wrap{
@@ -3240,7 +3288,7 @@ transition: text-decoration linear 0.2s;
 .partner-cabinet__vacancy-steps-spoiler{
   display: flex;
   cursor: pointer;
-  width: 100%;
+  width: 783px;
   min-height: 82px;
   background: transparent;
   border: 1px solid rgba($blue-dark, .1);
