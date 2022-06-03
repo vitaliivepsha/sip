@@ -25,6 +25,50 @@
   align-items: center;
 }
 
+.refugees-header__fav{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 38px;
+  svg{
+    +svg{
+      display: none;
+    }
+  }
+  &:hover{
+    svg{
+      path{
+        fill: $red;
+      }
+    }
+  }
+  &.active{
+    background-color: $red;
+    svg{
+      display: none;
+      +svg{
+        display: block;
+      }
+    }
+    &:hover{
+      svg{
+        display: block;
+        path{
+          fill: #fff;
+        }
+        +svg{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 .refugees-header__lang {
   width: 65px;
   height: 40px;
