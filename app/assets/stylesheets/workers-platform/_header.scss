@@ -223,9 +223,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 38px;
+  margin-right: 18px;
+  margin-left: auto;
   position: relative;
   z-index: 1;
+  @include bp(md) {
+    display: none;
+  }
   svg{
     +svg{
       display: none;
@@ -240,6 +244,9 @@
   }
   &.active{
     background-color: $blue-dark;
+    @include bp(md) {
+      background-color: $red;
+    }
     svg{
       display: none;
       +svg{
@@ -533,4 +540,13 @@
 
 .workers-menu__mobile-bot{
   padding: 20px 20px 40px;
+  position: relative;
+  .workers-header__fav{
+    @include bp(md) {
+      display: flex;
+      position: absolute;
+      left: 105px;
+      top: 20px;
+    }
+  }
 }
