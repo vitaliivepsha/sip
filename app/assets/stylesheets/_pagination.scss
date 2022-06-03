@@ -67,3 +67,41 @@
     }
   }
 }
+
+// workers platform
+.pagination-page {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  & span,
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 24px;
+height: 24px;
+font-family: $title;
+font-size: 12px;
+line-height: 150%;
+border-radius: 2px;
+border: 1px solid transparent;
+text-decoration: none;
+color: $blue-dark;
+  }
+  & li.current {
+    & span {
+      border: 1px solid $blue-dark;
+    }
+  }
+    & li.disabled {
+      & span {
+        color: rgba(10, 28, 39, 0.3);
+      }
+    }
+
+         & li:hover{
+           & a {
+            text-decoration: underline;
+           }
+         }
+}

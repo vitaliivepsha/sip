@@ -3,114 +3,114 @@
 'use strict';
 
 if (process.env.NODE_ENV !== 'production') {
-    require('./assets/templates/layouts/index.html');
-    require('./assets/templates/layouts/for-partners.html');
-    require('./assets/templates/layouts/for-companies.html');
-    require('./assets/templates/layouts/contacts-old.html');
-    require('./assets/templates/layouts/about-us.html');
-    require('./assets/templates/layouts/impressum.html');
-    require('./assets/templates/layouts/terms.html');
-    require('./assets/templates/layouts/policy.html');
-    require('./assets/templates/layouts/partner-cabinet-information.html');
-    require('./assets/templates/layouts/partner-cabinet-information-saved.html');
-    require('./assets/templates/layouts/partner-cabinet-information-edit.html');
-    require('./assets/templates/layouts/partner-cabinet-students.html');
-    require('./assets/templates/layouts/partner-cabinet-students-vacancy-choice.html');
-    require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list.html');
-    require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list-friends.html');
-    require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list-not-found.html');
-    require('./assets/templates/layouts/partner-cabinet-students-add.html');
-    require('./assets/templates/layouts/partner-cabinet-students-contol-of-the-documents.html');
-    require('./assets/templates/layouts/partner-cabinet-chats.html');
-    require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents.html');
+    // require('./assets/templates/layouts/index.html');
+    // require('./assets/templates/layouts/for-partners.html');
+    // require('./assets/templates/layouts/for-companies.html');
+    // require('./assets/templates/layouts/contacts-old.html');
+    // require('./assets/templates/layouts/about-us.html');
+    // require('./assets/templates/layouts/impressum.html');
+    // require('./assets/templates/layouts/terms.html');
+    // require('./assets/templates/layouts/policy.html');
+    // require('./assets/templates/layouts/partner-cabinet-information.html');
+    // require('./assets/templates/layouts/partner-cabinet-information-saved.html');
+    // require('./assets/templates/layouts/partner-cabinet-information-edit.html');
+    // require('./assets/templates/layouts/partner-cabinet-students.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-vacancy-choice.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list-friends.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-vacancy-choose-list-not-found.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-add.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-contol-of-the-documents.html');
+    // require('./assets/templates/layouts/partner-cabinet-chats.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents.html');
     require('./assets/templates/layouts/partner-cabinet-news.html');
-    require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-partner.html');
-    require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-SIP.html');
-    require('./assets/templates/layouts/partner-cabinet-students-approved-A.html');
-    require('./assets/templates/layouts/partner-cabinet-students-approved-B.html');
-    require('./assets/templates/layouts/partner-cabinet-students-approved-C.html');
-    require('./assets/templates/layouts/partner-cabinet-students-103.html');
-    require('./assets/templates/layouts/partner-cabinet-student-original-on-the-way-to-company-A.html');
-    require('./assets/templates/layouts/partner-cabinet-student-original-on-the-way-to-company-B.html');
-    require('./assets/templates/layouts/partner-cabinet-student-originals-received-by-company-A.html');
-    require('./assets/templates/layouts/partner-cabinet-student-originals-received-by-company-B.html');
-    require('./assets/templates/layouts/partner-cabinet-student-company-fill-out-forms-A.html');
-    require('./assets/templates/layouts/partner-cabinet-student-company-fill-out-forms-B.html');
-    require('./assets/templates/layouts/partner-cabinet-student-documents-sent-to-ministry.html');
-    require('./assets/templates/layouts/partner-cabinet-student-documents-sent-to-ministry-2.html');
-    require('./assets/templates/layouts/partner-cabinet-student-access-to-SIP-A.html');
-    require('./assets/templates/layouts/partner-cabinet-student-access-to-SIP-B.html');
-    require('./assets/templates/layouts/partner-cabinet-student-permission-received-A.html');
-    require('./assets/templates/layouts/partner-cabinet-student-permission-received-B.html');
-    require('./assets/templates/layouts/partner-cabinet-student-permission-received-C.html');
-    require('./assets/templates/layouts/partner-cabinet-student-permission-received-D.html');
-    require('./assets/templates/layouts/partner-cabine-contract.html');
-    require('./assets/templates/layouts/partner-cabinet-bussiness-processes.html');
-    require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents-A.html');
-    require('./assets/templates/layouts/student-cabinet-information.html');
-    require('./assets/templates/layouts/student-stages.html');
-    require('./assets/templates/layouts/student-stages-forming-a-group-0.html');
-    require('./assets/templates/layouts/student-stages-forming-a-group-1.html');
-    require('./assets/templates/layouts/student-stages-forming-a-group-2.html');
-    require('./assets/templates/layouts/student-stages-download-a-ticket.html');
-    require('./assets/templates/layouts/student-stages-insurance1.html');
-    require('./assets/templates/layouts/student-stages-insurance2.html');
-    require('./assets/templates/layouts/student-stages-insurance3.html');
-    require('./assets/templates/layouts/student-stages-reviews-1.html');
-    require('./assets/templates/layouts/student-stages-reviews-2.html');
-    require('./assets/templates/layouts/student-stages-reviews-3.html');
-    require('./assets/templates/layouts/student-stages-travel-back.html');
-    require('./assets/templates/layouts/student-stages-upload-photo.html');
-    require('./assets/templates/layouts/student-stages-upload-photo-2.html');
-    require('./assets/templates/layouts/student-stages-accompaniment.html');
-    require('./assets/templates/layouts/student-stages-employer.html');
-    require('./assets/templates/layouts/student-stages-ready-to-go.html');
-    require('./assets/templates/layouts/student-cabinet-trips.html');
-    require('./assets/templates/layouts/student-cabinet-company-information.html');
-    require('./assets/templates/layouts/student-cabinet-company-information-2.html');
-    require('./assets/templates/layouts/student-cabinet-chats.html');
-    require('./assets/templates/layouts/company-cabinet-information.html');
-    require('./assets/templates/layouts/company-cabinet-information-edit.html');
-    require('./assets/templates/layouts/company-cabinet-information-saved.html');
-    require('./assets/templates/layouts/company-cabinet-contract.html');
-    require('./assets/templates/layouts/company-cabinet-vacancies.html');
-    require('./assets/templates/layouts/company-cabinet-vacancy1.html');
-    require('./assets/templates/layouts/company-cabinet-vacancy2.html');
-    require('./assets/templates/layouts/company-cabinet-vacancy3.html');
-    require('./assets/templates/layouts/company-cabinet-vacancy4.html');
-    require('./assets/templates/layouts/company-cabinet-chats.html');
-    require('./assets/templates/layouts/company-cabinet-stages.html');
-    require('./assets/templates/layouts/company-cabinet-employers.html');
-    require('./assets/templates/layouts/company-cabinet-employer-edit.html');
-    require('./assets/templates/layouts/company-cabinet-bussiness-processes.html');
-    require('./assets/templates/layouts/employer-review.html');
-    require('./assets/templates/layouts/student-review.html');
-    require('./assets/templates/layouts/workers-platform-main.html');
-    require('./assets/templates/layouts/workers-platform-main-ru.html');
-    require('./assets/templates/layouts/workers-platform-main-de.html');
-    require('./assets/templates/layouts/workers-platform-main-en.html');
-    require('./assets/templates/layouts/refugees-cabinet-profile.html');
-    require('./assets/templates/layouts/refugees-cabinet-documents.html');
-    require('./assets/templates/layouts/refugees-cabinet-employers.html');
-    require('./assets/templates/layouts/refugees-cabinet-employer.html');
-    require('./assets/templates/layouts/refugees-cabinet-chats.html');
-    require('./assets/templates/layouts/insurance.html');
-    require('./assets/templates/layouts/employer.html');
-    require('./assets/templates/layouts/partners.html');
-    require('./assets/templates/layouts/contacts.html');
-    require('./assets/templates/layouts/vacancies.html');
-    require('./assets/templates/layouts/vacancy-with-filters.html');
-    require('./assets/templates/layouts/vacancy-with-filters-uregistered.html');
-    require('./assets/templates/layouts/vacancy-with-filters-role.html');
-    require('./assets/templates/layouts/vacancy-with-filters-no-reviews.html');
-    require('./assets/templates/layouts/vacancy-with-filters-no-actual-vacancies.html');
-    require('./assets/templates/layouts/vacancy.html');
-    require('./assets/templates/layouts/for-ukranians.html');
-    require('./assets/templates/layouts/program-refugees.html');
-    require('./assets/templates/layouts/program-practice.html');
-    require('./assets/templates/layouts/program-vacation.html');
-    require('./assets/templates/layouts/employer-rating.html');
-    require('./assets/templates/layouts/student-rating.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-partner.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-original-sent-to-SIP.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-approved-A.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-approved-B.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-approved-C.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-103.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-original-on-the-way-to-company-A.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-original-on-the-way-to-company-B.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-originals-received-by-company-A.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-originals-received-by-company-B.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-company-fill-out-forms-A.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-company-fill-out-forms-B.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-documents-sent-to-ministry.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-documents-sent-to-ministry-2.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-access-to-SIP-A.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-access-to-SIP-B.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-permission-received-A.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-permission-received-B.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-permission-received-C.html');
+    // require('./assets/templates/layouts/partner-cabinet-student-permission-received-D.html');
+    // require('./assets/templates/layouts/partner-cabine-contract.html');
+    // require('./assets/templates/layouts/partner-cabinet-bussiness-processes.html');
+    // require('./assets/templates/layouts/partner-cabinet-students-vacancy-chosen-add-documents-A.html');
+    // require('./assets/templates/layouts/student-cabinet-information.html');
+    // require('./assets/templates/layouts/student-stages.html');
+    // require('./assets/templates/layouts/student-stages-forming-a-group-0.html');
+    // require('./assets/templates/layouts/student-stages-forming-a-group-1.html');
+    // require('./assets/templates/layouts/student-stages-forming-a-group-2.html');
+    // require('./assets/templates/layouts/student-stages-download-a-ticket.html');
+    // require('./assets/templates/layouts/student-stages-insurance1.html');
+    // require('./assets/templates/layouts/student-stages-insurance2.html');
+    // require('./assets/templates/layouts/student-stages-insurance3.html');
+    // require('./assets/templates/layouts/student-stages-reviews-1.html');
+    // require('./assets/templates/layouts/student-stages-reviews-2.html');
+    // require('./assets/templates/layouts/student-stages-reviews-3.html');
+    // require('./assets/templates/layouts/student-stages-travel-back.html');
+    // require('./assets/templates/layouts/student-stages-upload-photo.html');
+    // require('./assets/templates/layouts/student-stages-upload-photo-2.html');
+    // require('./assets/templates/layouts/student-stages-accompaniment.html');
+    // require('./assets/templates/layouts/student-stages-employer.html');
+    // require('./assets/templates/layouts/student-stages-ready-to-go.html');
+    // require('./assets/templates/layouts/student-cabinet-trips.html');
+    // require('./assets/templates/layouts/student-cabinet-company-information.html');
+    // require('./assets/templates/layouts/student-cabinet-company-information-2.html');
+    // require('./assets/templates/layouts/student-cabinet-chats.html');
+    // require('./assets/templates/layouts/company-cabinet-information.html');
+    // require('./assets/templates/layouts/company-cabinet-information-edit.html');
+    // require('./assets/templates/layouts/company-cabinet-information-saved.html');
+    // require('./assets/templates/layouts/company-cabinet-contract.html');
+    // require('./assets/templates/layouts/company-cabinet-vacancies.html');
+    // require('./assets/templates/layouts/company-cabinet-vacancy1.html');
+    // require('./assets/templates/layouts/company-cabinet-vacancy2.html');
+    // require('./assets/templates/layouts/company-cabinet-vacancy3.html');
+    // require('./assets/templates/layouts/company-cabinet-vacancy4.html');
+    // require('./assets/templates/layouts/company-cabinet-chats.html');
+    // require('./assets/templates/layouts/company-cabinet-stages.html');
+    // require('./assets/templates/layouts/company-cabinet-employers.html');
+    // require('./assets/templates/layouts/company-cabinet-employer-edit.html');
+    // require('./assets/templates/layouts/company-cabinet-bussiness-processes.html');
+    // require('./assets/templates/layouts/employer-review.html');
+    // require('./assets/templates/layouts/student-review.html');
+    // require('./assets/templates/layouts/workers-platform-main.html');
+    // require('./assets/templates/layouts/workers-platform-main-ru.html');
+    // require('./assets/templates/layouts/workers-platform-main-de.html');
+    // require('./assets/templates/layouts/workers-platform-main-en.html');
+    // require('./assets/templates/layouts/refugees-cabinet-profile.html');
+    // require('./assets/templates/layouts/refugees-cabinet-documents.html');
+    // require('./assets/templates/layouts/refugees-cabinet-employers.html');
+    // require('./assets/templates/layouts/refugees-cabinet-employer.html');
+    // require('./assets/templates/layouts/refugees-cabinet-chats.html');
+    // require('./assets/templates/layouts/insurance.html');
+    // require('./assets/templates/layouts/employer.html');
+    // require('./assets/templates/layouts/partners.html');
+    // require('./assets/templates/layouts/contacts.html');
+    // require('./assets/templates/layouts/vacancies.html');
+    // require('./assets/templates/layouts/vacancy-with-filters.html');
+    // require('./assets/templates/layouts/vacancy-with-filters-uregistered.html');
+    // require('./assets/templates/layouts/vacancy-with-filters-role.html');
+    // require('./assets/templates/layouts/vacancy-with-filters-no-reviews.html');
+    // require('./assets/templates/layouts/vacancy-with-filters-no-actual-vacancies.html');
+    // require('./assets/templates/layouts/vacancy.html');
+    // require('./assets/templates/layouts/for-ukranians.html');
+    // require('./assets/templates/layouts/program-refugees.html');
+    // require('./assets/templates/layouts/program-practice.html');
+    // require('./assets/templates/layouts/program-vacation.html');
+    // require('./assets/templates/layouts/employer-rating.html');
+    // require('./assets/templates/layouts/student-rating.html');
 }
 
 // Depends
@@ -841,7 +841,10 @@ $(function () {
         }
     });
 
+
     /* partner cabinet students */
+
+
 
     // dropdown
     $('.dropdown').click(function () {
@@ -1794,7 +1797,12 @@ $(function () {
     $('.dropdown-list').on('mousewheel DOMMouseScroll', function (e) {
         e.stopPropagation();
     });
+
 });
+
+
+
+
 
 // $('.input-wrapper.confirm.error .input').on('blur', function {
 //     $(this).css('color', 'transparent');
