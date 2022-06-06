@@ -583,7 +583,7 @@
   padding: 0;
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: 0px 4px 10px rgba(95, 108, 250, 0.2);
+  box-shadow: 0px 10px 10px rgba(10, 28, 39, 0.15);
 
   @media (max-width: 575px) {
     margin-right: 15px;
@@ -965,7 +965,7 @@
       color: $blue-dark;
       border-radius: 5px;
       background-color: #fff;
-      box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+      box-shadow: 0px 10px 10px rgba(10, 28, 39, 0.15);
 
       @media (max-width: 991px) {
         right: -28px;
@@ -1155,8 +1155,10 @@
   position: relative;
   & label.error {
     position: absolute;
-    top: 7px;
-      left: 14px;
+    top: 4px;
+      left: 16px;
+      padding: 2px;
+      background-color: #fff;
     pointer-events: none;
     color: $red;
   }

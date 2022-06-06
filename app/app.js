@@ -841,7 +841,10 @@ $(function () {
         }
     });
 
+
     /* partner cabinet students */
+
+
 
     // dropdown
     $('.dropdown').click(function () {
@@ -1794,7 +1797,12 @@ $(function () {
     $('.dropdown-list').on('mousewheel DOMMouseScroll', function (e) {
         e.stopPropagation();
     });
+
 });
+
+
+
+
 
 // $('.input-wrapper.confirm.error .input').on('blur', function {
 //     $(this).css('color', 'transparent');
