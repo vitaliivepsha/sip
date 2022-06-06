@@ -28,11 +28,11 @@
   position: absolute;
   left: 0;
   top: 20px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 10px;
   line-height: 12px;
   gap: 8px;
-  color: #474747;
+  color: $red;
   cursor: pointer;
   >div{
     transition: background 0.3s;
@@ -78,11 +78,18 @@
       }
     }
   }
+  svg{
+    width: 20px;
+    height: 20px;
+    path{
+      fill: $red;
+    }
+  }
   &:hover{
-    color: $red;
+    color: $red-dark;
     svg{
       path{
-        fill: $red;
+        fill: $red-dark;
       }
     }
   }
