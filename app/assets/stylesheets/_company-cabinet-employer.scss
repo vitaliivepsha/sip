@@ -1,11 +1,9 @@
 .company-cabinet__employer-top__descr{
-  text-align: center;
+  text-align: left;
   font-weight: 500;
   font-size: 12px;
   line-height: 130%;
-  margin: 0 auto 40px;
-  font-family: $title;
-  color: $black;
+  margin: 0 auto 30px;
 }
 
 .company-cabinet__employer-add {
@@ -40,20 +38,10 @@
     width: 227px;
     &.btn-back{
       position: relative;
-      border: none;
-      padding: 1px;
+      border-color: $red;
+      color: $blue-dark;
       background: transparent;
       margin-right: 26px;
-      &:before{
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        border-radius: 5px;
-        background: linear-gradient(259.34deg, #FFAD70 22.31%, #FFD53D 57.92%);
-      }
       span{
         display: flex;
         align-items: center;
@@ -62,7 +50,6 @@
         height: 100%;
         z-index: 1;
         border-radius: 4px;
-        background-color: $bg-gray;
         svg{
           position: relative;
           bottom: -1px;
@@ -70,9 +57,12 @@
         }
       }
       &:hover{
-        color: $black;
-        span{
-          background-color: transparent;
+        color: #fff;
+        background-color: $red;
+        svg{
+          path{
+            fill: #fff;
+          }
         }
       }
     }
