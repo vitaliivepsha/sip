@@ -396,33 +396,35 @@
     align-items: center;
     justify-content: center;
     height: 245px;
-  }
-  .input-file{
-    margin-bottom: 0;
-    width: 205px;
-    height: 50px;
-    border-color: $red;
-    > label{
-      svg{
-        margin-right: 5px;
-        path{
-          fill: $red
+    .input-file{
+      margin-bottom: 0;
+      width: 205px;
+      height: 50px;
+      border-color: $red;
+      > label{
+        padding: 5px 13px;
+        justify-content: center;
+        svg{
+          margin-right: 5px;
+          path{
+            fill: $red
+          }
+        }
+        span{
+          max-width: 130px;
+          font-weight: 500;
         }
       }
-      span{
-        max-width: 130px;
-        font-weight: 500;
-      }
     }
-  }
-  .btn{
-    width: 173px;
-    margin-left: 12px;
-    background: $red;
-    color: #fff;
-    &:hover{
-      background: $red-dark;
+    .btn{
+      width: 173px;
+      margin-left: 12px;
+      background: $red;
       color: #fff;
+      &:hover{
+        background: $red-dark;
+        color: #fff;
+      }
     }
   }
 }
@@ -489,6 +491,8 @@
     border-color: $red;
     margin-bottom: 0;
     > label{
+      padding: 5px 20px;
+      justify-content: center;
       svg{
         path{
           fill: $red;
@@ -620,6 +624,7 @@
     width: 294px;
     margin-top: 0;
     border: 1px solid $red;
+    background-color: #fff;
     font-weight: 500;
     color: $blue-dark;
     &:hover{
@@ -643,6 +648,8 @@
     border-color: $red;
     input{
       +label{
+        padding: 5px 20px;
+        justify-content: center;
         svg{
           path{
             fill: $red;
