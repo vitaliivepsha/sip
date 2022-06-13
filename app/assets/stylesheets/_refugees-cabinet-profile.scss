@@ -681,3 +681,16 @@
   width: 730px;
   margin: 0 auto;
 }
+
+.refugees-cabinet__footnote{
+  margin-top: 50px;
+  font-size: 12px;
+  line-height: 130%;
+  a{
+    color: $blue-dark;
+    text-decoration: underline;
+    &:hover, &:focus{
+      color: $red;
+    }
+  }
+}
