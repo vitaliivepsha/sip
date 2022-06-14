@@ -1798,6 +1798,45 @@ $(function () {
         e.stopPropagation();
     });
 
+    // add address
+
+    var address_num = 1;
+    $('.add-address').click(function () {
+        address_num++;
+        $(this).closest('.addresses-list').find('.addresses-inner').append('<div class="company-cabinet__business-processes__addresses-row">\n' +
+            '                                            <div class="radio-wrapper">\n' +
+            '                                                <input type="radio" name="default-address" id="da' + address_num + '">\n' +
+            '                                                <label for="da' + address_num + '"></label>\n' +
+            '                                            </div>\n' +
+            '                                            <input class="input" name="address[]">\n' +
+            '                                            <input class="input" name="comment[]">\n' +
+            '                                        </div>');
+    });
+
+    // student approve popup
+
+    $('.b8_approve input').change(function () {
+        if ($(this).is(':checked')) {
+            $.magnificPopup.open({
+                items: {
+                    src: '#student-approve-popup'
+                }
+            });
+        }
+    });
+
+    // deal cancel popup
+
+    $('.b9_cancel input').change(function () {
+        if ($(this).is(':checked')) {
+            $.magnificPopup.open({
+                items: {
+                    src: '#deal-cancel-popup'
+                }
+            });
+        }
+    });
+
 });
 
 

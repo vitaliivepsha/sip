@@ -236,6 +236,45 @@
     &.b7_last_day {
       width: 130px;
     }
+    &.b8_vacancy{
+      width: 226px;
+    }
+    &.b8_resume{
+      width: 118px;
+    }
+    &.b8_rating{
+      width: 96px;
+    }
+    &.b8_reviews{
+      width: 120px;
+    }
+    &.b8_date{
+      width: 140px;
+    }
+    &.b8_approve{
+      width: 95px;
+    }
+    &.b8_decline{
+      width: 95px;
+    }
+    &.b9_vacancy{
+      width: 235px;
+    }
+    &.b9_address{
+      width: 263px;
+    }
+    &.b9_fio{
+      width: 184px;
+    }
+    &.b9_date_plan{
+      width: 116px;
+    }
+    &.b9_date_fact{
+      width: 112px;
+    }
+    &.b9_cancel{
+      width: 120px;
+    }
     > span {
       display: block;
       padding: 6px 10px 4px;
@@ -452,6 +491,56 @@
       }
       &.b7_last_day {
         width: 130px;
+      }
+      &.b8_vacancy{
+        width: 226px;
+      }
+      &.b8_resume{
+        width: 118px;
+      }
+      &.b8_rating{
+        width: 96px;
+        a{
+          font-size: 12px;
+          line-height: 130%;
+          color: $blue-dark;
+          text-decoration: none;
+          svg{
+            path{
+              fill: $blue-dark;
+            }
+          }
+        }
+      }
+      &.b8_reviews{
+        width: 120px;
+      }
+      &.b8_date{
+        width: 140px;
+      }
+      &.b8_approve{
+        width: 95px;
+      }
+      &.b8_decline{
+        width: 95px;
+      }
+      &.b9_vacancy{
+        width: 235px;
+      }
+      &.b9_address{
+        width: 263px;
+      }
+      &.b9_fio{
+        width: 184px;
+      }
+      &.b9_date_plan{
+        width: 116px;
+      }
+      &.b9_date_fact{
+        width: 112px;
+      }
+      &.b9_cancel{
+        width: 120px;
       }
     }
   }
@@ -1007,6 +1096,130 @@
       color: #fff;
       font-weight: 500;
       &:hover{
+        background: $red-dark;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.company-cabinet__business-processes__addresses-list{
+  width: 920px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid rgba($blue-dark, 0.3);
+  border-radius: 5px;
+  padding: 30px 40px 80px;
+}
+
+.company-cabinet__business-processes__addresses-inner{
+  width: 447px;
+}
+
+.company-cabinet__business-processes__addresses-head{
+  display: flex;
+  padding-left: 21px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+  margin-bottom: 11px;
+  span{
+    padding-left: 3px;
+    width: 146px;
+    +span{
+      width: 270px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.company-cabinet__business-processes__addresses-row{
+  display: flex;
+  align-items: center;
+  +.company-cabinet__business-processes__addresses-row{
+    margin-top: 10px;
+  }
+  .radio-wrapper{
+    input{
+      display: none;
+      +label{
+        width: 12px;
+        height: 12px;
+        margin-right: 9px;
+        margin-bottom: 0;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:before{
+          position: absolute;
+          content: '';
+          left: 0;
+          top: 0;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 1px solid $blue-dark;
+        }
+      }
+      &:checked{
+        +label{
+          &:before{
+            border-color: $red;
+          }
+          &:after{
+            content: '';
+            position: absolute;
+            left: 3px;
+            top: 2px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $red;
+          }
+        }
+      }
+    }
+  }
+  .input{
+    width: 146px;
+    background: $bg-gray;
+    +.input{
+      width: 270px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.company-cabinet__business-processes__addresses-buttons{
+  width: 447px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  .btn{
+    font-weight: 500;
+    &.company-cabinet__business-processes__addresses-btn__add{
+      border-color: $red;
+      color: $blue-dark;
+      width: 215px;
+      &:hover{
+        border-color: $blue-dark;
+        background: $blue-dark;
+        color: #fff;
+      }
+      svg{
+        margin-right: 18px;
+      }
+    }
+    &.company-cabinet__business-processes__addresses-btn__submit{
+      border-color: $red;
+      background: $red;
+      color: #fff;
+      width: 222px;
+      &:hover{
+        border-color: $red-dark;
         background: $red-dark;
         color: #fff;
       }

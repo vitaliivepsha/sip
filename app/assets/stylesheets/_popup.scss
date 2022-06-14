@@ -98,7 +98,7 @@
 
 .vacancy-order__popup{
   background: #fff;
-  box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+  box-shadow: 0 4px 10px rgba($blue-dark, 0.2);
   border-radius: 5px;
   width: 540px;
   position: relative;
@@ -1176,6 +1176,55 @@
 
 }
 
+.student-approve__popup{
+  .vacancy-order__popup-body{
+    padding: 24px 24px 26px;
+    p{
+      width: 100%;
+      margin: 0 auto 26px;
+      font-weight: 600;
+    }
+  }
+  .students-add__popup-btn{
+    border-color: $red;
+    background: $red;
+    color: #fff;
+    width: 293px;
+    border-radius: 5px;
+    &:hover{
+      border-color: $red-dark;
+      background: $red-dark;
+    }
+  }
+}
 
-
-
+.deal-cancel__popup{
+  .vacancy-order__popup-body{
+    padding: 18px 125px 40px;
+    p{
+      width: 100%;
+      font-size: 12px;
+      line-height: 130%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .textarea{
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      height: 90px;
+      border: 1px solid rgba($blue-dark, 0.2);
+    }
+    .students-add__popup-btn{
+      width: 100%;
+      border-color: $red;
+      background: $red;
+      color: #fff;
+      border-radius: 5px;
+      &:hover{
+        border-color: $red-dark;
+        background: $red-dark;
+      }
+    }
+  }
+}
