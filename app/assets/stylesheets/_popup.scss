@@ -289,7 +289,7 @@
   margin: 0 auto;
   width: 540px;
   background: #fff;
-  box-shadow: 0 4px 10px rgba(95, 108, 250, 0.2);
+  box-shadow: 0px 10px 10px rgba(10, 28, 39, 0.15);
   border-radius: 5px;
   .mfp-close {
     margin-top: 0;
@@ -298,11 +298,29 @@
     opacity: 1;
     &.notification-popup__btn{
       position: static;
-      padding: 0;
-      color: #75D7D6;
       margin: 30px auto 0;
-      &:hover{
-        color: $blue-dark;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 132px;
+      height: 50px;
+      padding: 0 10px;
+      font-family: $title;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+      border: 1px solid $red;
+      background-color: $red;
+      border-radius: 5px;
+      transition: 0.3s;
+      @media (max-width: 574px) {
+        height: 40px;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $red;
       }
     }
   }
@@ -342,22 +360,28 @@
   width: 292px;
   margin: 30px auto 0;
   height: 50px;
-  border: 1px solid $blue-dark;
-  border-radius: 30px;
-  transition: linear .2s;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 19px;
-  color: #75D7D6;
-  background-color: $blue-dark;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 132px;
+  padding: 0 10px;
+  font-family: $title;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
   text-align: center;
-  &:hover{
+  color: #fff;
+  border: 1px solid $red;
+  background-color: $red;
+  border-radius: 5px;
+  transition: 0.3s;
+  @media (max-width: 574px) {
+    height: 40px;
+  }
+  &:hover {
+    background-color: transparent;
+    color: $red;
     text-decoration: none;
-    background-color: #fff;
-    color: $blue-dark;
   }
 }
 

@@ -757,7 +757,7 @@ $(function () {
                 }
             },
             submitHandler: function () {
-                if ($('#refugees-form').length) {
+                if ($('#refugees-form')) {
                     $.ajax({
                         data: $('#refugees-form').serialize(),
                         success: function (data) {
