@@ -275,6 +275,18 @@
     &.b9_cancel{
       width: 120px;
     }
+    &.b10_vacancy{
+      width: 235px;
+    }
+    &.b10_fio{
+      width: 202px;
+    }
+    &.b10_message{
+      width: 210px;
+    }
+    &.b10_hours{
+      width: 210px;
+    }
     > span {
       display: block;
       padding: 6px 10px 4px;
@@ -542,6 +554,24 @@
       &.b9_cancel{
         width: 120px;
       }
+      &.b10_vacancy{
+        width: 235px;
+      }
+      &.b10_fio{
+        width: 202px;
+        a{
+          color: $blue-dark;
+        }
+      }
+      &.b10_message{
+        width: 210px;
+        a{
+          color: $blue-dark;
+        }
+      }
+      &.b10_hours{
+        width: 210px;
+      }
     }
   }
   .company-cabinet__business-processes__checkbox{
@@ -637,6 +667,13 @@
     +.company-cabinet__business-processes__checkbox{
       margin-left: 35px;
     }
+  }
+  .company-cabinet__business-processes__dates{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 130%;
+    color: $blue-dark;
+    margin-right: 40px;
   }
 }
 
