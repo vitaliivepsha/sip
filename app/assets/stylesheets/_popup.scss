@@ -135,6 +135,38 @@
     line-height: 130%;
     color: $blue-dark;
   }
+  .partner-cabinet__students-form {
+    margin-bottom: 24px;
+    .input-wrapper {
+      &.select-wrapper{
+        width: 395px;
+      }
+      &.time-wrapper{
+        .date-choose {
+          width: 110px;
+          &:before {
+            width: 67px;
+          }
+          .placeholder {
+            width: 65px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.vacancy-order__popup-row{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  >span{
+    font-size: 14px;
+    line-height: 130%;
+    color: $blue-dark;
+    margin-right: 12px;
+    font-weight: 600;
+  }
 }
 
 .vacancy-order__popup-footer{
